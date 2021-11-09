@@ -21,17 +21,19 @@ Welcome.
 #### Day One
 
 - Morning
-  - Introduction
+  - [Introduction]({{< relref "./introduction" >}})
 - Afternoon
-  - File System
+  - [File System]({{< relref "./file-system" >}})
 
 #### Day Two
 
 - Morning
-  - Userspace Applications
-  - Package Manager
+  - [Userspace Applications]({{< relref "./userspace-applications" >}})
+  - [Configuration: VirtualBox]({{< relref "./configurations/virtualbox" >}})
+  - [Configuration: Ubuntu]({{< relref "./configurations/ubuntu" >}})
+  - [Package Manager]({{< relref "./package-manager" >}})
 - Afternoon
-  - Git
+  - [Git]({{< relref "./git" >}})
 
 #### Day Three
 
