@@ -4,8 +4,46 @@ date: 2021-10-01T09:28:27-05:00
 draft: false
 ---
 
+## Linux
+
 Welcome.
 
-In this class we will be exploring Linux. Linux is a very powerful tool that can be used for many purposes.
+### Segments / Chapters
 
-In this class we will be learning some of the basics by configuring a Linux machine as a deployment target. It is very common for applications built various programming languages or tech stacks to be run on a Linux OS.
+- [Introduction]({{< relref "./introduction" >}})
+- [File System]({{< relref "./file-system" >}})
+- [Userspace Applications]({{< relref "./userspace-applications" >}})
+- [Package Manager]({{< relref "./package-manager" >}})
+- [Git]({{< relref "./git" >}})
+
+### Schedule
+
+#### Day One
+
+- Morning
+  - Introduction
+- Afternoon
+  - File System
+
+#### Day Two
+
+- Morning
+  - Userspace Applications
+  - Package Manager
+- Afternoon
+  - Git
+
+#### Day Three
+
+- Morning
+- Afternoon
+
+#### Day Four
+
+- Morning
+- Afternoon
+
+#### Day Five
+
+- Morning
+- Afternoon
