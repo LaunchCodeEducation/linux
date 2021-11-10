@@ -10,7 +10,7 @@ Welcome. This course explores Linux.
 
 We won't cover Linux exhaustively because it is a massive tool. 
 
-Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for our web applications.
+Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications.
 
 ### Segments / Chapters
 
