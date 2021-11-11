@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "VirtualBox"
-=======
-title: "Configuration: VirtualBox"
->>>>>>> restructured configus for pics starting filling in content
 draft: false
 weight: 1
 original_author: "Paul Matthews" 
@@ -24,7 +20,6 @@ First up we need to download the VirtualBox software onto our host machine.
 
 At the time of writing VirtualBox 6.1 is the Oracle recommended version, however we recommend using the currently recommended version when you are downloading VirtualBox. See the following picture as an example.
 
-<<<<<<< HEAD
 ![VirtualBox Homepage](pictures/virtualbox-homepage.png)
 
 Clicking the giant blue button stating `Download VirtualBox 6.1` should lead you to the [downloads page](https://www.virtualbox.org/wiki/Downloads) which has links for many common Operating Systems. The downloads page should like the following image.
@@ -40,48 +35,3 @@ If you are using a Linux based operating system the link from the downloads page
 ## Installation Instructions
 
 {{% children %}}
-=======
-![VirtualBox Homepage](./images/virtualbox-homepage.png)
-
-Clicking the giant blue button stating `Download VirtualBox 6.1` should lead you to the [downloads page](https://www.virtualbox.org/wiki/Downloads) which has links for many common Operating Systems. The downloads page should like the following image.
-
-![VirtualBox Downloads](./images/virtualbox-downloads.png)
-
-On this page you should see multiple links that coincide with your Operating System. Upon clicking one of these links it should automatically start a download that will work for your OS.
-
-<<<<<<< HEAD
-### Windows - Downloading
->>>>>>> restructured configus for pics starting filling in content
-=======
-{{% notice note %}}
-If you are using a Linux based operating system the link from the downloads page will take you to another page with various options, find the one for your specific distribution.
-{{% /notice %}}
-
-
-
-### MacOS - Instructions
-
-{{% expand "Click here to expand MacOS instructions" %}}
-
-#### MacOS - Download
-
-The direct link for the MacOS VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-OSX.dmg).
-
-{{% notice warning %}}
-The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
-{{% /notice %}}
-
-{{% /expand %}}
-
-### Windows - Instructions
-
-{{% expand "Click here to expand Windows instructions" %}}
-
-#### Windows - Download
-
-The direct link for the Windows VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-Win.exe)
-
-{{% notice warning %}}
-The link will start a download for the **.exe** file needed to install VirtualBox on a Windows system.
-{{% /notice %}}
->>>>>>> stubbing out MacOS & Windows sections
