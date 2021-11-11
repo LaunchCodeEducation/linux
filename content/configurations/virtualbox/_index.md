@@ -46,6 +46,28 @@ The direct link for the MacOS VirtualBox download can be found [here](https://do
 The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
 {{% /notice %}}
 
+#### MacOS - Installing
+
+- double click the .dmg file
+- double lick the PKG file
+- brings up an installer
+  - click allow
+  - form
+    - introduction
+      - click continue
+    - destination select
+      - don't need to do anything here (leave on defaults)
+    - installation type
+      - click install
+      - might ask for password, give it your credentials and click ok
+    - installation
+      - it will take some time as it's running scripts
+      - open your system security preferences
+    - summary
+      - installation was successful and close
+
+finally this is what you should see when everything has been installed properly and you open the program.
+
 {{% /expand %}}
 
 ### Windows - Instructions
@@ -59,3 +81,24 @@ The direct link for the Windows VirtualBox download can be found [here](https://
 {{% notice warning %}}
 The link will start a download for the **.exe** file needed to install VirtualBox on a Windows system.
 {{% /notice %}}
+
+#### Windows - Installation
+
+- double click the .exe file
+- brings up an installer
+  - click allow
+  - form
+    - introduction
+      - click continue
+    - destination select
+      - don't need to do anything here (leave on defaults)
+    - installation type
+      - click install
+      - might ask for password, give it your credentials and click ok
+    - installation
+      - it will take some time as it's running scripts
+      - open your system security preferences
+    - summary
+      - installation was successful and close
+
+finally this is what you should see when everything has been installed properly and you open the program.
