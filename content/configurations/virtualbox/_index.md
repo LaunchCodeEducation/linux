@@ -34,4 +34,84 @@ If you are using a Linux based operating system the link from the downloads page
 
 ## Installation Instructions
 
+<<<<<<< HEAD
 {{% children %}}
+=======
+
+### MacOS - Instructions
+
+{{% expand "Click here to expand MacOS instructions" %}}
+
+#### MacOS - Download
+
+The direct link for the MacOS VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-OSX.dmg).
+
+{{% notice warning %}}
+The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
+{{% /notice %}}
+
+#### MacOS - Installing
+
+- double click the .dmg file
+- double lick the PKG file
+- brings up an installer
+  - click allow
+  - form
+    - introduction
+      - click continue
+    - destination select
+      - don't need to do anything here (leave on defaults)
+    - installation type
+      - click install
+      - might ask for password, give it your credentials and click ok
+    - installation
+      - it will take some time as it's running scripts
+      - open your system security preferences
+    - summary
+      - installation was successful and close
+
+finally this is what you should see when everything has been installed properly and you open the program.
+
+{{% /expand %}}
+
+### Windows - Instructions
+
+{{% expand "Click here to expand Windows instructions" %}}
+
+#### Windows - Download
+
+The direct link for the Windows VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-Win.exe)
+
+{{% notice warning %}}
+The link will start a download for the **.exe** file needed to install VirtualBox on a Windows system.
+{{% /notice %}}
+
+#### Windows - Installation
+
+- double click the .exe file
+- brings up an installer
+  - click allow
+  - form
+    - introduction
+      - click continue
+    - destination select
+      - don't need to do anything here (leave on defaults)
+    - installation type
+      - click install
+      - might ask for password, give it your credentials and click ok
+    - installation
+      - it will take some time as it's running scripts
+      - open your system security preferences
+    - summary
+      - installation was successful and close
+
+finally this is what you should see when everything has been installed properly and you open the program.
+
+{{% /expand %}}
+
+## Summary
+
+In this article we downloaded and installed Oracle VirtualBox onto our host computers. In the next configuration article we will be using VirtualBox to create a virtual machine image of Ubuntu, which will be the Linux distribution used in this class.
+
+Look over the [Ubuntu Configuration Article]({{< relref "../ubuntu" >}}) to complete the configurations necessary for this course.
+>>>>>>> ubuntu installation instruction stubs
