@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "VirtualBox"
+=======
+title: "Configuration: VirtualBox"
+>>>>>>> restructured configus for pics starting filling in content
 draft: false
 weight: 1
 original_author: "Paul Matthews" 
@@ -20,6 +24,7 @@ First up we need to download the VirtualBox software onto our host machine.
 
 At the time of writing VirtualBox 6.1 is the Oracle recommended version, however we recommend using the currently recommended version when you are downloading VirtualBox. See the following picture as an example.
 
+<<<<<<< HEAD
 ![VirtualBox Homepage](pictures/virtualbox-homepage.png)
 
 Clicking the giant blue button stating `Download VirtualBox 6.1` should lead you to the [downloads page](https://www.virtualbox.org/wiki/Downloads) which has links for many common Operating Systems. The downloads page should like the following image.
@@ -35,3 +40,13 @@ If you are using a Linux based operating system the link from the downloads page
 ## Installation Instructions
 
 {{% children %}}
+=======
+![VirtualBox Homepage](./images/virtualbox-homepage.png)
+
+Clicking the giant blue button stating `Download VirtualBox 6.1`
+
+### MacOS - Downloading
+
+
+### Windows - Downloading
+>>>>>>> restructured configus for pics starting filling in content
