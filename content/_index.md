@@ -43,8 +43,6 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 
 - Morning
   - [Userspace Applications]({{< relref "./userspace-applications" >}})
-  - [Configuration: VirtualBox]({{< relref "./configurations/virtualbox" >}})
-  - [Configuration: Ubuntu]({{< relref "./configurations/ubuntu" >}})
   - [Package Manager]({{< relref "./package-manager" >}})
 - Afternoon
   - [Git]({{< relref "./git" >}})
