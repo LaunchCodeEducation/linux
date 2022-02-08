@@ -25,6 +25,8 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 - [Git]({{< relref "./git" >}})
 - [Terminal]({{< relref "./terminal" >}})
 - [Cron]({{< relref "./cron" >}})
+- [Web Server: Static Sites]({{< relref "./web-server-static" >}})
+- [Web Server: Reverse Proxy]({{< relref "./web-server-reverse-proxy" >}})
 
 #### Configurations
 
@@ -59,7 +61,9 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 #### Day Four
 
 - Morning
+  - [Web Server: Static Sites]({{< relref "./web-server-static" >}})
 - Afternoon
+  - [Web Server: Reverse Proxy]({{< relref "./web-server-reverse-proxy" >}})
 
 #### Day Five
 
