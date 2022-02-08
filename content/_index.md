@@ -23,6 +23,8 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 - [Userspace Applications]({{< relref "./userspace-applications" >}})
 - [Package Manager]({{< relref "./package-manager" >}})
 - [Git]({{< relref "./git" >}})
+- [Terminal]({{< relref "./terminal" >}})
+- [Cron]({{< relref "./cron" >}})
 
 #### Configurations
 
@@ -50,7 +52,9 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 #### Day Three
 
 - Morning
+  - [Terminal]({{< relref "./terminal" >}})
 - Afternoon
+  - [Cron]({{< relref "./cron" >}})
 
 #### Day Four
 
