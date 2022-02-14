@@ -50,6 +50,3 @@ We will not be diving deeply into the kernel in this class. We will spend the ma
 ## Content Links
 
 - [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Exercises]({{< relref "./exercises" >}})
-- [Next Steps]({{< relref "./next-steps" >}})
