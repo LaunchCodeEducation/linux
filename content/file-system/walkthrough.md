@@ -55,6 +55,14 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
       - `mv ./example-directory/ new-directory-name`
     - move folder to a new location and rename file
       - `mv ./example-directory/ ~/new-location/new-directory-name`
+- deleting files
+  - `rm`
+- deleting directories
+  - `rmdir`: only deletes **empty** directories
+    - `rm target-directory/*`: delete all files inside a directory
+    - `rmdir target-directory`: delete now empty directory 
+  - `rm -r target-directory`: delete directory **recursively**. An irreversible action that will delete whatever it is pointed at will check in with the user before removing any *write-protected* files.
+  - `rm -rf target-directory`: delete directory **recursively** with **force**. An irreversible action that will delete whatever it is pointed at without checking in with the user before removing any *write-protected* files.
 - editing contents of a file
   - `nano some-file`
   - Nano basics
