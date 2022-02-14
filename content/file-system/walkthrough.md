@@ -41,6 +41,20 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
   - `find location -name '*.file'`
   - `find location -name '*README.md'`
   - `find location -regex '.*/*+README.md'`
+- moving / editing filename
+  - `mv`
+    - move file to a new location
+      - `mv ./examplefile ~/new-location/`
+    - rename file in current location
+      - `mv ./examplefile new-file-name`
+    - move file to a new location and rename file
+      - `mv ./examplefile ~/new-location/new-file-name`
+    - move folder to a new location
+      - `mv ./example-directory/ ~/new-location`
+    - rename directory in current location
+      - `mv ./example-directory/ new-directory-name`
+    - move folder to a new location and rename file
+      - `mv ./example-directory/ ~/new-location/new-directory-name`
 - editing contents of a file
   - `nano some-file`
   - Nano basics
