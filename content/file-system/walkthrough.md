@@ -15,7 +15,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
   - shell vs terminal
 - navigation commands
   - `pwd`
-  - `ls`
+  - `ls`: read contents of directory
   - `cd` relative path
   - `cd` absolute path
   - shortcuts
@@ -35,7 +35,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
     - `ls`
     - `ls -a` or `ls -A`
 - reading contents of file
-  - `cat some-file`
+  - `cat some-file`: read contents of file
 - finding files
   - `find location -name filename`
   - `find location -name '*.file'`
