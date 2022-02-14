@@ -16,6 +16,26 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## First Slide
 
+- Bash shell
+- terminal emulator
+- current directory
+- viewing contents of current directory
+- navigating file-system
+  - root
+  - userspace
+- creating directories and files
+  - hidden files and directories
+- displaying contents of a file
+- searching for files
+  - bash wildcard (`*`)
+- moving files & folders
+  - locations
+  - renaming
+- deleting files
+- deleting directories
+- editing the contents of a file with terminal based editors (nano) (show vim)
+- creating new user-defined aliases
+
 ___
 
 ## Horizontal from First Slide
