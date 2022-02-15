@@ -10,3 +10,15 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
 ## Walkthrough
+
+- what is a package manager
+- `apt`
+- `apt-get`
+- what is a package repository?
+- how can I see a list of all package repositories?
+- `apt search [package name]`
+- `apt install [package name]`
+- `apt remove [package name]`
+- `apt update`
+- `apt upgrade`
+- why use a package manager instead of downloading and installing software from the internet?
