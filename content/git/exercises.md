@@ -10,3 +10,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
 ## Exercises
+
+### contributing with branches
+
+### rebasing
