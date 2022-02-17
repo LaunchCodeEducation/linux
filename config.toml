@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Linux Introduction"
-theme = "learn"
+theme = "lc-learn"
 
 [params]
   themeVariant = "blue"
