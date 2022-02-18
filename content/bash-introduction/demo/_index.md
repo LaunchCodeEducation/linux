@@ -42,6 +42,7 @@ echo "Have a nice day!"
 
 - what is my $PATH `echo $PATH`
 - I just want to add this new dir to my path `PATH=$PATH:/home/student/bin`
+- check the new $PATH `echo $PATH`
 
 ### Execute the program directly from `$PATH`
 
@@ -50,13 +51,15 @@ echo "Have a nice day!"
 ### Rename file
 
 - what if I want to change the name of my program?
-  - `rename whattimeisit when`
+  - `mv /home/student/bin/whattimeisit /home/student/bin/when`
 
 ### Run same program with new name
 
 - run `when`
+- can you run the old name? `whattimeisit`
+- can you run it directly with bash? `bash /home/student/bin/when`
 
-### How can the executable file for the `when` program?
+### How can we view the absolute path of the `when` program?
 
 - what happens if we `which when`
 
@@ -76,8 +79,10 @@ echo "Have a nice day!"
 
 - let's take a look at /usr/bin `ls /usr/bin`
   - python should be here, manually search for it
-    - why is it blue?
-    - why is there a Python3.8 that is green?
+    - why is `python3` blue?
+    - why is there a `python3.8` that is green?
+      - when we made our Bash script executable it turned green
+      - are all executables green?
 
 #### Take a deeper look at the file metadata
 
@@ -93,25 +98,28 @@ What is `python3 -> python3.8` representing? It looks like `python3` is a shortc
   - it really is just a shortcut
   - soft link
   - both `python3` and `python3.8` should execute the same program
+  - Enter `python3 --version` & `python3.8 --version`
+    - same program! 
 
-### Edit our program to be callable with a SymLink
+### Edit our Bash script to be executable with a SymLink
 
 #### Change name back to whattimeisit
 
-- `rename when whattimeisit`
+- `mv /home/student/bin/when /home/student/bin/whattimeisit`
 
 #### Create a SymLink pointing to whattimeisit named when
 
-- `ln -s whattimeisit when`
+- `ln -s /home/student/bin/whattimeisit /home/student/bin/when`
+- look at the contents of the `/home/student/bin` directory: `ls -l /home/student/bin`
 
 #### How can we run the program?
 
 - `whattimeisit`
 - `when`
 
-This explains what Python3 is in /usr/bin -- just a symlink pointing at the actual python3.8 interpreter!
+This explains what Python3 is in `/usr/bin` -- just a symlink pointing at the actual python3.8 interpreter!
 
 
 {{% notice note %}}
-In Ubuntu the color scheme of STDOUT is helpful. Green files are executable, light blue files are SymLinks, dark blue files are directories, white files are just standard files. Not all terminal emulators support color, but it is quite useful when it is around.
+In Ubuntu the color scheme of STDOUT is helpful. Green files are executable, light blue files are SymLinks, dark blue files are directories, white files are standard files. Not all terminal emulators support color, but it is quite useful when it is around.
 {{% /notice %}}
