@@ -11,6 +11,26 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Major Concepts & Key Terminology
 
+- shell
+- terminal emulator
+- Bash shell
+- Bash command structure
+  - bash arguments
+  - bash options
+- Basic Bash commands:
+  - `pwd`
+  - `clear`
+  - `ls`
+  - `echo`
+  - `which`
+- Bash Shell Variables
+  - `$BASH`
+  - `$HOME`
+  - `$PATH`
+- Bash Help
+  - `man`
+  - `--help` option
+
 ## Content Links
 
 - [Slides]({{< relref "./slides" >}})
