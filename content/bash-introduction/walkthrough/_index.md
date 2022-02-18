@@ -249,8 +249,7 @@ Linux will perform whatever commands you instruct it to. You could conceivably s
 {{% /notice %}}
 
 {{% notice bonus %}}
-If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking up the value of the Shell Variable you can do that with a Bash Variable Substitution. You can simply reference the variable directly in a Bash Command! See the picture below:
-
+If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking up the value of the Shell Variable you can do that with a Bash Variable Substitution. You can simply reference the variable directly in a Bash Command!
 ![Bash Variable Substitution](pictures/bash-variable-subtitution.png)
 {{% /notice %}}
 
