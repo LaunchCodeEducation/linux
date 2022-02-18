@@ -171,15 +171,88 @@ Your `ls -a` output may look slightly different from the provided image. Many hi
 
 ### `echo`
 
+The next command `echo` simply prints out a message to the Bash shell's Standard Output (STDOUT). An echo statement is very similar to the `print()` method in Python3, or the `console.log()` method in JavaScript, or the `System.out.println()` method in Java.
+
+To use the `echo command` we simply need to invoke the command with one argument that results in a string.
+
+Enter `echo "Hello world"`.
+
+![echo "hello world"](pictures/echo-hello-world.png)
+
+{{% notice note %}}
+`echo` commands are especially useful inside of Bash scripts. In any given Bash script many things be happening and outputting some message to the individual that invokes the script is a very useful feature.
+{{% /notice %}}
+
+The `echo` command can be used to easily view the contents of a Shell Variable. Your home directory, path, and many other variables are attached directly to your Bash Shell in the form of variables. You can use `echo $VARIABLE` to easily view the contents of the variable.
+
 ### Bash Shell Variables
 
 #### `echo $BASH`
 
+![](pictures/echo-bash-variable.png)
+
+The `$BASH` shell variable contains the absolute path to the shell this session is using. 
+
 #### `echo $HOME`
+
+![](pictures/echo-home-variable.png)
+
+The `$HOME` shell variable contains the absolute path to the home directory of the user that initiated the Bash shell.
 
 #### `echo $PATH`
 
+![](pictures/echo-path-variable.png)
+
+The `$PATH` shell variable contains a collection of all of the tools currently accessible to this current Bash Shell session.
+
+Any files and subdirectories found within the listed directories are available to be invoked by name.
+
+{{% notice tip %}}
+If you have ever tried to run a program before and received a message about the command not being found in the path, this is what it was referring to. When installing new programming languages, build tools, or really any software that needs to be used from a shell the location of the tool *must* be added to the path variable. Lots of software installations take care of adding the tool to your path by either editing the PATH variable or by simply adding the binary of the software directly to one of the directories listed in your path.
+{{% /notice %}}
 #### `echo $BASHPID`
+
+![](pictures/echo-bashpid-variable.png)
+
+The `$BASHPID` shell variable contains the process ID of the current Bash Shell. This number will likely be different for everyone. In fact if you open your current terminal and open a new one and then check the `$BASHPID` shell variable you should notice that it is different.
+
+Every running program has at least one process running and therefore a process ID. Many programs will create multiple processes and each of their children processes will have unique IDs, however the program's initial main process is the parent of all other associated process IDs.
+
+{{% notice note %}}
+We will not be learning about processes in this class. Taking the time to learn about processes will make you a better Linux user, but goes deeper than we need to know in this class.
+{{% /notice %}}
+
+#### `kill` command
+
+The `kill` command sends signals to a specific process. These signals give you a way to affect the process. 
+
+One of the most common signals we may want to send to a running process is to end the process. This would immediately stop the process and free up any CPU, RAM, or hard disk operations the process is currently utilizing.
+
+Sending signals to a process is a powerful tool for using Linux. You will not be expected to know the `kill` command in this class.
+
+However, if you want to try the command out, you can send a signal to your `$BASHPID` to kill the process.
+
+Take note of your `$BASHPID`.
+
+Then enter `kill -9 your-bash-pid`, but enter the number of your `$BASHPID`.
+
+![Kill Bash Shell](pictures/kill-bash-shell.png)
+
+Upon entering this command you should see your terminal close immediately!
+
+Once you entered the command the Bash Shell sent a `SIGKILL` (`-9`) signal to the process associated with your `$BASHPID`. The `SIGKILL` signal notifies the operating system the process, and any child processes, needs to be terminated immediately and must be completed. Your operating system acts on the command and the Bash Shell associated with your `$BASHPID` is closed.
+
+There are various other signals that can be sent to processes, but they go beyond the scope of this class.
+
+{{% notice warning %}}
+Linux will perform whatever commands you instruct it to. You could conceivably start sending `SIGKILL` signals to random process IDs and Linux will terminate them. Everything running on your operating system has a process ID and you could terminate a process responsible for the Graphical User Interface of your operating system, or some software managing your hardware, which would require you to restart your machine to fix the issue.
+{{% /notice %}}
+
+{{% notice bonus %}}
+If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking up the value of the Shell Variable you can do that with a Bash Variable Substitution. You can simply reference the variable directly in a Bash Command! See the picture below:
+
+![Bash Variable Substitution](pictures/bash-variable-subtitution.png)
+{{% /notice %}}
 
 ### `which` command
 
