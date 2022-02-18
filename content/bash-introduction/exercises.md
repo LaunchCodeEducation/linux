@@ -55,7 +55,7 @@ We haven't learned how to use many tools yet, but we can still practice what we 
 - How can you exit or terminate your currently running emulator?
 {{% expand "CLICK FOR ANSWER" %}} `kill -9 $BASHPID`{{% /expand %}}
 
-- Is there any way you terminate the terminal emulator using the terminal emulator window?
+- Is there any way you can terminate the terminal emulator using the terminal emulator window?
 {{% expand "CLICK FOR ANSWER" %}} **YES** click the red x button in the terminal emulator window.{{% /expand %}}
 
 - There is a command built directly into Bash for exiting a Bash Shell. Can you guess it?
