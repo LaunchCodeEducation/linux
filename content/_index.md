@@ -19,6 +19,7 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 ### Segments / Chapters
 
 - [Introduction]({{< relref "./introduction" >}})
+- [Bash: Introduction]({{< relref "./bash-introduction" >}})
 - [File System]({{< relref "./file-system" >}})
 - [Userspace Applications]({{< relref "./userspace-applications" >}})
 - [Package Manager]({{< relref "./package-manager" >}})
@@ -40,6 +41,7 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 
 - Morning
   - [Introduction]({{< relref "./introduction" >}})
+  - [Bash: Introduction]({{< relref "./bash-introduction" >}})
 - Afternoon
   - [File System]({{< relref "./file-system" >}})
 
