@@ -10,14 +10,18 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Demo: Creating & Executing a Bash Script
 
+{{% notice warning %}}
+This file is written as instructions for an instructor-led demo. As a student you probably can work through this file on your own, but it does a few things that we haven't learned or practiced yet. You very possibly could get stuck and **will not receive guidance on moving through any issues you encounter**. That being said, you can attempt this demo and work through the issues you encounter as practice for attempting to learn on your own and troubleshooting issues as they arise.
+{{% /notice %}}
+
 In this Demo your instructor will show you how to create and execute a bash script, how to add to the `$PATH` Shell Variable, and how to create a `SymLink`. This demo will also give a sneak peek into creating directories and files from the Bash shell.
 
 ### Create Directory & File
 
 - `mkdir /home/student/bin`
-- `nano /home/student/bin/whattimeisit`
+- `touch /home/student/bin/whattimeisit`
 
-Add the following text into the file.
+Add the following text into the file. You may find `nano` to be useful, but however you want.
 
 ```bash
 #!/bin/bash
@@ -29,24 +33,24 @@ echo "Have a nice day!"
 
 ### Execute the file using the Bash command
 
-- run the file `bash /home/student/bin/whattimeisit`
+- run the file: `bash /home/student/bin/whattimeisit`
 
 ### Make the file executable & execute in new ways
 
-- make the file executable `chmod +x /home/student/bin/whattimeisit`
-- run the file `/home/student/bin/whattimeisit`
-  - or `./bin/whattimeisit`
-  - or `bash /home/student/bin/whattimeisit`
+- make the file executable: `chmod +x /home/student/bin/whattimeisit`
+- run the file: `/home/student/bin/whattimeisit`
+  - or: `./bin/whattimeisit`
+  - or: `bash /home/student/bin/whattimeisit`
 
 ### Adding `/home/student/bin` to `$PATH`
 
-- what is my $PATH `echo $PATH`
-- I just want to add this new dir to my path `PATH=$PATH:/home/student/bin`
-- check the new $PATH `echo $PATH`
+- what is the shells $PATH: `echo $PATH`
+- update the PATH variable with our personal bin: `PATH=$PATH:/home/student/bin`
+- check $PATH for the new information: `echo $PATH`
 
 ### Execute the program directly from `$PATH`
 
-- now I can just run `whattimeisit`
+- `whattimeisit`
 
 ### Rename file
 
@@ -55,17 +59,18 @@ echo "Have a nice day!"
 
 ### Run same program with new name
 
-- run `when`
+- `when`
 - can you run the old name? `whattimeisit`
 - can you run it directly with bash? `bash /home/student/bin/when`
+  - can you run it the other ways we tried above?
 
 ### How can we view the absolute path of the `when` program?
 
-- what happens if we `which when`
+- what happens if we: `which when`
 
 ### Does the `when` program have a man page?
 
-- what happens if we `man when`
+- what happens if we: `man when`
 
 ### Symlink
 
@@ -77,7 +82,7 @@ echo "Have a nice day!"
 
 #### Manually search for python3 in `/usr/bin`
 
-- let's take a look at /usr/bin `ls /usr/bin`
+- `ls /usr/bin`
   - python should be here, manually search for it
     - why is `python3` blue?
     - why is there a `python3.8` that is green?
@@ -98,8 +103,8 @@ What is `python3 -> python3.8` representing? It looks like `python3` is a shortc
   - it really is just a shortcut
   - soft link
   - both `python3` and `python3.8` should execute the same program
-  - Enter `python3 --version` & `python3.8 --version`
-    - same program! 
+    - Enter `python3 --version` & `python3.8 --version`
+      - same program! 
 
 ### Edit our Bash script to be executable with a SymLink
 
