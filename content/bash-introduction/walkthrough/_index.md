@@ -255,8 +255,96 @@ If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking 
 
 ### `which` command
 
+Most of the commands we have learned about in this class come standard as a part of the Ubuntu distribution we have been using. We will eventually learn about adding new commands and tools to our existing distribution. It is important to know the specific location of a command on your computer, something we can locate easily by using the `which` command.
+
+The `which` command will give you the absolute path of the file that is being used to execute the instructions.
+
+Let's find out where the `ls` command's binary lives.
+
+Enter `which ls`.
+
+![which ls](pictures/which-ls.png)
+
+According to the `which` command `ls` resides in `/usr/bin/ls`.
+
+{{% notice note %}}
+In Linux when you see something named `bin` it is almost always short for the word `binary`. A `binary` file is a file that **is not readable** to humans. Many `binary` files are executable programs. In fact, looking into the `/usr/bin` and `/bin` directories you may see the names of many executable programs that we have already used in this class!
+{{% /notice %}}
+
+#### `which which`?
+
+What about the `which` command? It is also an executable command so it should also have a location on our machine. How can we figure out where the `which` command resides?
+
+![which which](pictures/which-which.png)
+
+It looks like the which command is also an executable binary located in `/usr/bin`.
+
 ### Getting Help
+
+There are tons of commands you can use in Linux. It would take an enormous amount of time for any person to learn all of them.
+
+Luckily, Linux and GNU have provided multiple ways for us to learn about the various commands we may want to use.
 
 #### `man` command
 
+The `man` command is used to bring up the reference manual for any given command. These reference manuals are often called **man pages**
+
+Let's take a look at the man page for the `which` command.
+
+Enter `man which`.
+
+![Command: man which](pictures/enter-man-which.png)
+
+![Which Manual Entry](pictures/man-which.png)
+
+The output of our screen changed considerably. We no longer have a means for entering commands. We are looking at a `less` display screen. We will learn about `less` in a future lesson. You can move up and down on this page with the directional keys. Alternatively you can use the `j` key to move down, and the `k` to move up.
+
+The second thing to notice is how much useful information is being provided about the `which` command. This man page contains a Synopsis giving a brief example of how you can use the command. It also contains a highly beneficial description that goes far beyond what we learned just a moment ago. All of the possible options are listed and message about what that option is.
+
+The **man pages** are one of the most powerful tools for learning, or remembering, how to use a command effectively.
+
+To **exit the man pages** you simply need to press the `q` key on your keyboard.
+
+{{% notice bonus %}}
+Checkout the **man pages** of the additional commands you have learned about in this class.
+{{% /notice %}}
+
 #### `--help` option
+
+The man pages are exhaustive and provide additional context, that can sometimes be distracting when you are solving a problem in the moment.
+
+Many commands contain a `--help` or `-h` option that will give you an abbreviated list of the most common options or arguments you may want to use.
+
+Enter `ls --help`.
+
+![ls --help](pictures/ls-help.png)
+
+After scrolling to the top of the STDOUT we can see a shortened version of the man page. A brief description, and a list of options. All of this without leaving our terminal!
+
+The `--help` flag isn't enabled for all commands, but can provide assistance in a pinch.
+
+### Review
+
+We covered a lot of ground in this walkthrough. Look over the following list of terms used throughout this article:
+- Shell
+- Terminal Emulator
+- Bash Shell
+- Bash Commands
+  - argument(s)
+  - option(s)
+  - `pwd`
+  - `clear`
+  - `ls`
+  - `echo`
+  - `which`
+- Shell Variables
+  - `$BASH`
+  - `$HOME`
+  - `$PATH`
+  - `$BASHPID`
+- Manual Pages
+  - `man filename`
+- `--help`
+  - `command --help`
+
+In a future lesson we will learn even more about the Bash Shell in the form of file-system navigation, and file/directory creation, editing, and deleting.
