@@ -165,6 +165,32 @@ The short-hand options can be combined together behind a single hyphen.
 
 ---
 
+### Bash Shell Variables
+
+The Bash shell has various variables that contain information useful to Bash. They are indicated by the following pattern:
+
+`$VARIABLE_NAME`
+
+___
+
+#### `$BASH`
+
+The `$BASH` shell variable contains the absolute path to the shell this session is using.
+
+___
+
+#### `$HOME`
+
+The `$HOME` shell variable contains the absolute path to the home directory of the user that initiated the Bash shell.
+
+___
+
+#### `$PATH`
+
+The `$PATH` shell variable contains a collection of all the tools currently accessible to this current Bash Shell session.
+
+---
+
 ## Bash Command Reference Manuals
 
 To learn more about any Bash command you read its Reference Manual.
@@ -175,7 +201,7 @@ This will open up the Manual in your terminal. You can explore the provided info
 
 ---
 
-## Bash Commands
+## Walkthrough
 
 Your Walkthrough will take you through some of the basic Bash commands you will be using regularly.
 
