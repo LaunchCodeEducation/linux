@@ -145,9 +145,29 @@ Try listing the contents of the remaining directories inside of `/home/student/`
 
 ### `ls` Options
 
+`ls` has many options for you to choose from, however the two most common options are:
+- `--long`: show the permissions, size and date last modified among other meta-data
+- `--all`: show all files and directories including hidden
+
 #### `-l`
 
+Enter `ls -l` to see the long form output for the current directory.
+
+![ls -l current directory](pictures/ls-l-working-directory.png)
+
+Most of the information isn't relevant to us yet, but it's still important to know how to access it.
+
 #### `-a`
+
+Enter `ls -a` to see all the files and folders including any that may be hidden for the current directory.
+
+![ls -a current directory](pictures/ls-a-working-directory.png)
+
+Here we can see a few hidden files, and directories. All of the hidden files and folders start with a period `.`. 
+
+{{% notice note %}}
+Your `ls -a` output may look slightly different from the provided image. Many hidden files and folders are created in the home directory to keep track of shell histories, shell profiles, and various configurations. As you continue to use this operating system your home directory will fill up with some of these files and directories. 
+{{% /notice %}}
 
 ### `echo`
 
