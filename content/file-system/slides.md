@@ -10,7 +10,7 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## Slides Title
+## Bash: File System 
 
 ---
 
@@ -35,6 +35,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - deleting directories
 - editing the contents of a file with terminal based editors (nano) (show vim)
 - creating new user-defined aliases
+- `sudo`
 
 ___
 

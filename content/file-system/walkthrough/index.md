@@ -76,3 +76,5 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
     - homecontents: `ls ~`
   - `.bashrc`
     - adding an alias `homecontents` to `.bashrc`
+- `sudo`
+  - students will need sudo to cat out some files, and look into some directories --> so they just need to know what the command means substitute user do and the default argument is the root user (who has the highest level of permissions)
