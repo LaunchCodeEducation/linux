@@ -1,8 +1,8 @@
 ---
 title: "Exercises: Solution"
 date: 2021-11-09T15:12:13-06:00
-draft: false
-weight: 3
+draft: true
+weight: 9
 original_author: "Paul Matthews" 
 reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
