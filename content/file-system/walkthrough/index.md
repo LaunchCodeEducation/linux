@@ -9,43 +9,109 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## Walkthrough
+## Navigation Commands
 
-### Navigation Commands
+### Review: Where am I?
 
-#### Where am I?
+To get your bearings and view your current working directory you can use the familiar `pwd` command.
 
-- `pwd`
+![pwd](pictures/pwd.png)
 
-#### What is in this location?
+{{% notice note %}}
+The `pwd` command simply prints out the contents of the `$PWD` shell variable. Don't forget you can see the contents of any shell variables with the `echo` command!
+{{% /notice %}}
 
-- `ls`
+### Review: What are the contents of this location?
 
-#### I'm moving to a new location.
+To view the contents of the current working directory you can use the familiar `ls` command without any arguments.
 
-- `cd` relative path
-- `cd` absolute path
+![ls no arguments](pictures/ls-no-args.png)
 
-##### Shortcuts
+### Change Current Working Directory
 
-- `cd ~`
-- `cd`
-- `cd ..`
-- `cd ../Documents`
+To change the current working directory you can use the `cd` *builtin* command. 
 
-### Creation Commands
+`cd` allows for one optional argument the new path to use as the current working directory. If no argument is provided it will set the current working directory to the `$HOME` shell variable.
+
+`cd` works with both *absolute* and *relative* paths.
+
+#### `cd` relative path
+
+Starting from the home directory we could move into the `Documents/` directory with the following command:
+
+`cd Documents`
+
+![cd Documents](pictures/cd-documents.png)
+
+Take note from the image that our terminal emulator always tells us the current working directory. You should see `~/Documents$` directly before the character where you can enter text commands. You can also see on the previous line before the `cd` command had been executed the text directly before our input area is only `~$`. 
+
+#### `cd` absolute path
+
+Our current working directory is `/home/student/Documents`. We can return to the home directory by using an absolute path:
+
+`cd /home/student/`
+
+![cd /home/student](pictures/cd-home-student.png)
+
+And we're back to `$HOME`!
+
+The main benefit in using an *absolute* path as the argument for the `cd` command is it will work from any location. The absolute path is an unique identifier for a directory.
+
+#### Shell Shortcuts
+
+Another useful tool for changing directories is to learn some of the Bash shell shortcuts.
+
+- `~`: a shortcut for the `$HOME` variable
+- `.`: a shortcut for the current working directory (`$PWD` variable)
+- `..`: a shortcut for the parent of the current working directory
+
+##### Shortcut Home
+
+From a terminal change into the root directory:
+
+`cd /`
+
+![cd-root](pictures/cd-root.png)
+
+From the root directory change into the home directory by using the home shortcut:
+
+`cd ~`
+
+![cd ~](pictures/cd-tilde.png)
+
+{{% notice note %}}
+The default argument for the `cd` command is the home directory. An even more efficient shortcut for changing into the home directory would be simply `cd` with no arguments. Try it out on your own, by changing into the root directory, and then entering `cd` without any arguments.
+{{% /notice %}}
+
+##### Shortcut to Parent
+
+From your home directory let's change into the parent directory using the `..` shortcut:
+
+`cd ..`
+
+![cd ..](pictures/cd-dot-dot.png)
+
+Using the parent directory shortcut we were able to move up one directory.
+
+{{% notice bonus %}}
+You can extend the parent and current directory shortcuts. Assuming you are in `/home/student/Documents` you can change into `/home/student/Desktop` with the command: `cd ../Desktop`.
+![cd ../Desktop](pictures/cd-dot-dot-desktop.png)
+Additionally, the parent and current directory shortcuts can be used with most bash commands.
+{{% /notice %}}
+
+## Creation Commands
 
 CRUD stands for Create, Read, Update, Delete and it's the actions you can take on a record, object, file, directory, etc.
 
 Let's learn how to **C**reate files and directories.
 
-#### Create Directory
+### Create Directory
 
-#### Create File
+### Create File
 
-#### Creating Hidden Files/Directories
+### Creating Hidden Files/Directories
 
-### Reading Contents
+## Reading Contents
 
 Let's learn how to **R**ead files and directories.
 
@@ -53,29 +119,29 @@ You already know how to list the contents of a directory: `ls`.
 
 You can list the contents of a file in a few different ways:
 
-#### Concatenate and display on STDOUT
+### Concatenate and display on STDOUT
 
 `cat`
 
-#### Display and Parse Interactively
+### Display and Parse Interactively
 
 `less`
 
-#### Display contents in Text Editor
+### Display contents in Text Editor
 
 Open files in your text editor of choice, either in terminal (nano, vim, emacs) or in a GUI application (VisualStudioCode, IntelliJ, PyCharm, Atom).
 
-### Deleting Files and Directories
+## Deleting Files and Directories
 
 Let's learn how to **D**elete files and directories.
 
 `rm` command
 
-#### Delete Recursively
+### Delete Recursively
 
 `rm -r`
 
-##### Delete Recursively with Force!
+#### Delete Recursively with Force!
 
 `rm -rf`
 
@@ -83,29 +149,29 @@ Let's learn how to **D**elete files and directories.
 Linux will do what you tell it. If you tell it to delete a directory recursively with force it will not ask again. As long as you have permissions to edit a file it will be completely destroyed. Many horror stories exist around people accidently running `rm -rf` against their entire home directory and losing **all of their files**. Even worse targeting the root directory in which individuals have effectively **deleted their OS**...
 {{% /notice %}}
 
-### Update Files and Directories
+## Update Files and Directories
 
 You can either update the contents of a file/directory or the metadata (name, last modified, permissions) of a file/directory.
 
-#### Updating Metadata
+### Updating Metadata
 
-##### Moving Files and Directories
+#### Moving Files and Directories
 
 Updating the absolute path of the given file.
 
 `mv`
 
-##### Moving to Rename Files and Directories
+#### Moving to Rename Files and Directories
 
 `mv`
 
-##### Changing Additional Metadata
+#### Changing Additional Metadata
 
 {{% notice bonus %}}
 You can change a file's permissions with the `chmod` command. It will allow you to set a user (or groups) permissions to read, write and execute a specific file. In the Bash: Introduction - Demo the instructor added the execute permission to all users and groups. You can also change the owner of a file with the `chown` command.
 {{% /notice %}}
 
-#### Updating File Contents
+### Updating File Contents
 
 Open file using terminal text editor.
 
@@ -120,21 +186,21 @@ Open file using terminal text editor.
 
 Open the file in your favorite text editor or IDE. Visual Studio Code, IntelliJ, Pycharm, Atom, etc.
 
-#### Using `nano`
+### Using `nano`
 
-##### Open File
+#### Open File
 
-##### Write File
+#### Write File
 
-##### Exit File
+#### Exit File
 
-### Finding Files
+## Finding Files
 
-### Bash Alias
+## Bash Alias
 
-### `.bashrc`
+## `.bashrc`
 
-### `sudo`
+## `sudo`
 
 <!-- 
 
