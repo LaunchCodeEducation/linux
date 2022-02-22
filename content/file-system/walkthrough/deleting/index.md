@@ -13,16 +13,71 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 Let's learn how to **D**elete files and directories.
 
-`rm` command
+### The `rm` command
 
-### Delete Recursively
+You can remove files and directories with the remove (`rm`) command.
 
-`rm -r`
+You simply provide the remove target as the argument for the `rm` command.
+
+Let's create a new temporary file and then delete it with `rm`.
+
+##### `touch temporary.file`
+
+![touch temporary file](pictures/touch-temporary-file.png)
+
+After executing the `ls` command you can see that a new file named `temporary.file` was created from the `touch` command.
+
+##### `rm temporary.file`
+
+Let's get rid of that file with the `rm` command.
+
+![rm temporary file](pictures/rm-temporary-file.png)
+
+And the file is gone!
+
+{{% notice bonus %}}
+In an early walkthrough we create a file named `temp.file`. Feel free to remove that file as we won't be using it again!
+![rm temp file](pictures/rm-temp-file.png)
+{{% /notice %}}
+
+#### Delete Recursively
+
+The `rm` command works on both files and directories. However the `rm` command can **only** delete an empty directory. However, when we choose to delete a directory we usually want to delete all of the contents in the directory as well.
+
+Luckily, there is a *recursive* option that will remove all of the items inside of directory before deleting the directory itself, it's the `-r` option. Let's try it out.
+
+##### Create a directory: `mkdir temp-dir`
+
+![mkdir temp-dir](pictures/mkdir-temp-dir.png)
+
+##### Add file to new directory: `touch temp-dir/temp.file`
+
+![touch temp-file](pictures/touch-temp-file.png)
+
+##### Delete directory without recursive option: `rm temp-dir`
+
+![rm temp-dir](pictures/rm-temp-dir.png)
+
+##### Delete directory recursively: `rm -r temp-dir/` 
+
+![rm temp-dir recursively](pictures/rm-temp-dir-recursively.png)
+
+Since our user `student` has full permissions of the `temp-dir/temp.file` our Bash shell deleted the file without asking. In instances where the file is write-protected the Bash shell will ask for confirmation before deleting any files while using the `-r` option.
+
+{{% notice bonus %}}
+The following image shows a read-only file. Notice all the `-r--r--r--` indicating the file owner, group, and everyone else only has **read** access to the file.
+![ls -l temp-dir](pictures/ls-l-temp-dir.png)
+When we go to delete the directory recursively, the Bash shell will ask for permission before deleting this write protected file.
+![rm -r temp-dir write protected](pictures/rm-r-temp-dir-write-protected.png)
+We will not cover modifying changing file permissions in this lesson. But you can read about the `chmod` command to learn on your own.
+{{% /notice %}}
 
 #### Delete Recursively with Force!
 
-`rm -rf`
+In some instances there may be **many** write-protected files in a directory. Again, the Bash shell developers realized how tedious it would be to manually hit enter for each file that needs to be deleted. There is another flag called force `-f` that will delete the file(s) without checking the write protected status of the individual pieces.
+
+We recommend throughout this course that you manually go through the process of approving the deletion of write protected files, except when instructed not to.
 
 {{% notice warning %}}
-Linux will do what you tell it. If you tell it to delete a directory recursively with force it will not ask again. As long as you have permissions to edit a file it will be completely destroyed. Many horror stories exist around people accidently running `rm -rf` against their entire home directory and losing **all of their files**. Even worse targeting the root directory in which individuals have effectively **deleted their OS**...
+Linux will do what you tell it. If you tell it to delete a directory recursively with force it will not ask again. Many horror stories exist around people accidentally running `rm -rf` against their entire home directory and losing **all of their files**. Even worse targeting the root directory in which individuals have effectively **deleted their OS**...
 {{% /notice %}}
