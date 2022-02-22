@@ -1,0 +1,12 @@
+{
+	"Hugo Picture": {
+		"scope": "markdown,md",
+		"prefix": "//picture",
+		"body": ["![${1:alt-text}](pictures/${2:path}.png)$0"]
+	},
+	"Hugo Notice": {
+		"scope": "markdown,md",
+		"prefix": "//notice",
+		"body": ["{{% notice ${1:note} %}}", "$2", "{{% /notice %}}$0"]
+	}
+}
