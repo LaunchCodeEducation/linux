@@ -33,7 +33,4 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Demo]({{< relref "./demo" >}})
-- [Exercises]({{< relref "./exercises" >}})
+{{% children %}}
