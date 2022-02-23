@@ -10,11 +10,138 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## Bash: File System 
+## Bash: Filesystem 
 
 ---
 
-### Review
+## The Linux Filesystem (FS)
+
+The file system is a part of the Linux kernel.
+
+In Linux **everything is a file**. That is to say directories, files, links, and a few other Linux tools are all files and are a part of the file system.
+
+Knowing the basics of the Linux FS hierarchy, Bash shell FS navigation commands, and how to perform actions on files is a fundamental aspect of using Linux.
+
+---
+
+## Filesystem Hierarchy
+
+The Linux FS begins with the **root (`/`) directory**. This is the top level directory that contains all other directories and files that are a part of the operating system.
+
+If you understand the general purpose of top level directories inside of the root directory, you will have an idea on where various files live.
+
+---
+
+## Required root Directories
+
+According to the [Linux Documentation Project](https://tldp.org/) the Linux FS is required to have the following directories inside of the root directory.
+
+- `/bin`, `/boot`, `/dev`
+- `/etc`, `/lib`, `/media`
+- `/mnt`, `/opt`, `/sbin`
+- `/srv`, `/tmp`, `/usr`
+
+In this class you are expected to know the purpose and example files in `/bin`, `/etc`, `/usr` and the often used `/home` directories.
+
+---
+
+## `/bin` Essential command binaries
+
+Contains useful commands that are used by both the system administrator and non-privileged users.
+
+Contains shells like `bash`. Contains commonly used shell commands like `cp`, `mv`, `rm`, `cat`, `ls`.
+
+The tools found in `/bin` are separate from many of the other user tools as they are crucial for servicing the operating system if other areas become corrupted.
+
+---
+
+## `/etc` Host-specific system configuration
+
+The container for **all** system related configuration files. These files are used to control the operation of all programs.
+
+Example files `hostname` (name of computer), `timezone` (timezone of computer), `environment` (the contents that control the `$PATH` shell variable).
+
+---
+
+## `/usr` User binaries, documentation, libraries, header files, etc
+
+The container for programs and files that are shared across all users of the computer.
+
+Many of the applications we will learn about in this class are found in `/usr`.
+
+Examples include `nano`, `python3`, `man`, `which`, 
+
+---
+
+## `/home` multi-user data and applications
+
+Linux distributions are allowed to add additional directories to the root directory. Ubuntu, and some other Linux distros add `/home`.
+
+`/home` is the location of all individual user data and applications.
+
+Some Linux distributions create the `/home` directory within the `/usr` directory.
+
+---
+
+## Other Root Level Directories
+
+Check the vertical slides for the top level description of the remaining TLDP top level directories.
+
+We will not be covering the details of these directories, however you can learn more at the [Linux Filesystem Hierarchy from TLDP](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/Linux-Filesystem-Hierarchy.pdf)
+
+___
+
+## `/boot`
+
+Static files of the bootloader
+___
+
+## `/dev`
+
+Device files
+___
+
+## `/lib`
+
+Essential shared libraries and kernel modules
+___
+
+## `/media`
+
+Mount point for removeable media
+___
+
+## `/mnt`
+
+Mount point for mounting a filesystem temporarily.
+
+*Flash drive, or external hard drive, among others.*
+___
+
+## `/opt`
+
+Add-on application software packages
+
+___
+
+## `/sbin`
+
+Essential system binaries
+
+___
+
+## `/srv`
+
+Data for services provided by this system
+___
+
+## `/tmp`
+
+Temporary files
+
+---
+
+## Bash File System Command Review
 
 `pwd`: print working (current) directory
 
@@ -24,21 +151,15 @@ These two commands will help you get your bearings as you move away from your ho
 
 ---
 
+
 ## Navigating the File System
 
 Changing the working (current) directory is a common and useful action while in a Bash shell.
 
 You can change the current directory with the `cd` shell builtin.
 
-It takes an optional argument in the form of the directory to overwrite the current working directory.
+It takes an optional argument in the form of the directory which is used to update the current working path.
 
-___
-
-### root
-
-___
-
-### userspace
 
 ---
 
@@ -55,15 +176,25 @@ ___
 
 ## Creating Directories
 
-- `mkdir [new-dir-name]`: make directory
-- relative
-- absolute
+`mkdir [new-dir-name]`: make directory
+
+`mkdir` works with both relative and absolute paths.
+
+___
+
+### `mkdir` examples
+
+- `mkdir ~/new-dir`: creates a new directory in the home directory
+
+- `mkdir new-dir`: creates a new directory in the current working directory
+
+- `mkdir /home/student/Documents/new-dir`: creates a new directory using the absolute path provided
 
 ---
 
 ## Creating Empty Files
 
-- `touch [filename]`: create a new file
+- `touch [filename]`: create a new empty file
 - `nano [filename]`: open filename in nano editor, upon writing file it will be created at location.
 
 ___
@@ -86,9 +217,13 @@ ___
 
 ### `cat` example
 
+`cat /etc/hostname`: display the contents of `/etc/hostname` in the terminal window.
+
 ___
 
 ### `less` example
+
+`less /etc/hostname`: open the contents of `/etc/hostname` in chunks in an interactive terminal window.
 
 ---
 
