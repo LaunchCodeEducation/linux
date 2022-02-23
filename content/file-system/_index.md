@@ -11,6 +11,29 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Major Concepts & Key Terminology
 
+- Navigating the file system
+- CRUD directories and files
+- Finding files
+- Bash Aliases
+- Bash shell initialization script
+- Substitute user
+
+### Commands
+
+- `cd`
+- `mkdir`
+- `touch`
+- `cat`
+- `less`
+- `rm`
+  - `-r`
+- `mv`
+- `nano`
+- `find`
+- `alias`
+- `~/.bashrc`
+- `sudo`
+
 ## Content Links
 
 {{% children %}}
