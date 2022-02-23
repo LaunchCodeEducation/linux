@@ -36,7 +36,7 @@ Let's get rid of that file with the `rm` command.
 And the file is gone!
 
 {{% notice bonus %}}
-In an early walkthrough we create a file named `temp.file`. Feel free to remove that file as we won't be using it again!
+In an earlier walkthrough we created a file named `temp.file`. Feel free to remove that file as we won't be using it again!
 ![rm temp file](pictures/rm-temp-file.png)
 {{% /notice %}}
 
@@ -65,19 +65,23 @@ Luckily, there is a *recursive* option that will remove all of the items inside 
 Since our user `student` has full permissions of the `temp-dir/temp.file` our Bash shell deleted the file without asking. In instances where the file is write-protected the Bash shell will ask for confirmation before deleting any files while using the `-r` option.
 
 {{% notice bonus %}}
-The following image shows a read-only file. Notice all the `-r--r--r--` indicating the file owner, group, and everyone else only has **read** access to the file.
+The following image shows a read-only file. Notice the beginning of the second line: `-r--r--r--` indicating the file owner, group, and everyone else only has **read** access to the file. Write access and Execute access would be represented by the letter `w` and `x` respectively.
 ![ls -l temp-dir](pictures/ls-l-temp-dir.png)
 When we go to delete the directory recursively, the Bash shell will ask for permission before deleting this write protected file.
 ![rm -r temp-dir write protected](pictures/rm-r-temp-dir-write-protected.png)
-We will not cover modifying changing file permissions in this lesson. But you can read about the `chmod` command to learn on your own.
+We will not cover modifying file permissions in this lesson. But you can read about the `chmod` command to get a sense of how the `temp.file` came to have only read access for all users.
+{{% /notice %}}
+
+{{% notice bonus %}}
+In an early section of this course we created a `temp` directory in our home directory. Feel free to delete it using your newfound `rm -r` skills!
 {{% /notice %}}
 
 #### Delete Recursively with Force!
 
-In some instances there may be **many** write-protected files in a directory. Again, the Bash shell developers realized how tedious it would be to manually hit enter for each file that needs to be deleted. There is another flag called force `-f` that will delete the file(s) without checking the write protected status of the individual pieces.
+In some instances there may be **many** write-protected files in a directory. It would be tedious to manually hit enter for each write protected file that needs to be deleted. There is another option called force `-f` that will delete the file(s) without checking the write protected status of the individual pieces.
 
 We recommend throughout this course that you manually go through the process of approving the deletion of write protected files, except when instructed not to.
 
 {{% notice warning %}}
-Linux will do what you tell it. If you tell it to delete a directory recursively with force it will not ask again. Many horror stories exist around people accidentally running `rm -rf` against their entire home directory and losing **all of their files**. Even worse targeting the root directory in which individuals have effectively **deleted their OS**...
+Linux will do what you tell it. If you tell it to delete a directory recursively with force it will not ask again. Many horror stories exist around people accidentally running `rm -rf` against their entire home directory and losing **all of their files**. Even worse targeting the root directory which would effectively **delete the entire OS**...
 {{% /notice %}}
