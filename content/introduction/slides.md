@@ -19,10 +19,10 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - Operating System
 - User space applications
 - Kernel
+- GNU
 - Shell
 - Terminal
 - File System
-- GNU
 
 ---
 
@@ -92,28 +92,81 @@ All of these under the hood tasks would burden the user and are therefore handle
 
 ## Linux Kernel
 
+The Linux kernel is an *open source* and actively developed *monolithic* kernel. It was originally created by Linus Torvalds, but has since received commits from 1000s of contributors.
 
+[GitHub repo](https://github.com/torvalds/linux)
+
+[The Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/)
 
 ---
 
 ## GNU
 
+GNU is a recursive acronym that stands for **G**NU is **N**ot **U**nix.
+
+GNU offers a huge collection of free software, that is commonly bundled with the Linux kernel to create a full fledged operating system.
+
+Many of the tools we will use in this class are created and maintained by GNU.
+
+[GNU Homepage](https://www.gnu.org/)
+
+[GNU Package Listing](https://www.gnu.org/software/software.html)
+
 ---
 
 ## Shell
+
+A **shell** is software that is end user interactive.
+
+It's purpose is to serve as the interface between an end user and the kernel.
+
+There are both text-based shells (Bash shell) and graphical shells (gnome-shell).
 
 ---
 
 ## Terminal
 
+A **terminal** is the graphical application that powers a text-based shell.
+
+Before graphical shells (like the Xerox Neptune Directory Editor, Windows 1, Apple Lisa & Macintosh, etc) there were only text-based shells.
+
+___
+
+### Terminal Emulators
+
+Terminals which were the monitors connected to these computers only provided a text-based interface.
+
+In our modern era of computing we mostly use *terminal emulators*. They emulate what the original text-based only terminals felt like, but provide additional features, and are run as an application within a graphical shell.
+
+___
+
+#### Terminal Emulator Examples
+
+If you have used *git-bash*, the *bash shell*, *powershell*, or the Windows *cmd* line you have used a terminal emulator.
+
+We will be spending the majority of our time in this class using a terminal emulator displaying the *bash shell*.
+
 ---
 
 ## File System
 
+The filesystem of a computer is defined and managed by the kernel.
+
+The Linux filesystem contains a **root** directory (`/`) which holds all of the files and directories on the computer. 
+
 ___
 
-## Horizontal from First Slide
+### Root Directory
 
----
+Many of the subdirectories inside of the **root** directory contain configurations, data, and tools that are used directly by the operating system.
 
-## Second Slide
+The end user can see, and possibly edit or delete these files which are crucial to running the operating system.
+
+To mitigate the risk of having end users mess around with kernel level data Linux has also designated **userspace**.
+___
+
+### Userspace
+
+**Userspace** is a term that describes the areas of the Linux filesystem that contain end user files and directories.
+
+Userspace is usually found in a couple of different locations and the location varies by Linux distribution. In Ubunutu, which is the Linux distribution we will be using userspace is predominately in the `/usr` and `/home` directories.
