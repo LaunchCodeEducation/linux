@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://lctt-linux.netfliy.app"
 languageCode = "en-us"
 title = "Linux Introduction"
 theme = "lc-learn"
