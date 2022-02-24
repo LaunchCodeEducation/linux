@@ -1,4 +1,4 @@
-<iframe id="slideFrame" src="{{"none.html" | relURL }}" style="width:{{with .Get "width"}}{{.}}{{else}}100%{{end}};height:{{with .Get "height"}}{{.}}{{else}}30em{{end}}; border:0px"></iframe>
+<iframe id="slideFrame" src="{{"none.html" | relURL }}" style="width:{{with .Get "width"}}{{.}}{{else}}100%{{end}};height:{{with .Get "height"}}{{.}}{{else}}40em{{end}}; border:0px"></iframe>
 
 
 <a  href="fullscreen/" target="_blank">
@@ -81,7 +81,6 @@
 	</script>
 </div>
 
-<!-- IDEA: uncomment when ref slideFullScreen to open in new tab and switch to it -->
 <script type="text/javascript">
 var toto = document.getElementById('slideContent').innerHTML
 document.getElementById('slideFrame').contentWindow.document.write(document.getElementById('slideContent').innerHTML); 
@@ -91,11 +90,4 @@ document.addEventListener("DOMContentLoaded",function(){
       document.getElementById('slideFrame').contentWindow.initSlides() ;
     }, 2000);
 });
-
-function slideFullScreen() {
-	document.open();
-	document.write(toto);
-	document.close();
-	initSlides()
-}
 </script>
