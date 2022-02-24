@@ -1,5 +1,5 @@
 ---
-title: "Slides"
+title: "Slides: Fullscreen"
 date: 2021-11-09T15:11:04-06:00
 draft: false
 type: "slides"
@@ -9,6 +9,8 @@ reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
+
+<!-- {{< slides >}} -->
 
 ## Linux 
 
@@ -170,3 +172,5 @@ ___
 **Userspace** is a term that describes the areas of the Linux filesystem that contain end user files and directories.
 
 Userspace is usually found in a couple of different locations and the location varies by Linux distribution. In Ubunutu, which is the Linux distribution we will be using userspace is predominately in the `/usr` and `/home` directories.
+
+<!-- {{< /slides >}} -->
