@@ -11,6 +11,10 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Walkthrough
 
+We will be using the `apt` command line interface to work with our packages and package repositories.
+
+{{% children %}}
+
 - what is a package manager
 - `apt`
 - `apt-get`
@@ -22,3 +26,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - `apt update`
 - `apt upgrade`
 - why use a package manager instead of downloading and installing software from the internet?
+
+
+CRUD -- Package Repositories
+CRUD -- Individual Packages
