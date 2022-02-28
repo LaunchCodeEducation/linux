@@ -19,6 +19,8 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - stage, and commit local changes
 - push from local to remote
 
+## Fork & Clone
+
 ### new local existing remote
 
 - git fork *optional only necessary if you are forking from another user or organization*
@@ -27,7 +29,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - make local changes
 - stage, commit and push
 
-## Branching & Merging
+## Branching
 
 - Why you should do this
 
@@ -59,6 +61,8 @@ end
   - app that is being expanded
   - new branch for new feature
 - after coding pushed up and 
+
+## Merge Strategies
 
 ### `git merge`
 
