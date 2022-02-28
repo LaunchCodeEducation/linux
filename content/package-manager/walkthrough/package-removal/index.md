@@ -12,4 +12,8 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 `apt remove`
 
+`apt remove vim`
+
+`apt remove gimp`
+
 `apt autoremove`

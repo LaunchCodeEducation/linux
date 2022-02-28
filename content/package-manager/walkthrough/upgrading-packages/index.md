@@ -9,7 +9,11 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-`apt upgrade`
+`sudo apt upgrade`
+
+`sudo apt upgrade wget`
+
+`sudo apt upgrade update-notifier -y`
 
 From man page:
 
@@ -23,4 +27,4 @@ upgrade (apt-get(8))
            package the upgrade for this package isn't performed.
 ```
 
-`apt upgrade -y`
+`sudo apt upgrade -y`
