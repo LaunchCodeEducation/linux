@@ -48,8 +48,8 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 #### Day Two
 
 - Morning
-  - [Userspace Applications]({{< relref "./userspace-applications" >}})
   - [Package Manager]({{< relref "./package-manager" >}})
+  - [Userspace Applications]({{< relref "./userspace-applications" >}})
 - Afternoon
   - [Git]({{< relref "./git" >}})
 
