@@ -1,5 +1,5 @@
 ---
-title: "Slides"
+title: "Slides: Fullscreen"
 date: {{ .Date }}
 draft: false
 type: "slides"
@@ -9,16 +9,22 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## Slides Title
+<!-- Copy everything between open and closing slide tags from _index.md -->
+
+## Slide Deck Title
 
 ---
 
-## First Slide
+## Slide 1
 
 ___
 
-## Horizontal from First Slide
+### Slide 1 Vertical Slide
 
 ---
 
-## Second Slide
+## Slide 2
+
+___
+
+### Slide 2 Verticial Slide
