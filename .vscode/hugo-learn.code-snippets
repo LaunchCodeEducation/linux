@@ -2,7 +2,7 @@
 	"Hugo Picture": {
 		"scope": "markdown,md",
 		"prefix": "//picture",
-		"body": ["![${1:alt-text}](pictures/${2:path}.png)$0"]
+		"body": ["![${1:alt-text}](pictures/${2:path}.png?classes=border)$0"]
 	},
 	"Hugo Notice": {
 		"scope": "markdown,md",

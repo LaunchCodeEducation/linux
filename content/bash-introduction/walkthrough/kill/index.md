@@ -20,7 +20,7 @@ However, if you want to try the command out, you can send a signal to your `$BAS
 
 Take note of your `$BASHPID`.
 
-Then enter `kill -9 your-bash-pid`, but enter the number of your `$BASHPID`.
+Then enter `kill -9 [your-bash-pid]`, but enter the number of your `$BASHPID`.
 
 ![Kill Bash Shell](pictures/kill-bash-shell.png)
 

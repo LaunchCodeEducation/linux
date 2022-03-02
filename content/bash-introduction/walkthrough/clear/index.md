@@ -23,5 +23,5 @@ Then submit the command with enter.
 All that text is gone! We now have a clean slate to continue working.
 
 {{% notice note %}}
-Most future images will `clear` the screen before running new commands.
+Most future images in this course will `clear` the screen before running new commands.
 {{% /notice %}}

@@ -32,3 +32,7 @@ Then search for the program `terminal`.
 Either hit enter, or click the `terminal` application and a new `terminal emulator` will be launched!
 
 ![Ubuntu Terminal Emulator](pictures/ubuntu-terminal-emulator.png)
+
+{{% notice bonus %}}
+You can also open a new terminal in Ubuntu with the `ctrl` + `alt` + `t` keyboard shortcut!
+{{% /notice %}}

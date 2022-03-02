@@ -10,7 +10,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Bash Shell Variables
 
-The Bash shell has various variables that contain useful information. They are indicated by the following pattern: `$VARIABLE_NAME`.
+The Bash shell has numerous variables that contain useful information. They are indicated by the following pattern: `$VARIABLE_NAME`.
 
 We won't look at all of the Bash Shell Variables, but we would like you to know about four of them:
 
