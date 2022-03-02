@@ -18,16 +18,7 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 
 ### Segments / Chapters
 
-- [Introduction]({{< relref "./introduction" >}})
-- [Bash: Introduction]({{< relref "./bash-introduction" >}})
-- [Bash: File System]({{< relref "./file-system" >}})
-- [Userspace Applications]({{< relref "./userspace-applications" >}})
-- [Package Manager]({{< relref "./package-manager" >}})
-- [Git]({{< relref "./git" >}})
-- [Terminal]({{< relref "./terminal" >}})
-- [Cron]({{< relref "./cron" >}})
-- [Web Server: Static Sites]({{< relref "./web-server-static" >}})
-- [Web Server: Reverse Proxy]({{< relref "./web-server-reverse-proxy" >}})
+{{% children %}}
 
 #### Configurations
 
@@ -70,4 +61,6 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 #### Day Five
 
 - Morning
+  - [systemd]({{< relref "./systemd" >}})
 - Afternoon
+  - Final Project
