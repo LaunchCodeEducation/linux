@@ -16,7 +16,7 @@ Our next command will list out the contents of either our current working direct
 
 ![current working directory contents](pictures/ls.png)
 
-Our home directory `/home/student` has quite a few things in it. All of the entires just happen to be directories:
+Our home directory `/home/student` has quite a few things in it. All of the entries just happen to be directories:
 - Desktop
 - Documents
 - Downloads
@@ -72,7 +72,7 @@ Try listing the contents of the remaining directories inside of `/home/student/`
 ## `ls` Options
 
 `ls` has many options for you to choose from, however the two most common options are:
-- `--long`: show the permissions, size and date last modified among other meta-data
+- `-l`: show the permissions, size, and date last modified among other meta-data (this is often referred to as long listing format)
 - `--all`: show all files and directories including hidden
 
 ### `-l`

@@ -21,7 +21,7 @@ In this Demo your instructor will show you how to create and execute a bash scri
 - `mkdir /home/student/bin`
 - `touch /home/student/bin/whattimeisit`
 
-Add the following text into the file. You may find `nano` to be useful, but however you want.
+Add the following text into the file. You may find `nano` to be useful, but feel free to edit the file however you want.
 
 ```bash
 #!/bin/bash
