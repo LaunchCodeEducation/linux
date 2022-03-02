@@ -33,4 +33,6 @@ Either hit enter, or click the `terminal` application and a new `terminal emulat
 
 ![Ubuntu Terminal Emulator](pictures/ubuntu-terminal-emulator.png)
 
-<!-- Notice tip: Another option to open up terminal with ctrl + alt + t (as alternative to activites/search) -->
+{{% notice bonus %}}
+You can also open a new terminal in Ubuntu with the `ctrl` + `alt` + `t` keyboard shortcut!
+{{% /notice %}}
