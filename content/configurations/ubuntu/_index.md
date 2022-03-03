@@ -113,15 +113,20 @@ In this course will not be discussing the audio, network, usb, shared folders, o
 #### setting up this machine to use our ISO image
 
 - settings wheel (while the name is selected)
+![settings-wheel-picture-hover](pictures/settings-wheel-picture.png?classes=border)
   - shows all of the sections we just went over
+![settings-view](pictures/settings-view.png?classes=border)
   - click the storage option
+![click-storage-tab](pictures/click-storage-tab.png?classes=border)
   - under controller:IDE it says Empty (that's because we haven't told the machine which ISO to use for this machine)
-    - on the right side under attributes you should see optioal drive drop down box, to the right of that is a disk icon button
+![empty-section-undercontrolleride-image](pictures/empty-section-undercontrolleride-image.png?classes=border)
+    - on the right side under attributes you should see optional drive drop down box, to the right of that is a disk icon button
     - click that button
+![CE-disk-icon-dropdown-image](pictures/CE-disk-icon-dropdown-image.png?classes=border)
     - choose a disk file ...
       - file explorer (ISO)
       - most likely inside downloads (ubuntu-20.04.3-desktop-amd64.iso)
-    - after you select the ISO file clikc the ok button
+    - after you select the ISO file click the ok button
 
 
 
