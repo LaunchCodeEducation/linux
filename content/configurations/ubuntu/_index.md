@@ -104,9 +104,18 @@ In this course will not be discussing the audio, network, usb, shared folders, o
 
 #### starting the machine
 
+![virtual-box-homepage](pictures/virtual-box-homepage.png?classes=border)
 - click start button
-  - admonition note: it defaults to normal start, you can select how it starts witht he little arrow inside the start button
-  - admonition note: if the image is not set properly you will see the following errors (kernal drive not installed) and Failed to open a session for the virual machine for ubuntu-launchcode
+![picture-of-start-button](pictures/picture-of-start-button.png?classes=border)
+{{% notice bonus %}}
+You may notice the options within the dropdown next to the start arrow, the options are normal start, headless, detachable start. **During this course we will always be using the normal start. Without doing so you will not have access to the GUI.** To learn more about headless starts which are common, refer to the [Headless Software Wikipedia Article](https://en.wikipedia.org/wiki/Headless_software).
+{{% /notice %}}
+![new-window-after-start](pictures/new-window-after-start.png?classes=border)
+{{% notice warning %}}
+If the image is not set properly you will see the following errors (kernal drive not installed) and Failed to open a session for the virual machine for ubuntu-launchcode
+![error-output](pictures/error-output.png?classes=border)
+If you see this error you misconfigured your ISO image. Please repeat the steps from the above section.
+{{% /notice %}}
 
 
 #### granting your macbook access to orcale
