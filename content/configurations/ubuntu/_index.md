@@ -23,15 +23,20 @@ In this class we will be using Ubuntu Desktop 20.04.3 LTS, you can find it's dow
 ### Download Image
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png)
 =======
 ![Ubuntu Desktop Download Homepage](./images/ubuntu-download-desktop.png)
 >>>>>>> ubuntu installation instruction stubs
+=======
+![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png)
+>>>>>>> updated image folder
 
 Click the green `Download` button to start the download. It is a large file and will take some time.
 
 You will likely have to confirm the download, in the picture below the user will need to click `Save File` for the file to be downloaded onto the host computer.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ![Ubuntu Desktop Download Initiated Page](pictures/ubuntu-download.png)
 
@@ -41,12 +46,16 @@ Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-d
 >>>>>>> restructured configus for pics starting filling in content
 =======
 ![Ubuntu Desktop Download Initiated Page](./images/ubuntu-download.png)
+=======
+![Ubuntu Desktop Download Initiated Page](pictures/ubuntu-download.png)
+>>>>>>> updated image folder
 
 Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-desktop-*.iso`. An `.iso` file is a Disk Image which is the instruction for installing an Operating System. We will be using this file inside of Virtualbox to create an isolated Ubuntu 20.04.3 virtual operating system inside of our host computer.
 
 ### VirtualBox Ubuntu Image Creation Instructions
 
-- from virtual box click the new  button
+- Open VirtualBox
+- from VirtualBox click the new  button
 - give VB access to files when it asks, and Documents
 - and Downloads
 - give it a name (ubuntu-launchcode) (it should automatically change type to linux)
