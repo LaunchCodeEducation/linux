@@ -55,31 +55,40 @@ Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-d
 ### VirtualBox Ubuntu Image Creation Instructions
 
 - Open VirtualBox
-- from VirtualBox click the new  button
-- give VB access to files when it asks, and Documents
-- and Downloads
-- give it a name (ubuntu-launchcode) (it should automatically change type to linux)
-- machine folder leave as default (/Users/john/VirutalBox Vms
+![VirtualBox Homescreen](pictures/virtualbox-homepage.png?classes=border)
+- Within VirtualBox click the new  button
+![Click new Button](pictures/click-new-button.png?classes=border)
+- give VB access to files when it asks, and Documents, and Downloads
+![File-access-button](pictures/file-access-button.png?classes=border)
+- give it a name (student-VirtualBox) (it should automatically change type to linux)
+![image-name](pictures/image-name.png?classes=border)
+- machine folder leave as default (/Users/your-user-name/VirutalBox Vms
+{{% notice note %}}
+Your default location is dependent on your host operating system. If it is Mac it will be /Users/your-name, if you are on Windows it will be /Wedontknow/something
+{{% /notice %}}
 - type: double check that it is set to Linux
+![default-linux-check](pictures/default-linux-check.png?classes=border)
 - Version: double check that it is set to ubuntu 64bit
+![ubuntu-64bit-check](pictures/ubuntu-64bit-check.png?classes=border)
 - click continue
 - allocating the memory size
-  - minimum: 1024
-  - ideal: 2048 or greater 
+  - minimum: 2048
+  - ideal: 3072 or greater
 - click continue
 - hard disk
-  - create a virtual disck (click the blue create button)
+  - create a virtual disc (click the blue create button)
   - leave it on the default VDI
   - storage on physical hard disk: select Fixed size
   - file location and size
     - location: default
-    - size: at least 10GB
+    - size: at least 16GB
     - click create
+![hard-disc-tab-options](pictures/hard-disc-tab-options.png?classes=border)
 - exposition: what has been done
   - we created a new virtual machine within your computer
     - it has access to a certain amount of RAM (a portion of the RAM on your machine)
     - it has access to a virtual hard disk (the VDI we created)
-- from the home screen of virtualbox you should see the VM you created (ubuntu-launchcode)
+- from the home screen of virtualbox you should see the VM you created (student-VirtualBox)
   - it is showing all of the specs for this machine
     - General
       - name & OS
@@ -87,13 +96,19 @@ Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-d
       - RAM, HD    
     - Display
     - storage
+![general-settings-picture](pictures/general-settings-picture.png?classes=border)
       - controller IDE (exposition around the OS) it is a file, we need to cofigure this controller IDE to point at our ISO image
       - cointroller SATA -> 10.0 GB
+![controller-ide-file](pictures/controller-ide-file.png?classes=border)
+ - The remaining sections that you may see include the following:
     - audio
     - network
     - usb
     - shared folders
     - description
+{{% notice note %}}
+In this course will not be discussing the audio, network, usb, shared folders, or description.
+{{% /notice %}}
 
 #### setting up this machine to use our ISO image
 
