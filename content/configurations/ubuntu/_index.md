@@ -154,19 +154,6 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 - click allow for (System software from developer "Oracle America, Inc." was blocked from loading
 - then restart your machine
 
-{{% /expand %}}
-
-{{% expand "Click here if you are working on Windows for further instructions" %}}
-<!-- TODO: Double check security permissions for windows OS -->
-Content coming soon!
-{{% /expand %}}
-
-#### installing ubuntu (first time setup)
-
-{{% notice warning %}}
-If you haven't granted oracle in your security and privacy your machine will not start with a kernel error
-{{% /notice %}}
-
 - keystroke permission on Mac
 - open system preferences
 - unlock if necessary
@@ -175,31 +162,72 @@ If you haven't granted oracle in your security and privacy your machine will not
 ![virtualbox-checkbox](pictures/virtualbox-checkbox.png?classes=border)
 - exit system preferences
 - quit and reopen virtualbox
+
+{{% /expand %}}
+
+{{% expand "Click here if you are working on Windows for further instructions" %}}
+<!-- TODO: Double check security permissions for windows OS -->
+Content coming soon!
+{{% /expand %}}
+
+#### Installing Ubuntu (First Time Setup)
+
+{{% notice warning %}}
+For Macbook users, if you haven't granted oracle permissions in your security and privacy your machine will not start with a kernel error. If you see this error checkout the section on Granting your Macbook access to Oracle above.
+{{% /notice %}}
+
+
 - select your language (default is english)
-![select-language-picture](pictures/select-language-picture.png?classes=border)
-- click install (bottom left)
+![ubuntu-loading-completed](pictures/ubuntu-loading-completed.png?classes=border)
+- click `Install Ubuntu` underneath the laptop icon
 {{% notice warning %}}
 Do not click "try ubuntu"
 {{% /notice %}}
-![click-install-button](pictures/click-install-button.png?classes=border)
+
 - keyboard layout (keep default, unless you use a non english keyboard)
-![keyboard-layout-picture](pictures/keyboard-layout-picture.png?classes=border)
+![keyboard-layout-picture](pictures/keyboard-layout.png?classes=border)
 - click continue
 - select minimal installation
 - select download updates while installing (accept all the defaults)
-![minimal-install-download-updates](pictures/minimal-install-download-updates.png?classes=border)
+![updates-and-other-software](pictures/updates-and-other-software.png?classes=border)
 - erase disk and install ubuntu (if it detected an OS that means they didn't select a VDI)
-![installation-type-picture](pictures/installation-type-picture.png?classes=border)
+![installation-type-picture](pictures/installation-type.png?classes=border)
 - click install now
 - click continue
 - select your TZ (should default accurately)
-![tz-select-picture](pictures/tz-select-picture.png?classes=border)
+![erase-disk-and-install-ubuntu](pictures/erase-disk-and-install-ubuntu.png?classes=border)
+
+click `Install Now`
+
+![erase-disk-popup](pictures/erase-disk-popup.png?classes=border)
+
+click `Continue`
+
+![tz-select-picture](pictures/tz-select.png?classes=border)
+
 - who are you?
-![who-are-you-picture](pictures/who-are-you-picture.png?classes=border)
-  - your name: student
-  - your computer's name: student-VirtualBox
-  - username: student
-  - password: admin
-  - confirm: admin
-  - require my password to log in (default)
-  - click continue
+
+![who-are-you-picture](pictures/who-are-you-blank.png?classes=border)
+  - your name: `student`
+  - your computer's name: `student-VirtualBox`
+  - username: `student`
+  - password: `admin`
+  - confirm: `admin`
+  - select: `require my password to log in (default)`
+  - click: `Continue`
+
+![who-are-you-filled](pictures/who-are-you-filled.png?classes=border)
+
+![installing-system](pictures/installing-system.png?classes=border)
+
+![installing-system-final](pictures/installing-system-final.png?classes=border)
+
+![click-through-1](pictures/click-through-1.png?classes=border)
+
+![click-through-2](pictures/click-through-2.png?classes=border)
+
+![click-through-3](pictures/click-through-3.png?classes=border)
+
+![click-through-4](pictures/click-through-4.png?classes=border)
+
+![ubuntu-desktop](pictures/ubuntu-desktop.png?classes=border)
