@@ -220,7 +220,17 @@ click `Continue`
 
 ![installing-system](pictures/installing-system.png?classes=border)
 
-![installing-system-final](pictures/installing-system-final.png?classes=border)
+![installing-system-final](pictures/installation-complete-popup.png?classes=border)
+
+![loading-screen-to-home](pictures/loading-screen-to-home.png?classes=border)
+
+![after-restart](pictures/after-restart.png?classes=border)
+
+![user-login](pictures/user-login.png?classes=border)
+
+![user-login-password](pictures/user-login-password.png?classes=border)
+
+![first-time-login](pictures/first-time-login.png?classes=border)
 
 ![click-through-1](pictures/click-through-1.png?classes=border)
 
@@ -229,5 +239,7 @@ click `Continue`
 ![click-through-3](pictures/click-through-3.png?classes=border)
 
 ![click-through-4](pictures/click-through-4.png?classes=border)
+
+![software-updater](pictures/software-updater.png?classes=border)
 
 ![ubuntu-desktop](pictures/ubuntu-desktop.png?classes=border)
