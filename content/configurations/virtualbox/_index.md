@@ -62,7 +62,11 @@ The link will start a download for the **.dmg** file needed to install VirtualBo
       - might ask for password, give it your credentials and click ok
     - installation
       - it will take some time as it's running scripts
-      - open your system security preferences
+      - click the open security preferences button
+      - unlock security preferences by hitting the padlock icon in the bottom left corner and enter your password
+      - click the allow button next to "System software from developer "Oracle America, Inc" has been updated
+      - Hit the restart button and your machine will restart
+      - After your machine restarts you should find your VirtualBox.app within your applications folder. Alternatively you can find it by hitting command + spacebar and typing in the program name "VirtualBox.app"
     - summary
       - installation was successful and close
 
