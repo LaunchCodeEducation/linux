@@ -67,9 +67,9 @@ Make sure to grant VirtualBox permission to these locations!
 ![image-name](pictures/image-name.png?classes=border)
 ![image-type](pictures/image-type.png?classes=border)
 ![image-version](pictures/image-version.png?classes=border)
-- machine folder leave as default (/Users/your-user-name/VirutalBox Vms
+- machine folder leave as default (`/Users/username/VirtualBox` Vms
 {{% notice note %}}
-Your default location is dependent on your host operating system. If it is Mac it will be /Users/your-name, if you are on Windows it will be /Wedontknow/something
+Your default location is dependent on your host operating system. If it is Mac it will be /Users/your-name, if you are on Windows it will be `C:\Users\username>`
 {{% /notice %}}
 - click next
 - allocating the memory size
@@ -164,7 +164,7 @@ Once the installation wizard has finished setting up, you will see the following
 ![ubuntu-loading-completed](pictures/ubuntu-loading-completed.png?classes=border)
 
 {{% notice warning %}}
-If the image is not set properly you will see the following errors (kernal drive not installed) and Failed to open a session for the virual machine for ubuntu-launchcode
+If the image is not set properly you will see the following errors (kernel drive not installed) and Failed to open a session for the virtual machine for ubuntu-launchcode
 ![error-output](pictures/error-output.png?classes=border)
 If you see this error you misconfigured your ISO image. Please repeat the steps from the above section.
 {{% /notice %}}
@@ -174,12 +174,12 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 
 {{% expand "Click here if you are working on MacOS for further instructions" %}}
 
-#### granting your macbook access to orcale
+#### granting your Macbook access to Oracle
 
 - open settings
 - click security & privacy
 - unlock by clicking padlock and providing your password
-- click allow for (System software from devleoper "Orcale America, Inc." was blocked from loading
+- click allow for (System software from developer "Oracle America, Inc." was blocked from loading
 - then restart your machine
 
 {{% /expand %}}
@@ -192,7 +192,7 @@ Content coming soon!
 #### installing ubuntu (first time setup)
 
 {{% notice warning %}}
-If you haven't granted orcale in your security and privacy your machine will not start with a kernel error
+If you haven't granted oracle in your security and privacy your machine will not start with a kernel error
 {{% /notice %}}
 
 - keystroke permission on Mac
@@ -202,7 +202,7 @@ If you haven't granted orcale in your security and privacy your machine will not
 - select the checkbox for virtualbox
 ![virtualbox-checkbox](pictures/virtualbox-checkbox.png?classes=border)
 - exit system preferences
-- quit and repoen virtualbox
+- quit and reopen virtualbox
 - select your language (default is english)
 ![select-language-picture](pictures/select-language-picture.png?classes=border)
 - click install (bottom left)
