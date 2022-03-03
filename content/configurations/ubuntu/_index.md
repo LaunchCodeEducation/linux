@@ -139,26 +139,39 @@ Content coming soon!
 
 #### installing ubuntu (first time setup)
 
-- admonition warning: if you haven't granted orcale in your security and privacy your machine will not start with a kernel error
+{{% notice warning %}}
+If you haven't granted orcale in your security and privacy your machine will not start with a kernel error
+{{% /notice %}}
 
 - keystroke permission on Mac
 - open system preferences
 - unlock if necessary
+![padlock-mac-security-picture](pictures/padlock-mac-security-picture.png?classes=border)
 - select the checkbox for virtualbox
-- exit
+![virtualbox-checkbox](pictures/virtualbox-checkbox.png?classes=border)
+- exit system preferences
 - quit and repoen virtualbox
-
 - select your language (default is english)
-- click install (bottom left) (don't click try ubuntu)
+![select-language-picture](pictures/select-language-picture.png?classes=border)
+- click install (bottom left)
+{{% notice warning %}}
+Do not click "try ubuntu"
+{{% /notice %}}
+![click-install-button](pictures/click-install-button.png?classes=border)
 - keyboard layout (keep default, unless you use a non english keyboard)
+![keyboard-layout-picture](pictures/keyboard-layout-picture.png?classes=border)
 - click continue
-- normal installation is fine
-- download updates while installing (accept all the defaults)
+- select minimal installation
+- select download updates while installing (accept all the defaults)
+![minimal-install-download-updates](pictures/minimal-install-download-updates.png?classes=border)
 - erase disk and install ubuntu (if it detected an OS that means they didn't select a VDI)
+![installation-type-picture](pictures/installation-type-picture.png?classes=border)
 - click install now
 - click continue
 - select your TZ (should default accurately)
+![tz-select-picture](pictures/tz-select-picture.png?classes=border)
 - who are you?
+![who-are-you-picture](pictures/who-are-you-picture.png?classes=border)
   - your name: student
   - your computer's name: student-VirtualBox
   - username: student
