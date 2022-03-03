@@ -118,6 +118,10 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 {{% /notice %}}
 
 
+### Granting priveleges
+
+{{% expand "Click here if you are working on MacOS for further instructions" %}}
+
 #### granting your macbook access to orcale
 
 - open settings
@@ -125,6 +129,13 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 - unlock by clicking padlock and providing your password
 - click allow for (System software from devleoper "Orcale America, Inc." was blocked from loading
 - then restart your machine
+
+{{% /expand %}}
+
+{{% expand "Click here if you are working on Windows for further instructions" %}}
+<!-- TODO: Double check security permissions for windows OS -->
+Content coming soon!
+{{% /expand %}}
 
 #### installing ubuntu (first time setup)
 
