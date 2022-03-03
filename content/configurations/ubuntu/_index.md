@@ -55,66 +55,74 @@ Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-d
 ### VirtualBox Ubuntu Image Creation Instructions
 
 - Open VirtualBox
-![VirtualBox Homescreen](pictures/virtualbox-homepage.png?classes=border)
+![VirtualBox Homescreen](pictures/virtualbox-home.png?classes=border)
 - Within VirtualBox click the new  button
 ![Click new Button](pictures/click-new-button.png?classes=border)
-- give VB access to files when it asks, and Documents, and Downloads
+{{% notice note %}}
+If you have never used VirtualBox before, which is likely, you will be prompted by your host OS to give VirtualBox access to your files including your Downloads, and Documents directories.
 ![File-access-button](pictures/file-access-button.png?classes=border)
+Make sure to grant VirtualBox permission to these locations!
+{{% /notice %}}
 - give it a name (student-VirtualBox) (it should automatically change type to linux)
 ![image-name](pictures/image-name.png?classes=border)
+![image-type](pictures/image-type.png?classes=border)
+![image-version](pictures/image-version.png?classes=border)
 - machine folder leave as default (/Users/your-user-name/VirutalBox Vms
 {{% notice note %}}
 Your default location is dependent on your host operating system. If it is Mac it will be /Users/your-name, if you are on Windows it will be /Wedontknow/something
 {{% /notice %}}
-- type: double check that it is set to Linux
-![default-linux-check](pictures/default-linux-check.png?classes=border)
-- Version: double check that it is set to ubuntu 64bit
-![ubuntu-64bit-check](pictures/ubuntu-64bit-check.png?classes=border)
-- click continue
+- click next
 - allocating the memory size
   - minimum: 2048
   - ideal: 3072 or greater
-- click continue
+![image-memory](pictures/image-memory.png?classes=border)
+- click next
 - hard disk
   - create a virtual disc (click the blue create button)
+![image-hard-disk](pictures/image-hard-disk.png?classes=border)
   - leave it on the default VDI
+![image-hard-disk-type](pictures/image-hard-disk-type.png?classes=border)
   - storage on physical hard disk: select Fixed size
+![image-hard-disk-fixed](pictures/image-hard-disk-fixed.png?classes=border)
   - file location and size
     - location: default
-    - size: at least 16GB
+    - size: at least 12GB
     - click create
-![hard-disc-tab-options](pictures/hard-disc-tab-options.png?classes=border)
-- exposition: what has been done
-  - we created a new virtual machine within your computer
-    - it has access to a certain amount of RAM (a portion of the RAM on your machine)
-    - it has access to a virtual hard disk (the VDI we created)
-- from the home screen of virtualbox you should see the VM you created (student-VirtualBox)
-  - it is showing all of the specs for this machine
-    - General
-      - name & OS
-    - system
-      - RAM, HD    
-    - Display
-    - storage
-![general-settings-picture](pictures/general-settings-picture.png?classes=border)
-      - controller IDE (exposition around the OS) it is a file, we need to cofigure this controller IDE to point at our ISO image
-      - cointroller SATA -> 10.0 GB
-![controller-ide-file](pictures/controller-ide-file.png?classes=border)
- - The remaining sections that you may see include the following:
-    - audio
-    - network
-    - usb
-    - shared folders
-    - description
+![image-hard-disk-size](pictures/image-disk-size.png?classes=border)
+
+After completing the follow setup you will see the VirtualBox homepage that looks similar to:
+
+![new-image-home](pictures/new-image-home.png?classes=border)
+
+Using the picture above as a reference take note of the configurations for this specific image:
+
+##### General
+
+- Name: `student-VirtualBox`
+- Operatating System: `Ubuntu (64 bit)`
+
+##### System
+
+- Base Memory: `2048 MB`
+
+##### Storage
+
+- Controller :IDE:
+  - IDE Secondary Device 0: `[Optical Drive] Empty`
+- Controller :Sata: 
+  - SATA Port 0: `student-VirtualBox.vdi (Normal 12.00 GB)`
+
+Take note of the IDE Secondary Device 0, this is referencing the CD drive of this specific image. It is currently empty, which makes sense, as we don't have a CD in our computer! In order to load Ubuntu we are going take the Ubuntu.iso image we downloaded earlier and virtually insert it into this optical drive. This will allow us to boot into Ubuntu and load it into this virtual image.
+
 {{% notice note %}}
 In this course will not be discussing the audio, network, usb, shared folders, or description.
 {{% /notice %}}
 
 #### setting up this machine to use our ISO image
 
+![new-image-home](pictures/new-image-home.png?classes=border)
+
 - settings wheel (while the name is selected)
-![settings-wheel-picture-hover](pictures/settings-wheel-picture.png?classes=border)
-  - shows all of the sections we just went over
 ![settings-view](pictures/settings-view.png?classes=border)
   - click the storage option
 ![click-storage-tab](pictures/click-storage-tab.png?classes=border)
@@ -128,17 +136,33 @@ In this course will not be discussing the audio, network, usb, shared folders, o
       - most likely inside downloads (ubuntu-20.04.3-desktop-amd64.iso)
     - after you select the ISO file click the ok button
 
+Upon clicking `Choose a disk file` your host OS will open the default file manager. Using that file manager you need to select the `ubuntu-20.04.3-desktop-amd64.iso` file you downloaded earlier. 
+
+{{% notice note %}}
+The location of the `ubuntu-20.04.3-desktop-amd64.iso` will likely be in a different location than the example image posted below. 
+![personal-file-manager](pictures/personal-file-manager.png?classes=border)
+This image is an example of the default file manager on a Pop!_OS which is an Ubuntu derived distribution.
+{{% /notice %}}
+
+
 
 
 #### starting the machine
 
-![virtual-box-homepage](pictures/virtual-box-homepage.png?classes=border)
+![virtual-box-homepage](pictures/new-image-home.png?classes=border)
 - click start button
-![picture-of-start-button](pictures/picture-of-start-button.png?classes=border)
 {{% notice bonus %}}
 You may notice the options within the dropdown next to the start arrow, the options are normal start, headless, detachable start. **During this course we will always be using the normal start. Without doing so you will not have access to the GUI.** To learn more about headless starts which are common, refer to the [Headless Software Wikipedia Article](https://en.wikipedia.org/wiki/Headless_software).
 {{% /notice %}}
-![new-window-after-start](pictures/new-window-after-start.png?classes=border)
+
+The first time you start your machine it will load the `.iso` file in the virtual optical drive, which will trigger a new installation of Ubuntu. As it is setting up this installation you will see quite a few different screens one of which will look similar to the following image:
+
+![ubuntu-loading](pictures/ubuntu-loading.png?classes=border)
+
+Once the installation wizard has finished setting up, you will see the following screen:
+
+![ubuntu-loading-completed](pictures/ubuntu-loading-completed.png?classes=border)
+
 {{% notice warning %}}
 If the image is not set properly you will see the following errors (kernal drive not installed) and Failed to open a session for the virual machine for ubuntu-launchcode
 ![error-output](pictures/error-output.png?classes=border)
