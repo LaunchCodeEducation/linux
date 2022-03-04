@@ -8,6 +8,8 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
+<!-- TODO: add note about having 15 GB free on their computer before performing the steps in this section -->
+
 ## Ubuntu
 
 In this class we will be using Ubuntu Desktop 20.04.3 LTS, you can find it's download [on their website](https://ubuntu.com/download/desktop).
