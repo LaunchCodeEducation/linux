@@ -40,7 +40,6 @@ If you are using a Linux based operating system the link from the downloads page
 
 ### MacOS - Instructions
 
-{{% expand "Click here to expand MacOS instructions" %}}
 
 #### MacOS - Download
 
@@ -53,30 +52,76 @@ The link will start a download for the **.dmg** file needed to install VirtualBo
 #### MacOS - Installing
 
 - double click the .dmg file
+
+![click-dmg-file](pictures/click-dmg-file.png?classes=border&height=650px)
+
 - double lick the PKG file
+
+![dbl-click-pkg-file](pictures/dbl-click-pkg-file.png?classes=border&height=650px)
+
 - brings up an installer
-  - click allow
-  - form
-    - introduction
-      - click continue
-    - destination select
-      - don't need to do anything here (leave on defaults)
-    - installation type
-      - click install
-      - might ask for password, give it your credentials and click ok
-    - installation
-      - it will take some time as it's running scripts
-      - click the open security preferences button
-      - unlock security preferences by hitting the padlock icon in the bottom left corner and enter your password
-      - click the allow button next to "System software from developer "Oracle America, Inc" has been updated
-      - Hit the restart button and your machine will restart
-      - After your machine restarts you should find your VirtualBox.app within your applications folder. Alternatively you can find it by hitting command + spacebar and typing in the program name "VirtualBox.app"
-    - summary
-      - installation was successful and close
+
+![installer-allow-picture](pictures/installer-allow-picture.png?classes=border&height=650px)
+- click allow
+- form
+- introduction
+  - click continue
+
+![form-continue-image](pictures/form-continue-image.png?classes=border&height=650px)
+
+- destination select
+<!-- TODO: Add in image for destination view of VirtualBox.app install on MacOS -->
+{{% notice note %}}
+On the destination select tab do not change anything, leave the selected options as they were defaulted
+{{% /notice %}}
+- installation type
+
+![change-install-location](pictures/change-install-location.png?classes=border&height=650px)
+
+  - click install
+  - might ask for password, click on the use password button and provide your credentials
+
+![installer-password](pictures/installer-password.png?classes=border&height=650px)
+
+- installation
+  - it will take some time as it's running scripts
+  - click the open security preferences button so that we can allow Oracle to make the necessary changes
+
+![system-extension-updated](pictures/system-extension-updated.png?classes=border&height=650px)
+
+  - unlock security preferences by hitting the padlock icon in the bottom left corner
+
+![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
+
+- Enter your password
+
+![system-preferences-password](pictures/system-preferences-password.png?classes=border&height=650px)
+
+  - click the allow button next to "System software from developer "Oracle America, Inc" has been updated
+
+![allow-oracle-software](pictures/allow-oracle-software.png?classes=border&height=650px)
+
+  - Hit the restart button and your machine will restart
+{{% notice warning %}}
+Do not restart your machine until the installation has been completed
+
+{{% /notice %}}
+![restart-required](pictures/restart-required.png?classes=border&height=650px)
+- After your machine restarts you should find your VirtualBox.app within your applications folder. You can locate this by openning your finder and selecting the applications tab.
+{{% notice bonus %}}
+
+Alternatively you can find it by hitting command + spacebar and typing in the program name "VirtualBox.app"
+{{% /notice %}}
+
+- summary
+- installation was successful and close
+<!-- TODO: Add in image for successful installation of VirtualBox.app on MacOS-->
+
 
 finally this is what you should see when everything has been installed properly and you open the program.
 
-{{% /expand %}}
+![virtualbox-app](pictures/virtualbox-app.png?classes=border&height=650px)
+
 
 ### Windows - Instructions
 
