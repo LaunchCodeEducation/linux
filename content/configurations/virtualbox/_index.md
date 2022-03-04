@@ -87,14 +87,14 @@ You may be thinking that you are missing an image for the destination select vie
 - installation
   - it will take some time as it's running scripts
 
-![running-package-scripts](pictures/running-package-scripts.png?classes=border)
+![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
 {{% notice note %}}
 In the picture below you will notice that there is a System Extension Updated. This may pop up at a different time during your installation process.  You can click the open security preferences button and we will continue with those instructions later in this walkthrough.
 {{% /notice %}}
 
 
-![system-extention-individual](pictures/system-extension-individual.png?classes=border)
+![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
 - When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
 
@@ -105,7 +105,7 @@ In the picture below you will notice that there is a System Extension Updated. T
 Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
 {{% /notice %}}
 
-![installation-successful-image](pictures/installation-successful-image.png?classes=border)
+![installation-successful-image](pictures/installation-successful-image.png?classes=border&height=650px)
 
 {{% notice warning %}}
 Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
