@@ -45,6 +45,8 @@ The direct link for the MacOS VirtualBox download can be found [here](https://do
 The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
 {{% /notice %}}
 
+<!-- TODO: Add in the expands for this section -->
+
 #### MacOS - Installing
 
 - double click the .dmg file
@@ -55,21 +57,18 @@ The link will start a download for the **.dmg** file needed to install VirtualBo
 
 ![dbl-click-pkg-file](pictures/dbl-click-pkg-file.png?classes=border&height=650px)
 
-- brings up an installer
+- brings up an installer, click the allow button
 
 ![installer-allow-picture](pictures/installer-allow-picture.png?classes=border&height=650px)
-- click allow
-- form
-- introduction
+- This will bring up the following tab
   - click continue
 
 ![form-continue-image](pictures/form-continue-image.png?classes=border&height=650px)
 
-- destination select
-<!-- TODO: Add in image for destination view of VirtualBox.app install on MacOS -->
 {{% notice note %}}
-On the destination select tab do not change anything, leave the selected options as they were defaulted
+You may be thinking that you are missing an image for the destination select view. The installer should skip past this automatically. If it does not leave the settings as they are defaulted
 {{% /notice %}}
+
 - installation type
 
 ![change-install-location](pictures/change-install-location.png?classes=border&height=650px)
@@ -81,9 +80,30 @@ On the destination select tab do not change anything, leave the selected options
 
 - installation
   - it will take some time as it's running scripts
-  - click the open security preferences button so that we can allow Oracle to make the necessary changes
 
-![system-extension-updated](pictures/system-extension-updated.png?classes=border&height=650px)
+![running-package-scripts](pictures/running-package-scripts.png?classes=border)
+
+{{% notice note %}}
+In the picture below you will notice that there is a System Extension Updated. This may pop up at a different time during your installation process.  You can click the open security preferences button and we will continue with those instructions later in this walkthrough.
+{{% /notice %}}
+
+
+![system-extention-individual](pictures/system-extension-individual.png?classes=border)
+
+- When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
+
+![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
+
+
+{{% notice note %}}
+Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
+{{% /notice %}}
+
+![installation-successful-image](pictures/installation-successful-image.png?classes=border)
+
+{{% notice warning %}}
+Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
+{{% /notice %}}
 
   - unlock security preferences by hitting the padlock icon in the bottom left corner
 
@@ -111,13 +131,13 @@ Alternatively you can find it by hitting command + spacebar and typing in the pr
 
 - summary
 - installation was successful and close
-<!-- TODO: Add in image for successful installation of VirtualBox.app on MacOS-->
 
 
 finally this is what you should see when everything has been installed properly and you open the program.
 
 ![virtualbox-app](pictures/virtualbox-app.png?classes=border&height=650px)
 
+<!-- TODO: End expand tag -->
 
 ### Windows - Instructions
 
