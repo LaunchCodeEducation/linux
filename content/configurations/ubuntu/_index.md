@@ -12,7 +12,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 In this class we will be using Ubuntu Desktop 20.04.3 LTS, you can find it's download [on their website](https://ubuntu.com/download/desktop).
 
-### Download Image
+## Download Image
 
 ![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png)
 
@@ -24,7 +24,7 @@ You will likely have to confirm the download, in the picture below the user will
 
 Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-desktop-*.iso`. An `.iso` file is a Disk Image which is the instruction for installing an Operating System. We will be using this file inside of Virtualbox to create an isolated Ubuntu 20.04.3 virtual operating system inside of our host computer.
 
-### VirtualBox Ubuntu Image Creation Instructions
+## VirtualBox Ubuntu Image Creation Instructions
 
 - Open VirtualBox
 
@@ -86,16 +86,16 @@ After completing the follow setup you will see the VirtualBox homepage that look
 
 Using the picture above as a reference take note of the configurations for this specific image:
 
-##### General
+#### General
 
 - Name: `student-VirtualBox`
 - Operatating System: `Ubuntu (64 bit)`
 
-##### System
+#### System
 
 - Base Memory: `2048 MB`
 
-##### Storage
+#### Storage
 
 - Controller :IDE:
   - IDE Secondary Device 0: `[Optical Drive] Empty`
@@ -108,7 +108,7 @@ Take note of the IDE Secondary Device 0, this is referencing the CD drive of thi
 In this course will not be discussing the audio, network, usb, shared folders, or description.
 {{% /notice %}}
 
-#### setting up this machine to use our ISO image
+### setting up this machine to use our ISO image
 
 ![new-image-home](pictures/new-image-home.png?classes=border)
 
@@ -145,7 +145,7 @@ This image is an example of the default file manager on a Pop!_OS which is an Ub
 
 
 
-#### starting the machine
+### starting the machine
 
 ![virtual-box-homepage](pictures/new-image-home.png?classes=border)
 
@@ -169,11 +169,11 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 {{% /notice %}}
 
 
-### Granting priveleges
+## Granting Privileges
 
 {{% expand "Click here if you are working on MacOS for further instructions" %}}
 
-#### granting your Macbook access to Oracle
+### Granting your Macbook access to Oracle
 
 - open settings
 - click security & privacy
@@ -201,7 +201,7 @@ If you see this error you misconfigured your ISO image. Please repeat the steps 
 Content coming soon!
 {{% /expand %}}
 
-#### Installing Ubuntu (First Time Setup)
+### Installing Ubuntu (First Time Setup)
 
 {{% notice warning %}}
 For Macbook users, if you haven't granted oracle permissions in your security and privacy your machine will not start with a kernel error. If you see this error checkout the section on Granting your Macbook access to Oracle above.
