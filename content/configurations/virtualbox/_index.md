@@ -45,9 +45,11 @@ The direct link for the MacOS VirtualBox download can be found [here](https://do
 The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
 {{% /notice %}}
 
-<!-- TODO: Add in the expands for this section -->
+
 
 #### MacOS - Installing
+
+{{% expand "Click here to expand MacOS instructions" %}}
 
 - double click the .dmg file
 
@@ -137,7 +139,7 @@ finally this is what you should see when everything has been installed properly 
 
 ![virtualbox-app](pictures/virtualbox-app.png?classes=border&height=650px)
 
-<!-- TODO: End expand tag -->
+{{% /expand %}}
 
 ### Windows - Instructions
 
