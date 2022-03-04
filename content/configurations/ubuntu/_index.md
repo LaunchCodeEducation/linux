@@ -30,11 +30,21 @@ Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-d
 
 ## VirtualBox Ubuntu Image Creation Instructions
 
-- Open VirtualBox
+<!-- TODO: Starting VirtualBox Ubuntu Image Creation Instructions make this a sub article. This way all the three level headers can become two level headers. -->
 
-![VirtualBox Homescreen](pictures/virtualbox-home.png?classes=border)
+Before we can create the Ubuntu Image and machine we need to open VirtualBox.
 
-- Within VirtualBox click the new  button
+### Open VirtualBox
+
+Open VirtualBox the same way you would open any software. Once it is open you should be greeted by the VirtualBox Manager Window:
+
+![VirtualBox Manager Window](pictures/virtualbox-home.png?classes=border)
+
+### Create a New Virtual Machine
+
+In the VirtualBox Manager Window click the `New` button. Its icon is the blue spiky icon.
+
+After clicking the `New` button you will see the wizard that will guide you through creating a new Virtual Machine:
 
 ![Click new Button](pictures/click-new-button.png?classes=border)
 
@@ -44,43 +54,85 @@ If you have never used VirtualBox before, which is likely, you will be prompted 
 Make sure to grant VirtualBox permission to these locations!
 {{% /notice %}}
 <!-- TODO: get the file-access-button.png photo -->
-- give it a name (student-VirtualBox) (it should automatically change type to linux)
+
+We need to configure all of the components on the first page of this wizard. We will be configuring Name, Type, and OS version.
+
+#### Virtual Machine Name
+
+In the Name textbox enter `student-VirtualBox`:
 
 ![image-name](pictures/image-name.png?classes=border)
 
+#### Virtual Machine Type
+
+In the Type dropdown select `Linux` from the dropdown box:
+
 ![image-type](pictures/image-type.png?classes=border)
+
+#### Virtual Machine OS Version
+
+In the Version dropdown select `Ubuntu (64 bit)`:
 
 ![image-version](pictures/image-version.png?classes=border)
 
-- machine folder leave as default (`/Users/username/VirtualBox` Vms
+After entering all three of the preceding components click the `Next` button.
+
 {{% notice note %}}
-Your default location is dependent on your host operating system. If it is Mac it will be /Users/your-name, if you are on Windows it will be `C:\Users\username>`
+We will not be **changing the default value** on the `Machine Folder` component. Your default location is dependent on your host opearating system. For a MacOS it will be similar to `/Users/user-name`. For a Windows OS it will be similar to `C:\Users\user-name`.
 {{% /notice %}}
-- click next
-- allocating the memory size
-  - minimum: 2048
-  - ideal: 3072 or greater
+
+
+#### Virtual Machine Memory Size
+
+We need to configure the amount of RAM this Virtual Machine has access to. Your host computer has a certain amount of RAM, we cannot give all of the RAM to the Virtual Machine because your host computer still needs access to some of the memory.
+
+For this step we will be entering `2048` (2 GB) into the only textbox on this window:
 
 ![image-memory](pictures/image-memory.png?classes=border)
 
-- click next
-- hard disk
-  - create a virtual disc (click the blue create button)
+{{% notice note %}}
+You could also use the slider bar to configure the amount of RAM to provide to the Virtual Machine. We don't recommend this, because it's difficult to be precise. Make sure to provide at least 2048 MB of RAM.
+{{% /notice %}}
+
+After entering `2048` into the textbox click the `Next` button.
+
+#### Virtual Machine Hard Disk
+
+Similar to the RAM of our Virtual Machine we need to provide a certain amount of hard disk space from the Host operating system. However, this hard disk space needs to be formatting in a way that allows for an operating system to function.
+
+Luckily, VirtualBox will perform this formatting for us after we finish this wizard.
+
+##### Create a Virtual Hard Disk
+
+We will be creating a new VirtualBox managed virtual hard disk.
+
+Leave the first setting on the default value `Create a virtual hard disk now`:
 
 ![image-hard-disk](pictures/image-hard-disk.png?classes=border)
 
-  - leave it on the default VDI
+Click the `Create` button.
+
+##### Select Hard Disk Type
+
+We will be using the VirtualBox preferred `VDI (VirtualBox Disk Image)` which should be the default value:
 
 ![image-hard-disk-type](pictures/image-hard-disk-type.png?classes=border)
 
-  - storage on physical hard disk: select Fixed size
+After confirming the `VDI` option click `Next`.
+
+##### Fixed or Dynamic Hard Disk
+
+VirtualBox allows you to dynamically add more space to your Hard Disk. However, this slows down the entire Virtual Machine because of the flexible nature of the hard disk size.
+
+For this reason we will be using the `Fixed size` for our virtual hard disk:
 
 ![image-hard-disk-fixed](pictures/image-hard-disk-fixed.png?classes=border)
 
-  - file location and size
-    - location: default
-    - size: at least 12GB
-    - click create
+{{% notice note %}}
+If you are creating your own personal Virtual Machine after this class, you may want to use a dynamically sized hard disk. This will offer you more flexibility with regards to your hard disk usage.
+{{% /notice %}}
+
+After selecting teh `Fixed size` option click `Next`.
 
 ![image-hard-disk-size](pictures/image-disk-size.png?classes=border)
 
