@@ -1,20 +1,25 @@
 {
-	"Hugo Picture": {
+	"LC Learn Picture": {
 		"scope": "markdown,md",
 		"prefix": "//picture",
 		"body": ["![${1:alt-text}](pictures/${2:path}.png?classes=border)$0"]
 	},
-	"Hugo Notice": {
+	"LC Learn Resize Picture": {
+		"scope": "markdown,md",
+		"prefix": "//resize-picture",
+		"body": ["![${1:alt-text}](pictures/${2:path}.png?classes=border&height=650px)$0"]
+	},
+	"LC Learn Notice": {
 		"scope": "markdown,md",
 		"prefix": "//notice",
 		"body": ["{{% notice ${1:note} %}}", "$2", "{{% /notice %}}$0"]
 	},
-	"Hugo Normal Expand": {
+	"LC Learn Normal Expand": {
 		"scope": "markdown,md",
 		"prefix": "//expand",
 		"body": ["{{% expand \"${1:title}\" %}}", "$2", "{{% /expand %}}"]
 	},
-	"Hugo Answer Expand": {
+	"LC Learn Answer Expand": {
 		"scope": "markdown,md",
 		"prefix": "//answer",
 		"body": ["{{% expand \"${1:CLICK FOR ANSWER}\" %}}", "$2", "{{% /expand %}}"]
