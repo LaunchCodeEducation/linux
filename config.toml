@@ -5,6 +5,7 @@ theme = "lc-learn"
 
 [params]
   themeVariant = "blue"
+  editURL = "https://github.com/LaunchCodeTechnicalTraining/linux/edit/master/content/"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
