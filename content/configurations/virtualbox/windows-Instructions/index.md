@@ -20,9 +20,9 @@ The link will start a download for the **.exe** file needed to install VirtualBo
 
 ## Windows - Installation
 
-### Run the executable file
+### Run the .exe file
 
-An executable file is simply a file with a predetermined set of instructions that our operating system will execute once we click it.
+An executable file is a file with a predetermined set of instructions that our operating system will execute once we click it.
 
 Double click the `.exe` file that we downloaded from the first step in this article. If you are having trouble locating the file it is more than likely located in your downloads folder. 
 
