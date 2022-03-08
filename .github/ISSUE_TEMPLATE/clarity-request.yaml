@@ -6,13 +6,13 @@ body:
   attributes:
     label: File
     placeholder: "Examples: contributing/edit-page/index.md"
-    validations:
+  validations:
       required: true
 - type: textarea
   attributes:
     label: Confusing text
     placeholder: "Examples: Under the Edit Page Header the first paragraph reads: On the page where you have seen a typo, click the Edit this Page button found in the breadcrumb menu in the top right hand corner of your screen. It looks like the following picture:"
-    validations:
+  validations:
       required: true
 - type: textarea
   attributes:
