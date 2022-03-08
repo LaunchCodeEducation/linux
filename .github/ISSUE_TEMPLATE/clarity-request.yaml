@@ -1,0 +1,24 @@
+---
+name: Clarity Request
+description: Provide information around the nature of confusing text in the project.
+body:
+- type: textarea
+  attributes:
+    label: File
+    placeholder: "Examples: contributing/edit-page/index.md"
+    validations:
+      required: true
+- type: textarea
+  attributes:
+    label: Confusing text
+    placeholder: "Examples: Under the Edit Page Header the first paragraph reads: On the page where you have seen a typo, click the Edit this Page button found in the breadcrumb menu in the top right hand corner of your screen. It looks like the following picture:"
+    validations:
+      required: true
+- type: textarea
+  attributes:
+    label: Suggestions
+    placeholder: "Examples: On the page where you have seen a typo, click the Edit this Page button found in the breadcrumb menu in the top right hand corner of your screen. A breadcrumb is a visual navigation tool to help users understand their place within the project. It looks like the following picture:"
+- type: textarea
+  attributes:
+    label: Additional information
+    placeholder: "Examples: The curriculum never explained what a breadcrumb is, but uses the terminology like we should know. The definition needs to be included, or the term needs to be removed."
