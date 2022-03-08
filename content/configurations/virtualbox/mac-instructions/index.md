@@ -69,7 +69,7 @@ The installer will now run the scripts included within the `VirtualBox.pkg` file
 ![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
 {{% notice note %}}
-In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process.  You can click the open security preferences button and we will continue with those instructions later in this walkthrough.
+In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process.  You can click the `Open Security Preferences Button` and we will continue with those instructions later in this walkthrough.
 {{% /notice %}}
 
 
@@ -86,23 +86,25 @@ When you click the Open Security Prefences button it will bring up the following
 Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
 {{% /notice %}}
 
+After the installation is successful you can click the `close` button.
+
 ![installation-successful-image](pictures/installation-successful-image.png?classes=border&height=650px)
 
 {{% notice warning %}}
 Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
 {{% /notice %}}
 
-To make the required changes to our Security & Privacy we will need to unlock the security preferences by hitting the padlock icon in the bottom left corner. This will ask you to enter your password. Please provide your credentials.
+To make the required changes to our Security & Privacy we will need to unlock the security preferences by clicking the `padlock icon` in the bottom left corner. This will ask you to enter your password. Please provide your credentials.
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
 ![system-preferences-password](pictures/system-preferences-password.png?classes=border&height=650px)
 
-Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your settings window.
+Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your settings window. Click the `Allow` button.
 
 ![allow-oracle-software](pictures/allow-oracle-software.png?classes=border&height=650px)
 
-After clicking the allow button you will be prompted to restart your machine. If the VirtualBox installation has been completed click the `Restart` button.
+After clicking the allow button you will be prompted to restart your machine. If the VirtualBox installation has been completed you can click the `Restart` button.
 
 {{% notice warning %}}
 Do not restart your machine until the installation has been completed
