@@ -155,22 +155,55 @@ The link will start a download for the **.exe** file needed to install VirtualBo
 
 #### Windows - Installation
 
-- double click the .exe file
+- double click the .exe file. If you are having trouble locating the file it is more than likely localted in your downloads folder.
+
+![virtualbox-windows-install-1](pictures/virtualbox-windows-install-1.png?classes=border&height=650px)
+
 - brings up an installer
-  - click allow
-  - form
-    - introduction
-      - click continue
-    - destination select
-      - don't need to do anything here (leave on defaults)
-    - installation type
-      - click install
-      - might ask for password, give it your credentials and click ok
-    - installation
-      - it will take some time as it's running scripts
-      - open your system security preferences
-    - summary
-      - installation was successful and close
+- click next
+
+![virtualbox-wizard-2](pictures/virtualbox-wizard-2.png?classes=border)
+
+- Custom Setup Page
+- Leave the default settings enabled on this page
+<!-- TODO: Decide whether or not we want to leave all options enabled or have the learner de-select all items. There is also the third option of letting them choose their own settings here -->
+- Click next
+![virtualbox-wizard-location-3](pictures/virtualbox-wizard-location-3.png?classes=border&height=650px)
+
+- Network Interfaces
+
+![virtualbox-wizard-network-interfaces-4](pictures/virtualbox-wizard-network-interfaces-4.png?classes=border&height=650px)
+
+{{% notice warning %}}
+Once you click yes to install your network connection will be lost temporarily
+{{% /notice %}}
+
+- Click Yes
+  - This will bring up a Ready to install notification
+
+![virtualbox-wizard-ready-install](pictures/virtualbox-wizard-ready-install-5.png?classes=border&height=650px)
+
+- Click Install
+  - This will bring up a User Account Control windows. This will ask you if you want to allow this app (VirtualBox) to make changes to your device. We need to select yes here or the install will fail.
+<!-- TODO: Add picture of User Account Control Windows either from phone img or Virtualbox Windows Documentation -->
+- Click Yes
+- Your setup will continue. 
+  - You will then be asked if you would like to install the device software
+  - Leave the "Always trust software from "Oracle Corporation" selected
+- Click Install
+
+![virtualbox-security-notification-8](pictures/virtualbox-security-notification-8.png?classes=border&height=650px)
+
+- Installation Complete
+- VirtualBox has finished the install process
+
+![virtualbox-wizard-complete-9](pictures/virtualbox-wizard-complete-9.png?classes=border&height=650px)
+
+{{% notice note %}}
+You may receive a notification that a new version of VirtualBox is available. You can just hit ok to close this message.
+{{% /notice %}}
+
+![virtualbox-new-version-10](pictures/virtualbox-new-version-10.png?classes=border&height=650px)
 
 finally this is what you should see when everything has been installed properly and you open the program.
 
