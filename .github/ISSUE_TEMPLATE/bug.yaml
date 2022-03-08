@@ -1,0 +1,20 @@
+---
+name: Bug
+description: Provide information around the nature of the encountered bug.
+body:
+- type: textarea
+  attributes:
+    label: File
+    placeholder: "Examples: contributing/edit-page/index.md"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Nature of Bug
+    placeholder: "Examples: link with text 'Click here to learn more' is broken; button with text 'Click for Answer' is broken; code block contains code that doesn't run"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: More information
+    placeholder: "Example: please provide any additional relevant information including the expected behavior the bug may be inhibiting."
