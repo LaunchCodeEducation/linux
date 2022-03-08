@@ -9,3 +9,8 @@ theme = "lc-learn"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+  name = "Contributing to this Project"
+  url = "/contributing"
+  weight = 99998
