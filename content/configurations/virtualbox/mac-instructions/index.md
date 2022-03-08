@@ -2,7 +2,7 @@
 title: "MacOS Installation"
 date: 2022-02-17T14:54:25-06:00
 draft: false
-weight: 1
+weight: 10
 reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
@@ -72,7 +72,6 @@ The installer will now run the scripts included within the `VirtualBox.pkg` file
 In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process.  You can click the `Open Security Preferences Button` and we will continue with those instructions later in this walkthrough.
 {{% /notice %}}
 
-
 ![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
 ### Security & Privacy
@@ -80,7 +79,6 @@ In the picture below you will notice that there has been a System Extension Upda
 When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
-
 
 {{% notice note %}}
 Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
