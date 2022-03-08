@@ -23,6 +23,7 @@ The link will start a download for the **.dmg** file needed to install VirtualBo
 {{% /notice %}}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## MacOS Installation
 
 ### Run the .dmg file
@@ -50,25 +51,44 @@ Once the installer has started we will be prompted to allow the `VirtualBox.pkg`
 After clicking the allow button you will find a brief overview of the installation process and what VirtualBox is capable of. After reading through the description click the `continue` button.
 =======
 #### MacOS - Installing
+=======
+## MacOS Installation
+>>>>>>> configurations/virtualbox
 
-- double click the .dmg file
+### Run the .dmg file
+
+A `.dmg` file is an Apple Disk Image file. This is often the type of file used to store software installers.
+
+Double click the `.dmg` file that we downloaded from the first step in this article. If you are having trouble locating the file it is more than likely located in your downloads folder.
 
 ![click-dmg-file](pictures/click-dmg-file.png?classes=border&height=650px)
 
-- double lick the PKG file
+### Start the Installation
+
+Once you open the `.dmg` file you will have a new window pop up on your screen. We want to double click the `VirtualBox.pkg` file. This will open up the VirtualBox installer window.
 
 ![dbl-click-pkg-file](pictures/dbl-click-pkg-file.png?classes=border&height=650px)
 
-- brings up an installer, click the allow button
+## VirtualBox Installer
+
+Once the installer has started we will be prompted to allow the `VirtualBox.pkg` file to run. Click the `Allow` button.
 
 ![installer-allow-picture](pictures/installer-allow-picture.png?classes=border&height=650px)
+<<<<<<< HEAD
 - This will bring up the following tab
   - click continue
+>>>>>>> configurations/virtualbox
+=======
+
+### Introduction
+
+After clicking the allow button you will find a brief overview of the installation process and what VirtualBox is capable of. After reading through the description click the `continue` button.
 >>>>>>> configurations/virtualbox
 
 ![form-continue-image](pictures/form-continue-image.png?classes=border&height=650px)
 
 {{% notice note %}}
+<<<<<<< HEAD
 <<<<<<< HEAD
 You may be thinking that you are missing an image for the destination select view. The installer should skip past this automatically. If it does not leave the settings as they are defaulted.
 {{% /notice %}}
@@ -111,30 +131,39 @@ After the installation is successful you can click the `close` button.
 
 =======
 You may be thinking that you are missing an image for the destination select view. The installer should skip past this automatically. If it does not leave the settings as they are defaulted
+=======
+You may be thinking that you are missing an image for the destination select view. The installer should skip past this automatically. If it does not leave the settings as they are defaulted.
+>>>>>>> configurations/virtualbox
 {{% /notice %}}
 
-- installation type
+### Installation Type
+
+We will be using the standard installation of VirtualBox for this walkthrough. This is the default type of installation. Click the `Install` button.
 
 ![change-install-location](pictures/change-install-location.png?classes=border&height=650px)
 
-  - click install
-  - might ask for password, click on the use password button and provide your credentials
+### Installer Credentials
+
+You might receive a notification that your installer is trying to install new software. Click on the `Use Password...` button and provide your credentials to continue our installation process.
 
 ![installer-password](pictures/installer-password.png?classes=border&height=650px)
 
-- installation
-  - it will take some time as it's running scripts
+### Installation
+
+The installer will now run the scripts included within the `VirtualBox.pkg` file. This may take a little bit of time.
 
 ![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
 {{% notice note %}}
-In the picture below you will notice that there is a System Extension Updated. This may pop up at a different time during your installation process.  You can click the open security preferences button and we will continue with those instructions later in this walkthrough.
+In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process.  You can click the open security preferences button and we will continue with those instructions later in this walkthrough.
 {{% /notice %}}
 
 
 ![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
-- When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
+### Security & Privacy
+
+When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
@@ -150,6 +179,7 @@ Before moving forward with the security preferences section of this installation
 Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
 {{% /notice %}}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 To make the required changes to our Security & Privacy we will need to unlock the security preferences by clicking the `padlock icon` in the bottom left corner. This will ask you to enter your password. Please provide your credentials.
 
@@ -180,34 +210,39 @@ Alternatively you can find the VirtualBox.app by hitting command + spacebar and 
 When you open your VirtualBox application this is what you should see when you open the program.
 =======
   - unlock security preferences by hitting the padlock icon in the bottom left corner
+=======
+To make the required changes to our Security & Privacy we will need to unlock the security preferences by hitting the padlock icon in the bottom left corner. This will ask you to enter your password. Please provide your credentials.
+>>>>>>> configurations/virtualbox
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
-- Enter your password
-
 ![system-preferences-password](pictures/system-preferences-password.png?classes=border&height=650px)
 
-  - click the allow button next to "System software from developer "Oracle America, Inc" has been updated
+Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your settings window.
 
 ![allow-oracle-software](pictures/allow-oracle-software.png?classes=border&height=650px)
 
-  - Hit the restart button and your machine will restart
+After clicking the allow button you will be prompted to restart your machine. If the VirtualBox installation has been completed click the `Restart` button.
+
 {{% notice warning %}}
 Do not restart your machine until the installation has been completed
-
 {{% /notice %}}
-![restart-required](pictures/restart-required.png?classes=border&height=650px)
-- After your machine restarts you should find your VirtualBox.app within your applications folder. You can locate this by openning your finder and selecting the applications tab.
-{{% notice bonus %}}
 
+![restart-required](pictures/restart-required.png?classes=border&height=650px)
+
+## Installation Complete
+
+After your machine restarts you should find your VirtualBox.app within your applications folder. You can locate this by opening your finder and selecting the applications tab.
+
+{{% notice bonus %}}
 Alternatively you can find it by hitting command + spacebar and typing in the program name "VirtualBox.app"
 {{% /notice %}}
 
-- summary
-- installation was successful and close
-
-
+<<<<<<< HEAD
 finally this is what you should see when everything has been installed properly and you open the program.
+>>>>>>> configurations/virtualbox
+=======
+When you open your VirtualBox application this is what you should see when you open the program.
 >>>>>>> configurations/virtualbox
 
 ![virtualbox-app](pictures/virtualbox-app.png?classes=border&height=650px)
