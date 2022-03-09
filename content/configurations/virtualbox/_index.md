@@ -1,5 +1,5 @@
 ---
-title: "Configuration: VirtualBox"
+title: "VirtualBox"
 draft: false
 weight: 1
 original_author: "Paul Matthews" 
