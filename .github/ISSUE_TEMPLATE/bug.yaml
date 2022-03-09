@@ -40,3 +40,10 @@ body:
   attributes:
     value: |
       Thank you for taking the time to help us in improving this course. You rock!
+- type: markdown
+  attributes:
+    value: "### Disclaimer"
+- type: markdown
+  attributes:
+    value: |
+      We value all the input received from our students, course staff, and allies of LaunchCode. However, all issues will be considered by LaunchCode staff before issue resolution. LaunchCode reserves the final say on bug fixes, clarity improvements, and new features. We offer no guarantee that any issues will result in changes to the curriculum.
