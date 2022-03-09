@@ -19,8 +19,8 @@ body:
       Please provide information around the nature of the bug you encountered by filling out the remainder of this form. The more information you provide us, the more likely we will be able to resolve the issue.
 - type: textarea
   attributes:
-    label: File
-    placeholder: "Examples: contributing/edit-page/index.md"
+    label: "URL: Path to Bug"
+    placeholder: "Examples: contributing/edit-page/"
   validations:
     required: true
 - type: textarea
