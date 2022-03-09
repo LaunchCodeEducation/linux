@@ -2,6 +2,13 @@
 name: Bug
 description: Provide information around the nature of the encountered bug.
 body:
+- type: markdown
+  attributes:
+    value: "## Bug Form"
+- type: markdown
+  attributes:
+    value: |
+      Please provide information around the nature of the bug you encountered by filling out the remainder of this form.
 - type: textarea
   attributes:
     label: File
@@ -18,3 +25,10 @@ body:
   attributes:
     label: More information
     placeholder: "Example: please provide any additional relevant information including the expected behavior the bug may be inhibiting."
+- type: markdown
+  attributes:
+    value: "### Thank You"
+- type: markdown
+  attributes:
+    value: |
+      Thank you for taking the time to help us in improving this course. You rock!
