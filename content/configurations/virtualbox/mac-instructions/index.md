@@ -68,19 +68,19 @@ The installer will now run the scripts included within the `VirtualBox.pkg` file
 
 ![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
-{{% notice note %}}
-In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process.  You can click the `Open Security Preferences Button` and we will continue with those instructions later in this walkthrough.
+{{% notice warning %}}
+In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process. You can click the `Open Security Preferences Button` and we will continue with those instructions later in this walkthrough.
 {{% /notice %}}
 
 ![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
 ### Security & Privacy
 
-When you click the Open Security Prefences button it will bring up the following window. We are going to set this window aside until our installation is complete.
+When you click the Open Security Prefences button it will bring up the following window. As mentioned in the warning above we are going to set this window aside until our installation is complete.
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
-{{% notice note %}}
+{{% notice warning %}}
 Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
 {{% /notice %}}
 
@@ -98,7 +98,7 @@ To make the required changes to our Security & Privacy we will need to unlock th
 
 ![system-preferences-password](pictures/system-preferences-password.png?classes=border&height=650px)
 
-Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your settings window. Click the `Allow` button.
+Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your Security & Privacy window. Click the `Allow` button.
 
 ![allow-oracle-software](pictures/allow-oracle-software.png?classes=border&height=650px)
 
@@ -115,7 +115,7 @@ Do not restart your machine until the installation has been completed
 After your machine restarts you should find your VirtualBox.app within your applications folder. You can locate this by opening your finder and selecting the applications tab.
 
 {{% notice bonus %}}
-Alternatively you can find it by hitting command + spacebar and typing in the program name "VirtualBox.app"
+Alternatively you can find the VirtualBox.app by hitting command + spacebar and typing in the program name "VirtualBox.app"
 {{% /notice %}}
 
 When you open your VirtualBox application this is what you should see when you open the program.

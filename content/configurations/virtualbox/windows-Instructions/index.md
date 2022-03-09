@@ -38,7 +38,7 @@ Once you have the wizard open hit the `Next` button.
 
 #### File Location and Structure
 
-Next you will want to double check that your settings look similar to the image below. These are the default settings for the installation wizard and we will not be changing them. Click the `Next` button.
+Next you will want to double check that your settings look similar to the image below. These are the default settings for the setup wizard and we will not be changing them. Click the `Next` button.
 
 ![virtualbox-wizard-location-3](pictures/virtualbox-wizard-location-3.png?classes=border)
 
@@ -46,12 +46,12 @@ Next you will want to double check that your settings look similar to the image 
 
 The next portion of the wizard will provide options for your installation including the following
 
-- `Choose start menu entries`
+- `Create start menu entries`
 - `Create a shortcut on the desktop`
 - `Create a shortcut in the Quick Launch Bar`
 - `Register file associations`
 
-For this particular installation walkthrough we will be leaving all of the above options selected and clicking the `Next` button.
+For this setup walkthrough we will be leaving all of the above options selected and clicking the `Next` button.
 
 ![virtualbox-wizard-features-3](pictures/virtualbox-wizard-features-3.png?classes=border)
 <!-- TODO: Decide whether or not we want to leave all options enabled or have the learner de-select all items. There is also the third option of letting them choose their own settings here -->
@@ -72,13 +72,15 @@ Once you click yes to install the VirtualBox networking feature your network con
 
 #### Ready to Install
 
-We have completed the setup portion of this installation process. The next step is to begin the actual installation. Once you have the Ready to Install window open click the `Install` button.
+The setup portion of this installation process has been completed. The next step is to begin the actual installation. Once you have the "Ready to Install" window open click the `Install` button.
 
 ![virtualbox-wizard-ready-install](pictures/virtualbox-wizard-ready-install-5.png?classes=border)
 
 #### User Account Control
 
+{{% notice bonus %}}
 After clicking the `Install` button you should receive a windows notification bringing up a separate User Account Control window. This will ask you to allow VirtualBox to make changes to your device. We need to select `yes` or the install will fail.
+{{% /notice %}}
 <!-- TODO: Add picture of User Account Control Windows either from phone img or Virtualbox Windows Documentation -->
 
 #### Windows Security Check
