@@ -4,11 +4,16 @@ date: 2021-11-09T15:13:39-06:00
 draft: false
 # type: "slides"
 weight: 1
-original_author: "Paul Matthews" 
+originalAuthor: "Paul Matthews"
+originalAuthorGitHub: "pdmxdd"
 reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+reviewerGitHub: ""
+lastEditor: "" # update each time the file is edited
+lastEditorGitHub: "" 
+lastMod: 2022-03-09
 ---
+
+<!--  TODO: remove this comment
 
 - Package: software
   - `cat /etc/apt/sources.list`
@@ -39,6 +44,8 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 - `apt show [package]`
   - `apt show bash`
   - `apt show firefox`
+
+-->
 
 {{< slides >}}
 
