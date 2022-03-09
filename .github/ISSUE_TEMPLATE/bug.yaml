@@ -4,11 +4,11 @@ description: Provide information around the nature of the encountered bug.
 body:
 - type: markdown
   attributes:
-    value: "## Bug Form"
+    value: "# Bug Form"
 - type: markdown
   attributes:
     value: |
-      Please provide information around the nature of the bug you encountered by filling out the remainder of this form.
+      Please provide information around the nature of the bug you encountered by filling out the remainder of this form. The more information you provide us, the more likely we will be able to resolve the issue.
 - type: textarea
   attributes:
     label: File
@@ -27,7 +27,7 @@ body:
     placeholder: "Example: please provide any additional relevant information including the expected behavior the bug may be inhibiting."
 - type: markdown
   attributes:
-    value: "### Thank You"
+    value: "# Thank You"
 - type: markdown
   attributes:
     value: |
