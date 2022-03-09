@@ -8,15 +8,15 @@ body:
 - type: markdown
   attributes:
     value: |
-      Please provide information around the nature of the bug you encountered by filling out the remainder of this form. The more information you provide us, the more likely we will be able to resolve the issue.
-- type: markdown
-  attributes:
-    value: |
       A **bug** is an error in the curriculum. In other words some aspect of the web page did not behave the way it should. Examples include, but not limited to:
       - broken link
       - missing image
       - broken button
       - provided code that doesn't execute on your machine
+- type: markdown
+  attributes:
+    value: |
+      Please provide information around the nature of the bug you encountered by filling out the remainder of this form. The more information you provide us, the more likely we will be able to resolve the issue.
 - type: textarea
   attributes:
     label: File
