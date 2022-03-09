@@ -11,5 +11,4 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Configurations
 
-- [VirtualBox]({{< relref "./virtualbox" >}})
-- [Ubuntu]({{< relref "./ubuntu" >}})
+{{% children %}}
