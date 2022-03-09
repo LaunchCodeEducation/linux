@@ -3,10 +3,13 @@ title: "Walkthrough"
 date: 2021-11-09T15:13:39-06:00
 draft: false
 weight: 2
-original_author: "Paul Matthews" 
+originalAuthor: "Paul Matthews" 
+originalAuthorGitHub: "pdmxdd"
 reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+reviewerGitHub: ""
+lastEditor: "" # update each time the file is edited
+lastEditorGitHub: "" 
+lastMod: 2022-03-09 # just the date is enough (don't worry about the time portion)
 ---
 
 ## Walkthrough
@@ -14,19 +17,3 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 We will be using the `apt` command line interface to work with our packages and package repositories.
 
 {{% children %}}
-
-- what is a package manager
-- `apt`
-- `apt-get`
-- what is a package repository?
-- how can I see a list of all package repositories?
-- `apt search [package name]`
-- `apt install [package name]`
-- `apt remove [package name]`
-- `apt update`
-- `apt upgrade`
-- why use a package manager instead of downloading and installing software from the internet?
-
-
-CRUD -- Package Repositories
-CRUD -- Individual Packages
