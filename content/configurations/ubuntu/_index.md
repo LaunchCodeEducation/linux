@@ -164,53 +164,56 @@ Take note of the IDE Secondary Device 0, this is referencing the CD drive of thi
 In this course will not be discussing the audio, network, usb, shared folders, or description.
 {{% /notice %}}
 
-### setting up this machine to use our ISO image
+### Setting up the Virtual Machine to use our ISO Image
+
+With the VirtualBox we just created selected, click the `settings wheel` icon.
 
 ![new-image-home](pictures/new-image-home.png?classes=border)
 
-- settings wheel (while the name is selected)
+### Storage
+
+Click on the `Storage Option` located on the left side of the menu
 
 ![settings-view](pictures/settings-view.png?classes=border)
 
-  - click the storage option
+After clicking the storage option it will bring up the following view:
 
 ![click-storage-tab](pictures/click-storage-tab.png?classes=border)
 
-  - under controller:IDE it says Empty (that's because we haven't told the machine which ISO to use for this machine)
+Under Controller:IDE it says Empty. This is because we haven't told the machine which ISO to use for this Virtual Machine. Click on the `Empty` section below the Controller: IDE.
 
 ![empty-section-undercontrolleride-image](pictures/empty-section-undercontrolleride-image.png?classes=border)
 
-    - on the right side under attributes you should see optional drive drop down box, to the right of that is a disk icon button
-    - click that button
+On the right side under attributes you should now see an Optical Drive drop down, to the right of that is a disk icon button.
+Click the `blue disc icon button` and it should bring up a couple of options:
+  - `Choose/Create a Virtual Optical Disk...`
+  - `Choose a disk file...`
+
+Click on the `Choose a disk file...` option.
 
 ![CE-disk-icon-dropdown-image](pictures/CE-disk-icon-dropdown-image.png?classes=border)
 
-    - choose a disk file ...
-      - file explorer (ISO)
-      - most likely inside downloads (ubuntu-20.04.3-desktop-amd64.iso)
-    - after you select the ISO file click the ok button
+### Selecting the Ubuntu ISO
 
 Upon clicking `Choose a disk file` your host OS will open the default file manager. Using that file manager you need to select the `ubuntu-20.04.3-desktop-amd64.iso` file you downloaded earlier. 
 
 {{% notice note %}}
-The location of the `ubuntu-20.04.3-desktop-amd64.iso` will likely be in a different location than the example image posted below. 
+The location of the `ubuntu-20.04.3-desktop-amd64.iso` will likely be in a different location than the example image posted below. The file is likely located in your downloads folder.
 ![personal-file-manager](pictures/personal-file-manager.png?classes=border)
 This image is an example of the default file manager on a Pop!_OS which is an Ubuntu derived distribution.
 {{% /notice %}}
 
+### Starting the Virtual Machine
 
-
-
-### starting the machine
+Within the VirtualBox Manager, click on the newly created VirtualBox so that it is highlighted and then click the green `Start` button.
 
 ![virtual-box-homepage](pictures/new-image-home.png?classes=border)
 
-- click start button
 {{% notice bonus %}}
-You may notice the options within the dropdown next to the start arrow, the options are normal start, headless, detachable start. **During this course we will always be using the normal start. Without doing so you will not have access to the GUI.** To learn more about headless starts which are common, refer to the [Headless Software Wikipedia Article](https://en.wikipedia.org/wiki/Headless_software).
+You may notice the options within the dropdown next to the start arrow, the options are normal start, headless, and detachable start. **During this course we will always be using the normal start. Without doing so you will not have access to the GUI.** To learn more about headless starts which are common, refer to the [Headless Software Wikipedia Article](https://en.wikipedia.org/wiki/Headless_software).
 {{% /notice %}}
 
-The first time you start your machine it will load the `.iso` file in the virtual optical drive, which will trigger a new installation of Ubuntu. As it is setting up this installation you will see quite a few different screens one of which will look similar to the following image:
+The first time you start your machine it will load the `.iso` file in the virtual optical drive, which will trigger a new installation of Ubuntu. As it is setting up this installation you will see quite a few different screens, one of which will look similar to the following image:
 
 ![ubuntu-loading](pictures/ubuntu-loading.png?classes=border)
 
@@ -223,73 +226,46 @@ If the image is not set properly you will see the following errors (kernel drive
 ![error-output](pictures/error-output.png?classes=border)
 If you see this error you misconfigured your ISO image. Please repeat the steps from the above section.
 {{% /notice %}}
-
-
-## Granting Privileges
-
-{{% expand "Click here if you are working on MacOS for further instructions" %}}
-
-### Granting your Macbook access to Oracle
-
-- open settings
-- click security & privacy
-- unlock by clicking padlock and providing your password
-- click allow for (System software from developer "Oracle America, Inc." was blocked from loading
-- then restart your machine
-
-- keystroke permission on Mac
-- open system preferences
-- unlock if necessary
-
-![padlock-mac-security-picture](pictures/padlock-mac-security-picture.png?classes=border)
-
-- select the checkbox for virtualbox
-
-![virtualbox-checkbox](pictures/virtualbox-checkbox.png?classes=border)
-
-- exit system preferences
-- quit and reopen virtualbox
-
-{{% /expand %}}
-
-{{% expand "Click here if you are working on Windows for further instructions" %}}
-<!-- TODO: Double check security permissions for windows OS -->
-Content coming soon!
-{{% /expand %}}
+<!-- TODO: Add Image of the error-output if the image is not setup properly (kernel drive not installed) -->
 
 ### Installing Ubuntu (First Time Setup)
 
-{{% notice warning %}}
+{{% notice note %}}
 For Macbook users, if you haven't granted oracle permissions in your security and privacy your machine will not start with a kernel error. If you see this error checkout the section on Granting your Macbook access to Oracle above.
 {{% /notice %}}
 
 
-- select your language (default is english)
+Select your language (default is english)
 
-![ubuntu-loading-completed](pictures/ubuntu-loading-completed.png?classes=border)
+Click the `Install Ubuntu` button underneath the laptop icon
 
-- click `Install Ubuntu` underneath the laptop icon
 {{% notice warning %}}
 Do not click "try ubuntu"
 {{% /notice %}}
 
-- keyboard layout (keep default, unless you use a non english keyboard)
+![ubuntu-loading-completed](pictures/ubuntu-loading-completed.png?classes=border)
+
+Select your Keyboard layout (keep default, unless you use a non english keyboard) and click `continue`.
 
 ![keyboard-layout-picture](pictures/keyboard-layout.png?classes=border)
 
-- click continue
-- select minimal installation
-- select download updates while installing (accept all the defaults)
+## Installation Type
 
-![updates-and-other-software](pictures/updates-and-other-software.png?classes=border)
+Select the `Minimal installation`. This will lower the amount of space taken up by software we do not need on the Virtual Machine.
 
-- erase disk and install ubuntu (if it detected an OS that means they didn't select a VDI)
+Select `Download updates while installing Ubuntu`. As it mentions this will save time after installation.
+
+Click `Continue`.
 
 ![installation-type-picture](pictures/installation-type.png?classes=border)
 
-- click install now
-- click continue
-- select your TZ (should default accurately)
+For the Installation type you should select `Erase disk and install Ubuntu`.
+
+{{% notice note %}}
+If you can see that an Operating System has been detected that means you did not select `VDI (Virtual Disk Image)` in the **Virtaul Machine Hard Disk** portion of this setup. If this is the case you will need to recreate your Virtual Machine.
+{{% /notice %}}
+
+Click the `Install Now` button.
 
 ![erase-disk-and-install-ubuntu](pictures/erase-disk-and-install-ubuntu.png?classes=border)
 
@@ -299,6 +275,7 @@ click `Install Now`
 
 click `Continue`
 
+- select your TZ (should default accurately)
 ![tz-select-picture](pictures/tz-select.png?classes=border)
 
 - who are you?
