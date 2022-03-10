@@ -32,7 +32,7 @@ Knowing the basics of the Linux FS hierarchy, Bash shell FS navigation commands,
 
 The Linux FS begins with the **root (`/`) directory**. This is the top level directory that contains all other directories and files that are a part of the operating system.
 
-If you understand the general purpose of top level directories inside of the root directory, you will have an idea on where various files live.
+If you understand the general purpose of top level directories inside of the root directory, you will have a good idea where various files live.
 
 ---
 
@@ -45,7 +45,7 @@ According to the [Linux Documentation Project](https://tldp.org/) the Linux FS i
 - `/mnt`, `/opt`, `/sbin`
 - `/srv`, `/tmp`, `/usr`
 
-In this class you are expected to know the purpose and example files in `/bin`, `/etc`, `/usr` and the often used `/home` directories.
+In this class you are expected to know the purpose and use of the files in `/bin`, `/etc`, `/usr` and the often utilized `/home` directories.
 
 ---
 
@@ -73,7 +73,7 @@ The container for programs and files that are shared across all users of the com
 
 Many of the applications we will learn about in this class are found in `/usr`.
 
-Examples include `nano`, `python3`, `man`, `which`, 
+Examples include `nano`, `python3`, `man`, and `which`.
 
 ---
 
@@ -89,9 +89,9 @@ Some Linux distributions create the `/home` directory within the `/usr` director
 
 ## Other Root Level Directories
 
-Check the vertical slides for the top level description of the remaining TLDP top level directories.
+Check the slides below for the top level description of the remaining TLDP top level directories.
 
-We will not be covering the details of these directories, however you can learn more at the [Linux Filesystem Hierarchy from TLDP](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/Linux-Filesystem-Hierarchy.pdf)
+We will not be covering the details of these directories, however you can learn more at the [Linux Filesystem Hierarchy from TLDP](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/Linux-Filesystem-Hierarchy.pdf).
 
 ___
 
@@ -112,14 +112,14 @@ ___
 
 ## `/media`
 
-Mount point for removeable media
+Mount point for removable media
 ___
 
 ## `/mnt`
 
 Mount point for mounting a filesystem temporarily.
 
-*Flash drive, or external hard drive, among others.*
+*Flash drive, or external hard drive, among others*
 ___
 
 ## `/opt`
@@ -160,7 +160,7 @@ These two commands will help you get your bearings as you move away from your ho
 
 Changing the working (current) directory is a common and useful action while in a Bash shell.
 
-You can change the current directory with the `cd` shell builtin.
+You can change the current directory with the `cd` shell builtin command.
 
 It takes an optional argument in the form of the directory which is used to update the current working path.
 
@@ -172,7 +172,7 @@ It takes an optional argument in the form of the directory which is used to upda
 - `cd /home/student/Documents`: absolute path
 - `cd Documents`: relative path
 - `cd .Documents`: relative path
-- `cd ~`: `~` is a shortcut for `$HOME`
+- `cd ~`: the "`~`" key is a shortcut for `$HOME`
 - `cd`: default argument is `$HOME`
 - `cd ..`: change to parent directory
 
@@ -199,8 +199,10 @@ ___
 ## Creating Empty Files
 
 - `touch [filename]`: create a new empty file
-- `nano [filename]`: open filename in nano editor, upon writing file it will be created at location.
+- `nano [filename]`: open filename in nano editor. 
 
+Upon writing the file it will be created at your current directory location.
+<!-- TODO: Clarity: As a user i created a new file using touch and "filename" as the name of the file. I then opened the file using nano "filename". The note about writing the file will create it at the location is a bit confusing for me. I suggest we potentially give specific filenames on this portion of the walkthrough to avoid any confusion ie: touch example-file, nano example-nano -->
 ___
 
 ### `touch` actually updates timestamps
@@ -215,7 +217,7 @@ You can try this out by creating a new file with `touch example-file` checking t
 
 Reading the contents of a file is always handy. In a terminal you can either take the entire contents and dump it into STDOUT with `cat`.
 
-Or you can load pieces of the file into RAM at a time with `less`.
+Or you can load the file into RAM pieces at a time with `less`.
 
 ___
 
