@@ -63,4 +63,4 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 - Morning
   - [systemd]({{< relref "./systemd" >}})
 - Afternoon
-  - Final Project
+  - [Final Project]({{< relref "./final-project" >}})
