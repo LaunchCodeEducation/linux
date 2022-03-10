@@ -3,10 +3,13 @@ title: "Reading Packages"
 date: 2021-11-09T15:13:39-06:00
 draft: false
 weight: 3
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "" # to be set by the page reviewer
+reviewerGitHub: "" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Being able to access the metadata of package can be useful. This article shows how to view all currently installed packages, and how to look at some of the metadata associated with any specific installed package.

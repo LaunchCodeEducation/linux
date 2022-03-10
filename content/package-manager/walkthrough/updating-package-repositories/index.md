@@ -3,10 +3,13 @@ title: "Updating Package Repositories"
 date: 2021-11-09T15:13:39-06:00
 draft: false
 weight: 2
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "" # to be set by the page reviewer
+reviewerGitHub: "" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 When dealing with Package Manager a common task is to **refresh** your list of package repositories and **download the metadata of all packages**. This is a common task to complete before installing a new package or upgrading any existing packages because it ensures our Package Manager has the most up to date information on all packages.
