@@ -1,9 +1,10 @@
 ---
-title: "Slides"
+title: "Slides: Fullscreen"
 date: 2021-11-09T15:20:12-06:00
 draft: false
-type: "slides"
 weight: 1
+type: "slides"
+hidden: true
 original_author: "Paul Matthews" 
 reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
