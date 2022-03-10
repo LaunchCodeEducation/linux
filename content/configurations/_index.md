@@ -11,4 +11,8 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Configurations
 
+{{% notice note %}}
+The images that are displayed in this course utilize the settings layed out in the following walkthroughs. If you do not use the same settings some of the images in the following chapters may appear different on your machine.
+{{% /notice %}}
+
 {{% children %}}
