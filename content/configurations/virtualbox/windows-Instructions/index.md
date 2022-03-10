@@ -54,7 +54,6 @@ The next portion of the wizard will provide options for your installation includ
 For this setup walkthrough we will be leaving all of the above options selected and clicking the `Next` button.
 
 ![virtualbox-wizard-features-3](pictures/virtualbox-wizard-features-3.png?classes=border)
-<!-- TODO: Decide whether or not we want to leave all options enabled or have the learner de-select all items. There is also the third option of letting them choose their own settings here -->
 
 {{% notice note %}}
 If you would prefer to unselect any of the above options based on personal preference that is okay.
