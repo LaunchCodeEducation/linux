@@ -54,7 +54,6 @@ The next portion of the wizard will provide options for your installation includ
 For this setup walkthrough we will be leaving all of the above options selected and clicking the `Next` button.
 
 ![virtualbox-wizard-features-3](pictures/virtualbox-wizard-features-3.png?classes=border)
-<!-- TODO: Decide whether or not we want to leave all options enabled or have the learner de-select all items. There is also the third option of letting them choose their own settings here -->
 
 {{% notice note %}}
 If you would prefer to unselect any of the above options based on personal preference that is okay.
@@ -81,7 +80,6 @@ The setup portion of this installation process has been completed. The next step
 {{% notice bonus %}}
 After clicking the `Install` button you should receive a windows notification bringing up a separate User Account Control window. This will ask you to allow VirtualBox to make changes to your device. We need to select `yes` or the install will fail.
 {{% /notice %}}
-<!-- TODO: Add picture of User Account Control Windows either from phone img or Virtualbox Windows Documentation -->
 
 #### Windows Security Check
 After allowing VirtualBox to make changes to your device you will be prompted once more asking if you would like to install the device software.
