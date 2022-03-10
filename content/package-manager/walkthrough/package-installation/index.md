@@ -124,3 +124,58 @@ Let's practice installing a package that has a GUI component. The `GIMP` package
 {{% notice note %}}
 We won't use, or learn GIMP in this program. We are simply using it as an example of a package that is predominately driven by a GUI.
 {{% /notice %}}
+
+### Update Package Repositories
+
+Again, before installing a new package we should update our package repositories:
+
+![sudo apt update](pictures/sudo-apt-update.png?classes=border)
+
+### Install GIMP
+
+Now let's install GIMP with: `sudo apt install gimp`:
+
+![apt install gimp confirm](pictures/apt-install-gimp-confirm.png?classes=border)
+
+Again confirm the install by hitting `enter` or entering in `Y` and hitting enter.
+
+{{% notice bonus %}}
+The `apt install` CLI has a `-y` option that will automatically enter yes into any package installation confirmations. So you would find that `sudo apt install gimp -y` would install the `gimp` package without asking for confirmation. In this class we are going to recommend not using the `-y` flag as it's great to reinforce the steps of the `apt` CLI.
+{{% /notice %}}
+
+![apt install gimp](pictures/apt-install-gimp.png?classes=border)
+
+### Confirm Installation
+
+#### `which gimp`
+
+![which gimp](pictures/which-gimp.png?classes=border)
+
+#### `gimp --version`
+
+![gimp --version](pictures/gimp-version.png?classes=border)
+
+### Opening `gimp`
+
+We can simply enter `gimp` into our Bash shell:
+
+![open gimp](pictures/open-gimp.png?classes=border)
+
+{{% notice note %}}
+Alternatively you could search for `gimp` in the Activities pane:
+![activities search gimp](pictures/activities-search-gimp.png?classes=border)
+{{% /notice %}}
+
+And the GNU Image Manipulation Program GUI will open:
+
+![gimp](pictures/gimp.png?classes=border)
+
+### Closing `gimp`
+
+Since this is a GUI you simply need to click the red `X` in the top right hand corner of the GIMP window, or you can select `File->Quit` (or use the shortcut `ctrl` + `q`).
+
+After closing GIMP, if you opened it from your bash shell you should see your terminal once again:
+
+![after closing gimp](pictures/after-closing-gimp.png?classes=border)
+
+GIMP is a popular tool in the GNU/Linux world, because it is an open source, free software maintained by GNU. We will not be using GIMP in this course.
