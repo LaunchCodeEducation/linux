@@ -233,7 +233,7 @@ ___
 ## Searching for Files
 
 `find [location] -name file-name`
-<!-- TODO: Clarity: It seems you can also remove the [location] option and use just the -name. -->
+
 ---
 
 ## Moving Files and Directories

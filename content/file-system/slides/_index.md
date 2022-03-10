@@ -256,7 +256,7 @@ You can use the `mv` command to rename files and directories in place, or change
 
 ## Deleting Files
 
-`rm [file-name]`: relative or absolute
+`rm [file-name]`: relative or absolute path
 
 - `rm temp-file`
 - `rm Documents/file2`
@@ -338,40 +338,3 @@ Execute a command as another user.
 Super (root) user is the default argument.
 
 {{< /slides >}}
-
-<!--
-- navigating file-system
-  - root
-  - userspace
-  - `cd`
-    - `cd` no args
-    - `cd ..`
-- creating directories and files
-  - `mkdir`
-  - `touch`
-  - hidden files and directories
-- displaying contents of a file
-  - `cat`
-- searching for files
-  - `find [location] [filename]`
-  - bash wildcard (`*`)
-- moving files & folders
-  - `mv`
-  - locations
-  - renaming
-- deleting files
-  - `rm`
-- deleting directories
-  - `rm -r`
-- editing the contents of a file with terminal based editors (nano) (show vim)
-  - `nano`
-  - `nano` save file: `ctrl` + `o`
-  - `nano` exit file: `ctrl` + `x`
-- creating new user-defined aliases
-  - `alias` builtin
-- `~/.bashrc`: code run when a new shell session initializes
-  - adding `alias` to your `~/.bashrc`
-  - reload a `~/.bashrc` with `source`
-    - `.bash_profile`: code run when a login shell is created (so not run for each new shell session)
-- `sudo`
-  -->
