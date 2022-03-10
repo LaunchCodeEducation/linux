@@ -11,6 +11,42 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 ## Exercises
 
-### contributing with branches
+Example repos for each exercise
 
-### rebasing
+
+## easy merge
+
+- example project with 3 branches
+  - master
+  - patch-1 (code is complete)
+  - new-feature (code is complete)
+
+## merge conflicts
+
+- example project with 3 branches
+  - master
+  - patch-1
+  - new-feature
+
+### handling locally
+
+new-feature
+
+### handling remote
+
+patch-1
+
+## rebasing
+
+example project with 3 branches:
+  - master
+  - patch-1
+  - new-feature
+
+### no conflicts
+
+patch-1
+
+### conflict resolution
+
+new-feature
