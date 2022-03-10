@@ -5,10 +5,13 @@ draft: false
 weight: 1
 type: "slides"
 hidden: true
-original_author: "Paul Matthews" 
+originalAuthor: ""
+originalAuthorGitHub: ""
 reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+reviewerGitHub:
+lastEditor: ""
+lastEditorGitHub: ""
+lastMod: "2022-03-10"
 ---
 
 ## Slides Title
