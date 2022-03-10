@@ -3,10 +3,13 @@ title: "Review & Changing Directories"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 1
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ### Review: Where am I?
@@ -29,8 +32,8 @@ To view the contents of the current working directory you can use the familiar `
 
 To change the current working directory you can use the `cd` *builtin* command. 
 
-`cd` allows for one optional argument the new path to use as the current working directory. If no argument is provided it will set the current working directory to the `$HOME` shell variable.
-
+`cd` allows for one optional argument. If no argument is provided it will set the current working directory to the `$HOME` shell variable.
+<!-- TODO: Clarity: removed "the new path to use as the current working directory." I was not sure what this was referencing. -->
 `cd` works with both *absolute* and *relative* paths.
 
 #### `cd` relative path
