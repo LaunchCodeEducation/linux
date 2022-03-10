@@ -2,6 +2,7 @@
 title: "Adding Package & Repository"
 date: 2021-11-09T15:13:39-06:00
 draft: false
+hidden: true
 weight: 8
 original_author: "Paul Matthews" 
 reviewer: "" # to be set by the approving reviewer
