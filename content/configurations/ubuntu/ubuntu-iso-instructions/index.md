@@ -43,9 +43,7 @@ Click on the `Choose a disk file...` option.
 
 ![CE-disk-icon-dropdown-image](pictures/CE-disk-icon-dropdown-image.png?classes=border)
 
-<!-- TODO: Add image of Optical Drive populated with ubuntu ISO -->
-
-## Selecting the Ubuntu ISO
+### Selecting the Ubuntu ISO
 
 Upon clicking `Choose a disk file` your host OS will open the default file manager. Using that file manager you need to select the `ubuntu-20.04.3-desktop-amd64.iso` file you downloaded earlier. 
 
@@ -54,6 +52,12 @@ The location of the `ubuntu-20.04.3-desktop-amd64.iso` will likely be in a diffe
 ![personal-file-manager](pictures/personal-file-manager.png?classes=border)
 This image is an example of the default file manager on a Pop!_OS which is an Ubuntu derived distribution.
 {{% /notice %}}
+
+### ISO added to Optical Drive
+
+You will now see that the Ubuntu ISO has been populated under the Controller:IDE section:
+
+![Optical-drive-image](pictures/optical-drive-image.png?classes=border)
 
 #### Next Steps
 
