@@ -3,10 +3,13 @@ title: "Bonus"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 4
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Bonus Exercise
@@ -29,14 +32,14 @@ These are all steps you can now perform with your new found Bash: File System Na
 You can also complete the rest of the steps from the [Bash: Introduction - Demo]({{< relref "/bash-introduction/demo" >}}).
 
 {{% notice note %}}
-You are not expected to know about manually changing the `$PATH` shell variable, Symlinks, or how to use the `ln` command, but you can do your own research to learn about these concepts and command. Being able to look up and use various commands is a very important skill to develop within the tech industry!
+You are not expected to know about manually changing the `$PATH` shell variable, Symlinks, or how to use the `ln` command, but you can do your own research to learn about these concepts and commands. Being able to look up and use various commands is a very important skill to develop within the tech industry!
 {{% /notice %}}
 
 ### General Steps
 
 - add the `/home/student/bin` directory to the `$PATH` variable
 - create a symlink named `when` that points at the `whattimeisit` bash script
-- invoke both `when` and `whattimeisit` to show how they both work
+- invoke both `when` and `whattimeisit` to show how they work
 
 #### Double Bonus: Question
 
