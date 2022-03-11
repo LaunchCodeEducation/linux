@@ -3,10 +3,13 @@ title: "Create Hidden Notes"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 1
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Create a Hidden folder called `notes` and a note file
@@ -35,7 +38,7 @@ An **absolute path** is the unique path for a specific file/directory. It always
 {{% /expand %}}
 - What is a **relative path**?
 {{% expand "ANSWER" %}} 
-The path to a file/directory **relative** to the current working directory. This path always starts fromt he current working directory sometimes denoted as a `.` character.
+The path to a file/directory **relative** to the current working directory. This path always starts from the current working directory sometimes denoted as a `.` character.
 {{% /expand %}}
 - What is the `nano` program?
 {{% expand "ANSWER" %}} 
