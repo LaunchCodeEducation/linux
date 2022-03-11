@@ -3,10 +3,13 @@ title: "Sudo"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 9
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## The `sudo` command
@@ -62,6 +65,8 @@ As an example let's say we needed to read the contents of the mysterious `/etc/s
 ![cat /etc/shadow](pictures/cat-etc-shadow.png)
 
 Our `student` user doesn't have read access to this file. So we can run the same command as `root`.
+
+`sudo cat /etc/shadow`
 
 ![sudo cat /etc/shadow](pictures/sudo-cat-etc-shadow.png)
 
