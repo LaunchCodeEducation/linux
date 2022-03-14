@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu ISO Image Setup"
 draft: false
-weight: 2
+weight: 15
 original_author: "Paul Matthews" 
 reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited

@@ -1,7 +1,7 @@
 ---
 title: "VirtualBox Image Creation"
 draft: false
-weight: 1
+weight: 10
 original_author: "Paul Matthews" 
 reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
