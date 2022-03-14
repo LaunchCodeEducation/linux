@@ -13,7 +13,7 @@ In this class we will be learning about Linux. In order to use Linux we will nee
 
 In lieu of overwriting our preferred operating systems we will be using VirtualBox to create a virtual operating system **inside** of our host operating system. This is possible by partitioning a portion of our hard drive to hold a full-fledged operating system, a concept known as *virtualization*.
 
-Using our playgrounded, virtual operating system we will be able to learn about and use Linux without installing it as the primary operating system of our personal computer. We will also be able to remove this virtual operating system after this class is over.
+Using our virtual operating system we will be able to learn about and use Linux without installing it as the primary operating system of our personal computer. We will also be able to remove this virtual operating system after this class is over.
 
 In order to setup this virtual operating system we will need to:
 
