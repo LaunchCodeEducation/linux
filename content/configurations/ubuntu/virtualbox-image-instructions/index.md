@@ -8,17 +8,15 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## VirtualBox Ubuntu Image Creation Instructions
+Before you can create the Virtual Machine that utilizes the Ubuntu Image you need to open VirtualBox.
 
-Before we can create the Ubuntu Image and machine we need to open VirtualBox.
-
-### Open VirtualBox
+## Open VirtualBox
 
 Open VirtualBox the same way you would open any software. Once it is open you should be greeted by the VirtualBox Manager Window:
 
 ![VirtualBox Manager Window](pictures/virtualbox-home.png?classes=border)
 
-#### Create a New Virtual Machine
+## Create a New Virtual Machine
 
 In the VirtualBox Manager Window click the `New` button. Its icon is the blue spiky icon.
 
@@ -33,19 +31,19 @@ Make sure to grant VirtualBox permission to these locations!
 
 We need to configure all of the components on the first page of this wizard. We will be configuring Name, Type, and OS version.
 
-#### Virtual Machine Name
+### Virtual Machine Name
 
 In the Name textbox enter `student-VirtualBox`:
 
 ![image-name](pictures/image-name.png?classes=border)
 
-#### Virtual Machine Type
+### Virtual Machine Type
 
 In the Type dropdown select `Linux` from the dropdown box:
 
 ![image-type](pictures/image-type.png?classes=border)
 
-#### Virtual Machine OS Version
+### Virtual Machine OS Version
 
 In the Version dropdown select `Ubuntu (64 bit)`:
 
@@ -58,7 +56,7 @@ We will not be **changing the default value** on the `Machine Folder` component.
 {{% /notice %}}
 
 
-#### Virtual Machine Memory Size
+### Virtual Machine Memory Size
 
 We need to configure the amount of RAM this Virtual Machine has access to. Your host computer has a certain amount of RAM, we cannot give all of the RAM to the Virtual Machine because your host computer still needs access to some of the memory.
 
@@ -72,13 +70,13 @@ You could also use the slider bar to configure the amount of RAM to provide to t
 
 After entering `2048` into the textbox click the `Next` button.
 
-#### Virtual Machine Hard Disk
+### Virtual Machine Hard Disk
 
 Similar to the RAM of our Virtual Machine we need to provide a certain amount of hard disk space from the Host operating system. However, this hard disk space needs to be formatting in a way that allows for an operating system to function.
 
 Luckily, VirtualBox will perform this formatting for us after we finish this wizard.
 
-##### Create a Virtual Hard Disk
+#### Create a Virtual Hard Disk
 
 We will be creating a new VirtualBox managed virtual hard disk.
 
@@ -89,7 +87,7 @@ Click the `Create` button.
 ![image-hard-disk](pictures/image-hard-disk.png?classes=border)
 
 
-##### Select Hard Disk Type
+#### Select Hard Disk Type
 
 We will be using the VirtualBox preferred `VDI (VirtualBox Disk Image)` which should be the default value.
 
@@ -97,7 +95,7 @@ After confirming the `VDI` option click `Next`.
 
 ![image-hard-disk-type](pictures/image-hard-disk-type.png?classes=border)
 
-##### Fixed or Dynamic Hard Disk
+#### Fixed or Dynamic Hard Disk
 
 VirtualBox allows you to dynamically add more space to your Hard Disk. However, this slows down the entire Virtual Machine because of the flexible nature of the hard disk size.
 
@@ -111,33 +109,33 @@ After selecting the `Fixed size` option click `Next`.
 If you are creating your own personal Virtual Machine after this class, you may want to use a dynamically sized hard disk. This will offer you more flexibility with regards to your hard disk usage.
 {{% /notice %}}
 
-##### File Location and Size
+#### File Location and Size
 
 The file location for the VirtualBox you will leave as the default value. You will however want to adjust the size of the virtual hard disk. The default value is `10.00 GB`. You should change this to `12.00 GB` as shown in the image below.
 
 ![image-hard-disk-size](pictures/image-disk-size.png?classes=border)
 
-##### VirtualBox Manager Homepage
+#### VirtualBox Manager Homepage
 
 After completing the above setup you will see the VirtualBox homepage that looks similar to the following image:
 
 ![new-image-home](pictures/new-image-home.png?classes=border)
 
 
-### Review
+## Review
 
 Using the picture above as a reference take note of the configurations for this specific image:
 
-#### General
+### General
 
 - Name: `student-VirtualBox`
 - Operatating System: `Ubuntu (64 bit)`
 
-#### System
+### System
 
 - Base Memory: `2048 MB`
 
-#### Storage
+### Storage
 
 - Controller :IDE:
   - IDE Secondary Device 0: `[Optical Drive] Empty`
@@ -150,7 +148,7 @@ Take note of the IDE Secondary Device 0, this is referencing the CD drive of thi
 In this course will not be discussing the audio, network, usb, shared folders, or description.
 {{% /notice %}}
 
-#### Next Steps
+## Next Steps
 
 After completing the above instructions please move on to the next portion of the installation process located in the article below:
 
