@@ -8,21 +8,23 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## MacOS Installation Instructions
+## Download VirtualBox Installer
 
-#### MacOS - Download
+Before we can install Oracle VirtualBox we need to download the installer application.
 
-The direct link for the MacOS VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-OSX.dmg).
+The direct link for the MacOS VirtualBox download can be found [here](https://download.virtualbox.org/virtualbox/6.1.28/VirtualBox-6.1.28-147628-OSX.dmg). Download the linked `.dmg` file to your computer.
 
 {{% notice warning %}}
 The link will start a download for the **.dmg** file needed to install VirtualBox on a MacOS system.
 {{% /notice %}}
 
-## MacOS Installation
+A `.dmg` file is an Apple Disk Image file. Apple commonly uses this type of file (`.dmg`) to store software installers.
+
+## Install VirtualBox
+
+To begin the VirtualBox installation we simply need to run the previously downloaded `.dmg` file.
 
 ### Run the .dmg file
-
-A `.dmg` file is an Apple Disk Image file. Apple commonly uses this type of file (`.dmg`) to store software installers.
 
 Double click the `.dmg` file that we downloaded from the first step in this article. 
 
@@ -54,6 +56,18 @@ After clicking the allow button you will find a brief overview of the installati
 Take note that the installer skips past the `Destination Select` screen. VirtualBox changed how you can specify the installation location, but left the option on the installer. This article uses the default installation location. **If you are ever prompted to change, or select an installation location leave it on the default option**. At the time of creating this article the installation location was hidden behind the `Change Install Location...` button. You can see this button in the following images. This article will not even click the button as we want the default location.
 {{% /notice %}}
 
+#### Security and Preferences Note
+
+At some point in time during the installation of VirtualBox your MacOS will display a pop up window with the message: `System Extension Updated`. 
+
+Your MacOS is letting you know that the programs associated with `Oracle America, Inc.` (in this case VirtualBox) have been registered in your MacOS' Security Preferences. In order to use the software installed you will have to confirm the access this software has to your computer. This is standard behavior for MacOS. This article will cover the work that needs to be completed in the MacOS Security Preferences settings **after** completing the installation of VirtualBox.
+
+{{% notice warning %}}
+The `System Extension Updated` pops up at a non deterministic time in your installation process. It could pop up almost immediately, or you might not see it until one of the later screens of the installation. **Whenever the System Extension Updated window pops up click the `Open Security Preferences` button and move the window out of the way**, you will check these settings **after** completing the VirtualBox installation.
+![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
+Whenever you see the above image in your VirtualBox installation click the `Open Security Preferences` button and set the resulting screen to the side so you can complete VirtualBox installation.
+{{% /notice %}}
+
 ### Installation Type
 
 You will be using the standard installation of VirtualBox for this walkthrough. This is the default type of installation. Click the `Install` button.
@@ -66,66 +80,82 @@ You might receive a notification that your installer is trying to install new so
 
 ![installer-password](pictures/installer-password.png?classes=border&height=650px)
 
-### Installation
+### Complete Installation
 
-The installer will now run the scripts included within the `VirtualBox.pkg` file. This may take a few seconds.
+The installer will now run the scripts included within the `VirtualBox.pkg` file to complete our configured installation. This may take a few moments.
 
 ![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
-{{% notice warning %}}
-In the picture below you will notice that there has been a System Extension Updated. **The System Extension Updated may pop up at a different time during your installation process. Whenever the System Extension Updated window pops ups click the `Open Security Preferences` button and set it to the side.** We will continue with those instructions after finishing the installation. When you see the following image click the `Open Security Preferences` button and set the resulting window to the side.
-![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
-{{% /notice %}}
+Once your installation has completed successfully you should see a window similar to the following image:
 
-
-### Security & Privacy
-
-When you click the Open Security Preferences button it will bring up the following window. As mentioned in the warning above we are going to set this window aside until our installation is complete.
-
-![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
-
-{{% notice warning %}}
-Before moving forward with the security preferences section of this installation process **ensure that the installation was successful**. This should be indicated through the installer and look similar to the image below.
 ![installation-successful-image](pictures/installation-successful-image.png?classes=border&height=650px)
-{{% /notice %}}
 
-**After the installation is successful you can click the `close` button.**
-
+From here you can exit the `Install Oracle VM VirtualBox` window.
 
 
-{{% notice warning %}}
-Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
-{{% /notice %}}
+## Configuring MacOS Security & Privacy
 
-To make the required changes to our Security & Privacy we will need to unlock the security preferences by clicking the `padlock icon` in the bottom left corner. This will ask you to enter your password. Please provide your credentials.
+Before you can use the VirtualBox software we need to finish up the update necessary to grant proper access to `Oracle America, Inc.`.
+
+During the installation process you ran into the following pop up:
+
+![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
+
+You clicked the `Open Security Preferences` and put the resulting window to the side. The resulting window was called `Security & Privacy and looks like the following image:
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
+
+<!-- TODO: Add a notice with picture on how to open this window if they somehow shut the window -->
+
+Using this window we will be granting VirtualBox the permissions needed to use the software.
+
+From the `Security & Privacy` window we will need to:
+
+- unlock the security preferences
+- Allow "Oracle America, Inc." permission to our machine
+- Restart our computer
+
+### Unlock Security Preferences
+
+To make the required changes to our Security & Privacy we will need to unlock the security preferences by clicking the padlock icon in the bottom left corner.
+
+![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
+
+Upon clicking the padlock icon you will be asked to enter your password. Please provide your credentials.
 
 ![system-preferences-password](pictures/system-preferences-password.png?classes=border&height=650px)
+
+### Grant Oracle America, Inc. Permission
 
 Once you have entered your password you will see a "System software from developer "Oracle America, Inc" has been updated towards the bottom of your Security & Privacy window. Click the `Allow` button.
 
 ![allow-oracle-software](pictures/allow-oracle-software.png?classes=border&height=650px)
 
-After clicking the allow button you will be prompted to restart your machine. If the VirtualBox installation has been completed you can click the `Restart` button.
+### Restart Computer
+
+For the settings to take affect you will need to restart your computer. 
 
 {{% notice warning %}}
-Do not restart your machine until the installation has been completed
+**Do not restart your computer until you have completed the VirtualBox installation.**
 {{% /notice %}}
+
+Either click `Restart` or `Not Now` depending on if you have completed the Installation steps from the previous section.
 
 ![restart-required](pictures/restart-required.png?classes=border&height=650px)
 
-## Installation Complete
+## Validation
 
-After your machine restarts you should find your VirtualBox.app within your applications folder. You can locate this by opening your finder and selecting the applications tab.
+After your machine restarts you should find the `VirtualBox.app` within your applications folder. You can locate this by opening your finder and selecting the applications tab.
 
 {{% notice bonus %}}
-Alternatively you can find the VirtualBox.app by hitting command + spacebar and typing in the program name "VirtualBox.app"
+Alternatively you can find the VirtualBox.app by hitting command + space bar (`cmd` + `space`) and typing in the program name "VirtualBox.app".
 {{% /notice %}}
 
-When you open your VirtualBox application this is what you should see when you open the program.
+Finally, when you open the VirtualBox application you should see a window similar to the following image:
 
 ![virtualbox-app](pictures/virtualbox-app.png?classes=border&height=650px)
+
+Once you have reached this screen you have successfully downloaded, installed and configured VirtualBox to run on your MacOS.
 
 ## Summary
 
