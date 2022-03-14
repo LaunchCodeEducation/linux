@@ -12,15 +12,14 @@ We will be using Ubuntu as our Linux distribution in this class.
 
 The linked articles will take you through:
 
-1. Downloading Ubuntu
-1. Setting up a virtual machine (using VirtualBox)
-1. Configuring the virtual machine to use the downloaded Ubuntu image
-1. Starting the virtual machine & completing Ubuntu setup
-1. First time user login
+- Downloading Ubuntu
+- Setting up a virtual machine (using VirtualBox)
+- Configuring the virtual machine to use the downloaded Ubuntu image
+- Starting the virtual machine & completing Ubuntu setup
+- First time user login
 
 ## Articles
 
-<<<<<<< HEAD
 ![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png)
 
 Click the green `Download` button to start the download. It is a large file and will take some time.
@@ -30,6 +29,3 @@ You will likely have to confirm the download, in the picture below the user will
 ![Ubuntu Desktop Download Initiated Page](pictures/ubuntu-download.png)
 
 Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-desktop-*.iso`. An `.iso` file is a Disk Image which is the instruction for installing an Operating System. We will be using this file inside of Virtualbox to create an isolated Ubuntu 20.04.3 virtual operating system inside of our host computer.
-=======
-{{% children %}}
->>>>>>> restructured
