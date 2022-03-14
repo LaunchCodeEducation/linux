@@ -6,46 +6,12 @@ draft: false
 weight: 1
 originalAuthor: "Paul Matthews"
 originalAuthorGitHub: "pdmxdd"
-reviewer: "" # to be set by the approving reviewer
-reviewerGitHub: ""
+reviewer: "John Woolbright" # to be set by the approving reviewer
+reviewerGitHub: "jwoolbright23"
 lastEditor: "" # update each time the file is edited
-lastEditorGitHub: "" 
-lastMod: 2022-03-09
+lastEditorGitHub: "jwoolbright23" 
+lastMod: 2022-03-14
 ---
-
-<!--  TODO: remove this comment
-
-- Package: software
-  - `cat /etc/apt/sources.list`
-  - `man sources.list`
-  - `ls /etc/apt/sources.list.d`
-- Package Repository: source of the software
-  - https://packages.ubuntu.com/
-  - `lsb_release -a`: focal: https://packages.ubuntu.com/focal/
-    - `lsb_release -cs`: focal
-  - `apt list`
-  - `apt list --installed`
-- Package Manager: tool for managing packages (installing, removing, upgrading, adding new repositories)
-  - `.tar`
-  - **Debian**
-    - packages: DEB 
-    - package managers: `apt` / `apt-get` & `apt-cache`
-  - **Red Hat**
-    - packages: RPM
-    - package managers: `yum` / `dnf` / `rpm`
-  - OpenSUSE: `zyyper`
-  - Arch: `pacman`
-  - tons of options
-- APT
-- CLI: `apt`
-  - Older CLI tools: `apt-get` & `apt-cache`
-- `apt list`
-  - `apt list --installed`
-- `apt show [package]`
-  - `apt show bash`
-  - `apt show firefox`
-
--->
 
 {{< slides >}}
 

@@ -7,11 +7,11 @@ type: "slides"
 weight: 1
 originalAuthor: "Paul Matthews" 
 originalAuthorGitHub: "pdmxdd"
-reviewer: "" # to be set by the approving reviewer
-reviewerGitHub: ""
+reviewer: "John Woolbright" # to be set by the approving reviewer
+reviewerGitHub: "jwoolbright23"
 lastEditor: "" # update each time the file is edited
 lastEditorGitHub: "" 
-lastMod: 2022-03-09 # just the date is enough (don't worry about the time portion)
+lastMod: 2022-03-14 # just the date is enough (don't worry about the time portion)
 ---
 
 ## Package Manager
