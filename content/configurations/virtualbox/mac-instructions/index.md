@@ -22,21 +22,25 @@ The link will start a download for the **.dmg** file needed to install VirtualBo
 
 ### Run the .dmg file
 
-A `.dmg` file is an Apple Disk Image file. This is often the type of file used to store software installers.
+A `.dmg` file is an Apple Disk Image file. Apple commonly uses this type of file (`.dmg`) to store software installers.
 
-Double click the `.dmg` file that we downloaded from the first step in this article. If you are having trouble locating the file it is more than likely located in your downloads folder.
+Double click the `.dmg` file that we downloaded from the first step in this article. 
+
+{{% notice note %}}
+If you are having trouble locating the downloaded `.dmg` file it is more than likely located in your downloads folder.
+{{% /notice %}}
 
 ![click-dmg-file](pictures/click-dmg-file.png?classes=border&height=650px)
 
 ### Start the Installation
 
-Once you open the `.dmg` file you will have a new window pop up on your screen. We want to double click the `VirtualBox.pkg` file. This will open up the VirtualBox installer window.
+Once you open the `.dmg` file a new window will pop up on your screen. You will need to double click the `VirtualBox.pkg` file. This will open up the VirtualBox installer window.
 
 ![dbl-click-pkg-file](pictures/dbl-click-pkg-file.png?classes=border&height=650px)
 
 ## VirtualBox Installer
 
-Once the installer has started we will be prompted to allow the `VirtualBox.pkg` file to run. Click the `Allow` button.
+Once the installer has started you will be prompted to allow the `VirtualBox.pkg` file to run. Click the `Allow` button.
 
 ![installer-allow-picture](pictures/installer-allow-picture.png?classes=border&height=650px)
 
@@ -47,12 +51,12 @@ After clicking the allow button you will find a brief overview of the installati
 ![form-continue-image](pictures/form-continue-image.png?classes=border&height=650px)
 
 {{% notice note %}}
-You may be thinking that you are missing an image for the destination select view. The installer should skip past this automatically. If it does not leave the settings as they are defaulted.
+Take note that the installer skips past the `Destination Select` screen. VirtualBox changed how you can specify the installation location, but left the option on the installer. This article uses the default installation location. **If you are ever prompted to change, or select an installation location leave it on the default option**. At the time of creating this article the installation location was hidden behind the `Change Install Location...` button. You can see this button in the following images. This article will not even click the button as we want the default location.
 {{% /notice %}}
 
 ### Installation Type
 
-We will be using the standard installation of VirtualBox for this walkthrough. This is the default type of installation. Click the `Install` button.
+You will be using the standard installation of VirtualBox for this walkthrough. This is the default type of installation. Click the `Install` button.
 
 ![change-install-location](pictures/change-install-location.png?classes=border&height=650px)
 
@@ -64,29 +68,30 @@ You might receive a notification that your installer is trying to install new so
 
 ### Installation
 
-The installer will now run the scripts included within the `VirtualBox.pkg` file. This may take a little bit of time.
+The installer will now run the scripts included within the `VirtualBox.pkg` file. This may take a few seconds.
 
 ![running-package-scripts](pictures/running-package-scripts.png?classes=border&height=650px)
 
 {{% notice warning %}}
-In the picture below you will notice that there has been a System Extension Updated. This may pop up at a different time during your installation process. You can click the `Open Security Preferences Button` and we will continue with those instructions later in this walkthrough.
+In the picture below you will notice that there has been a System Extension Updated. **The System Extension Updated may pop up at a different time during your installation process. Whenever the System Extension Updated window pops ups click the `Open Security Preferences` button and set it to the side.** We will continue with those instructions after finishing the installation. When you see the following image click the `Open Security Preferences` button and set the resulting window to the side.
+![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 {{% /notice %}}
 
-![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
 ### Security & Privacy
 
-When you click the Open Security Prefences button it will bring up the following window. As mentioned in the warning above we are going to set this window aside until our installation is complete.
+When you click the Open Security Preferences button it will bring up the following window. As mentioned in the warning above we are going to set this window aside until our installation is complete.
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
 {{% notice warning %}}
-Before moving forward with the security preferences section of this installation process please ensure that the installation was successful. This should be indicated through the installer and look similar to the image below
+Before moving forward with the security preferences section of this installation process **ensure that the installation was successful**. This should be indicated through the installer and look similar to the image below.
+![installation-successful-image](pictures/installation-successful-image.png?classes=border&height=650px)
 {{% /notice %}}
 
-After the installation is successful you can click the `close` button.
+**After the installation is successful you can click the `close` button.**
 
-![installation-successful-image](pictures/installation-successful-image.png?classes=border&height=650px)
+
 
 {{% notice warning %}}
 Do not move forward with the below instructions until the installation process is complete! Please see above image and details for more information.
