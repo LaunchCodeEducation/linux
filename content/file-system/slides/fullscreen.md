@@ -195,11 +195,8 @@ ___
 
 ## Creating Empty Files
 
-- `touch [filename]`: create a new empty file
-- `nano [filename]`: open filename in nano editor. 
-
-Upon writing the file it will be created at your current directory location.
-<!-- TODO: Clarity: As a user i created a new file using touch and "filename" as the name of the file. I then opened the file using nano "filename". The note about writing the file will create it at the location is a bit confusing for me. I suggest we potentially give specific filenames on this portion of the walkthrough to avoid any confusion ie: touch example-file, nano example-nano -->
+- `touch new-file.txt`: create a new empty file named `new-file.txt` in the current working directory.
+- `nano new-file.txt`: open the file named `new-file.txt` in nano editor. 
 ___
 
 ### `touch` actually updates timestamps
@@ -214,7 +211,7 @@ You can try this out by creating a new file with `touch example-file` checking t
 
 Reading the contents of a file is always handy. In a terminal you can either take the entire contents and dump it into STDOUT with `cat`.
 
-Or you can load the file into RAM pieces at a time with `less`.
+Or you can break the output into chunks and scroll through them manually with `less`.
 
 ___
 
@@ -227,6 +224,10 @@ ___
 ### `less` example
 
 `less /etc/hostname`: open the contents of `/etc/hostname` in chunks in an interactive terminal window.
+
+`less` works by breaking the file into smaller chunks and then displaying one chunk at a time. This way even *very* large files can be displayed as only one chunk of the file must be loaded into active memory (RAM) at a time.
+
+`less` is the default tool when using the `man` command to access a package's Manual Reference Page.
 
 ---
 
