@@ -51,7 +51,7 @@ The bottom of the page has a basic form for allowing you to commit your changes 
 
 ### Identifying & Making a Change
 
-Looking over the file we see a typo. On `line 18` the current curriculum says the word `it's`, but they are using the apostrophe incorrectly. The typo is highlighted in teh following picture:
+Looking over the file we see a typo. On `line 18` the current curriculum says the word `it's`, but they are using the apostrophe incorrectly. The typo is highlighted in the following picture:
 
 ![highlighted-typo](pictures/highlighted-typo.png?classes=border)
 
