@@ -1,8 +1,10 @@
 ---
-title: "Next Steps"
+title: "Slides: Fullscreen"
 date: 2021-11-09T15:20:12-06:00
 draft: false
-weight: 4
+weight: 1
+type: "slides"
+hidden: true
 originalAuthor: ""
 originalAuthorGitHub: ""
 reviewer: "" # to be set by the approving reviewer
@@ -12,4 +14,16 @@ lastEditorGitHub: ""
 lastMod: "2022-03-10"
 ---
 
-## Next Steps
+## Slides Title
+
+---
+
+## First Slide
+
+___
+
+## Horizontal from First Slide
+
+---
+
+## Second Slide
