@@ -33,7 +33,7 @@ To view the contents of the current working directory you can use the familiar `
 To change the current working directory you can use the `cd` *builtin* command. 
 
 `cd` allows for one optional argument. If no argument is provided it will set the current working directory to the `$HOME` shell variable.
-<!-- TODO: Clarity: removed "the new path to use as the current working directory." I was not sure what this was referencing. -->
+
 `cd` works with both *absolute* and *relative* paths.
 
 #### `cd` relative path
