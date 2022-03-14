@@ -101,7 +101,7 @@ During the installation process you ran into the following pop up:
 
 ![system-extention-individual](pictures/system-extension-individual.png?classes=border&height=650px)
 
-You clicked the `Open Security Preferences` and put the resulting window to the side. The resulting window was called `Security & Privacy and looks like the following image:
+You clicked the `Open Security Preferences` and put the resulting window to the side. The resulting window was called `Security & Privacy` and looks like the following image:
 
 ![security-preferences-menu](pictures/security-preferences-menu.png?classes=border&height=650px)
 
