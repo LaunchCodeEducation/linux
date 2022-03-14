@@ -62,9 +62,9 @@ You will most likely receive a notification at this point that there is updated 
 It is normally a best practice to update your operating system whenever new package versions are available. However one of the early sections of this book is learning about and using the package manager. We will complete the step of updating our software at that point in time. Please select **Remind Me Later** to skip this step for now. No problem if you accidentally select **Install Now**, it will simply change some of the output you see during the Package Manger lessons, but will not impact your ability to work through this course.
 {{% /notice %}}
 
-Select **Reminder Me Later** as we will complete updates in a later lesson.
-
 ![software-updater](pictures/software-updater.png?classes=border)
+
+Select **Reminder Me Later** as we will complete updates in a later lesson.
 
 ## Ubuntu Desktop
 
