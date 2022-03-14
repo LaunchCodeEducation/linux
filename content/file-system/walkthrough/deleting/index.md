@@ -3,10 +3,13 @@ title: "Deleting Files & Directories"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 4
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Deleting Files and Directories
@@ -42,7 +45,7 @@ In an earlier walkthrough we created a file named `temp.file`. Feel free to remo
 
 #### Delete Recursively
 
-The `rm` command works on both files and directories. However the `rm` command can **only** delete an empty directory. However, when we choose to delete a directory we usually want to delete all of the contents in the directory as well.
+The `rm` command works on both files and directories. However the `rm` command can **only** delete an empty directory. Usually when we choose to delete a directory we want to delete all of the contents in the directory as well.
 
 Luckily, there is a *recursive* option that will remove all of the items inside of directory before deleting the directory itself, it's the `-r` option. Let's try it out.
 

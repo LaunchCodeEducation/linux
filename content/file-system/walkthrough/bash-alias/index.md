@@ -3,10 +3,13 @@ title: "Bash Aliases"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 7
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Bash Aliases
@@ -35,7 +38,7 @@ Simply execute your new `alias` by entering `displaycontents`
 
 ![displaycontents](pictures/displaycontents.png)
 
-Our Bash shell has a `displaycontents` alias registered and it was configured to run the `ls` command when executed, which you can see happened from the photo.
+Our Bash shell has a `displaycontents` alias registered and it was configured to run the `ls` command when executed, which you can see happened in the above image.
 
 {{% notice note %}}
 The `displaycontents` alias isn't very useful, but serves as a demonstration for creating and using Bash aliases. Most people will create new aliases when they find themselves using the same complex commands over, and over again as a way of simplifying their work.
@@ -56,5 +59,5 @@ Now execute the `greeting` alias:
 This is a more complex alias and is doing something we haven't seen before. Inside of the `echo` command it is invoking another Bash shell command named `date`. 
 
 {{% notice bonus %}}
-The syntax `$(command)` is a Bash shell **command substitution**. It essentially means the `date` command is executed first and its output is used in place of the second command being executed `echo`. We will learn more about **command substitution** and some more advanced Bash features in a later chapter.
+The syntax `$(command)` is a Bash shell **command substitution**. It essentially means the `date` command is executed first and its output is used in place of the second command being executed which is `echo`. We will learn more about **command substitution** and some more advanced Bash features in a later chapter.
 {{% /notice %}}

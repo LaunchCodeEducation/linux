@@ -3,15 +3,18 @@ title: "Updating Files & Directories"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 5
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Update Files and Directories
 
-You can either update the contents of a file/directory or the metadata (name, last modified, permissions) of a file/directory.
+You can update the contents of a file/directory or the metadata (name, last modified, permissions) of a file/directory.
 
 ## Updating Metadata
 
@@ -70,7 +73,7 @@ This command moved the `roster.txt` file from the `temp-dir/` directory into the
 
 While changing the metadata attached to a file is important, it's not as common as updating the contents of a file. This section will focus on updating the internal contents of a file with the GNU bash shell terminal editor called `nano`.
 
-Open file using terminal text editor.
+Opening a file using a terminal text editor:
 
 - `nano filename`
   - `vim filename`
@@ -93,9 +96,9 @@ If you find any pair of computer enthusiasts that worked on computers between 19
 
 `nano` is a great choice as it is the most straightforward to use and it comes as a part of the standard package of most Linux/GNU distributions. We will predominately use `nano` to edit files in this course. We will also explore some of the basics of `vim`.
 
-### Open File
+### Opening a File
 
-Opening a file with `nano` is very straightforward. We simply execute the `nano` command with one argument, the file we wish to open. If the file exists, its contents will be populated into `nano`. If the file does not exist, it will be created and an empty file will be populated into `nano`.
+Opening a file with `nano` is very straightforward. We simply execute the `nano` command with one argument, the file we wish to open. If the file exists, its contents will be populated into `nano`. If the file does not exist, it will be created as an empty file and opened within `nano`.
 
 When you open the file you will leave the Bash shell behind and the `nano` text editor will take up the entirety of your terminal window.
 
@@ -112,7 +115,7 @@ After executing the command you will see the `~/myname.txt` file opened in the `
 There are three sections of the `nano` text editor:
 
 - The top of the screen shows the version (`GNU nano 4.8`) and the currently opened file (`/home/student/myname.txt`)
-- A large block of space, with a cursor. This is the area we can read, add, edit, or delete any of the contents of the file.
+- A large block of space, with a cursor. This is the area where we can create, read, update, and delete any of the contents of the file.
 - The bottom of the screen contains a useful collection of **control** keys allowing us to save, exit, or assist us in editing the file. 
 
 #### Add Contents to the File
@@ -170,5 +173,5 @@ And let's `cat` out the contents of our file:
 We have successfully opened a file, edited the contents of a file, wrote a file, and displayed the contents of a file all from our terminal!
 
 {{% notice bonus %}}
-Like everything in this class, you will become more comfortable the more you practice. If you truly want to become comfortable or productive with a terminal text editor you need to **use one a lot**. `nano` is straightforward to use, but lacks the many features you will find in `vim` or `emacs`. For now practice creating and editing some files with `nano`. Soon we will learn about installing new software and you can take it upon yourself to learn how to use either `vim` or `emacs`. Conquering the basics and being comfortable with some of their more advanced uses will benefit you greatly if you work with Linux systems in your career.
+Like everything in this class, you will become more comfortable the more you practice. If you truly want to become comfortable and productive with a terminal text editor you need to **use one often**. `nano` is straightforward to use, but lacks the many features you will find in `vim` or `emacs`. For now practice creating and editing some files with `nano`. Soon we will learn about installing new software and you can take it upon yourself to learn how to use either `vim` or `emacs`. Conquering the basics and being comfortable with some of their more advanced uses will benefit you greatly if you work with Linux systems in your career.
 {{% /notice %}}
