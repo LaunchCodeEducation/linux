@@ -5,17 +5,17 @@ draft: false
 weight: 2
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
-reviewer: "" # to be set by the page reviewer
-reviewerGitHub: "" # to be set by the page reviewer
-lastEditor: "" # update any time edits are made after review
-lastEditorGitHub: "" # update any time edits are made after review
-lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "John Woolbright" # update any time edits are made after review
+lastEditorGitHub: "jwoolbright23" # update any time edits are made after review
+lastMod: 2022-03-14 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-When dealing with Package Manager a common task is to **refresh** your list of package repositories and **download the metadata of all packages**. This is a common task to complete before installing a new package or upgrading any existing packages because it ensures our Package Manager has the most up to date information on all packages.
+When dealing with any Package Manager a common task is to **refresh** your list of package repositories and **download the metadata of all packages**. This is a common task to complete before installing a new package or upgrading any existing packages because it ensures our Package Manager has the most up to date information on all packages.
 
 {{% notice note %}}
-Being able to update the metadata about the packages is a very important task. There are tons of packages and all of them are actively maintained which takes the form of: bug squashing, vulnerability patching, feature adding, optimization, etc. Each of these changes usually results in a new version (or build) of the package which adds to the metadata of the package. Being able to update our package manager allows us ot learn of any of these changes without upgrading any of our packages.
+Being able to update the metadata about the packages is a very important task. There are tons of packages and all of them are actively maintained which takes the form of: bug squashing, vulnerability patching, feature adding, optimization, etc. Each of these changes usually results in a new version (or build) of the package which adds to the metadata of the package. Being able to update our package manager allows us to learn of any of these changes without upgrading any of our packages.
 {{% /notice %}}
 
 ## `sudo apt update`
