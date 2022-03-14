@@ -29,7 +29,7 @@ Clicking the giant blue button stating `Download VirtualBox 6.1` should lead you
 On this page you should see multiple links that coincide with your Operating System. Upon clicking one of these links it should automatically start a download that will work for your OS.
 
 {{% notice note %}}
-If you are using a Linux based operating system the link from the downloads page will take you to another page with various options, find the one for your specific distribution.
+If you are using a Linux based operating system the link from the downloads page will take you to another page with various options, find the one for your specific distribution. If you are currently using a Debian based Linux distribution you should be able to just use it with the instructions in this class and don't need to install VirtualBox, or setup an Ubuntu virtual machine. However, there will likely be slight differences between your outputs, and file locations from what is listed in this course.
 {{% /notice %}}
 
 ## Installation Instructions
