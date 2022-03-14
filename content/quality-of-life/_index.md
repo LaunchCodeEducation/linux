@@ -10,8 +10,6 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-## Major Concepts & Key Terminology
-
 ## Content Links
 
 {{% children %}}
