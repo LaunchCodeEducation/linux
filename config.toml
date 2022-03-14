@@ -14,3 +14,8 @@ theme = "lc-learn"
   name = "Contributing to this Project"
   url = "/contributing"
   weight = 99998
+
+[[menu.shortcuts]]
+  name = "Quality of Life Improvements"
+  url = "/quality-of-life"
+  weight = 99997
