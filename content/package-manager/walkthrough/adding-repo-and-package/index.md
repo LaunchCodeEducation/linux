@@ -180,56 +180,113 @@ GPG works by having two linked keys a public key, and a private key. A public ke
 
 In this specific case (adding a package repository from Docker) we are adding the Docker public key to our `gnupg` keychain. This way docker can create a digital signature (using their private key) that we can verify (using our public key). Docker can also encrypt (using their private key) the payload of data and we can decrypt (using our public key) the data.
 
+The command for requesting the Docker public gpg key and adding it to our personal pgp keyring is as follows:
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
+That is a complex command that is using the pipe (`|`) operator. Which means the output from the first command is being passed as the input to the second command.
+
+Let's break these commands down to get a better understanding of what's happening.
+
 #### Command Breakdown
 
-`curl` makes web requests from the terminal. We are requesting Docker's public key.
+`curl` makes web requests from the terminal. The `curl https://download.docker/com/linux/ubuntu/gpg` command is requesting Docker's public key to be printed out to the terminal (STDOUT).
 
 {{% notice green "Bonus" "rocket" %}}
 You can run `curl https://download.docker.com/linux/ubuntu/gpg` by itself to see the actual key.
+![curl https://download.docker.com/linux/ubuntu/gpg](pictures/curl-docker-gpg-key.png?classes=border)
+We don't need to understand this key, we simply need it to verify Docker's signature.
 {{% /notice %}}
 
-We are passing the output (the key we just requested) to the next command `sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`.
+The output (the text of the key listed in the picture above) is being passed to the next command `sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg`.
 
-This command is packing the key into the proper format and then writing the key to the file: `/usr/share/keyrings/docker-archive-keyring.gpg`.
+This command is packing the key into the proper format (`.gpg`) and then writing the key to the file: `/usr/share/keyrings/docker-archive-keyring.gpg`.
 
-This key will be used in the next step.
+After running the full command, the Docker public key is now on our `gpg` keyring and will be used to verify any signatures from Docker! 
 
 ### Add the Docker `stable` Repository
+
+Now that we have the Docker public key on our keyring we can add the Docker repository to our computer. It's another complex command we will break down:
 
 ```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-Wow, that's a lot of stuff packed into one line.
+Wow, that's a lot of stuff packed into one line. Let's break it down.
 
 #### Command Breakdown
 
-In the command there are two Bash operators (`|` and `>`), meaning there are three separate bash commands. Let's break them down.
+In the command there are two Bash operators (`|` and `>`), meaning there are three separate bash commands. Let's look at them one at a time:
 
 The Pipe Operator (`|`) passes the output from the first command and uses it as the input for the next command.
 
 The Output Redirection Operator (`>`) passes the output from the first command to be written as a file in the second command.
 
-##### `echo ...`
+#### The `echo ...` portion
 
 The `echo` command is just displaying something to the Bash shell's display (STDOUT).
 
-You can run this part of the command completely on your own to see the contents of this command.
+You can run this part of the command completely on your own to see the contents of this command:
 
-##### `sudo tee ...`
+```bash
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable"
+```
 
-##### `/dev/null`
+Which results in the following output:
 
-A special file that when you write to it the contents are immediately deleted.
+![echo package repo](pictures/echo-package-repo.png?classes=border)
+
+The output is difficult to see so we will share it here:
+
+```bash
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable
+```
+
+Overall it's a simple line. One line of output that contains:
+
+- the architecture of our computer (`amd64`)
+- the key to use when using this repo (`docker-archive-keyring.gpg`)
+- the package repo URL (`https://download.docker.com/linux/ubuntu`)
+- our distributions canonical name (`focal`)
+- the type of repository to add (`stable`)
+
+This is the information necessary for a package repository to work.
+
+{{% notice bonus %}}
+This information is eeriely similar to the Ubuntu provided package repositories that come standard with your distribution. Print out the contents of the package repositories in `/etc/apt/sources.list` with `cat /etc/apt/sources.list`.
+![cat /etc/apt/sources.list](pictures/cat-etc-apt-sources-list.png?classes=border)
+There are multiple uncommented out lines that are similar to the line we just printed out.
+{{% /notice %}}
+
+#### The `sudo tee ...` portion
+
+The output from the previous `echo` command is passed to: `sudo tee /etc/apt/sources.list.d/docker.list`.
+
+By simply taking a look at the `tee` package's man page we will see it's description:
+
+![man tee](pictures/man-tee.png?classes=border)
+
+It reads from standard input (the result of the `echo command` in the previous step) and writes it to a file in this case `etc/apt/sources.list.d/docker`. So the contents we printed to our display in the previous step will simply be written to this new file.
+
+#### The `/dev/null` portion
+
+Finally a really weird section the output from the previous `tee` command is being directed to a file called `/dev/null`.
+
+`/dev/null` is a special file that when you write to it the contents are immediately deleted.
+
+The `tee` command expects to write the result of creating the new file to a completely different file and will throw an error if the results aren't written somewhere.
+
+So we are using the `/dev/null` file as a location to write the expected output, where it is immediately discarded.
 
 ## Install the Docker Tools
 
+Now that we have written the package repository to the appropriate location `/etc/apt/sources.list.d/docker` we can use the package repository to install and maintain the packages associated with that repo.
+
 ### Update the Package Repository List
+
+Not only is a good idea to update our package repository list, but we need to because we just added a brand new package repository, and we need to instruct the `apt` CLI to update itself.
 
 ```bash
 sudo apt update -y
@@ -237,6 +294,17 @@ sudo apt update -y
 
 ### Install the Packages with `apt`
 
+Finally we can install the packages associated with docker using the `apt` CLI.
+
 ```bash
 sudo apt install docker-ce docker-ce-cli containerd.io
 ```
+
+## Review
+
+We have successfully:
+
+- web requested the Docker public key
+- added the Docker public key to our gpg keyring
+- added the Docker Package Repository
+- installed Docker and associated packages using the `apt` CLI
