@@ -88,6 +88,10 @@ After running this command we can see the output:
 
 ![apt list ca certificates](pictures/apt-list-ca-certificates.png?classes=border)
 
+It looks like the `ca-certificates` package is automatically installed as a part of this distribution.
+
+What happens if we try to install it anyway?
+
 ```bash
 sudo apt install ca-certificates
 ```
@@ -106,11 +110,19 @@ After running this command we can see the output:
 
 ![apt list curl](pictures/apt-list-curl.png?classes=border)
 
+It looks like the `curl` package is **not currently installed** on this distribution.
+
+How can it be installed with `apt`?
+
 ```bash
 sudo apt install curl
 ```
 
 ![sudo apt install curl](pictures/apt-install-curl.png?classes=border)
+
+{{% notice note %}}
+Don't forget we will have to confirm the installation by entering `y` and hitting enter, or by simply hitting enter.
+{{% /notice %}}
 
 #### `gnupg`
 
@@ -123,6 +135,10 @@ apt list gnupg
 After running this command we can see the output:
 
 ![apt list gnupg](pictures/apt-list-gnupg.png?classes=border)
+
+It looks like the `gnupg` package is automatically installed as a part of this distribution.
+
+What happens if we try to install it anyway?
 
 ```bash
 sudo apt install gnupg
@@ -142,23 +158,28 @@ After running this command we can see the output:
 
 ![apt list lsb-release](pictures/apt-list-lsb-release.png?classes=border)
 
+It looks like the `lsb-release` package is automatically installed as a part of this distribution.
+
+What happens if we try to install it anyway?
+
 ```bash
 sudo apt install lsb-release
 ```
 
 ![apt install lsb-release](pictures/apt-install-lsb-release.png?classes=border)
 
-### Installing the Packages Anyway!
-
-Let's see what happens when we run an install command when all of the tools are already installed on our machine.
-
-```bash
-sudo apt install ca-certificates curl gnupg, lsb-release
-```
-
 ### Add Docker's GPG Key
 
-<!-- TODO: high level blurb about GPG public/private key relationship to ensure a level of security -->
+After checking for and installing the prerequisite packages we need to add Docker's GPG key.
+
+GPG stands for **G**NU **P**rivacy **G**uard. It is an implementation of OpenPGP which allows you to asymmetrically encrypt data and create and authenticate digital signatures. 
+
+{{% notice bonus %}}
+GPG works by having two linked keys a public key, and a private key. A public key can be shared with anyone, the private key remains secret and in the control of an individual. Data can be encrypted by either the public or private key and key be decrypted by the alternate key. Because of this encryption a user can create a digital signature that the other party can decrypt and verify.
+{{% /notice %}}
+
+In this specific case (adding a package repository from Docker) we are adding the Docker public key to our `gnupg` keychain. This way docker can create a digital signature (using their private key) that we can verify (using our public key). Docker can also encrypt (using their private key) the payload of data and we can decrypt (using our public key) the data.
+
 
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
