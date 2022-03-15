@@ -3,15 +3,18 @@ title: "Introduction"
 date: 2021-11-09T15:11:04-06:00
 draft: false
 weight: 2
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-15 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Linux
 
-Welcome! This course will be exploring Linux. We will talk about many of the key elements of Linux, some of the problems you can solve using this tool and most importantly will be getting hands on practice with this very commonly used tool.
+Welcome! This course will be exploring Linux. The course will cover many key elements of Linux, some of the problems you can solve using this tool, and most importantly you will be getting hands on practice with this very commonly used tool.
 
 ### Brief History
 
@@ -31,11 +34,11 @@ Some of the ways these Linux distributions are used:
 - personal use operating system (like MacOS or Windows)
 - mobile devices (Android)
 - embedded systems (like car computers, or single board computers)
-- **Cloud Computing** Linux distributions dominate the various cloud services that power the internet
+- **Cloud Computing**: Linux distributions dominate the various cloud services that power the internet
 
-Due to Linux's popularity especially as it pertains to the web and cloud computing make it an attractive tool to learn about as you continue your journey in technology.
+Linux’s popularity especially as it pertains to the web and cloud computing makes it an attractive tool to learn about as you continue your journey in technology.
 
-We will not be diving deeply into the kernel in this class. We will spend the majority of our time focusing on how this tool can be used to build solutions in the tech industry. We will work towards learning how to install and configure various web servers, knowledge you can take to bring your web applications to the internet.
+This course is not designed to dive deeply into the kernel. The majority of time will be spent focusing on how this tool can be used to build solutions in the tech industry. You will learn how to install and configure various web servers, providing you with the knowledge needed to bring your web applications to the internet.
 
 ## Major Concepts & Key Terminology
 
