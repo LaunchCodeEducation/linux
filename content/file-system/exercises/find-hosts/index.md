@@ -32,12 +32,12 @@ lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 
 ### What command, arguments, and options did you use to find all files containing the word `hosts` in the `/etc` directory?
 
-{{% expand "ANSWER" %}}
+{{% expand "CLICK FOR ANSWER" %}}
 `sudo find /etc --name *hosts*` 
 {{% /expand %}}
 
 ### Why are the wildcards (`*`) necessary in the previous answer?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 Without the wildcards the find command searches for file names matching exactly `hosts` of which it finds a couple, but it doesn't find **all** files that contain the word `hosts`.
 {{% /expand %}}

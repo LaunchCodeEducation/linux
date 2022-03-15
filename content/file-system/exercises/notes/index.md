@@ -30,36 +30,36 @@ lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 
 ### What is the command to change working directories?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 `cd`
 {{% /expand %}}
 
 ### What is an **absolute path**?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 An **absolute path** is the unique path for a specific file/directory. It always starts at root (`/`).
 {{% /expand %}}
 
 ### What is a **relative path**?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWERR" %}} 
 The path to a file/directory **relative** to the current working directory. This path always starts from the current working directory sometimes denoted as a `.` character.
 {{% /expand %}}
 
 ### What is the `nano` program?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 `nano` is a command line text editor. It allows you to edit the text content of files directly from a terminal.
 {{% /expand %}}
 
 ### How do you save a file in `nano`?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 One way to save a file in `nano` is to press `Ctrl` + `O` to **write out** the file.
 {{% /expand %}}
 
 ### How do you exit a file in `nano`?
 
-{{% expand "ANSWER" %}} 
+{{% expand "CLICK FOR ANSWER" %}} 
 You exit a file in `nano` by pressing `Ctrl` + `X` to **exit** the file. If changes have been made to the file `nano` will ask you if you want to write changes before exiting, or to discard changes before exiting.
 {{% /expand %}}
