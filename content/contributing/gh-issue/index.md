@@ -110,26 +110,101 @@ As you are working through the curriculum you may encounter any of the above bug
 
 #### Example
 
+Let's take a look at the Bug Form.
+
 ![bug-form-blank](pictures/bug-form-blank.png?classes=border)
 
-![bug-form-completed](pictures/bug-form-completed.png?classes=border)
+You must provide us with:
+
+- **Title of the Issue**
+  - A brief title for this issue like: `Typo on Why Learn To Code`
+- The **URL** where the bug exists
+  - The full URL: `https://education.launchcode.org/intro-to-professional-web-dev/chapters/introduction/why-learn-to-code.html`)
+  - Or more simply, the path: `intro-to-professional-web-dev/chapters/introduction/why-learn-to-code.html`
+- The **nature of the bug**
+  - What bug did you encounter? 
+    - How was it supposed to behave? (expected behavior)
+    - How did it actually behave? (actual behavior)
+  - For example: *I clicked on the Learn More link, but the resource could not be found with a 404 status code.*
+
+Additionally, we ask that you provide any **More information** around the context of this bug. To adequately fix the bug we have to first recreate the bug on our system. This verifies the existence of the bug and gives us insight into identifying the underlying problem that is causing the bug. These steps have to be completed in order to fix the bug.
 
 ### Clarity Request
 
+Confusion is a natural part of the learning journey. We try to create and organize content in a way that reduces confusion for as many different learning styles as possible.
+
+There may be instances where a **large number of students and course staff** will encounter confusion around the same section of curriculum. When this happens it's a good indicator that a section should be reworded, reorganized, or rebuilt in a way to reduce the confusion experienced by a large number of individuals.
+
+The Clarity Request Form is the mechanism that allows students and course staff to provide feedback around clarity improvements that can be made to the curriculum.
+
+{{% notice warning %}}
+**Please talk to other students and course staff about your confusion before creating a new clarity request. It is possible that the section is already in an adequate format that is meeting the needs of the majority of students and course staff. However, when a large number of students and course staff agree upon a section that is causing confusion it is an appropriate time to create a clarity request.**
+{{% /notice %}}
 
 #### Example
+
+Let's take a look at the Clarity Request Form:
 
 ![clarity-request-form-blank](pictures/clarity-request-form-blank.png?classes=border)
 
-![clarity-request-form-completed](pictures/clarity-request-form-completed.png?classes=border)
+You must provide us with:
+
+- **Title of Issue**
+- The **URL** to the issue
+- The section of text that caused confusion: **Confusing Section**
+
+Additionally we ask that you provide:
+
+- Any **Suggestions** you may have for improving the clarity.
+- **Additional information** to help us understand the nature of your confusion, or the underlying issue.
 
 ### Feature Request
 
+In some instances you may have ideas about **new features** to the website hosting the curriculum, or **new content** that might have a positive impact on the experience of students and course staff working through a LaunchCode program.
+
+Features of the website include:
+
+- text search
+- buttons
+- navigation bars
+- menus
+  - table of contents
+- next and previous buttons
+- etc
+
+Content may include:
+
+- more code examples
+- more exercises
+- more concept checks
+- additional sections to chapters
+- additional chapters
+- additional explanations
+- additional definitions
+- additional diagrams
+- etc
+
+There are many things that could be added to the website or to the content of the curriculum. Again we are looking for **consensus** from a **large number of students and course staff**.
+
+In this case you need to create a Feature Request Issue.
+
+{{% notice warning %}}
+**Please talk to other students and course staff about your ideas around new content before creating a new feature request. We cannot create every feature that every individual user desires, but are very interested in adding features and content that a majority of students and course staff desire.**
+{{% /notice %}}
+
 #### Example
+
+Let's take a look at the Feature Request Form:
 
 ![feature-request-form-blank](pictures/feature-request-form-blank.png?classes=border)
 
-![feature-request-form-completed](pictures/feature-request-form-completed.png?classes=border)
+You must provide us with a **Title** and **Feature Short Description**. We must know the description of the feature you are requesting. If you cannot adequately describe to us either the new feature or content that should be added we cannot decide if the feature or content should be created.
+
+Additionally we ask you to provide a **longer description of the feature**, and **suggestions on where/how the feature or content should be added**.
+
+Providing as much details about the new feature or content is necessary for LaunchCode to determine if the feature / content is feasible, and if it should be developed. This makes the longer description of the feature section an important part of the form.
+
+Providing suggestions on where the feature should be added is also important for LaunchCode to determine where and how the feature or content should be implemented.
 
 ## Review
 
@@ -150,5 +225,3 @@ Any issues may be closed without discussion or reason by a LaunchCode representa
 LaunchCode reserves the final say in all things related to the curriculum.
 
 We appreciate any and all feedback gathered through GitHub Issues and we **thank you** for your work towards creating better experiences for future students!
-
-<!-- TODO: Blurb of student experience in creating new GH issues. What GH issue forms exist, what are their purpose. Pictures of how they can use them. This will be its own card on Trello. After step is completed change the draft frontmatter to false -->
