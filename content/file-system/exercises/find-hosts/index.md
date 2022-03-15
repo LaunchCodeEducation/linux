@@ -1,5 +1,5 @@
 ---
-title: "Finding files"
+title: "Finding Files"
 date: 2021-11-09T15:12:13-06:00
 draft: false
 weight: 3
@@ -28,13 +28,16 @@ lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
   - find your username in this file
     - what does it say the home directory for that user is?
 
-## Questions
+## Questions & Answers
 
-- What command, arguments, and options did you use to find all files containing the word `hosts` in the `/etc` directory?
+### What command, arguments, and options did you use to find all files containing the word `hosts` in the `/etc` directory?
+
 {{% expand "ANSWER" %}}
 `sudo find /etc --name *hosts*` 
 {{% /expand %}}
-- Why are the wildcards (`*`) necessary in the previous answer?
+
+### Why are the wildcards (`*`) necessary in the previous answer?
+
 {{% expand "ANSWER" %}} 
 Without the wildcards the find command searches for file names matching exactly `hosts` of which it finds a couple, but it doesn't find **all** files that contain the word `hosts`.
 {{% /expand %}}
