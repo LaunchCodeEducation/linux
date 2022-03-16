@@ -13,6 +13,7 @@ lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 - using the services created in the previous walkthroughs take students through:
+  - `systemctl status`
   - `systemctl start`
   - `systemctl stop`
   - `systemctl enable`
