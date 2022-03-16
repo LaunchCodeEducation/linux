@@ -167,3 +167,14 @@ Your remote repository should now show the added files and changes made!
 You can also view your commit by clicking on the `1 commit` section to view all commits inside of the remote repository.
 
 ![remote-commit-view](pictures/remote-commit-view.png?classes=border)
+
+### Recap:
+
+This walkthrough was a refresher on the following:
+- Creating a local repository
+  - `git init`
+- Creating a remote repository on github
+- Adding a remote repo to our local repo
+  - `git remote add <remote-reference-name> <remote-repository-url>`
+- Staging, Committing, and Pushing local changes to a remote repository
+  - `git add`, `git commit`, `git push`
