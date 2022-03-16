@@ -1,6 +1,6 @@
 ---
 title: "Forking and Cloning Repositories"
-date: 2021-11-09T15:20:12-06:00
+date: "2022-03-16"
 draft: false
 weight: 2
 originalAuthor: "John Woolbright"
@@ -9,7 +9,7 @@ reviewer: "" # to be set by the approving reviewer
 reviewerGitHub:
 lastEditor: ""
 lastEditorGitHub: ""
-lastMod: "2022-03-16"
+lastMod: ""
 ---
 
 ## Fork & Clone
