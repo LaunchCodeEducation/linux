@@ -14,9 +14,21 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
+- initialization system
+  - `systemd`
+- daemon
+- service
+- defining a daemon or service with a unit file
+- where system daemon and service files live
+- where personal daemon and service files live
+- `systemctl`
+  - `start`
+  - `stop`
+  - `enable`
+  - `disable`
+  - `status`
+- `journalctl`
+
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Exercises]({{< relref "./exercises" >}})
-- [Next Steps]({{< relref "./next-steps" >}})
+{{% children %}}
