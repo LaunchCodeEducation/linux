@@ -106,47 +106,64 @@ Now that we have made some changes to our project directory we want to stage the
 
 Cd back into the root folder of this project directory using the `cd ..` command.
 
-![first-staging](pictures/first-staging.png?classes=border)
-
 ### Staging
 
-Now that we are inside of the root folder we can check any changes that have been made using the `git status` command. As you can see there are untracked files inside of our project directory. We want to stage these changes for a commit using the `git add` command.
+Now that we are inside of the root folder we can check any changes that have been made using the `git status` command. 
+
+![first-staging](pictures/first-staging.png?classes=border)
+
+As you can see there are untracked files inside of our project directory. We want to stage these changes for a commit using the `git add` command.
 
 ![git-add](pictures/git-add.png?classes=border)
 
 Type in the command `git add example-folder/` and hit the enter key. You will notice that there will not be any output after hitting enter. But if you type in `git status` once more you will see that there are now changes to be committed.
 
+{{% notice bonus %}}
+There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders you want to include. If you would like to include all folders and files changed into one commit you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
+{{% /notice %}}
+
 ### Commit to Local Repository
 
-Now that you have changes ready to be committed we can do so with the following command `git commit`. There are a multiple things to consider when committing code to a new project repository. So before we do so lets touch base on them. 
+Now that you have changes ready to be committed you can do so with the command `git commit`. There are a multiple things to consider when committing code to a new project repository. So before you do so lets touch base on them. 
 - Meaningful Commit messages: You want your commit messages to be meaningful so that you or anyone else working on the project has a good idea of what changes were made for any given commit.
 - Title, and Body of Commit: Ideally every commit has a title and a body explaining what changes were made to the file.
 
-After considering the above lets make our first-commit. All commit commands usually have the following structure: `git commit -m "title message" -m "body message"`
+After considering the above lets make our first-commit. All commits usually have the following structure: `git commit -m "title of commit" -m "body message"`
 
 ![first-commit](pictures/first-commit.png?classes=border)
 
-<!-- TODO: Have them complete a git log and check the remote repo -->
-
 Enter the following command `git commit -m "first-commit" -m "added an example-folder with an example-fle containing a message"`.
 
+#### Git Log
+
+Now that you have made a commit you can check to see what the commit looks like using the `git log` command.
+
+![git-log](pictures/git-log.png?classes=border)
+
+As you can see the log shows us that a commit was made to the `master` branch from a specific `Author` on a specific `Date`. Below that you can see what the title of the commit was in addition to a description of what was included.
 
 ### Push Local Changes to Remote Repo
 
-The final step is to push the changes that we staged and committed to our remote repository. This is as simple as using the `git push` command specifying what branch we want to push our changes to.
+The final step is to push the changes that we staged and committed to our local repository up to the remote repository. To accomplish this you must use the `git push` command specifying what branch you want to push the changes to.
 
 ![git-push-origin-master](pictures/git-push-origin-master.png?classes=border)
 
-Enter the `git push origin master` command into your terminal.
+Enter `git push origin master` into your terminal.
+
+{{% notice note %}}
+The above command is pushing changes from your local repository to the remote repository named `origin` onto the branch named `master`.
+{{% /notice %}}
 
 You will be asked for your username and password.
 
 ![git-push-origin-master-password](pictures/git-push-origin-master-password.png?classes=border)
-
-<!-- TODO: Have them complete another git log and check the remote repo here -->
 
 Enter your `username` and `password` for the changes to be pushed into the remote repository.
 
 Your remote repository should now show the added files and changes made!
 
 ![remote-repo-updated](pictures/remote-repo-updated.png?classes=border)
+
+You can also view your commit by clicking on the `1 commit` section to view all commits inside of the remote repository.
+
+![remote-commit-view](pictures/remote-commit-view.png?classes=border)
