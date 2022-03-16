@@ -12,4 +12,4 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-unit file for caddy
+unit file for caddy (when hit will just show the default caddy page)
