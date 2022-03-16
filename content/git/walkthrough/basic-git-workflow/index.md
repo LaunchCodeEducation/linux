@@ -14,6 +14,8 @@ lastMod: "2022-03-16"
 
 ### Review: Creating a Local Git Repo
 
+<!-- TODO: Add expectations of what we want the learner to do -->
+
 One of the ways to use git is to initialize a local repository in project directory you have already created. As an example you can create a new directory inside of your home/student directory called `local-repository`.
 
 ![local-project-directory](pictures/local-repository.png?classes=border)
@@ -29,11 +31,13 @@ Make sure to cd into your newly created directory before running the `git init` 
 
 Running the above command creates a new subdirectory named .git. This file holds all of the required repository files.
 
+<!-- TODO: Add bonus of how to find the .git folder -->
+
 ### Review: Creating a Remote Git Repo
 
 There are a couple of ways to create a remote repository on git. The simplest way of doing so is to use the github. After logging in you need to navigate to the repositories tab and click the green `new` button. 
 
-![new-remote-repo](pictures/new-remote-repo.png?classes=border)
+![new-remote-repo](pictures/new-remote-repository.png?classes=border)
 
 This new view gives us a few options. The only required option is to provide the remote repository with a name. For this walkthrough we will use the name `remote-repository`.
 
@@ -44,6 +48,7 @@ You may be familiar with the other options:
 - **Add .gitignore**: File that allows you to ignore certain files or directories when adding, commiting, and pushing files to your remote repository. This is always something you can create later.
 - **Choose a license**:
 <!-- TODO: Create note about License and what the general purposes are -->
+<!-- we will not be covering licenses in this course. -->
 
 For this walkthrough you should only provide this repo with a name and leave the optional settings as they were defaulted.
 
@@ -57,11 +62,13 @@ After clicking the Create button you should see the following view:
 
 This page provides you with options and information on how to create a new repo from the command line (which you already completed). The other option is to push an existing repo from the command line. The reason it is providing this information is because this repository is currently empty. The next step is to connect our local and remote repository so that we can push something (code, files, folders) into the repository.
 
-### Link a Remote Repo to Local Repo
+### Adding a Remote Repo to an existing Local Repo
 
 Jump back over to the directory inside the terminal where you created a local repository.
 
 ![git-remote-add-origin](pictures/git-remote-add-origin.png?classes=border)
+
+<!-- TODO: add in a snippet about what the "origin" is when adding a new remote repository -->
 
 Once inside of the directory we can run the following command:
 
@@ -73,7 +80,7 @@ Your terminal should output the following information about our remote repo:
 - origin `https://github.com/github-username/remote-repository.git` (fetch)
 - origin `https://github.com/github-username/remote-repository.git` (push)
 
-### Stage, Commit, and Push Local Changes
+## Stage, Commit, and Push Local Changes
 
 Now that you have connected your local and remote repositories you can push local information into our remote repository. Lets add an example-folder with an example-file inside of it to push to our new remote.
 
@@ -95,7 +102,7 @@ Cd back into the root folder of this project directory using the `cd ..` command
 
 ![first-staging](pictures/first-staging.png?classes=border)
 
-## Staging
+### Staging
 
 Now that we are inside of the root folder we can check any changes that have been made using the `git status` command. As you can see there are untracked files inside of our project directory. We want to stage these changes for a commit using the `git add` command.
 
@@ -103,7 +110,7 @@ Now that we are inside of the root folder we can check any changes that have bee
 
 Type in the command `git add example-folder/` and hit the enter key. You will notice that there will not be any output after hitting enter. But if you type in `git status` once more you will see that there are now changes to be committed.
 
-## Commit Local Changes
+### Commit to Local Repository
 
 Now that you have changes ready to be committed we can do so with the following command `git-commit`. There are a multiple things to consider when committing code to a new project repository. So before we do so lets touch base on them. 
 - Meaningful Commit messages: You want your commit messages to be meaningful so that you or anyone else working on the project has a good idea of what changes were made for any given commit.
@@ -112,6 +119,8 @@ Now that you have changes ready to be committed we can do so with the following 
 After considering the above lets make our first-commit. All commit commands usually have the following structure: `git commit -m "title message" -m "body message"`
 
 ![first-commit](pictures/first-commit.png?classes=border)
+
+<!-- TODO: Have them complete a git log and check the remote repo -->
 
 Enter the following command `git commit -m "first-commit" -m "added an example-folder with an example-fle containing a message"`.
 
@@ -128,3 +137,10 @@ You will be asked for your username and password.
 
 ![git-push-origin-master-password](pictures/git-push-origin-master-password.png?classes=border)
 
+<!-- TODO: Have them complete another git log and check the remote repo here -->
+
+Enter your `username` and `password` for the changes to be pushed into the remote repository.
+
+Your remote repository should now show the added files and changes made!
+
+![remote-repo-updated](pictures/remote-repo-updated.png?classes=border)
