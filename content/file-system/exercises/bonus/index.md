@@ -27,7 +27,7 @@ In the previous [Bash: Introduction - Demo]({{< relref "/bash-introduction/demo"
 
 These are all steps you can now perform with your new found Bash: File System Navigation and File/Directory CRUD skills!
 
-## Double Bonus
+## Additional Bonus
 
 You can also complete the rest of the steps from the [Bash: Introduction - Demo]({{< relref "/bash-introduction/demo" >}}).
 
@@ -41,10 +41,11 @@ You are not expected to know about manually changing the `$PATH` shell variable,
 - create a symlink named `when` that points at the `whattimeisit` bash script
 - invoke both `when` and `whattimeisit` to show how they work
 
-#### Double Bonus: Question
+## Additional Bonus: Question & Answer
 
-- What happens if you close your terminal and try to run `when` and `whattimeisit`?
-{{% expand "ANSWER" %}} 
+### What happens if you close your terminal and try to run `when` and `whattimeisit`?
+
+{{% expand "CLICK FOR ANSWER" %}} 
 The `when` and `whattimeisit` commands **no longer work**! Check the path of this new Bash session with `echo $PATH`. You will notice the `/home/student/bin` is no longer on the Path variable.
 
 When we manually added the `/home/student/bin` directory to our Path variable, we were only adding it for the current Bash session. There are many ways you can add this directory to the `$PATH` permanently. However, the best solution would be to add the line specifically to your `~/.bashrc` user profile. That way this specific directory of programs is only added for the **student** user.
