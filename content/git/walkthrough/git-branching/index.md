@@ -11,3 +11,27 @@ lastEditor: ""
 lastEditorGitHub: ""
 lastMod: "2022-03-17"
 ---
+
+## Branching
+
+- Why you should do this
+
+{{< mermaid >}}
+gitGraph:
+options
+{
+  "nodeSpacing: 75,
+  "nodeRadius": 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+{{< /mermaid >}}
+
