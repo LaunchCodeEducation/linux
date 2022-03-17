@@ -14,12 +14,15 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
+- `systemd` has 2 major responsibilities
+  - initialize actions at specific states (machine power-on, machine power-off, user login, user logout, machine crash, kernel panic, etc)
+  - manage ongoing services & daemons
 - initialization system
   - `systemd`
 - daemon
 - service
-- defining a daemon or service with a unit file
-- where system daemon and service files live
+- where system daemon and service files live (existing services and daemons)
+- defining custom daemon or service with a unit file
 - where personal daemon and service files live
 - `systemctl`
   - `start`
