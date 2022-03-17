@@ -12,9 +12,35 @@ lastEditorGitHub: ""
 lastMod: "2022-03-17"
 ---
 
-## Branching
+## Creating a new Branch
 
-Branching is a crucial compenent when working with projects under version control. Branching allows you to diverge from the master or main branch of a project directory so that you can make changes safely. It is best practice to always create a new branch when adding content to a project.
+While inside of a git project directory you can create a new branch with the `git branch` command. To test this you can do the following:
+
+Navigate your terminal to an existing project and run the command `git branch`. This will show you the current branch you are working on in addition to any other local branches you have.
+
+![git-branch-command](pictures/git-branch-command.png?classes=border)
+
+{{% notice bonus %}}
+If you would like to view all local branches in addition to any remote branches you can add the -a tag at the end of your command: `git branch -a`. Try it out!
+{{% /notice %}}
+
+Now run the command `git branch new-branch`. 
+
+![git-new-branch](pictures/git-new-branch.png?classes=border)
+
+Once again you can check the status of your branches with `git branch` or `git branch -a`.
+
+## Changing Branches
+
+Now that you have a new branch to work on you can switch or "checkout" to that branch with the `git checkout` command.
+
+![git-checkout](pictures/git-checkout.png?classes=border)
+
+Run the command `git checkout new-branch`. Once more check your current branch status with the `git branch` command.
+
+Now that you are on your newly created branch you can begin to add content safely.
+
+<!-- Branching is a crucial compenent when working with projects under version control. Branching allows you to diverge from the master or main branch of a project directory so that you can make changes safely. It is best practice to always create a new branch when adding content to a project.
 
 When creating a new branch you always want to make sure your master branch is updated to the most recent version. That process will look something like the following:
 
@@ -30,9 +56,9 @@ We are "checking out" from master so that we are adding code to the master branc
 
 {{% notice bonus %}}
 To view all remote branches you can use the command `git branch -a`
-{{% /notice %}}
+{{% /notice %}} -->
 
-<!-- - Why you should do this -->v
+<!-- - Why you should do this -->
 
 ## Branch Diagram
 
