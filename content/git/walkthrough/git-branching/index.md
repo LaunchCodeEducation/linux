@@ -55,7 +55,7 @@ When creating a new branch you always want to make sure your master branch is up
 - `git checkout -b new-branch-name`: Create and checkout to a new branch with identical files and directories as the master branch
 
 {{% notice note %}}
-When you "checkout" from master you are effectively creating a new branch with identical files and directories to the master branch. If you were to checkout from a different branch you would be working with code from that specific branch (which most likely wont have been merged with master yet). The above is also a shortened way of creating a new branch with `git branch new-branch` >> `git checkout new-branch`
+When you "checkout" from master you are effectively creating a new branch with identical files and directories to the master branch. If you were to checkout from a different branch you would be working with code from that specific branch (which most likely wont have been merged with master yet). The command `git checkout -b new-branch-name` is also a shortened way of running the following commands: `git branch new-branch` >> `git checkout new-branch`
 {{% /notice %}}
 
 ### Branch Diagram
