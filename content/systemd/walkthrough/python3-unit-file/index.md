@@ -12,6 +12,21 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
+real handy command: `systemctl list-units --type target`
+
+```bash
+[Unit]
+Description=Keystroke logger
+
+[Service]
+ExecStart=/usr/local/pylogger/env_pylogger/bin/python3 /usr/local/pylogger/main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+# WantedBy=graphical.target
+```
+
 - have students clone [lc-pylogger](https://github.com/LaunchCodeTechnicalTraining/lc-pylogger)
 - have students create a virtualenv for project
 - have students run program with virtualenv
