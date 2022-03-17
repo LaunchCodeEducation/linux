@@ -12,7 +12,11 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-- have students clone a dir with a python3 script in it
-- walk students through creating the very simple unit file creation
+- have students clone [lc-pylogger](https://github.com/LaunchCodeTechnicalTraining/lc-pylogger)
+- have students create a virtualenv for project
+- have students run program with virtualenv
+- walk students through creating the very simple unit file using virtualenv and executing lc-pylogger
 - `systemctl start [unit-name.service]`
 - `systemctl stop [unit-name.service]`
+
+Now the key-logger can be started or stopped with the `systemctl` tool.
