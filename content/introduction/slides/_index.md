@@ -4,10 +4,13 @@ date: 2021-11-09T15:11:04-06:00
 draft: false
 # type: "slides"
 weight: 1
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "John Woolbright" # to be set by the page reviewer
+reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-15 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 {{< slides >}}
@@ -58,7 +61,7 @@ User space applications are all of the programs on a computer that the end user 
 
 Every action you have ever completed on a computer is considered an user space application. 
 
-Creating a word document, Writing/Compiling/Executing code, watching movies, editing photos, browsing the internet, sending emails all are user space applications.
+Creating a word document, Writing/Compiling/Executing code, watching movies, editing photos, browsing the internet, sending emails are all user space applications.
 
 Even the Graphical User Interface (GUI) you use to select your documents and applications is itself a user space application!
 
@@ -67,8 +70,11 @@ ___
 ## OS Provides the User Interface
 
 These applications have been created with people in mind to achieve a specific goal. In essence one of the primary responsibilities of an OS is to provide a collection of programs that allow interfacing with a computer easy and intuitive.
+___
 
-However, under the hood the OS is also responsible for providing to a monitor, managing the mouse location, determining mouse and keyboard click events, opening programs by allocating memory (RAM), writing to disk when files are created or modified, managing CPU access to all running processes. 
+## Under the Hood
+
+Additionally, under the hood the OS is also responsible for providing to a monitor, managing the mouse location, determining mouse and keyboard click events, opening programs by allocating memory (RAM), writing to the disk when files are created or modified, and managing CPU access to all running processes. 
 
 All of these under the hood actions are responsibilities of the kernel.
 
@@ -82,11 +88,9 @@ ___
 
 ## Example
 
-Consider all the actions needed to open a word document.
+Consider all the actions needed to open a word document. From a user perspective we simply double click the file in our file manager or on our desktop.
 
-From a user perspective we simply double click the file in our file manager or on our desktop.
-
-The computer has to determine which file was clicked on based on the mouse position, find that file from hard disk storage, open the contents of the file in memory (RAM), create and send the display of the file to the monitor.
+The computer has to determine which file was clicked based on the mouse position, find that file from hard disk storage, open the contents of the file in memory (RAM), create and send the display of the file to the monitor.
 
 All of these under the hood tasks would burden the user and are therefore handled by the kernel.
 
@@ -171,6 +175,6 @@ ___
 
 **Userspace** is a term that describes the areas of the Linux filesystem that contain end user files and directories.
 
-Userspace is usually found in a couple of different locations and the location varies by Linux distribution. In Ubunutu, which is the Linux distribution we will be using userspace is predominately in the `/usr` and `/home` directories.
+Userspace is usually found in a couple of different locations and the location varies by Linux distribution. In Ubunutu, which is the Linux distribution we will be using, it is predominately found in the `/usr` and `/home` directories.
 
 {{< /slides >}}
