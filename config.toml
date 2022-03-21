@@ -4,7 +4,7 @@ title = "Linux Introduction"
 theme = "hugo-theme-relearn"
 
 [params]
-  themeVariant = "blue"
+  themeVariant = ["lc-light"]
   editURL = "https://github.com/LaunchCodeTechnicalTraining/linux/edit/master/content/"
 
 [outputs]
