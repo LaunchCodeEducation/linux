@@ -1,7 +1,7 @@
 baseURL = "https://lctt-linux.netlify.app"
 languageCode = "en-us"
 title = "Linux Introduction"
-theme = "lc-learn"
+theme = "hugo-theme-relearn"
 
 [params]
   themeVariant = "blue"
