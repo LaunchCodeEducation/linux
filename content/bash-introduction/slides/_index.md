@@ -9,6 +9,10 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
+{{% notice note %}}
+The slides found at this location are meant to be used in personal reference. If you are reading these slides for the first time, or are presenting these slides we recommended using the Fullscreen option found below.
+{{% /notice %}}
+
 {{< slides >}}
 
 ## Bash: Introduction
