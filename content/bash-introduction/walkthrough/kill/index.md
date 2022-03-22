@@ -34,7 +34,7 @@ There are various other signals that can be sent to processes, but they go beyon
 Linux will perform whatever commands you instruct it to. You could conceivably start sending `SIGKILL` signals to random process IDs and Linux will terminate them. Everything running on your operating system has a process ID and you could terminate a process responsible for the Graphical User Interface of your operating system, or some software managing your hardware, which would require you to restart your machine to fix the issue.
 {{% /notice %}}
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking up the value of the Shell Variable you can do that with a Bash Variable Substitution. You can simply reference the variable directly in a Bash Command!
 ![Bash Variable Substitution](pictures/bash-variable-subtitution.png)
 {{% /notice %}}

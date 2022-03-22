@@ -87,7 +87,7 @@ Once you have the "Ready to Install" window open click the `Install` button.
 
 #### User Account Control
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 After clicking the `Install` button you should receive a windows notification bringing up a separate User Account Control window. This will ask you to allow VirtualBox to make changes to your device. We need to select `yes` or the install will fail.
 <!-- TODO: picture here? -->
 {{% /notice %}}

@@ -22,7 +22,7 @@ We can view **all** of the managed package repositories with the `apt` CLI by us
 
 There are so many package repositories they exceed the number of lines our terminal will render significantly.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You can redirect the output from the `apt list` command directly into `less` by using the Bash Pipe operator (`|`). You would need to enter: `apt list | less`. This gives us the ability to manually scroll through the entire list. We will learn more about various Bash operators in a future article.
 {{% /notice %}}
 
@@ -72,7 +72,7 @@ Let's take a look at the [Ubuntu Packages Homepage](https://packages.ubuntu.com/
 
 It provides a list of various Ubuntu versions, we are using 20.04 the canonical name is `focal`.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 If you have forgotten your version of Ubuntu there are many ways to figure it out from your computer. There is a `lsb_release` command that displays distribution specific information. Try running `lsb_release -a` from your Bash shell:
 ![lsb_release -a](pictures/lsb-release-a.png)
 {{% /notice %}}

@@ -28,6 +28,6 @@ Enter `apt --help` and look over the displayed information.
 
 ![apt --help](pictures/apt-help.png)
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Using the `apt` CLI man page and the `--help` option challenge yourself to use this walkthrough as a reference.
 {{% /notice %}}

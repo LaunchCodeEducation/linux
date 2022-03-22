@@ -66,7 +66,7 @@ Once the file has opened you will see that it doesn't have any contents:
 
 Nothing exists in the file, and so therefore nothing is displayed. Your cursor is currently on the first line of the file, but if you type nothing happens! 
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 `vim` has various modes, you are in command mode, which allows the user to perform various commands and operations within, or on the entire file. Some of the features built into command mode are what make `vim` such a popular terminal text editor. You will learn about `vim` usage in a future lesson.
 {{% /notice %}}
 
@@ -142,7 +142,7 @@ Now let's install GIMP with: `sudo apt install gimp`:
 
 Again confirm the install by hitting `enter` or entering in `Y` and hitting enter.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 The `apt install` CLI has a `-y` option that will automatically enter yes into any package installation confirmations. So you would find that `sudo apt install gimp -y` would install the `gimp` package without asking for confirmation. In this class we are going to recommend not using the `-y` flag as it's great to reinforce the steps of the `apt` CLI.
 {{% /notice %}}
 

@@ -58,6 +58,6 @@ Now execute the `greeting` alias:
 
 This is a more complex alias and is doing something we haven't seen before. Inside of the `echo` command it is invoking another Bash shell command named `date`. 
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 The syntax `$(command)` is a Bash shell **command substitution**. It essentially means the `date` command is executed first and its output is used in place of the second command being executed which is `echo`. We will learn more about **command substitution** and some more advanced Bash features in a later chapter.
 {{% /notice %}}

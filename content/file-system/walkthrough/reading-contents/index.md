@@ -130,6 +130,6 @@ If you open a file with a terminal text editor you will need to figure out how t
 
 We will see examples of this when we learn about editing the contents of files with `nano` in a later section.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Many IDEs and graphical text editors also provide a shell command for opening a file with the chosen IDE/text editor! If you install Visual Studio Code onto your distribution you can open a file directly into VSC with the `code filename` command. We will see an example of this when we learn about installing additional software in the Package Manager section.
 {{% /notice %}}

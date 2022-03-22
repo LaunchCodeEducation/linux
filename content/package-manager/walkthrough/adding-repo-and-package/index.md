@@ -25,7 +25,7 @@ We are going to use the Docker Engine as an example.
 This specific course will not touch Docker at all. Docker provides solid documentation and their website provides exact instructions for adding their package repository and installing their package in Ubuntu (and other popular Linux distributions).
 {{% /notice %}}
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 This article will provide all the steps, information and break down on achieving this goal, but you may find reading the Official Docker Documentation [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) a great addition to this article!
 {{% /notice %}}
 
@@ -104,7 +104,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 
 `curl` makes web requests from the terminal. We are requesting Docker's public key.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You can run `curl https://download.docker.com/linux/ubuntu/gpg` by itself to see the actual key.
 {{% /notice %}}
 

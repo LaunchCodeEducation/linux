@@ -65,7 +65,7 @@ Understandably, it took some time to perform the `apt upgrade` command. If you s
 
 However, your distribution has been fully upgraded. Since all of our packages have been installed and managed through the `apt` CLI when you upgrade **all** installed packages you are performing a full upgrade of your Distribution!
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You could run `sudo apt update -y` and `apt list --upgradeable` again to see if there are any available new package upgrades since you just upgraded. In my case there were a couple of additional package upgrades:
 ![small apt list --upgradeable](pictures/small-apt-list-upgradeable.png?classes=border)
 However, this is a much smaller list than the 100+ I had earlier. And there's nothing stopping me from running `sudo apt upgrade` again!

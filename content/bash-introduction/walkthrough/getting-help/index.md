@@ -34,7 +34,7 @@ The **man pages** are one of the most powerful tools for learning, or rememberin
 
 To **exit the man pages** you simply need to press the `q` key on your keyboard.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Checkout the **man pages** of the additional commands you have learned about in this class.
 {{% /notice %}}
 

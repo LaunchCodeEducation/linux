@@ -94,7 +94,7 @@ From your home directory let's change into the parent directory using the `..` s
 
 Using the parent directory shortcut we were able to move up one directory.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You can extend the parent and current directory shortcuts. Assuming you are in `/home/student/Documents` you can change into `/home/student/Desktop` with the command: `cd ../Desktop`.
 ![cd ../Desktop](pictures/cd-dot-dot-desktop.png)
 Additionally, the parent and current directory shortcuts can be used with most bash commands.

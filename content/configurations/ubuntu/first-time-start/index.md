@@ -14,7 +14,7 @@ Within the VirtualBox Manager window click on the virtual machine so that it is 
 
 ![virtual-box-homepage](pictures/new-image-home.png?classes=border)
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You may notice the options within the dropdown next to the start arrow, the options are normal start, headless, and detachable start. **During this course we will always be using the normal start. Without doing so you will not have access to the GUI.** To learn more about headless starts which are common, refer to the [Headless Software Wikipedia Article](https://en.wikipedia.org/wiki/Headless_software).
 {{% /notice %}}
 
