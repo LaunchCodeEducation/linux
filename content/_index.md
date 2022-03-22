@@ -54,9 +54,14 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 #### Day Four
 
 - Morning
-  - [Web Server: Static Sites]({{< relref "./web-server-static" >}})
+  - [General Web Server Concepts & Key Terminology]({{< relref "./web-server" >}})
+  - [General Web Server Slides]({{< relref "./web-server/slides" >}})
+  - [Caddy]({{< relref "./web-server/caddy" >}}) (installation through static website)
+  - [NGINX]({{< relref "./web-server/nginx" >}}) (installation through static website)
 - Afternoon
-  - [Web Server: Reverse Proxy]({{< relref "./web-server-reverse-proxy" >}})
+  - [Caddy]({{< relref "./web-server/caddy" >}}) (Reverse Proxy)
+  - [NGINX]({{< relref "./web-server/nginx" >}}) (Reverse Proxy)
+  - [Web Server Exercises]({{< relref "./web-server/exercises" >}})
 
 #### Day Five
 
