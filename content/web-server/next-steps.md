@@ -13,3 +13,18 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+### Web Servers
+
+- NGINX
+- caddy
+- apache
+  - and apache tomcat -> Specifically for Java web apps (comes as a part of springboot)
+- gunicorn -> WSGI Python HTTP Server for UNIX
+- haproxy -> I think it's more about reverse proxying and load balancing
+
+### Additional Concepts
+
+- load balancing
+- web server logs
+- web server monitoring
