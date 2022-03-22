@@ -22,7 +22,7 @@ Simply type `pwd` into your terminal and hit enter.
 Make sure you only type `pwd` into your terminal before hitting enter. Since the Bash shell is expecting text it requires the text you enter to exactly match it's expectations.
 {{% /notice %}}
 
-![pwd output](pictures/pwd.png)
+![pwd output](pictures/pwd.png?classes=border)
 
 `pwd` stands for print working directory. You will notice the output of the command is simply the text `/home/student`. Which is the current working directory of our Bash shell session.
 

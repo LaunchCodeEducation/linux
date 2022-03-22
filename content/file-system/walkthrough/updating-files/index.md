@@ -24,7 +24,7 @@ The filename and path of a file/directory is a key piece of metadata. In many in
 
 Let's create a new directory `temp-dir` and a new file `temp.file` both in our home directory.
 
-![mkdir ~/temp-dir && touch ~/temp.file](pictures/mkdir-and-touch.png)
+![mkdir ~/temp-dir && touch ~/temp.file](pictures/mkdir-and-touch.png?classes=border)
 
 Now we have `/home/student/temp-dir/` and `/home/student/temp.file`. Let's move `temp.file` into our new directory `temp-dir/`.
 
@@ -32,13 +32,13 @@ Now we have `/home/student/temp-dir/` and `/home/student/temp.file`. Let's move 
 
 So to move the `temp.file` into the `temp-dir` we would need a command like: `mv ~/temp.file ~/temp-dir/`
 
-![mv ~/temp.file temp-dir](pictures/mv-temp-file-temp-dir.png)
+![mv ~/temp.file temp-dir](pictures/mv-temp-file-temp-dir.png?classes=border)
 
 {{% notice note %}}
 You can use absolute or relative paths with the `mv` command. So you could have accomplished the same task with absolute paths:
-![mv absolute paths](pictures/mv-absolute-paths.png)
+![mv absolute paths](pictures/mv-absolute-paths.png?classes=border)
 Or you could have accomplished the same task with relative paths:
-![mv relative paths](pictures/mv-relative-paths.png)
+![mv relative paths](pictures/mv-relative-paths.png?classes=border)
 {{% /notice %}}
 
 #### Moving Directories
@@ -47,7 +47,7 @@ The `mv` command works with directories as well. Let's move the `~/temp-dir` dir
 
 `mv ~/temp-dir/ ~/Documents`
 
-![mv ~/temp-dir ~/Documents](pictures/mv-temp-dir-documents.png)
+![mv ~/temp-dir ~/Documents](pictures/mv-temp-dir-documents.png?classes=border)
 
 ### Moving to Rename Files and Directories
 
@@ -59,13 +59,13 @@ We can use the `mv` command to update the absolute path. The parent directories 
 
 `mv ~/Documents/temp-dir/temp.file ~/Documents/temp-dir/roster.txt`
 
-![mv ~/Documents/temp-dir/temp.file ~/Documents/temp-dir/roster.txt](pictures/mv-to-rename-in-place.png)
+![mv ~/Documents/temp-dir/temp.file ~/Documents/temp-dir/roster.txt](pictures/mv-to-rename-in-place.png?classes=border)
 
 This command **updated** the name of the file without changing it's location. Under the hood, the absolute path of the file was updated and that's the purpose of the `mv` command. The absolute path started as `/home/student/Document/temp-dir/temp.file` and we updated it to `/home/student/Document/temp-dir/roster.txt`!
 
 {{% notice green "Bonus" "rocket" %}}
 You can both update the location and the name of a file in one `mv` command.
-![move and rename](pictures/mv-and-rename.png)
+![move and rename](pictures/mv-and-rename.png?classes=border)
 This command moved the `roster.txt` file from the `temp-dir/` directory into the current working directory (as represented by `./`) and renamed it to `hello.txt`. That's a lot of work packed into one command!
 {{% /notice %}}
 
@@ -106,11 +106,11 @@ Let's create and open a new file in our home directory called `myname.txt`.
 
 `nano ~/myname.txt`
 
-![nano ~/myname.txt](pictures/nano-myname.png)
+![nano ~/myname.txt](pictures/nano-myname.png?classes=border)
 
 After executing the command you will see the `~/myname.txt` file opened in the `nano` text editor:
 
-![nano text editor](pictures/nano-text-editor.png)
+![nano text editor](pictures/nano-text-editor.png?classes=border)
 
 There are three sections of the `nano` text editor:
 
@@ -122,7 +122,7 @@ There are three sections of the `nano` text editor:
 
 Go ahead and type your name into the file:
 
-![nano add name](pictures/nano-add-name.png)
+![nano add name](pictures/nano-add-name.png?classes=border)
 
 I simply typed directly on my keyboard and nano added the contents to the file! You can also use the arrow keys on your keyboard to navigate the file.
 
@@ -134,7 +134,7 @@ Once you are happy with the changes you have made to the file, we need to write 
 
 Give it a shot.
 
-![nano write out](pictures/nano-write-out.png)
+![nano write out](pictures/nano-write-out.png?classes=border)
 
 Notice the change to the `nano` window. A new message towards the bottom of the screen (above the control key combos) is confirming the name and location of the file to be written.
 
@@ -142,7 +142,7 @@ The `/home/student/myname.txt` file didn't exist before we opened the file. It i
 
 You can simply hit enter on your keyboard to write the `/home/student/myname.txt` file with the contents you provided in the window. Try it out.
 
-![nano write confirm](pictures/nano-write-confirm.png)
+![nano write confirm](pictures/nano-write-confirm.png?classes=border)
 
 `nano` was kind enough to confirm that one line was written, as indicated by the message above the control key combos.
 
@@ -152,7 +152,7 @@ To exit a file you simply need to invoke the control combo key for the Exit opti
 
 Try it out.
 
-![nano exit](pictures/nano-exit.png)
+![nano exit](pictures/nano-exit.png?classes=border)
 
 Since the file had been written in the previous step, and had no changes nano immediately exited the file and returned us to our Bash shell. 
 
@@ -164,11 +164,11 @@ If you invoke the exit condition of `nano` while having unsaved changes, it will
 
 Let's see the new file. Enter `ls ~` to see the new `myname.txt`.
 
-![ls ~](pictures/ls-for-myname.png)
+![ls ~](pictures/ls-for-myname.png?classes=border)
 
 And let's `cat` out the contents of our file:
 
-![cat ~/myname.txt](pictures/cat-myname.png)
+![cat ~/myname.txt](pictures/cat-myname.png?classes=border)
 
 We have successfully opened a file, edited the contents of a file, wrote a file, and displayed the contents of a file all from our terminal!
 

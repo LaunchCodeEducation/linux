@@ -16,7 +16,7 @@ lastMod: 2022-03-10 # UPDATE ANY TIME CHANGES ARE MADE
 
 To get your bearings and view your current working directory you can use the familiar `pwd` command.
 
-![pwd](pictures/pwd.png)
+![pwd](pictures/pwd.png?classes=border)
 
 {{% notice note %}}
 The `pwd` command simply prints out the contents of the `$PWD` shell variable. Don't forget you can see the contents of any shell variables with the `echo` command!
@@ -26,7 +26,7 @@ The `pwd` command simply prints out the contents of the `$PWD` shell variable. D
 
 To view the contents of the current working directory you can use the familiar `ls` command without any arguments.
 
-![ls no arguments](pictures/ls-no-args.png)
+![ls no arguments](pictures/ls-no-args.png?classes=border)
 
 ### Change Current Working Directory
 
@@ -42,7 +42,7 @@ Starting from the home directory we could move into the `Documents/` directory w
 
 `cd Documents`
 
-![cd Documents](pictures/cd-documents.png)
+![cd Documents](pictures/cd-documents.png?classes=border)
 
 Take note from the image that our terminal emulator always tells us the current working directory. You should see `~/Documents$` directly before the character where you can enter text commands. You can also see on the previous line before the `cd` command had been executed the text directly before our input area is only `~$`. 
 
@@ -52,7 +52,7 @@ Our current working directory is `/home/student/Documents`. We can return to the
 
 `cd /home/student/`
 
-![cd /home/student](pictures/cd-home-student.png)
+![cd /home/student](pictures/cd-home-student.png?classes=border)
 
 And we're back to `$HOME`!
 
@@ -72,13 +72,13 @@ From a terminal change into the root directory:
 
 `cd /`
 
-![cd-root](pictures/cd-root.png)
+![cd-root](pictures/cd-root.png?classes=border)
 
 From the root directory change into the home directory by using the home shortcut:
 
 `cd ~`
 
-![cd ~](pictures/cd-tilde.png)
+![cd ~](pictures/cd-tilde.png?classes=border)
 
 {{% notice note %}}
 The default argument for the `cd` command is the home directory. An even more efficient shortcut for changing into the home directory would be simply `cd` with no arguments. Try it out on your own, by changing into the root directory, and then entering `cd` without any arguments.
@@ -90,12 +90,12 @@ From your home directory let's change into the parent directory using the `..` s
 
 `cd ..`
 
-![cd ..](pictures/cd-dot-dot.png)
+![cd ..](pictures/cd-dot-dot.png?classes=border)
 
 Using the parent directory shortcut we were able to move up one directory.
 
 {{% notice green "Bonus" "rocket" %}}
 You can extend the parent and current directory shortcuts. Assuming you are in `/home/student/Documents` you can change into `/home/student/Desktop` with the command: `cd ../Desktop`.
-![cd ../Desktop](pictures/cd-dot-dot-desktop.png)
+![cd ../Desktop](pictures/cd-dot-dot-desktop.png?classes=border)
 Additionally, the parent and current directory shortcuts can be used with most bash commands.
 {{% /notice %}}

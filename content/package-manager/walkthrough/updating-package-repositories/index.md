@@ -22,7 +22,7 @@ Being able to update the metadata about the packages is a very important task. T
 
 Updating from the CLI is quite easy. We simply enter `sudo apt update`:
 
-![sudo apt update](pictures/sudo-apt-update.png)
+![sudo apt update](pictures/sudo-apt-update.png?classes=border)
 
 You can see from the display that it is reading all package lists from our configured Ubuntu package repositories.
 

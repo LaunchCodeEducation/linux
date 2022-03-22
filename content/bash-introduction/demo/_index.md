@@ -99,7 +99,7 @@ echo "Have a nice day!"
 
 - let's use grep to search for the output we want instead: `ls -l /usr/bin | grep python3`
 
-![ls -l /usr/bin | grep python3](pictures/ls-l-grep-python3.png)
+![ls -l /usr/bin | grep python3](pictures/ls-l-grep-python3.png?classes=border)
 
 What is `python3 -> python3.8` representing? It looks like `python3` is a shortcut to `python3.8`!
 

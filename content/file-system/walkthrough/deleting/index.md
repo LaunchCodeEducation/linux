@@ -26,7 +26,7 @@ Let's create a new temporary file and then delete it with `rm`.
 
 ##### `touch temporary.file`
 
-![touch temporary file](pictures/touch-temporary-file.png)
+![touch temporary file](pictures/touch-temporary-file.png?classes=border)
 
 After executing the `ls` command you can see that a new file named `temporary.file` was created from the `touch` command.
 
@@ -34,13 +34,13 @@ After executing the `ls` command you can see that a new file named `temporary.fi
 
 Let's get rid of that file with the `rm` command.
 
-![rm temporary file](pictures/rm-temporary-file.png)
+![rm temporary file](pictures/rm-temporary-file.png?classes=border)
 
 And the file is gone!
 
 {{% notice green "Bonus" "rocket" %}}
 In an earlier walkthrough we created a file named `temp.file`. Feel free to remove that file as we won't be using it again!
-![rm temp file](pictures/rm-temp-file.png)
+![rm temp file](pictures/rm-temp-file.png?classes=border)
 {{% /notice %}}
 
 #### Delete Recursively
@@ -51,27 +51,27 @@ Luckily, there is a *recursive* option that will remove all of the items inside 
 
 ##### Create a directory: `mkdir temp-dir`
 
-![mkdir temp-dir](pictures/mkdir-temp-dir.png)
+![mkdir temp-dir](pictures/mkdir-temp-dir.png?classes=border)
 
 ##### Add file to new directory: `touch temp-dir/temp.file`
 
-![touch temp-file](pictures/touch-temp-file.png)
+![touch temp-file](pictures/touch-temp-file.png?classes=border)
 
 ##### Delete directory without recursive option: `rm temp-dir`
 
-![rm temp-dir](pictures/rm-temp-dir.png)
+![rm temp-dir](pictures/rm-temp-dir.png?classes=border)
 
 ##### Delete directory recursively: `rm -r temp-dir/` 
 
-![rm temp-dir recursively](pictures/rm-temp-dir-recursively.png)
+![rm temp-dir recursively](pictures/rm-temp-dir-recursively.png?classes=border)
 
 Since our user `student` has full permissions of the `temp-dir/temp.file` our Bash shell deleted the file without asking. In instances where the file is write-protected the Bash shell will ask for confirmation before deleting any files while using the `-r` option.
 
 {{% notice green "Bonus" "rocket" %}}
 The following image shows a read-only file. Notice the beginning of the second line: `-r--r--r--` indicating the file owner, group, and everyone else only has **read** access to the file. Write access and Execute access would be represented by the letter `w` and `x` respectively.
-![ls -l temp-dir](pictures/ls-l-temp-dir.png)
+![ls -l temp-dir](pictures/ls-l-temp-dir.png?classes=border)
 When we go to delete the directory recursively, the Bash shell will ask for permission before deleting this write protected file.
-![rm -r temp-dir write protected](pictures/rm-r-temp-dir-write-protected.png)
+![rm -r temp-dir write protected](pictures/rm-r-temp-dir-write-protected.png?classes=border)
 We will not cover modifying file permissions in this lesson. But you can read about the `chmod` command to get a sense of how the `temp.file` came to have only read access for all users.
 {{% /notice %}}
 

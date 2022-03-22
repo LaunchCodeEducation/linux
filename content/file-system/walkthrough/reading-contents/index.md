@@ -28,7 +28,7 @@ Let's take a look at the contents at some of the files on our machine.
 
 #### `cat /etc/hostname`
 
-![cat /etc/hostname](pictures/cat-etc-hostname.png)
+![cat /etc/hostname](pictures/cat-etc-hostname.png?classes=border)
 
 This is the hostname on record for this machine. This lines up with whatever you named your machine back when we first setup this VirtualBox image. If you followed our guide to the letter it should be `student-Virtualbox`.
 
@@ -36,13 +36,13 @@ The hostname is the name of the computer. Any given computer may have multiple u
 
 #### `cat /etc/timezone`
 
-![cat /etc/timezone](pictures/cat-etc-timezone.png)
+![cat /etc/timezone](pictures/cat-etc-timezone.png?classes=border)
 
 After installing the Ubuntu distribution onto our Virtualbox we configured our operating system including selecting our timezone. This is the file that keeps the record of our timezone!
 
 #### `cat /etc/environment`
 
-![cat /etc/environment](pictures/cat-etc-environment.png)
+![cat /etc/environment](pictures/cat-etc-environment.png?classes=border)
 
 This is the file that coincides with the `$PATH` shell variable. This is known as the system wide `$PATH` all users (including the `student` and `root` users) use this base system wide path. If you added a directory to this file it would be shared across **all** users of the machine. 
 
@@ -52,7 +52,7 @@ A user wouldn't add something to the system wide path, they would make their cha
 
 #### `cat ~/.bash_history`
 
-![cat ~/.bash_history](pictures/cat-bash-history.png)
+![cat ~/.bash_history](pictures/cat-bash-history.png?classes=border)
 
 {{% notice note %}}
 Your history will be different from the picture!
@@ -66,7 +66,7 @@ The preferred way of viewing the history of any given Bash shell is by using the
 
 Enter `history`
 
-![history](pictures/history.png)
+![history](pictures/history.png?classes=border)
 
 ### Display and Parse Interactively
 
@@ -86,17 +86,17 @@ Let's give it a try.
 
 Before executing the command you will see:
 
-![less ~/.bash_history command](pictures/less-bash-history-cmd.png)
+![less ~/.bash_history command](pictures/less-bash-history-cmd.png?classes=border)
 
 After executing the command you will see something similar to the following picture.
 
-![less ~/.bash_history display](pictures/less-bash-history-display.png)
+![less ~/.bash_history display](pictures/less-bash-history-display.png?classes=border)
 
 From here you have the full power of `less` at your fingertips, you can move to any line on the file by navigating with the tips listed above.
 
 When you are ready to exit the file you simply need to press the `q` key. This will return you back to your Bash shell.
 
-![quit less](pictures/quit-less.png)
+![quit less](pictures/quit-less.png?classes=border)
 
 ##### Bonus
 

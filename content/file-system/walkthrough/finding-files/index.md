@@ -24,7 +24,7 @@ Let's search our home directory for any files named `myname.txt`.
 
 `find ~/ -name "myname.txt"`
 
-![find ~/ -name "myname.txt"](pictures/find-myname.png)
+![find ~/ -name "myname.txt"](pictures/find-myname.png?classes=border)
 
 The command found **one** matching file with the absolute path of `/home/student/myname.txt`. 
 
@@ -40,7 +40,7 @@ Let's use `find` to find the `python3` binaries starting at the root (`/`) direc
 
 `find / -name "python3"`
 
-![find / -name "python3"](pictures/find-root-python3.png)
+![find / -name "python3"](pictures/find-root-python3.png?classes=border)
 
 That was overwhelming! There are dozens of files that match `"python3"` just for filenames in our entire computer. Many of the files we do not even have permission to **read** which is why we are getting `Permission denied` errors.
 
@@ -48,7 +48,7 @@ Let's run our `find` command again, but instead of starting at the root director
 
 `find /usr -name "python3"`
 
-![find /usr -name "python3"](pictures/find-usr-python3.png)
+![find /usr -name "python3"](pictures/find-usr-python3.png?classes=border)
 
 This is definitely more manageable as we are only looking for files matching `"python3"` in the user directory. 
 
@@ -58,7 +58,7 @@ In an earlier lesson we looked at `/usr/bin/python3`. However, there was also a 
 
 `find /usr -name *"*python3*"`
 
-![find /usr -name "python3*"](pictures/find-usr-python3-wildcard.png)
+![find /usr -name "python3*"](pictures/find-usr-python3-wildcard.png?classes=border)
 
 Another long list, but we do have at least read access on all of the results. Note how the `find` command matched any file name starting with `"python3"`, but matched any text after that match. That's the power of the Bash shell wildcard `*`.
 
