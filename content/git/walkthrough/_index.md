@@ -2,7 +2,7 @@
 title: "Walkthrough"
 date: 2021-11-09T15:20:12-06:00
 draft: false
-weight: 2
+weight: 110
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "" # to be set by the page reviewer

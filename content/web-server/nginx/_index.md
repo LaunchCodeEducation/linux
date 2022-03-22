@@ -2,7 +2,7 @@
 title: "NGINX"
 date: 2022-03-22T10:37:21-05:00
 draft: false
-weight: 105
+weight: 115
 originalAuthor: Paul Matthews # to be set by page creator
 originalAuthorGitHub: pdmxdd # to be set by page creator
 reviewer: # to be set by the page reviewer
