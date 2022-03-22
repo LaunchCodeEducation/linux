@@ -2,10 +2,13 @@
 title: "Ubuntu ISO Image Setup"
 draft: false
 weight: 15
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "John Woolbright" # to be set by page creator
+originalAuthorGitHub: "jwoolbright23" # to be set by page creator
+reviewer: "Paul Matthews" # to be set by the page reviewer
+reviewerGitHub: "pdmxdd" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 In this article we will configure our new virtual machine to use the Ubuntu `.iso` image we downloaded earlier. We will be configuring our virtual machine to use the `.iso` file as a CD simulating entering a CD with the file into the optical drive of this virtual machine.
