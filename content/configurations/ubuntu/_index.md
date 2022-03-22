@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu"
 draft: false
-weight: 2
+weight: 105
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer

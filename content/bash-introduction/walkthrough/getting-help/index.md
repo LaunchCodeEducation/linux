@@ -2,7 +2,7 @@
 title: "Getting Help"
 date: 2022-02-17T14:54:25-06:00
 draft: false
-weight: 91
+weight: 145
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer
