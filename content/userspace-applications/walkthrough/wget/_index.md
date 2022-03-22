@@ -14,7 +14,7 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Name
 
-Wget - The non-interactive network downloader.
+> Wget - The non-interactive network downloader.
 
 ## Purpose
 
