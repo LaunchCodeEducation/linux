@@ -2,10 +2,13 @@
 title: "First Time User Login"
 draft: false
 weight: 25
-original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
-last_editor: "" # update each time the file is edited
-last_edit_date: # just the date is enough (don't worry about the time portion)
+originalAuthor: "John Woolbright" # to be set by page creator
+originalAuthorGitHub: "jwoolbright23" # to be set by page creator
+reviewer: "Paul Matthews" # to be set by the page reviewer
+reviewerGitHub: "pdmxdd" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 After your machine boots up for the first time, or after you have completed the Ubuntu installation you will be greeted with the typical Ubuntu user login screen:

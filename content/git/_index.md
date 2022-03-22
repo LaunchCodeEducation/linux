@@ -3,13 +3,13 @@ title: "Git"
 date: 2021-11-09T15:20:12-06:00
 draft: false
 weight: 6
-originalAuthor: ""
-originalAuthorGitHub: ""
-reviewer: "" # to be set by the approving reviewer
-reviewerGitHub:
-lastEditor: ""
-lastEditorGitHub: ""
-lastMod: "2022-03-10"
+originalAuthor: "Paul Matthews" # to be set by page creator
+originalAuthorGitHub: "pdmxdd" # to be set by page creator
+reviewer: "" # to be set by the page reviewer
+reviewerGitHub: "" # to be set by the page reviewer
+lastEditor: "" # update any time edits are made after review
+lastEditorGitHub: "" # update any time edits are made after review
+lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Major Concepts & Key Terminology
