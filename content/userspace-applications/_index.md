@@ -14,9 +14,25 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
+- kernel
+- root user
+- end-user
+- additional users?
+  - service users
+  - daemon users
+- userspace
+  - end-user tools
+  - end-user files
+
+### Covered Userspace Applications
+
+- `wget`: download resources via web
+- `curl`: craft HTTP(s) requests and display HTTP(s) responses
+- `grep`: search content (using words or regular expressions)
+- `sed`: edit streams of data (substitute)
+- `vim`: edit files
+- `mail-utils`: send emails
+
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Exercises]({{< relref "./exercises" >}})
-- [Next Steps]({{< relref "./next-steps" >}})
+{{% children %}}
