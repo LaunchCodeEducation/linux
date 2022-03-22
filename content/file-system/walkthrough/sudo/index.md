@@ -30,7 +30,7 @@ The `whoami` command simply displays the current user.
 
 Go ahead and execute the `whoami` command:
 
-![whoami](pictures/whoami.png)
+![whoami](pictures/whoami.png?classes=border)
 
 This makes a lot of sense. We are the `student` user.
 
@@ -40,11 +40,11 @@ Run the same command this time as the `daemon` user.
 
 Execute `sudo -u daemon whoami`:
 
-![sudo -u daemon whoami](pictures/daemon-whoami.png)
+![sudo -u daemon whoami](pictures/daemon-whoami.png?classes=border)
 
 You will be prompted to enter your password, which if you followed the configuration guide in this course should be **admin**. As you type **nothing will be displayed** on the terminal, this is a security feature so someone that can see your terminal will not know what your password is. After typing your password hit enter. Assuming your password was correct you should see the following:
 
-![sudo -u daemon whoami results](pictures/daemon-whoami-results.png)
+![sudo -u daemon whoami results](pictures/daemon-whoami-results.png?classes=border)
 
 As we can see we ran the `whoami` command as the `daemon` user and so the display reads `daemon`.
 
@@ -52,7 +52,7 @@ As we can see we ran the `whoami` command as the `daemon` user and so the displa
 
 Execute `sudo whoami`:
 
-![sudo whoami](pictures/root-whoami.png)
+![sudo whoami](pictures/root-whoami.png?classes=border)
 
 The default for the `sudo` command is to execute the command as the `root` user.
 
@@ -62,13 +62,13 @@ Running a command as the `root` user is sometimes necessary. You may need to rea
 
 As an example let's say we needed to read the contents of the mysterious `/etc/shadow` file.
 
-![cat /etc/shadow](pictures/cat-etc-shadow.png)
+![cat /etc/shadow](pictures/cat-etc-shadow.png?classes=border)
 
 Our `student` user doesn't have read access to this file. So we can run the same command as `root`.
 
 `sudo cat /etc/shadow`
 
-![sudo cat /etc/shadow](pictures/sudo-cat-etc-shadow.png)
+![sudo cat /etc/shadow](pictures/sudo-cat-etc-shadow.png?classes=border)
 
 Running the command as the `root` user gave me read access to the file. General user's do not have read access to this file because the file lists **all** users and their hashed password.
 

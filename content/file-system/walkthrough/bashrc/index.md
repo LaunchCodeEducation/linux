@@ -16,13 +16,13 @@ lastMod: 2022-03-11 # UPDATE ANY TIME CHANGES ARE MADE
 
 In your `/home/student` directory you should find a hidden file called `.bashrc`.
 
-![ls -a](pictures/ls-a-bashrc.png)
+![ls -a](pictures/ls-a-bashrc.png?classes=border)
 
 The contents of the `~/.bashrc` file are executed as a new user invoked Bash shell is initialized.
 
 Let's take a look at the contents of the existing `.bashrc` file with `cat`.
 
-![cat ~/.bashrc](pictures/cat-bashrc.png)
+![cat ~/.bashrc](pictures/cat-bashrc.png?classes=border)
 
 There is a lot going on in this file that we don't need to worry about right now. However, if you scroll up you will find a section that looks like this:
 
@@ -39,15 +39,15 @@ Let's try them out.
 
 ### Execute `ll`
 
-![ll](pictures/ll.png)
+![ll](pictures/ll.png?classes=border)
 
 ### Execute `la`
 
-![la](pictures/la.png)
+![la](pictures/la.png?classes=border)
 
 ### Execute `l`
 
-![l](pictures/l.png)
+![l](pictures/l.png?classes=border)
 
 Without defining any of the aliases they were still loaded into our Bash shell session because they exist in `~/.bashrc` file which was run upon initializing our current Bash shell session!
 

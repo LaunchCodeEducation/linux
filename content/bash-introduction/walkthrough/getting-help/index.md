@@ -26,9 +26,9 @@ Let's take a look at the man page for the `which` command.
 
 Enter `man which`.
 
-![Command: man which](pictures/enter-man-which.png)
+![Command: man which](pictures/enter-man-which.png?classes=border)
 
-![Which Manual Entry](pictures/man-which.png)
+![Which Manual Entry](pictures/man-which.png?classes=border)
 
 The output of our screen changed considerably. We no longer have a means for entering commands. We are looking at a `less` display screen. We will learn about `less` in a future lesson. You can move up and down on this page with the directional keys. Alternatively you can use the `j` key to move down, and the `k` to move up.
 
@@ -50,7 +50,7 @@ Many commands contain a `--help` or `-h` option that will give you an abbreviate
 
 Enter `ls --help`.
 
-![ls --help](pictures/ls-help.png)
+![ls --help](pictures/ls-help.png?classes=border)
 
 After scrolling to the top of the STDOUT we can see a shortened version of the man page. A brief description, and a list of options. All of this without leaving our terminal!
 

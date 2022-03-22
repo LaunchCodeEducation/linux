@@ -19,12 +19,12 @@ The Ubuntu ISO that you will be using is 3.4 GB in size. You will also be alloca
 
 ## Download Image
 
-![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png)
+![Ubuntu Desktop Download Homepage](pictures/ubuntu-download-desktop.png?classes=border)
 
 Click the green `Download` button to start the download. It is a large file and will take some time.
 
 You will likely have to confirm the download, in the picture below the user will need to click `Save File` for the file to be downloaded onto the host computer.
 
-![Ubuntu Desktop Download Initiated Page](pictures/ubuntu-download.png)
+![Ubuntu Desktop Download Initiated Page](pictures/ubuntu-download.png?classes=border)
 
 Regardless of your host OS we will all be using a similar file `ubuntu-20.04.3-desktop-*.iso`. An `.iso` file is a Disk Image which is the instruction for installing an Operating System. We will be using this file inside of Virtualbox to create an isolated Ubuntu 20.04.3 virtual operating system inside of our host computer.

@@ -27,15 +27,15 @@ The terminal emulator is also configured to:
 
 The **terminal emulator** we will be using in this class is simply called **terminal**. You can find it by clicking the *Activities* button in the top left corner of your Ubuntu screen.
 
-![Ubuntu Activities Search](pictures/ubuntu-activities-search.png)
+![Ubuntu Activities Search](pictures/ubuntu-activities-search.png?classes=border)
 
 Then search for the program `terminal`.
 
-![Ubuntu Activities Search: terminal](pictures/ubuntu-activities-search-terminal.png)
+![Ubuntu Activities Search: terminal](pictures/ubuntu-activities-search-terminal.png?classes=border)
 
 Either hit enter, or click the `terminal` application and a new `terminal emulator` will be launched!
 
-![Ubuntu Terminal Emulator](pictures/ubuntu-terminal-emulator.png)
+![Ubuntu Terminal Emulator](pictures/ubuntu-terminal-emulator.png?classes=border)
 
 {{% notice green "Bonus" "rocket" %}}
 You can also open a new terminal in Ubuntu with the `ctrl` + `alt` + `t` keyboard shortcut!

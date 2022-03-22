@@ -18,7 +18,7 @@ Our next command will list out the contents of either our current working direct
 
 `ls` will use your current working directory as a default argument if you do not provide an argument. So to list out the contents of your current working directory you simply need to enter `ls` and nothing else before submitting the command. Give it a try!
 
-![current working directory contents](pictures/ls.png)
+![current working directory contents](pictures/ls.png?classes=border)
 
 Our home directory `/home/student` has quite a few things in it. All of the entries just happen to be directories:
 - Desktop
@@ -41,7 +41,7 @@ Let's try looking at all the contents inside of the root directory `/`.
 
 Enter `ls /`.
 
-![root directory contents](pictures/ls-root.png)
+![root directory contents](pictures/ls-root.png?classes=border)
 
 The **root** directory is the container for all files/directories on this computer! It is the root of our Ubuntu distribution. The root directory contains the `/home` directories of all users, all the tools shared across the machine, and all of the files/directories necessary for the operating system to function.
 
@@ -49,7 +49,7 @@ Let's take a look in the `bin` directory inside of the root directory.
 
 Enter `ls /bin`.
 
-![/bin contents](pictures/ls-bin.png)
+![/bin contents](pictures/ls-bin.png?classes=border)
 
 Woah. That's a lot of files! The `/bin` directory is a location of many of the **binaries** used on this operating system. If you scroll through the list you may see some familiar names like `zip` or `python3`. `zip` is used to create and open zipped folders. `python3` is the Python3 interpreter that can run python files.
 
@@ -65,7 +65,7 @@ Let's take a look at the contents inside our current user's `Documents` director
 
 Enter `ls Documents`.
 
-![/home/student/Documents](pictures/ls-documents.png)
+![/home/student/Documents](pictures/ls-documents.png?classes=border)
 
 Nothing came up. This isn't a bug, this is the output we would expect if there are no contents to be listed.
 
@@ -83,7 +83,7 @@ Try listing the contents of the remaining directories inside of `/home/student/`
 
 Enter `ls -l` to see the long form output for the current directory.
 
-![ls -l current directory](pictures/ls-l-working-directory.png)
+![ls -l current directory](pictures/ls-l-working-directory.png?classes=border)
 
 Most of the information isn't relevant to us yet, but it's still important to know how to access it.
 
@@ -91,7 +91,7 @@ Most of the information isn't relevant to us yet, but it's still important to kn
 
 Enter `ls -a` to see all the files and folders including any that may be hidden for the current directory.
 
-![ls -a current directory](pictures/ls-a-working-directory.png)
+![ls -a current directory](pictures/ls-a-working-directory.png?classes=border)
 
 Here we can see a few hidden files, and directories. All of the hidden files and folders start with a period `.`. 
 

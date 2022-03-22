@@ -26,11 +26,11 @@ If you already know the name of the package you are interested in you can just s
 
 ### Enter `apt search vim`
 
-![apt search vim](pictures/apt-search-vim.png)
+![apt search vim](pictures/apt-search-vim.png?classes=border)
 
 Lots of entries mention vim in their description, or name. Scroll through the list and you should find:
 
-![apt search vim listing](pictures/vim-listing.png)
+![apt search vim listing](pictures/vim-listing.png?classes=border)
 
 That's exactly what I'm looking for the `Vi IMproved - enhanced vi editor`.
 
@@ -50,7 +50,7 @@ You know you want to edit files from the terminal in Ubuntu. So pull up a search
 
 `ubuntu terminal text editors`
 
-![alt-text](pictures/search-engine-terminal-text-editors.png)
+![alt-text](pictures/search-engine-terminal-text-editors.png?classes=border)
 
 You may want to check out a couple of different results, but you are mainly on a discovery mission, so just focus on the first article for now: [Exploring Text Editors in Ubuntu 20.04 - ByteXD](https://bytexd.com/exploring-the-text-editors-in-ubuntu-20-04/).
 
@@ -78,6 +78,6 @@ The top result was: [linuxhint: Best Image Editor for Ubuntu](https://linuxhint.
 
 It is an article from 2 years ago talking about the popular GNU Image Manipulation Program (`GIMP`). It's a GNU package so you can probably assume you can access it with your package manager, but you can always search to make sure with `apt search gimp`.
 
-![apt search gimp](pictures/apt-search-gimp.png)
+![apt search gimp](pictures/apt-search-gimp.png?classes=border)
 
 Again, you just discovered the package using the internet. You will need to do more research into if the tool is a good choice for your specific task, and you may need to learn how to use the tool.

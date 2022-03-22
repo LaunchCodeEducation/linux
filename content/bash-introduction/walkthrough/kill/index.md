@@ -26,7 +26,7 @@ Take note of your `$BASHPID`.
 
 Then enter `kill -9 [your-bash-pid]`, but enter the number of your `$BASHPID`.
 
-![Kill Bash Shell](pictures/kill-bash-shell.png)
+![Kill Bash Shell](pictures/kill-bash-shell.png?classes=border)
 
 Upon entering this command you should see your terminal close immediately!
 
@@ -40,5 +40,5 @@ Linux will perform whatever commands you instruct it to. You could conceivably s
 
 {{% notice green "Bonus" "rocket" %}}
 If you want to send a `SIGKILL` signal to your `$BASHPID` without first looking up the value of the Shell Variable you can do that with a Bash Variable Substitution. You can simply reference the variable directly in a Bash Command!
-![Bash Variable Substitution](pictures/bash-variable-subtitution.png)
+![Bash Variable Substitution](pictures/bash-variable-subtitution.png?classes=border)
 {{% /notice %}}

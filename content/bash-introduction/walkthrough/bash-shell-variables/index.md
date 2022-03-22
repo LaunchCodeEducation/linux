@@ -27,19 +27,19 @@ To view the contents of any Bash Shell variable you can simply use the variable 
 
 ### `echo $BASH`
 
-![echo $BASH](pictures/echo-bash-variable.png)
+![echo $BASH](pictures/echo-bash-variable.png?classes=border)
 
 The `$BASH` shell variable contains the absolute path to the shell this session is using. 
 
 ### `echo $HOME`
 
-![echo $HOME](pictures/echo-home-variable.png)
+![echo $HOME](pictures/echo-home-variable.png?classes=border)
 
 The `$HOME` shell variable contains the absolute path to the home directory of the user that initiated the Bash shell.
 
 ### `echo $PATH`
 
-![echo $PATH](pictures/echo-path-variable.png)
+![echo $PATH](pictures/echo-path-variable.png?classes=border)
 
 The `$PATH` shell variable contains a collection of all of the tools currently accessible to this current Bash Shell session.
 
@@ -51,7 +51,7 @@ If you have ever tried to run a program before and received a message about the 
 
 ### `echo $BASHPID`
 
-![echo $BASHPID](pictures/echo-bashpid-variable.png)
+![echo $BASHPID](pictures/echo-bashpid-variable.png?classes=border)
 
 The `$BASHPID` shell variable contains the process ID of the current Bash Shell. This number will likely be different for everyone. In fact if you open your current terminal and open a new one and then check the `$BASHPID` shell variable you should notice that it is different.
 

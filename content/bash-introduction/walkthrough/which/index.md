@@ -22,7 +22,7 @@ Let's find out where the `ls` command's binary lives.
 
 Enter `which ls`.
 
-![which ls](pictures/which-ls.png)
+![which ls](pictures/which-ls.png?classes=border)
 
 According to the `which` command `ls` resides in `/usr/bin/ls`.
 
@@ -34,6 +34,6 @@ In Linux when you see something named `bin` it is almost always short for the wo
 
 What about the `which` command? It is also an executable command so it should also have a location on our machine. How can we figure out where the `which` command resides?
 
-![which which](pictures/which-which.png)
+![which which](pictures/which-which.png?classes=border)
 
 It looks like the which command is also an executable binary located in `/usr/bin`.

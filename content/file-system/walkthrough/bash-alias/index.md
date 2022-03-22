@@ -30,13 +30,13 @@ Let's create a new `alias` called `displaycontents` which will simply execute th
 
 `alias displaycontents=ls`
 
-![alias displaycontents=ls](pictures/alias-displaycontents.png)
+![alias displaycontents=ls](pictures/alias-displaycontents.png?classes=border)
 
 Upon executing this command nothing was displayed to the terminal, however your current Bash shell session registered a new `alias` called `displaycontents`.
 
 Simply execute your new `alias` by entering `displaycontents`
 
-![displaycontents](pictures/displaycontents.png)
+![displaycontents](pictures/displaycontents.png?classes=border)
 
 Our Bash shell has a `displaycontents` alias registered and it was configured to run the `ls` command when executed, which you can see happened in the above image.
 
@@ -50,11 +50,11 @@ Let's create a new `alias` called `greeting`.
 
 `alias greeting="echo Hello Paul, it is $(date)"`
 
-![alias greeting="echo Hello Paul, it is $(date)"](pictures/new-greeting-alias.png)
+![alias greeting="echo Hello Paul, it is $(date)"](pictures/new-greeting-alias.png?classes=border)
 
 Now execute the `greeting` alias:
 
-![greeting](pictures/executing-greeting-alias.png)
+![greeting](pictures/executing-greeting-alias.png?classes=border)
 
 This is a more complex alias and is doing something we haven't seen before. Inside of the `echo` command it is invoking another Bash shell command named `date`. 
 

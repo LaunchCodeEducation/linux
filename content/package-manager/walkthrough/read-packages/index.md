@@ -18,7 +18,7 @@ Being able to access the metadata of package can be useful. This article shows h
 
 Enter: `apt list --installed`
 
-![apt list --installed](pictures/apt-list-installed.png)
+![apt list --installed](pictures/apt-list-installed.png?classes=border)
 
 There are so many installed packages that they cannot be displayed within one Bash shell session.
 
@@ -32,15 +32,15 @@ You can use the `apt show` command to view some of the metadata, and OS level co
 
 ### Enter `apt show apt`
 
-![apt show apt](pictures/apt-show-apt.png)
+![apt show apt](pictures/apt-show-apt.png?classes=border)
 
 ### Enter `apt show bash`
 
-![apt show bash](pictures/apt-show-bash.png)
+![apt show bash](pictures/apt-show-bash.png?classes=border)
 
 ### Enter `apt show python3`
 
-![apt show python3](pictures/apt-show-python3.png)
+![apt show python3](pictures/apt-show-python3.png?classes=border)
 
 ## Package Metadata Breakdown
 

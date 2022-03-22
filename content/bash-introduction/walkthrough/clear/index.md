@@ -18,11 +18,11 @@ Our next command also takes no arguments. `clear` will clear the terminal emulat
 
 Enter `clear` into your terminal.
 
-![clear before execution](pictures/clear-before-execution.png)
+![clear before execution](pictures/clear-before-execution.png?classes=border)
 
 Then submit the command with enter.
 
-![clear output](pictures/clear.png)
+![clear output](pictures/clear.png?classes=border)
 
 All that text is gone! We now have a clean slate to continue working.
 
