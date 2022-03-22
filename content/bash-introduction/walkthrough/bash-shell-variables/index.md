@@ -41,7 +41,7 @@ The `$PATH` shell variable contains a collection of all of the tools currently a
 
 Any files and subdirectories found within the listed directories are available to be invoked by name.
 
-{{% notice tip %}}
+{{% notice green "Bonus" "rocket" %}}
 If you have ever tried to run a program before and received a message about the command not being found in the path, this is what it was referring to. When installing new programming languages, build tools, or really any software that needs to be used from a shell the location of the tool *must* be added to the path variable. Lots of software installations take care of adding the tool to your path by either editing the PATH variable or by simply adding the binary of the software directly to one of the directories listed in your path.
 {{% /notice %}}
 

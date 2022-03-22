@@ -74,6 +74,6 @@ Running the command as the `root` user gave me read access to the file. General 
 
 You can see clearly that the `student` user's hashed password is: `$6$YQsJ8yJfzXt5L...`. 
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 A hashed password can be cracked using a rainbow table, which goes way outside the scope of this class. However, knowing that a hashed password can be cracked illustrates why general users **do not have access to read the `/etc/shadow` file**.
 {{% /notice %}}

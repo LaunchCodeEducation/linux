@@ -147,7 +147,7 @@ Either click `Restart` or `Not Now` depending on if you have completed the Insta
 
 After your machine restarts you should find the `VirtualBox.app` within your applications folder. You can locate this by opening your finder and selecting the applications tab.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Alternatively you can find the VirtualBox.app by hitting command + space bar (`cmd` + `space`) and typing in the program name "VirtualBox.app".
 {{% /notice %}}
 

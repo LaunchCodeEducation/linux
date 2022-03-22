@@ -64,6 +64,6 @@ Another long list, but we do have at least read access on all of the results. No
 
 In this list you should see both `/usr/bin/python3` and `/usr/bin/python3.8` near the top of the list, you will probably need to scroll up to see.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 The `/usr` directory contains data, binaries, and documentation that are available to general **users** of the computer. It's a great place to search for tools that are available across users, but aren't used by the kernel to perform it's many tasks. You can learn more about the `/usr` directory at the [LDP Linux Filesystem Hierarchy Documentation](https://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/usr.html).
 {{% /notice %}}

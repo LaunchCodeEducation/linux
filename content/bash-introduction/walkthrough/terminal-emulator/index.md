@@ -37,6 +37,6 @@ Either hit enter, or click the `terminal` application and a new `terminal emulat
 
 ![Ubuntu Terminal Emulator](pictures/ubuntu-terminal-emulator.png)
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You can also open a new terminal in Ubuntu with the `ctrl` + `alt` + `t` keyboard shortcut!
 {{% /notice %}}

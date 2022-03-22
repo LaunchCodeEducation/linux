@@ -66,7 +66,7 @@ The CLI options the article lists:
 
 You don't want to learn 5 different packages that allow you to accomplish the same task. You simply need to use one. You will need to conduct further research to choose the tool that is right for your problem, and for you personally.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Go ahead and try out `apt search [package-name]` on all of the listed items to see if there is a package associated with each of the 5 tools listed above. You may find using some Regex anchors beneficial while searching. Try `apt search vim` & `apt search ^vim$`. How are the results different? What are the keywords you've learned from this hint you can use to learn more? (`Regex` & `Regex anchors`)
 {{% /notice %}}
 

@@ -63,7 +63,7 @@ We can use the `mv` command to update the absolute path. The parent directories 
 
 This command **updated** the name of the file without changing it's location. Under the hood, the absolute path of the file was updated and that's the purpose of the `mv` command. The absolute path started as `/home/student/Document/temp-dir/temp.file` and we updated it to `/home/student/Document/temp-dir/roster.txt`!
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 You can both update the location and the name of a file in one `mv` command.
 ![move and rename](pictures/mv-and-rename.png)
 This command moved the `roster.txt` file from the `temp-dir/` directory into the current working directory (as represented by `./`) and renamed it to `hello.txt`. That's a lot of work packed into one command!
@@ -79,7 +79,7 @@ Opening a file using a terminal text editor:
   - `vim filename`
   - `emacs filename`
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 `echo "newline" >> filename`
 {{% /notice %}}
 
@@ -172,6 +172,6 @@ And let's `cat` out the contents of our file:
 
 We have successfully opened a file, edited the contents of a file, wrote a file, and displayed the contents of a file all from our terminal!
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Like everything in this class, you will become more comfortable the more you practice. If you truly want to become comfortable and productive with a terminal text editor you need to **use one often**. `nano` is straightforward to use, but lacks the many features you will find in `vim` or `emacs`. For now practice creating and editing some files with `nano`. Soon we will learn about installing new software and you can take it upon yourself to learn how to use either `vim` or `emacs`. Conquering the basics and being comfortable with some of their more advanced uses will benefit you greatly if you work with Linux systems in your career.
 {{% /notice %}}

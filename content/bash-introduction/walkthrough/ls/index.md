@@ -65,7 +65,7 @@ Enter `ls Documents`.
 
 Nothing came up. This isn't a bug, this is the output we would expect if there are no contents to be listed.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 Try listing the contents of the remaining directories inside of `/home/student/`. Do any of them have contents?
 {{% /notice %}}
 

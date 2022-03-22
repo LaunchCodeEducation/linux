@@ -38,7 +38,7 @@ Let's get rid of that file with the `rm` command.
 
 And the file is gone!
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 In an earlier walkthrough we created a file named `temp.file`. Feel free to remove that file as we won't be using it again!
 ![rm temp file](pictures/rm-temp-file.png)
 {{% /notice %}}
@@ -67,7 +67,7 @@ Luckily, there is a *recursive* option that will remove all of the items inside 
 
 Since our user `student` has full permissions of the `temp-dir/temp.file` our Bash shell deleted the file without asking. In instances where the file is write-protected the Bash shell will ask for confirmation before deleting any files while using the `-r` option.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 The following image shows a read-only file. Notice the beginning of the second line: `-r--r--r--` indicating the file owner, group, and everyone else only has **read** access to the file. Write access and Execute access would be represented by the letter `w` and `x` respectively.
 ![ls -l temp-dir](pictures/ls-l-temp-dir.png)
 When we go to delete the directory recursively, the Bash shell will ask for permission before deleting this write protected file.
@@ -75,7 +75,7 @@ When we go to delete the directory recursively, the Bash shell will ask for perm
 We will not cover modifying file permissions in this lesson. But you can read about the `chmod` command to get a sense of how the `temp.file` came to have only read access for all users.
 {{% /notice %}}
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 In an early section of this course we created a `temp` directory in our home directory. Feel free to delete it using your newfound `rm -r` skills!
 {{% /notice %}}
 

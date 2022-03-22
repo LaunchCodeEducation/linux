@@ -36,7 +36,7 @@ There isn't an official Ubuntu repository for Visual Studio Code, however the Mi
 
 The picture above shows the exact steps for adding the repository, with gpg key, and then installing the `code` package.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 If you visit the [actual article](https://code.visualstudio.com/docs/setup/linux) you will find there is another way to complete the steps in a more streamlined process.
 {{% /notice %}}
 
