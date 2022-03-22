@@ -24,3 +24,12 @@ Parse text and only return lines that match specific patterns (specific characte
 
 - Search for file names matching a specific pattern in a directory
 - Search contents of a file for specific patterns
+
+## Activity
+
+- `wget` a CSV file
+  - `cat [file] | grep "[search argument]"`: searching for names
+  - `cat [file] | grep "[search argument]"`: searching for dates
+  - `cat [file] | grep "[search argument]"`: searching for phone numbers
+  - `cat [file] | grep "[search argument]"`: searching for addresses
+  - `cat [file] | grep "[search argument]"`: searching for dollar amounts

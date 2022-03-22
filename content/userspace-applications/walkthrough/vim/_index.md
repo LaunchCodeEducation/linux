@@ -25,3 +25,17 @@ CLI for editing text files. Provides various modes and actions that allow the us
 - create new files
 - read existing files
 - edit existing files
+
+## Activity
+
+- create a new file
+- `wget` file
+  - navigate file
+    - bottom
+    - top
+    - end of line
+    - start of line
+    - next word
+  - edit file
+    - insert mode
+    - substitute

@@ -24,3 +24,23 @@ To craft HTTP(s) requests and receive HTTP(s) responses.
 Make and receive web requests.
 
 Great for debugging and troubleshooting web application servers and APIs.
+
+## Activity
+
+- clone this repo of a RESTful API
+- create the environment
+- run the project
+- make curl requests to the RESTful API
+  - GET /todos --> empty list
+  - POST /todos --> created and reflected back the new resource
+  - GET /todos --> list w/ our new todo
+  - PATCH /todos/{todoId} -->
+  - GET /todos --> list w/ our completed todo
+  - DELETE /todos/{todoId}
+  - GET /todos --> empty list
+
+### Necessary Options
+
+- `-X [HTTP METHOD]`
+- `-H 'content-type`: application/json': anytime we are sending a JSON request body
+- `-d '{"text": "dishes"}'`: the JSON request body

@@ -27,3 +27,8 @@ To create and configure email servers. Emails can be received and sent.
 {{% notice note %}}
 We will only be using mailutils to send emails in this class.
 {{% /notice %}}
+
+## Activity
+
+- setup mail utils to send emails
+- send yourself an email
