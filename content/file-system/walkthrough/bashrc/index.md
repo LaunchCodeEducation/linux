@@ -2,7 +2,7 @@
 title: "Bashrc"
 date: 2021-11-09T15:12:13-06:00
 draft: false
-weight: 8
+weight: 135
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer

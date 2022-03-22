@@ -3,7 +3,7 @@ title: "Slides: Fullscreen"
 date: 2022-02-17T14:54:25-06:00
 draft: false
 type: "slides"
-weight: 1
+weight: 105
 hidden: true
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
