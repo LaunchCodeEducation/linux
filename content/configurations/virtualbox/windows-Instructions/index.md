@@ -2,7 +2,7 @@
 title: "Windows Installation"
 date: 2022-02-17T14:54:25-06:00
 draft: false
-weight: 15
+weight: 105
 originalAuthor: "John Woolbright" # to be set by page creator
 originalAuthorGitHub: "jwoolbright23" # to be set by page creator
 reviewer: "Paul Matthews" # to be set by the page reviewer

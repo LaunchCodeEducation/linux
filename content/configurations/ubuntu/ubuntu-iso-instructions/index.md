@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu ISO Image Setup"
 draft: false
-weight: 15
+weight: 110
 originalAuthor: "John Woolbright" # to be set by page creator
 originalAuthorGitHub: "jwoolbright23" # to be set by page creator
 reviewer: "Paul Matthews" # to be set by the page reviewer

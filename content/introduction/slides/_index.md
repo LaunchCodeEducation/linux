@@ -3,7 +3,7 @@ title: "Slides"
 date: 2021-11-09T15:11:04-06:00
 draft: false
 # type: "slides"
-weight: 1
+weight: 100
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer

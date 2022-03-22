@@ -2,7 +2,7 @@
 title: "Bash command: which"
 date: 2022-02-17T14:54:25-06:00
 draft: false
-weight: 9
+weight: 140
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer

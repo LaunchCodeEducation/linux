@@ -1,7 +1,7 @@
 ---
 title: "Download Ubuntu Image"
 draft: false
-weight: 5
+weight: 100
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "John Woolbright" # to be set by the page reviewer
