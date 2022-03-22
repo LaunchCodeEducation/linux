@@ -21,7 +21,7 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
   - service users
   - daemon users
 - userspace
-  - end-user tools
+  - end-user tools (userspace applications)
   - end-user files
 
 ### Covered Userspace Applications
