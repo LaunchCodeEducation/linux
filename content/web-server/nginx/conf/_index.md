@@ -11,3 +11,17 @@ lastEditor: # update any time edits are made after review
 lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+conf location:
+
+- `/usr/local/nginx/conf`
+- `/etc/nginx`
+- `/usr/local/etc/nginx`
+
+- `http`
+- `server`
+- directive
+  - `listen`
+  - `location`
+    - `root` /absolute/path/to/dir
+    - `proxy_pass` http://localhost:8080;
