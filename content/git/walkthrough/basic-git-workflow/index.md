@@ -140,7 +140,7 @@ There are a couple of ways you can add files to staging. If you want to be speci
 {{% /notice %}}
 
 {{% notice bonus %}}
-There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders you want to include. If you would like to include all folders and files changed into one commit you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
+There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders or files you want to include. If you would like to add all folders and files changed into staging you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
 {{% /notice %}}
 
 ### Commit to Local Repository
