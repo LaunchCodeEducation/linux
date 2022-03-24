@@ -50,7 +50,7 @@ The new repository page provides a wizard with a few options to create the new r
 
 ![create-remote-repo](pictures/create-remote-repo.png?classes=border)
 
-{{% notice "Bonus" "rocket" %}}
+{{% notice green "Bonus" "rocket" %}}
 A breakdown of the remaining options:
 - **Description**: Provide the remote repo with a description
 - **Public or Private repository**: Public (anyone on the internet can access), Private (only those with proper authentication can access)
@@ -135,7 +135,7 @@ As you can see there are untracked files inside of our project directory. We wan
 
 Type in the command `git add example-folder/` and hit the enter key. You will notice that there will not be any output after hitting enter. But if you type in `git status` once more you will see that there are now changes to be committed, in this case `new file: example-folder/example-file`.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders or files you want to include. If you would like to add all folders and files changed into staging you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
 {{% /notice %}}
 
