@@ -12,6 +12,10 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-15 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
+{{% notice note %}}
+The slides found at this location are meant to be used in personal reference. If you are reading these slides for the first time, or are presenting these slides we recommended using the Fullscreen option found below.
+{{% /notice %}}
+
 ## Linux
 
 Welcome! This course will be exploring Linux. The course will cover many key elements of Linux, some of the problems you can solve using this tool, and most importantly you will be getting hands on practice with this very commonly used tool.
