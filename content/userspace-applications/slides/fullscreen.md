@@ -1,15 +1,35 @@
 ---
-title: "Exercises"
-date: 2021-11-09T15:12:20-06:00
+title: "Slides: Fullscreen"
+date: 2022-03-22
 draft: false
-weight: 110
+type: "slides"
+weight: 105
+hidden: true
 originalAuthor: "Paul Matthews" # to be set by page creator
 originalAuthorGitHub: "pdmxdd" # to be set by page creator
 reviewer: "" # to be set by the page reviewer
 reviewerGitHub: "" # to be set by the page reviewer
 lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
-lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
+lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Exercises
+<!-- Copy everything between open and closing slide tags from _index.md -->
+
+## Slide Deck Title
+
+---
+
+## Slide 1
+
+___
+
+### Slide 1 Vertical Slide
+
+---
+
+## Slide 2
+
+___
+
+### Slide 2 Verticial Slide
