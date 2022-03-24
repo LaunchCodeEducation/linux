@@ -13,4 +13,5 @@ lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 - install postgresql
-- create unit file for database
+- view postgres service status
+- where is postgres unit file? 

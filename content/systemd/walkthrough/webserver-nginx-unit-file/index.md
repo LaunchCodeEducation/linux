@@ -12,4 +12,6 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-16 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-unit file for NGINX (when hit will just show the default NGINX page)
+view the status of the NGINX service
+
+where is it's unit file?
