@@ -36,7 +36,7 @@ Make sure to cd into your newly created directory before running the `git init` 
 
 Running the above command creates a new subdirectory named `local-repository/.git/`. This file holds all of the required repository files.
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 After running the `git init` command you may notice that if you type in the `ls` command it does not show the .git folder inside of our directory. Remember that you can use the `ls -a` command to show all folders within a directory, including hidden ones.
 {{% /notice %}}
 
@@ -139,7 +139,7 @@ Type in the command `git add example-folder/` and hit the enter key. You will no
 There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders or files you want to include. If you would like to add all folders and files changed into staging you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
 {{% /notice %}}
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 There are a couple of ways you can add files to staging. If you want to be specific like in the example above you type out the path of what folders or files you want to include. If you would like to add all folders and files changed into staging you can use the command `git add .`. This will add all untracked files into staging so that you are able to commit them all at once. This is very useful if you only have a small amount of files that were changed. However if you have a large portion of untracked files you most likely want to commit them separately so that you can be more specific with your commit messages.
 {{% /notice %}}
 
