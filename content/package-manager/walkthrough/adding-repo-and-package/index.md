@@ -174,7 +174,7 @@ After checking for and installing the prerequisite packages we need to add Docke
 
 GPG stands for **G**NU **P**rivacy **G**uard. It is an implementation of OpenPGP which allows you to asymmetrically encrypt data and create and authenticate digital signatures. 
 
-{{% notice bonus %}}
+{{% notice green "Bonus" "rocket" %}}
 GPG works by having two linked keys a public key, and a private key. A public key can be shared with anyone, the private key remains secret and in the control of an individual. Data can be encrypted by either the public or private key and key be decrypted by the alternate key. Because of this encryption a user can create a digital signature that the other party can decrypt and verify.
 {{% /notice %}}
 
