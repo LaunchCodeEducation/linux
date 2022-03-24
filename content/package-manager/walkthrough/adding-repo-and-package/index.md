@@ -254,8 +254,8 @@ Overall it's a simple line. One line of output that contains:
 
 This is the information necessary for a package repository to work.
 
-{{% notice bonus %}}
-This information is eeriely similar to the Ubuntu provided package repositories that come standard with your distribution. Print out the contents of the package repositories in `/etc/apt/sources.list` with `cat /etc/apt/sources.list`.
+{{% notice green "Bonus" "rocket"  %}}
+This information is eerily similar to the Ubuntu provided package repositories that come standard with your distribution. Print out the contents of the package repositories in `/etc/apt/sources.list` with `cat /etc/apt/sources.list`.
 ![cat /etc/apt/sources.list](pictures/cat-etc-apt-sources-list.png?classes=border)
 There are multiple uncommented out lines that are similar to the line we just printed out.
 {{% /notice %}}
