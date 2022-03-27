@@ -130,7 +130,7 @@ Now that our installation is complete we can open up VirtualBox. If you are havi
 
 {{% notice note %}}
 You may see a popup window about a newer version of VirtualBox that is available. Click the `Ok` or `x` window button to close the popup.
-![virtualbox-new-version-10](pictures/virtualbox-new-version-10.png?classes=border&height=650px)
+![virtualbox-new-version-10](pictures/virtualbox-new-version-10.png?classes=border)
 {{% /notice %}}
 
 ## Summary
