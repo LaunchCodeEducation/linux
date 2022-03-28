@@ -74,6 +74,36 @@ Run the command `git checkout bug-fix`. Once more check your current branch stat
 
 Now that you are on your newly created branch you can fix the existing bug and stage the changes for commit.
 
+Within your `py-demo-web-logs` directory you can run the main.py program to view the output:
+
+![big-fix](pictures/bug-fix.png?classes=border)
+
+You will notice that the current output shows the directory `/home/student` as the `ip` and it shows `127.0.1.1` as the `home-dir`. Those two values should be swapped. 
+
+Open up the main.py file with `nano` or `vim` and change the print statement to look like the following: 
+
+![big-fixed](pictures/bug-fixed.png?classes=border)
+
+`print("{}: {}@{} ip: {} home-dir: {}".format(ts, user, hostname, local_ip, home_dir))`
+
+{{% notice warning %}}
+Make sure to write your changes before exiting!
+{{% /notice %}}
+
+Now if you run the `main.py` program again you should see that the error has been fixed!
+
+![python3-main](pictures/python3-main.png?classes=border)
+
+{{% notice green "Bonus" "rocket" %}}
+If you would like to check that the changes you made are correct you can run the command `git checkout master` and then run the command `git checkout bug-fix-solution` to compare your file.
+{{% /notice %}}
+
+### Staging
+
+This would be a great place to stage your changes for a commit. Run the `git status` command to view the changes made.
+
+![git-status](pictures/git-status.png?classes=border)
+
 {{% notice note %}}
 It is best practice to always create a new branch when adding content to a project.
 {{% /notice %}}
