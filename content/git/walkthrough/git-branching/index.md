@@ -27,7 +27,7 @@ In the steps below you will do the following:
 - Stage changes
 - Push changes to remote repository
 
-### Good Branching Practices
+### Branching Practices
 
 When creating a new branch you always want to make sure your master branch is updated to the most recent version. One reason for this is to avoid any unecessary merge conflicts when you begin to merge any working branches into the master branch. That process will look something like the following:
 
@@ -100,22 +100,26 @@ If you would like to check that the changes you made are correct you can run the
 
 ### Staging
 
-This would be a great place to stage your changes for a commit. Run the `git status` command to view the changes made.
+This would be a great place to stage your changes for a commit and submit a pull request within your own remote repo for additional practice. Run the `git status` command to view the changes made to the project.
 
 ![git-status](pictures/git-status.png?classes=border)
 
-{{% notice note %}}
-It is best practice to always create a new branch when adding content to a project.
-{{% /notice %}}
+- Add the changes
+- Commit the changes
+- Push new local branch to local repo
+- Submit a pull request and merge the `bug-fix` branch into the `master` branch.
 
 
 ### Recap
 
-- example repo
-  - broken app with a bug
-  - new branch to fix bug
-- example repo2
-  - app that is being expanded
-  - new branch for new feature
-- after coding pushed up and 
+- Branching Practices
+ - Update master when creating new branches
+- Viewing current local branch and existing remote branches
+  - `git branch`, `git branch -a`
+- Creating a new branch
+  - `git branch [new-branch]`
+- Checkout to different branch
+  - `git checkout [new-branch]`
+- Additional Staging
+
 
