@@ -2,14 +2,14 @@
 title: "Review: Basic Git Workflow"
 date: 2022-16-03T15:20:12-06:00
 draft: false
-weight: 1
+weight: 100
 originalAuthor: "John Woolbright"
 originalAuthorGitHub: "jwoolbright23"
 reviewer: "" # to be set by the approving reviewer
 reviewerGitHub:
-lastEditor: ""
-lastEditorGitHub: ""
-lastMod: "2022-03-16"
+lastEditor: "John Woolbright"
+lastEditorGitHub: "jwoolbright23"
+lastMod: "2022-03-28"
 ---
 
 ## Review: Creating a Local Git Repo
