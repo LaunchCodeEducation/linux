@@ -84,51 +84,77 @@ The URL has the following format: `protocol://domain/path` to future proof this 
 
 ## Download `hello.txt`
 
+Craft a `wget` request to download the `hello.txt` file:
+
 ```bash
 wget [protocol]://[domain]/userspace-applications/walkthrough/wget/_index.files/hello.txt
 ```
+
+Command output:
 
 ![wget hello.txt](pictures/wget-hello-txt.png?classes=border)
 
 ### Validation
 
+Check the contents of the downloaded file with `cat`:
+
 ```bash
 cat hello.txt
 ```
+
+Command output:
 
 ![cat hello.txt](pictures/cat-hello-txt.png?classes=border)
 
 ## Download `hello.sh`
 
+Craft a `wget` request to download the `hello.sh` file:
+
 ```bash
 wget [protocol]://[domain]/userspace-applications/walkthrough/wget/_index.files/hello.sh
 ```
+
+Command output:
 
 ![wget hello.sh](pictures/wget-hello-sh.png?classes=border)
 
 ### Validation
 
+Check the contents of the downloaded file with `cat`:
+
 ```bash
 cat hello.sh
 ```
 
+Command output:
+
 ![cat hello.sh](pictures/cat-hello-sh.png?classes=border)
+
+This file happens to be a `bash` script that we can execute with the `bash` command:
 
 ```bash
 bash hello.sh
 ```
 
+Command output:
+
 ![bash hello.sh](pictures/bash-hello-sh.png?classes=border)
 
 ## Download `hello.py`
+
+Craft a `wget` request to download the `hello.py` file:
 
 ```bash
 wget [protocol]://[domain]/userspace-applications/walkthrough/wget/_index.files/hello.py`
 ```
 
+Command output:
+
 ![wget hello.py](pictures/wget-hello-py.png?classes=border)
 
 ### Validation
+
+Check the contents of the downloaded file with `cat`:
 
 ```bash
 cat hello.py
@@ -136,21 +162,31 @@ cat hello.py
 
 ![cat hello.py](pictures/cat-hello-py.png?classes=border)
 
+This file happens to be a `python` script that we can execute with the `python3` interpreter:
+
 ```bash
 python3 hello.py
 ```
+
+Command output:
 
 ![python3 hello.py](pictures/python-hello-py.png?classes=border)
 
 ## Download `roster.csv`
 
+Craft a `wget` request to download the `roster.csv` file:
+
 ```bash
 wget [protocol]://[domain]/userspace-applications/walkthrough/wget/_index.files/roster.csv
 ```
 
+Command output:
+
 ![wget roster.csv](pictures/wget-roster-csv.png?classes=border)
 
 ### Validation
+
+Check the contents of the file with `cat`:
 
 ```bash
 cat roster.csv
