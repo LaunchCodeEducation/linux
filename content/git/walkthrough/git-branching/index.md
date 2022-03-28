@@ -7,28 +7,46 @@ originalAuthor: "John Woolbright"
 originalAuthorGitHub: "jwoolbright23"
 reviewer: "" # to be set by the approving reviewer
 reviewerGitHub:
-lastEditor: ""
-lastEditorGitHub: ""
+lastEditor: "John Woolbright"
+lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-17"
 ---
 
+{{% notice note %}}
+We will be using the repository you cloned in the previous walkthrough for the instructions below.
+{{% /notice %}}
+
+## Branching
+
+Branches allow users to work on projects under version control in a safe and controllable way. Rather than changing folders and files on your `master` branch where you have a working project, branching allows you to add new features and bug fixes on a branch to then later merge them with your master branch. This ensures that you do not break or add unitended bugs directly to your master or main branch of development.
+
+In the steps below you will do the following:
+- Create a new branch
+- Fix an existing bug
+- Stage changes
+- Push changes to remote repository
+
 ### Creating a new Branch
 
-While inside of a git project directory you can create a new branch with the `git branch` command. To test this you can do the following:
+While inside of a git project directory you can create a new branch with the `git branch` command.
 
-Navigate your terminal to an existing project and run the command `git branch`. This will show you the current branch you are working on in addition to any other local branches you have.
+Navigate your terminal to the `py-demo-web-logs` project you cloned in the previous walkthrough. 
 
 ![git-branch-command](pictures/git-branch-command.png?classes=border)
 
-{{% notice bonus %}}
+Run the command `git branch`. This will show you the current branch you are working on in addition to any other local branches you have.
+
+{{% notice green "Bonus" "rocket" %}}
 If you would like to view all local branches in addition to any remote branches you can add the -a tag at the end of your command: `git branch -a`. Try it out!
+![git-branch-a](pictures/git-branch-a.png?classes=border)
+You will notice that there is a remote branch `big-fix` that has been created previously on this project.
 {{% /notice %}}
 
-Now run the command `git branch new-branch`. 
+The main.py program within this project currently contains a bug. You are going to create a new branch to fix the bug and stage that change for commit.
 
 ![git-new-branch](pictures/git-new-branch.png?classes=border)
 
-Once again you can check the status of your branches with `git branch` or `git branch -a`.
+Run the command `git branch fix-bug`. Check that the branch has been created using the `git branch` command.
 
 ### Changing Branches
 
@@ -36,12 +54,12 @@ Now that you have a new branch to work on you can switch or "checkout" to that b
 
 ![git-checkout](pictures/git-checkout.png?classes=border)
 
-Run the command `git checkout new-branch`. Once more check your current branch status with the `git branch` command.
+Run the command `git checkout fix-bug`. Once more check your current branch status with the `git branch` command.
 
-Now that you are on your newly created branch you can begin to add content safely.
+Now that you are on your newly created branch you can begin to add content without directly affecting the master branch of development.
 
 {{% notice note %}}
-Branching is a crucial compenent when working with projects under version control. Branching allows you to diverge from the master or main branch of a project directory so that you can make changes safely. It is best practice to always create a new branch when adding content to a project.
+It is best practice to always create a new branch when adding content to a project.
 {{% /notice %}}
 
 ### Best Branching Practices
@@ -58,31 +76,7 @@ When creating a new branch you always want to make sure your master branch is up
 When you "checkout" from master you are effectively creating a new branch with identical files and directories to the master branch. If you were to checkout from a different branch you would be working with code from that specific branch (which most likely wont have been merged with master yet). The command `git checkout -b new-branch-name` is also a shortened way of running the following commands: `git branch new-branch` >> `git checkout new-branch`
 {{% /notice %}}
 
-### Branch Diagram
-
-Below you will find a diagram vizualizing the creation of a new branch and making commits. You are also able to see the branch being merged into master.
-
-{{< mermaid >}}
-gitGraph:
-options
-{
-  "nodeSpacing: 50,
-  "nodeRadius": 10
-}
-end
-  commit
-  branch newbranch
-  checkout newbranch
-  commit
-  commit
-  checkout master
-  commit
-  commit
-  merge newbranch
-{{< /mermaid >}}
-
-
-### `git branch`
+### Recap
 
 - example repo
   - broken app with a bug
