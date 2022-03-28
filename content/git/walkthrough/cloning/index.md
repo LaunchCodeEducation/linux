@@ -38,7 +38,7 @@ Now open up a new terminal and navgiate to the directory where you want the proj
 make sure to replace `/your-github-user/` with your own personal github username while also inside the directory where you want the project to live.
 {{% /notice %}}
 
-run the command `git clone https://github.com/your-github-user/py-demo-web-logs.git` in the terminal.
+run the command `git clone https://github.com/[your-github-user]/py-demo-web-logs.git` in the terminal.
 
 This will create a new directory (inside of your current working directory) named `py-demo-web-logs`, initialize a .git directory, and grab all of the most recent data associated with the repository.
 
@@ -59,12 +59,13 @@ Navigate into the newly cloned directory and run the `ls` command once more. You
 
 ![ls-py-demo-web-logs](pictures/ls-py-demo-web-logs.png?classes=border)
 
-{{% notice note %}}
-In the upcoming `branching` walkthrough we will be creating a new branch inside of this project directory and fixing a bug located within the main.py file of our `py-demo-web-logs`.
-{{% /notice %}}
 
 ### Recap:
 
 This walkthrough was a refresher on the following:
 - Cloning a Repository
   - `git clone https://github.com/git-repo-url`
+  
+{{% notice note %}}
+In the upcoming `branching` walkthrough we will be creating a new branch inside of this project directory and fixing a bug located within the main.py file of our `py-demo-web-logs`.
+{{% /notice %}}

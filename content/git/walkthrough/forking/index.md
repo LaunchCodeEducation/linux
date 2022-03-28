@@ -30,6 +30,8 @@ Click the `fork` button. This will be the repository you use in the remainder of
 
 After clicking the `fork` button github will provide you with options for the destination of the fork. Select your own personal Github user account as the location. 
 
+<!-- TODO: Add a note, if you have previously forked the repo it may cause conflicts -->
+
 ![fork-destination](pictures/fork-destination.png?classes=border)
 
 ## Repository Forked
