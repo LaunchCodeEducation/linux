@@ -21,10 +21,26 @@ We will be using the repository you cloned in the previous walkthrough for the i
 Branches allow users to work on projects under version control in a safe and controllable way. Rather than changing folders and files on your `master` branch where you have a working project, branching allows you to add new features and bug fixes on a branch to then later merge them with your master branch. This ensures that you do not break or add unitended bugs directly to your master or main branch of development.
 
 In the steps below you will do the following:
+- Review best branching practices
 - Create a new branch
 - Fix an existing bug
 - Stage changes
 - Push changes to remote repository
+
+### Good Branching Practices
+
+When creating a new branch you always want to make sure your master branch is updated to the most recent version. One reason for this is to avoid any unecessary merge conflicts when you begin to merge any working branches into the master branch. That process will look something like the following:
+
+![git-checkout-master](pictures/git-new-branch.png?classes=border)
+
+- `git checkout master` (if not already on the master branch)
+- `git pull`: Update master branch to most recent working version
+- `git branch [new-branch-name]`: Create a new branch
+- `git checkout [new-branch-name]`: Checkout or switch to newly created branch
+
+{{% notice note %}}
+When you "checkout" from master you are effectively creating a new branch with identical files and directories to the master branch. If you were to checkout from a different branch you would be working with code from that specific branch (which most likely wont have been merged with master yet). The command `git checkout -b new-branch-name` is also a shortened way of running the following commands: `git branch [new-branch]` >> `git checkout [new-branch]`
+{{% /notice %}}
 
 ### Creating a new Branch
 
@@ -39,14 +55,14 @@ Run the command `git branch`. This will show you the current branch you are work
 {{% notice green "Bonus" "rocket" %}}
 If you would like to view all local branches in addition to any remote branches you can add the -a tag at the end of your command: `git branch -a`. Try it out!
 ![git-branch-a](pictures/git-branch-a.png?classes=border)
-You will notice that there is a remote branch `big-fix` that has been created previously on this project.
+You will notice that there is a remote branch `big-fix-solution` that has been created previously on this project.
 {{% /notice %}}
 
 The main.py program within this project currently contains a bug. You are going to create a new branch to fix the bug and stage that change for commit.
 
 ![git-new-branch](pictures/git-new-branch.png?classes=border)
 
-Run the command `git branch fix-bug`. Check that the branch has been created using the `git branch` command.
+Run the command `git branch bug-fix`. Check that the branch has been created using the `git branch` command.
 
 ### Changing Branches
 
@@ -54,27 +70,14 @@ Now that you have a new branch to work on you can switch or "checkout" to that b
 
 ![git-checkout](pictures/git-checkout.png?classes=border)
 
-Run the command `git checkout fix-bug`. Once more check your current branch status with the `git branch` command.
+Run the command `git checkout bug-fix`. Once more check your current branch status with the `git branch` command.
 
-Now that you are on your newly created branch you can begin to add content without directly affecting the master branch of development.
+Now that you are on your newly created branch you can fix the existing bug and stage the changes for commit.
 
 {{% notice note %}}
 It is best practice to always create a new branch when adding content to a project.
 {{% /notice %}}
 
-### Best Branching Practices
-
-When creating a new branch you always want to make sure your master branch is updated to the most recent version. One reason for this is to avoid any unecessary merge conflicts when you begin to merge any working branches into the master branch. That process will look something like the following:
-
-![git-checkout-master](pictures/git-checkout-master.png?classes=border)
-
-- `git checkout master` (if not already on the master branch)
-- `git pull`: Update master branch to most recent working version
-- `git checkout -b new-branch-name`: Create and checkout to a new branch with identical files and directories as the master branch
-
-{{% notice note %}}
-When you "checkout" from master you are effectively creating a new branch with identical files and directories to the master branch. If you were to checkout from a different branch you would be working with code from that specific branch (which most likely wont have been merged with master yet). The command `git checkout -b new-branch-name` is also a shortened way of running the following commands: `git branch new-branch` >> `git checkout new-branch`
-{{% /notice %}}
 
 ### Recap
 
