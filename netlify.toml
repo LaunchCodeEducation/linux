@@ -1,7 +1,7 @@
 # netlify site URL: https://lctt-linux.netlify.app
 
 [build]
-  command = "hugo"
+  command = "hugo -b $DEPLOY_PRIME_URL"
   publish = "public"
 
 [build.environment]
