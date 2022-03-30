@@ -2,7 +2,7 @@
 title: "Creating Branches"
 date: 2022-17-03T15:20:12-06:00
 draft: false
-weight: 3
+weight: 100
 originalAuthor: "John Woolbright"
 originalAuthorGitHub: "jwoolbright23"
 reviewer: "" # to be set by the approving reviewer
