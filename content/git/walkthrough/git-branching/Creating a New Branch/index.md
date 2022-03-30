@@ -9,8 +9,12 @@ reviewer: "" # to be set by the approving reviewer
 reviewerGitHub:
 lastEditor: "John Woolbright"
 lastEditorGitHub: "jwoolbright23"
-lastMod: "2022-03-17"
+lastMod: "2022-03-30"
 ---
+
+{{% notice note %}}
+This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs` repository you cloned in the basic-git-workflow article.
+{{% /notice %}}
 
 ### Creating a new Branch
 

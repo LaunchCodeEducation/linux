@@ -2,7 +2,7 @@
 title: "Best Practices"
 date: 2022-17-03T15:20:12-06:00
 draft: false
-weight: 3
+weight: 120
 hidden: true
 originalAuthor: "John Woolbright"
 originalAuthorGitHub: "jwoolbright23"
