@@ -13,7 +13,7 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
-### Branching Practices
+## Branching Practices
 
 When creating a new branch you always want to make sure your master branch is updated to the most recent version. One reason for this is to avoid any unecessary merge conflicts when you begin to merge any working branches into the master branch. That process will look something like the following:
 

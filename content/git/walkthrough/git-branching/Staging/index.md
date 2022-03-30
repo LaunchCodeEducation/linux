@@ -12,7 +12,7 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
-### Staging
+## Staging
 
 This would be a great place to stage your changes for a commit and submit a pull request within your own remote repo for additional practice. Run the `git status` command to view the changes made to the project.
 
@@ -24,7 +24,7 @@ This would be a great place to stage your changes for a commit and submit a pull
 - Submit a pull request and merge the `bug-fix` branch into the `master` branch.
 
 
-### Recap
+## Recap
 
 - Branching Practices
  - Update master when creating new branches

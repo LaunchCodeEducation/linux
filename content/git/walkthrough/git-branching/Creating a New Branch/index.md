@@ -16,7 +16,7 @@ lastMod: "2022-03-30"
 This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs` repository you cloned in the basic-git-workflow article.
 {{% /notice %}}
 
-### Creating a new Branch
+## Creating a new Branch
 
 While inside of a git project directory you can create a new branch with the `git branch` command.
 

@@ -16,7 +16,7 @@ lastMod: "2022-03-30"
 This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs` repository you cloned in the basic-git-workflow article.
 {{% /notice %}}
 
-### Changing Branches
+## Changing Branches
 
 Now that you have a new branch to work on you can switch or "checkout" to that branch with the `git checkout` command.
 
