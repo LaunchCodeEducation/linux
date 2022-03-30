@@ -183,7 +183,7 @@ If you run the command `git status` after adding the changes to staging you will
 It's always a good idea to run `git status` to make sure things are as they should be.
 {{% /notice %}}
 
-![git-status-fixed](pictures/git-status-fixed.png?classes=border)a
+![git-status-fixed](pictures/git-status-fixed.png?classes=border)
 
 Run the command `git status`.
 
@@ -205,7 +205,26 @@ If you attempt to run the command `git push origin new-function` without force t
 
 ![git-push-force](pictures/git-push-force.png?classes=border)
 
-Run the command `git push origin new-function`.
+Run the command `git push -f origin new-function`.
+
+Now that the local changes have pushed to the remote repository you should be able to merge the pull request created for the `new-function` branch.
+
+Open up the pull request on your personal github account and merge the pull request!
+
+![no-merge-conflicts](pictures/no-merge-conflicts.png?classes=border)
+
+- Click the `Merge pull request` button.
+- Click the `Confirm merge` button.
+- Click the `Delete branch` button.
+
+You have successfully completed a `git rebase`!
+
+## Recap:
+- Create a pull request
+  - Merge pull request without conflicts
+- Create pull request that has unresolved conflicts
+  - 
+
 
 
 
