@@ -55,7 +55,7 @@ Run the command `git branch`. This will show you the current branch you are work
 {{% notice green "Bonus" "rocket" %}}
 If you would like to view all local branches in addition to any remote branches you can add the -a tag at the end of your command: `git branch -a`. Try it out!
 ![git-branch-a](pictures/git-branch-a.png?classes=border)
-You will notice that there is a remote branch `big-fix-solution` that has been created previously on this project.
+You will notice that there is a remote branch `bug-fix-solution` that has been created previously on this project.
 {{% /notice %}}
 
 The main.py program within this project currently contains a bug. You are going to create a new branch to fix the bug and stage that change for commit.
@@ -95,7 +95,7 @@ Now if you run the `main.py` program again you should see that the error has bee
 ![python3-main](pictures/python3-main.png?classes=border)
 
 {{% notice green "Bonus" "rocket" %}}
-If you would like to check that the changes you made are correct you can run the command `git checkout master` and then run the command `git checkout bug-fix-solution` to compare your file.
+If you would like to check that the changes you made are correct you can run the command `git checkout master` and then run the command `git checkout bug-fix-solution` to view the file it contains and compare it to the change you made on the `bug-fix` branch. 
 {{% /notice %}}
 
 ### Staging
