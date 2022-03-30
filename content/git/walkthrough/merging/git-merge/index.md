@@ -16,12 +16,6 @@ lastMod: "2022-03-17"
 This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-continued` github repository.
 {{% /notice %}}
 
-## Merge Strategies
-
-In this walkthrough you will find two different merge strategies. `git merge` and `git rebase`. The main benefits of `git merge` is that you will keep the original history of the `master` branch in tact. `git rebase` will alter the history but you are able to perform the rebase on a alternate branch. 
-- `get merge` requires you to merge a branch directly into master. 
-- `git rebase` allows you to rebase your development branch on top of master.
-
 ### `git merge`
 
 Lets begin with the `git merge` command and strategy to combine two branches.
@@ -59,9 +53,29 @@ Run the command `python3 main.py` within your `py-demo-logs-continued` directory
 
 ### new-feature branch
 
-Paul has come up with a solution to write the information inside of main.py to a file when run instead of only printing to Stdout. Checkout to the `new-feature` branch to test the behavior.
+Paul has come up with a solution to write the information inside of main.py to a file when run instead of only printing to Stdout. 
+
+![cat-main-new-feature](pictures/cat-main-new-feature.png?classes=border)
+
+Checkout to the `new-feature` branch to test the behavior.
 
 ![git-checkout-new-feature](pictures/git-checkout-new-feature.png?classes=border)
+
+- run the command `git checkout new-feature`
+- run the command `python3 main.py`
+- run the `ls` command to check that a file was written to your directory
+- run the `cat` command to print the contents of web.log to Stdout
+- lastly, remove the file as we no longer need it
+
+### new-function branch
+
+John has also come up with a solution to write the information inside of main.py to a file but has created a function and called that function to handle the work. John also added in a newline character so that 
+
+![cat-main-new-function](pictures/cat-main-new-function.png?classes=border)
+
+Checkout to the `new-function` branch to test the behavior.
+
+![git-checkout-new-function](pictures/git-checkout-new-function.png?classes=border)
 
 - run the command `git checkout new-feature`
 - run the command `python3 main.py`
