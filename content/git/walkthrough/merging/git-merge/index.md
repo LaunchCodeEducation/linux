@@ -78,4 +78,51 @@ Now would be a great time for you to run a `git status` command to see what is g
 
 ![git-status-git-merge](pictures/git-status-git-merge.png?classes=border)
 
+### What Changes to Keep?
+
+Paul and John both made changes to the main.py file. We need to decide which ones to keep and which to throw away. 
+
+The changes that we want to keep in this walkthrough include the following:
+- function created from John's solution
+- name of file used in Paul's solution (`web.log`)
+
+Open up the `main.py` file with vim so that you can make the necessary changes and fix the conflicts inside of the file:
+
+![vim-main-py](pictures/vim-main-py.png?classes=border)
+
+Make the below changes:
+
+![edited-vim-changes](pictures/edited-vim-changes.png?classes=border)
+
+After making the required changes to the file it should look similar to the above image. Write the changes and exit vim.
+
+{{% notice warning %}}
+Make sure to write the changes to the file before exiting vim!
+{{% /notice %}}
+
+Now that the conflicts have been resolved inside of the `main.py` file you need to resolve the conflicts inside of the `.gitignore` file.
+
+Open the `.gitignore` file with vim.
+
+![vim-gitignore-new-function](pictures/vim-gitignore-new-function.png?classes=border)
+
+Knowing that `web.log` is the name of the file preferred you can remove everything else from the `.gitignore` file so that there are no conflicts.
+
+![fixed-gitignore](pictures/fixed-gitignore.png?classes=border)
+
+Write the file and exit vim so that you are back inside of the `py-web-logs-continued` directory.
+
+Now that all conflicts have been resolved you will need to add the changes to staging so that you can continue the merge.
+
+Add the files to staging and commit changes:
+
+![git-commit-merge](pictures/git-commit-merge.png?classes=border)
+
+Run the following commands:
+- `git add .`: Add changes to staging
+- `git status`: Check status
+- `git commit -m "your commit message`: Commit changes to complete merge
+- `git push origin master`: Push changes to remote repo
+
+
 

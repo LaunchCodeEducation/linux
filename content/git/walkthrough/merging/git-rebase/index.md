@@ -147,7 +147,7 @@ Paul and John both made changes to the main.py file. We need to decide which one
 
 The changes that we want to keep in this walkthrough include the following:
 - function created from John's solution
-- name of file used in Paul's solution
+- name of file used in Paul's solution (`web.log`)
 
 ![edited-vim-changes](pictures/edited-vim-changes.png?classes=border)
 
