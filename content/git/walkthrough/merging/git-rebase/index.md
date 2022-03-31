@@ -30,46 +30,46 @@ Rebase is another way to merge branches. The `git rebase` command essentially ta
 
 This project is currently staged for a `git rebase`. There has been a feature branch merged into the `master` branch already. In order to merge the remaining branch `new-function` into `master` we will need to resolve the merge conflicts within the `main.py` and `.gitignore` files.
 
-iCheckout to the `new-function` branch and perform the `git rebase`:
+Checkout to the `new-function` branch and perform the `git rebase`:
 
 ![git-rebase-master-new-function](pictures/git-rebase-master-new-function.png?classes=border)
 
 Run the following commands:
 - `git checkout new-function`
-- `gi You will receive a notification that there are merge conflicts in `main.py` and `.gitignore` and that the conflcits need to be resolved manually before continuingt rebase master`
+- `git rebase master`
 
 ## Merge Conflicts
 
-You will notice some warnings that there are merge conflicts in the `main.py` and `.gitignore` files. 
+You will receive a notification that there are merge conflicts in `main.py` and `.gitignore` and that the conflcits need to be resolved manually before continuing the rebase onto the `master` branch.
+
 - It asks you to resolve the conflicts manually and mark them as resolved with the `git add` or `git rm` command
 - After the conflicts have been resolved you can then run `git rebase --continue`. 
 - Lets resolve the conflicts so that you can continue the rebase.
 
-## Resolve Conflicts
+### Resolve Conflicts
 - Open up the `main.py` file with vim:
 
  ![vim-web-logs](pictures/vim-main-py.png?classes=border)
 
  run the command `vim main.py`
-
+<!-- 
 There should be a few things that come to your immediate attention:
 - Section marked as `Head`
 - Separating lines `=======`
-- Section marked as `new feature`:
+- Section marked as `new feature`: -->
 
 <!-- TODO: Write explanation of above sections -->
-
-### What Changes to Keep?
 
 Paul and John both made changes to the main.py file. We need to decide which ones we want to keep and which to throw away. 
 
 The changes that we want to keep in this walkthrough include the following:
-- function created from John's solution
+- function created in John's solution
 - name of file used in Paul's solution (`web.log`)
 
 ![edited-vim-changes](pictures/edited-vim-changes.png?classes=border)
 
-After making the required changes to the file it should look similar to the above image. Write the changes and exit vim.
+After making the required changes to the file it should look similar to the above image. 
+- Write the changes and exit vim.
 
 {{% notice warning %}}
 Make sure to write the changes to the file before exiting vim!
