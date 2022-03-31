@@ -44,6 +44,8 @@ Run the command `git branch -a`
 
 You are going to merge the `new-feature` branch and the `new-function` branch into master.
 
+## Merge `new-feature` Branch
+
 Lets start with by merging `new-feature` branch into the `master branch`:
 
 ![git-merge-origin-new-feature](pictures/git-merge-origin-new-feature.png?classes=border)
@@ -54,13 +56,26 @@ While on the `master` branch run the command: `git merge origin/new-feature`
 Notice that the above example uses the remote name `origin` when merging. The remote branches had not yet existed on the local machine when I ran this command. If you already had checked out these remote branches you could have left off the remote name `origin` and simply ran the command `git merge new-feature`.
 {{% /notice %}}
 
-The merge was successful! Update your remote master branch:
+The merge was successful! Remember to update your remote master branch:
 
+![git-push-master-new-feature](pictures/git-push-master-new-feature.png?classes=border)
 
+run the command `git push origin master`
 
-## Merge Conflicts
+## Merge `new-function` Branch
 
 Now that you have merged the `new-feature` branch into master its time to merge the `new-function` branch. Since both of these branches made edits to the same files you are going to run into conflicts.
 
+![git-merge-origin-new-function](pictures/git-merge-origin-new-function.png?classes=border)
+
+run the command `git merge origin/new-function`
+
+{{% notice note %}}
+Remember that if you already have the `new-function` branch existing locally you can leave off the remote name origin and run the command `git merge new-function`!
+{{% /notice %}}
+
+Now would be a great time for you to run a `git status` command to see what is going on:
+
+![git-status-git-merge](pictures/git-status-git-merge.png?classes=border)
 
 
