@@ -37,3 +37,8 @@ The main.py program within this project currently contains a bug. You are going 
 ![git-new-branch](pictures/git-new-branch.png?classes=border)
 
 Run the command `git branch bug-fix`. Check that the branch has been created using the `git branch` command.
+
+## Recap:
+- Creating a new branch with `git branch [new-branch-name]`
+- View existing branches with `git branch`
+  - View all branches (including remote) with `git branch -a`

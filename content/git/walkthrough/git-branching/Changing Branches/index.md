@@ -24,8 +24,6 @@ Now that you have a new branch to work on you can switch or "checkout" to that b
 
 Run the command `git checkout bug-fix`. Once more check your current branch status with the `git branch` command.
 
-Now that you are on your newly created branch you can fix the existing bug and stage the changes for commit.
-
 Within your `py-demo-web-logs` directory you can run the main.py program to view the output:
 
 ![big-fix](pictures/bug-fix.png?classes=border)
@@ -49,3 +47,7 @@ Now if you run the `main.py` program again you should see that the error has bee
 {{% notice green "Bonus" "rocket" %}}
 If you would like to check that the changes you made are correct you can run the command `git checkout master` and then run the command `git checkout bug-fix-solution` to view the file it contains and compare it to the change you made on the `bug-fix` branch. 
 {{% /notice %}}
+
+## Recap:
+- Changing branches with the `git checkout` command
+  - Making minor changes to existing files

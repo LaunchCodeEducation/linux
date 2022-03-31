@@ -20,7 +20,7 @@ This would be a great place to stage your changes for a commit and submit a pull
 
 - Add the changes
 - Commit the changes
-- Push new local branch to local repo
+- Push updated local branch to remote repo
 - Submit a pull request and merge the `bug-fix` branch into the `master` branch.
 
 
