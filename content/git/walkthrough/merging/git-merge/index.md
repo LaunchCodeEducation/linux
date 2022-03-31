@@ -124,5 +124,16 @@ Run the following commands:
 - `git commit -m "your commit message`: Commit changes to complete merge
 - `git push origin master`: Push changes to remote repo
 
+{{% notice green "Bonus" "rocket" %}}
+Both the `new-feature` branch and the `new-function` branch can now be deleted safely!
+{{% /notice %}}
+
+## Recap:
+- Traditional `git merge` command: Merge development branches into master branch using the `git merge` command
+  - Merged the `new-feature` branch into `master` without conflict
+  - Merged `new-function` branch into `master` while resolving conflicts
+Staging:
+  - Pushed updated files into remote master branch
+
 
 
