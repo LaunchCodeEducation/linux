@@ -34,6 +34,12 @@ run the command `git clone https://github.com/[your-github-username]/py-demo-web
 
 ## `git merge` command
 
+The `git merge` joins two or more development histories together. When you perform a merge you are merging the target branch into the branch you are currently on. The command would be as follows: 
+
+`git merge [target-branch]`.
+
+## Merge `new-feature` Branch into `master`
+
 Open up the `py-demo-web-logs-continued` project directory inside of your terminal. 
 
 Check the existing branches:
@@ -43,8 +49,6 @@ Check the existing branches:
 Run the command `git branch -a`
 
 You are going to merge the `new-feature` branch and the `new-function` branch into master.
-
-## Merge `new-feature` Branch
 
 Lets start with by merging `new-feature` branch into the `master branch`:
 

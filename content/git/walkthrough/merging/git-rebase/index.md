@@ -18,7 +18,9 @@ You will be using `https://github.com/[your-github-username]/py-demo-web-logs-re
 
 ## Merging with Git Rebase
 
-Rebase is another way to merge branches. The `git rebase` command essentially takes committed changes to a branch and reiterates them on top of another branch.
+Rebase is another way to merge branches. The `git rebase` command will reapply commits from the current branch on top of the target branch. To perform a `git rebase` the command is as follows: 
+
+`git rebase [target-branch]`
 
 ## Repository Staged for Rebase
 
