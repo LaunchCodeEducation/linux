@@ -30,48 +30,32 @@ Rebase is another way to merge branches. The `git rebase` command essentially ta
 
 This project is currently staged for a `git rebase`. There has been a feature branch merged into the `master` branch already. In order to merge the remaining branch `new-function` into `master` we will need to resolve the merge conflicts within the `main.py` and `.gitignore` files.
 
-Checkout to the `new-function` branch and perform the `git rebase`:
+iCheckout to the `new-function` branch and perform the `git rebase`:
 
 ![git-rebase-master-new-function](pictures/git-rebase-master-new-function.png?classes=border)
 
 Run the following commands:
 - `git checkout new-function`
-- `git rebase master`
+- `gi You will receive a notification that there are merge conflicts in `main.py` and `.gitignore` and that the conflcits need to be resolved manually before continuingt rebase master`
 
-### Merge Conflicts
+## Merge Conflicts
 
 You will notice some warnings that there are merge conflicts in the `main.py` and `.gitignore` files. 
 - It asks you to resolve the conflicts manually and mark them as resolved with the `git add` or `git rm` command
 - After the conflicts have been resolved you can then run `git rebase --continue`. 
 - Lets resolve the conflicts so that you can continue the rebase.
 
-You will need to resolve these conflicts within your terminal so that you are able to merge the `new-function` branch into `master`.
-
-Open up your terminal and navigate to the `py-web-logs-continued` directory and update your master branch with the new remote changes.
-
- ### Fixing Conflicts with Git Rebase
-
- Checkout to the `new-function` branch and use the `git rebase` command to rebase `new-function` on top of master.
-
- ![git-rebase-master](pictures/git-rebase-master.png?classes=border)
-
- Run the following commands:
- - `git checkout new-function`
- - `git rebase master`
-
- You will receive a notification that there are merge conflicts in `main.py` and `.gitignore` and that the conflcits need to be resolved manually before continuing.
-
- Lets fix the conflicts using vim.
-
- ![vim-web-logs](pictures/vim-web-logs.png?classes=border)
-
+## Resolve Conflicts
 - Open up the `main.py` file with vim:
-    - `vim main.py`
+
+ ![vim-web-logs](pictures/vim-main-py.png?classes=border)
+
+ run the command `vim main.py`
 
 There should be a few things that come to your immediate attention:
 - Section marked as `Head`
 - Separating lines `=======`
-- Section marked as `master`
+- Section marked as `new feature`:
 
 <!-- TODO: Write explanation of above sections -->
 
@@ -103,6 +87,8 @@ Knowing that `web.log` is the name of the file preferred you can remove everythi
 
 Write the file and exit vim so that you are back inside of the `py-web-logs-continued` directory.
 
+## Staging
+
 Now that all conflicts have been resolved you will need to add the changes to staging so that you can continue the rebase onto `master`.
 
 ![git-status-rebase](pictures/git-status-rebase.png?classes=border)
@@ -111,17 +97,12 @@ Run the following commands:
 - `git status`: check changes made
 - `git add .`: add changes to staging
 
+{{% notice green "Bonus" "rocket" %}}
 If you run the command `git status` after adding the changes to staging you will notice that it says "all conflicts fixed: run "`git rebase --continue`".
-
-{{% notice note %}}
-It's always a good idea to run `git status` to make sure things are as they should be.
+![git-status-fixed](pictures/git-status-fixed.png?classes=border)
 {{% /notice %}}
 
-![git-status-fixed](pictures/git-status-fixed.png?classes=border)
-
-Run the command `git status`.
-
-### Git Rebase --Continue
+## `Git Rebase --Continue`
 
 Since you have added the changes to staging you can now continue the `git rebase`.
 
@@ -129,24 +110,31 @@ Since you have added the changes to staging you can now continue the `git rebase
 
 run the command `git rebase --continue`
 
-### Pushing Local Changes to Remote Branch
+## Pushing Local Changes to Remote Branch
 
 You have completed a `git rebase`. If you run the command `git status` you will receive a notice that your branch and `origin/new-function` have diverged. This is because you rebased your local `new-function` branch onto the local `master` branch. 
 
 ![git-status-diverged](pictures/git-status-diverged.png?classes=border)
 
-If you attempt to run the command `git push origin new-function` without force the push will be denied since the branches have diverged.
+If you attempt to run the command `git push origin new-function` without force the push will be denied because the tip of your current branch is behind its remote counterpart.
+
+<!-- TODO: notes on the above for further explanation -->
 
 ![git-push-force](pictures/git-push-force.png?classes=border)
 
 Run the command `git push -f origin new-function`.
 
-Now that the local changes have pushed to the remote repository you should be able to merge the pull request created for the `new-function` branch.
+<!-- TODO: notes on the above line for further explanation -->
 
-Open up the pull request on your personal github account and merge the pull request!
+Now that the local changes have been pushed to the remote repository you should be able to merge the branch without conflict.
 
-![no-merge-conflicts](pictures/no-merge-conflicts.png?classes=border)
+Open up the pull request from the `new-function` branch on your personal github account and merge the pull request!
 
+{{% notice warning %}}
+You may need to change the base repository and base branch reference!
+{{% /notice %}}
+
+- Click the `Create pull request` button.
 - Click the `Merge pull request` button.
 - Click the `Confirm merge` button.
 - Click the `Delete branch` button.
@@ -154,10 +142,12 @@ Open up the pull request on your personal github account and merge the pull requ
 You have successfully completed a `git rebase`!
 
 ## Recap:
-- Create a pull request
-  - Merge pull request without conflicts
-- Create pull request that has unresolved conflicts
-  - 
+- Checkout to branch needing to be merged
+  - Rebase the branch onto master with `git rebase master`
+  - Resolve merge conflicts
+  - Add changes to staging
+  - Continue rebase with `git rebase --continue`
+
 
 
 
