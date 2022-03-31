@@ -13,107 +13,41 @@ lastMod: "2022-03-30"
 ---
 
 {{% notice note %}}
-You will be using `https://github.com/[your-github-username]/py-demo-web-logs-continued` as the github repository for this walkthrough.
+You will be using `https://github.com/[your-github-username]/py-demo-web-logs-rebase` as the github repository for this walkthrough.
 {{% /notice %}}
 
 ## Merging with Git Rebase
 
-Lets start by merging the `new-feature` branch into the `master` branch. Navigate to the `py-demo-web-logs-continued` repository within your personal github account.
+Rebase is another way to merge branches. The `git rebase` command essentially takes committed changes to a branch and reiterates them on top of another branch.
 
-### Create a Pull Request
+## Repository Staged for Rebase
 
-![pull-request](pictures/pull-request.png?classes=border)
+- Fork this repository: `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-rebase` to your personal github account
+- Clone the forked repo to your own machine: `git clone https://github.com/[your-github-username]/py-demo-web-logs-rebase`
+- `cd` into the root folder of the project inside of your terminal
 
-Click the `3 branches` section.
+## Perform the Rebase
 
-Open a pull request for the `new-feature` branch.
+This project is currently staged for a `git rebase`. There has been a feature branch merged into the `master` branch already. In order to merge the remaining branch `new-function` into `master` we will need to resolve the merge conflicts within the `main.py` and `.gitignore` files.
 
-![pull-request-new-feature](pictures/pull-request-new-feature.png?classes=border)
+Checkout to the `new-function` branch and perform the `git rebase`:
 
-Click the `New pull request` for the `new-feature` branch.
+![git-rebase-master-new-function](pictures/git-rebase-master-new-function.png?classes=border)
 
-{{% notice note %}}
-You will notice that is says "There isn't anything to compare.". You need to change the base repository option to your personal github repo.
-{{% /notice %}}
-
-![pull-request-dropdown](pictures/pull-request-dropdown.png?classes=border)
-
-Click `[your-github-username]/py-demo-web-logs-continued`
-
-{{% notice note %}}
-You will also need to select a different base reference. 
-{{% /notice %}}
-
-![base-reference](pictures/base-reference.png?classes=border)
-
-Select `master` as the base branch reference.
-
-Lastly we will be able to create a pull request:
-
-![create-pull-request-button](pictures/create-pull-request-button.png?classes=border)
-
-Click the `Create pull request` button.
-
-### Merge pull request
-
-Since the `new-feature` branch did not have any conflicts with the `master` branch we can merge it automatically.
-
-![merge-pull-request](pictures/merge-pull-request.png?classes=border)
-
-Click the `Merge pull request` button.
-
-### Confirm the merge
-
-![click-confirm-merge](pictures/click-confirm-merge.png?classes=border)
-
-Click `Confirm merge`
-
-### Delete Merged Branch
-
-Now that the `new-feature` branch has been merged into the `master` branch it can be safely deleted. 
-
-{{% notice green "Bonus" "rocket" %}}
-Deleting the branch on the remote repository will only delete the remote branch. You will still have access to this branch locally.
-{{% /notice %}}
-
-![delete-branch](pictures/delete-branch.png?classes=border)
-
-Click the `Delete branch` button.
-
-### Merge the `new-function` Branch into Master
-
-Now it is time to merge the `new-function` branch into master. Since you just merged the `new-feature` branch into master there will be merge conflicts because both branches were working on the **same file**
-
-### Create Another Pull Request
-
-Similar to the steps above, create another pull request for the `new-function` branch. The steps will be as follows:
-- Navigate to your branches view
-- Click the `New pull request` button for the `new-function` branch
-- Change the base repository option to `[your-github-username]/py-demo-web-logs-continued`
-- Change the base branch reference to `master`
-- Click the `Create pull request` button.
+Run the following commands:
+- `git checkout new-function`
+- `git rebase master`
 
 ### Merge Conflicts
 
-You will notice that there is a warning saying "This branch has conflicts that must be resolved". It asks you to use the web editor or the command line to resolve the conflicts. This walkthrough is going to utilize the `command line` to resolve the conflicts.
-
-![merge-conflicts](pictures/merge-conflicts.png?classes=border)
-
-{{% notice note %}}
-Github shows you what files have conflicts:
-- `.gitignore`
-- `main.py`
-{{% /notice %}}
+You will notice some warnings that there are merge conflicts in the `main.py` and `.gitignore` files. 
+- It asks you to resolve the conflicts manually and mark them as resolved with the `git add` or `git rm` command
+- After the conflicts have been resolved you can then run `git rebase --continue`. 
+- Lets resolve the conflicts so that you can continue the rebase.
 
 You will need to resolve these conflicts within your terminal so that you are able to merge the `new-function` branch into `master`.
 
 Open up your terminal and navigate to the `py-web-logs-continued` directory and update your master branch with the new remote changes.
-
-![git-pull-origin-master](pictures/git-pull-origin-master.png?classes=border)
-
-Run the following commands:
- - `git checkout master`: Ensure you are on the master branch
- - `git pull origin master`: update local master branch with remote changes
 
  ### Fixing Conflicts with Git Rebase
 

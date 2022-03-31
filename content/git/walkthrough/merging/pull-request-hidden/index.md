@@ -62,3 +62,13 @@ Click the `Merge pull request` button.
 Click `Confirm merge`
 
 ### Delete Merged Branch
+
+Now that the `new-feature` branch has been merged into the `master` branch it can be safely deleted. 
+
+{{% notice green "Bonus" "rocket" %}}
+Deleting the branch on the remote repository will only delete the remote branch. You will still have access to this branch locally.
+{{% /notice %}}
+
+![delete-branch](pictures/delete-branch.png?classes=border)
+
+Click the `Delete branch` button.
