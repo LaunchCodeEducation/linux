@@ -18,23 +18,33 @@ This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraini
 
 ## Changing Branches
 
-Now that you have a new branch to work on you can switch or "checkout" to that branch with the `git checkout` command.
+Now that you have a new branch to work with you can switch or "checkout" to that branch with the `git checkout` command.
 
 ![git-checkout](pictures/git-checkout.png?classes=border)
 
-Run the command `git checkout bug-fix`. Once more check your current branch status with the `git branch` command.
+Run the command `git checkout bug-fix`.
 
-Within your `py-demo-web-logs` directory you can run the main.py program to view the output:
+Once more check your current branch status with the `git branch` command.
+
+Run the `main.py` program within `py-demo-web-logs` to view the output:
 
 ![big-fix](pictures/bug-fix.png?classes=border)
 
-You will notice that the current output shows the directory `/home/student` as the `ip` and it shows `127.0.1.1` as the `home-dir`. Those two values should be swapped. 
+You will notice that the current output has the following issues:
+- `ip`: /home/student
+- `home-dir`: 127.0.1.1
+
+These two values should be swapped.
+
+## Fix the Bug
 
 Open up the main.py file with `nano` or `vim` and change the print statement to look like the following: 
 
+`print("{}: {}@{} ip: {} home-dir: {}".format(ts, user, hostname, local_ip, home_dir))`
+
 ![big-fixed](pictures/bug-fixed.png?classes=border)
 
-`print("{}: {}@{} ip: {} home-dir: {}".format(ts, user, hostname, local_ip, home_dir))`
+Write the changes and exit back to the terminal.
 
 {{% notice warning %}}
 Make sure to write your changes before exiting!

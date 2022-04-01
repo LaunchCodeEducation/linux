@@ -24,7 +24,11 @@ Navigate your terminal to the `py-demo-web-logs` project you cloned in the previ
 
 ![git-branch-command](pictures/git-branch-command.png?classes=border)
 
-Run the command `git branch`. This will show you the current branch you are working on in addition to any other local branches you have.
+Run the command `git branch`.
+
+{{% notice note %}}
+Running the `git branch` command without an option will show you the current branch you are working on in addition to any other local branches you have.
+{{% /notice %}}
 
 {{% notice green "Bonus" "rocket" %}}
 If you would like to view all local branches in addition to any remote branches you can add the -a tag at the end of your command: `git branch -a`. Try it out!
@@ -32,11 +36,13 @@ If you would like to view all local branches in addition to any remote branches 
 You will notice that there is a remote branch `bug-fix-solution` that has been created previously on this project.
 {{% /notice %}}
 
-The main.py program within this project currently contains a bug. You are going to create a new branch to fix the bug and stage that change for commit.
+The main.py file within this project currently contains a bug. You are going to create a new branch to fix the bug and stage that change for commit.
 
 ![git-new-branch](pictures/git-new-branch.png?classes=border)
 
-Run the command `git branch bug-fix`. Check that the branch has been created using the `git branch` command.
+Run the command `git branch bug-fix`. 
+
+Check that the branch has been created using the `git branch` command.
 
 ## Recap:
 - Creating a new branch with `git branch [new-branch-name]`

@@ -12,26 +12,18 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
+{{% notice note %}}
+This walkthrough is a continuation of the `Changing Branches` walkthrough.
+{{% /notice %}}
+
 ## Staging
 
-This would be a great place to stage your changes for a commit and submit a pull request within your own remote repo for additional practice. Run the `git status` command to view the changes made to the project.
+Now that you have made changes on a new branch this would be a great place to stage your changes for a commit and submit a pull request.
 
 ![git-status](pictures/git-status.png?classes=border)
 
-- Add the changes
-- Commit the changes
-- Push updated local branch to remote repo
+- `git status`: Check that there have been changes made
+- `git add .` or `git add [file-name]`: Add the changes to staging
+- `git commit -m "commit message"`: Commit the changes
+- `git push origin bug-fix`: Push updated local branch to remote repo
 - Submit a pull request and merge the `bug-fix` branch into the `master` branch.
-
-
-## Recap
-
-- Branching Practices
- - Update master when creating new branches
-- Viewing current local branch and existing remote branches
-  - `git branch`, `git branch -a`
-- Creating a new branch
-  - `git branch [new-branch]`
-- Checkout to different branch
-  - `git checkout [new-branch]`
-- Additional Staging
