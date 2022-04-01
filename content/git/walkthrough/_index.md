@@ -12,20 +12,6 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Walkthrough Articles
-
-- `Review: Basic Git Workflow`
-  - `Creating and Connecting a Local and Remote Repository`
-  - `Stage, Commit, Push changes`
-- `Git Branches`
-  - `Creating Branches`
-  - `Changing Braches`
-  - `Staging Changes`
-- `Merging`
-  - `Review Existing Code`
-  - `Git Merge`
-  - `Git Rebase`
-
 ## Content Links
 
-{{% children %}}
+{{% children depth="2" %}}
