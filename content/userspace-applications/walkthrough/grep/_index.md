@@ -25,8 +25,23 @@ Parse text and only return lines that match specific patterns (specific characte
 - Search for file names matching a specific pattern in a directory
 - Search contents of a file for specific patterns
 
+## What is a Pattern?
+
+A pattern can be a single character, a word, a phrase, or a regular expression (regex).
+
 ## Activity
 
+- `ls` with grep
+  - plain text (letter: `i`)
+  - plain text (word: `hello`)
+  - plain text (`hello.py`)
+  - basic regex (`hello.\(py\|sh\)`) (regex group: `()`, regex or: `|`)
+  - basic regex (filename must start with: `^i`) (regex line begin anchor: `^`)
+  - basic regex (filename must end with: `\..*^`) (regex line end anchor: `$`)
+- only the `.java` files
+- `find` with grep
+  - find 'bash' at root: `sudo find / -name 'bash'`
+    - too much information, I just want `/bin` options: `sudo find / -name 'bash' | grep 'bin'`
 - `wget` a CSV file
   - `cat [file] | grep "[search argument]"`: searching for names
   - `cat [file] | grep "[search argument]"`: searching for dates
