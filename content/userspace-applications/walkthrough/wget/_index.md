@@ -47,10 +47,6 @@ Some examples:
 - Image: `.png`, `.jpeg`, `.jpg`
 - etc...
 
-This site is hosting files that you can make wget requests to. You will be using the following files to practice.
-
-<!-- Clarity: Which site are we referencing in the above line #50? -->
-
 ### Example
 
 Make a `wget` request for the file at `https://www.launchcode.org`:
