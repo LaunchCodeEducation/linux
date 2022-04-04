@@ -28,3 +28,7 @@ In the Git Branches walkthrough you will be doing the following:
 ## Content Links
 
 {{% children %}}
+
+{{% notice note %}}
+The walkthrough articles in this section will be using the [py-demo-web-logs](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs) repository you cloned in the [Review: Basic Git Workflow](../../basic-git-workflow).
+{{% /notice %}}
