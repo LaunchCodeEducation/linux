@@ -17,13 +17,32 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Purpose
 
-To craft HTTP(s) requests and receive HTTP(s) responses.
+To craft HTTP(s) requests and receive HTTP(s) responses allowing you to transfer data to or from a server.
 
 ## Usage
+
+```bash
+curl [url]
+```
 
 Make and receive web requests.
 
 Great for debugging and troubleshooting web application servers and APIs.
+
+## Example
+
+Make a curl request to `google.com` receiving an HTML object as a response.
+
+```bash
+curl google.com
+```
+
+Result:
+![curl-google.com](pictures/curl-google.com.png?classes=border)
+
+{{% notice green "Bonus" "rocket" %}}
+You will notice that the request page `google.com` has been moved. You can add the `-L` or `--location` option to redo the request on a new place. Try `curl -L google.com`
+{{% /notice %}}
 
 ## Activity
 
