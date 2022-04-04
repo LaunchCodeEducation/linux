@@ -92,8 +92,6 @@ Now would be a great time for you to run a `git status` command to see what is g
 
 ![git-status-git-merge](pictures/git-status-git-merge.png?classes=border)
 
-You will have to decide what to keep and what to discard with regards to the conflicts that currently exist.
-
 ### What Changes to Keep?
 
 Paul and John both made changes to the `main.py` file. We need to decide which ones to keep and which to throw away. 
@@ -102,7 +100,9 @@ The changes that we want to keep in this walkthrough include the following:
 - function created from John's solution
 - name of file used in Paul's solution (`web.log`)
 
-Open up the `main.py` file with vim so that you can make the necessary changes and fix the conflicts inside of the file:
+### Resolve conflicts in `main.py`
+
+Open up the `main.py` file with `vim` (or `nano` or the file editor of your choice) so that you can make the necessary changes and fix the conflicts inside of the file:
 
 ![vim-main-py](pictures/vim-main-py.png?classes=border)
 
@@ -118,6 +118,8 @@ Make sure to write the changes to the file before exiting vim!
 
 Now that the conflicts have been resolved inside of the `main.py` file you need to resolve the conflicts inside of the `.gitignore` file.
 
+### Resolve Conflicts in `.gitignore`
+
 Open the `.gitignore` file with vim.
 
 ![vim-gitignore-new-function](pictures/vim-gitignore-new-function.png?classes=border)
@@ -127,6 +129,8 @@ Knowing that `web.log` is the name of the file preferred you can remove everythi
 ![fixed-gitignore](pictures/fixed-gitignore.png?classes=border)
 
 Write the file and exit vim so that you are back inside of the `py-web-logs-continued` directory.
+
+### Staging, Committing and Pushing Conflict Resolution
 
 Now that all conflicts have been resolved you will need to add the changes to staging so that you can continue the merge.
 
