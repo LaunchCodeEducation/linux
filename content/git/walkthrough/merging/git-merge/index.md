@@ -12,13 +12,15 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-17"
 ---
 
-{{% notice note %}}
-You will be using `https://github.com/[your-github-username]/py-demo-web-logs-continued` as the github repository for this walkthrough.
-{{% /notice %}}
-
 ## Traditional Git Merge
 
-Using the `git merge` command is the traditional way to merge development branches into your master branch of development. The main benefits of `git merge` is that you will keep the original history of the `master` branch in tact. The downside is that you will be working directly on the master branch and any mistakes or unwanted changes will cause problems.
+{{% notice note %}}
+You will be using [py-demo-web-logs-continued](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-continued) as the github repository for this walkthrough.
+{{% /notice %}}
+
+Using the `git merge` command is the traditional way to merge development branches into your master branch of development. 
+
+The main benefits of `git merge` is that you will keep the original history of the `master` branch in tact. The downside is that you will be working directly on the master branch and any mistakes or unwanted changes will cause problems.
 
 - Fork the repository:`https://github.com/[your-github-username]/py-demo-web-logs-continued` to you your personal github account if you have not done so already.
 
@@ -30,11 +32,13 @@ In the example below we are cloning the github repo into the `home/student/Deskt
 
 ![git-clone](pictures/git-clone.png?classes=border)
 
-run the command `git clone https://github.com/[your-github-username]/py-demo-web-logs-continued` in your preferred directory.
+Run the command: `git clone https://github.com/[your-github-username]/py-demo-web-logs-continued` in the directory you cloned your repository.
 
-## `git merge` command
+## `git merge`
 
-The `git merge` joins two or more development histories together. When you perform a merge you are merging the target branch into the branch you are currently on. The command would be as follows: 
+The `git merge` joins two or more development histories together. When you perform a merge you are **merging the target branch into the currently checked out branch**. 
+
+The command to merge the target-branch into the currently checked out branch would be: 
 
 `git merge [target-branch]`.
 
@@ -50,29 +54,35 @@ Run the command `git branch -a`
 
 You are going to merge the `new-feature` branch and the `new-function` branch into master.
 
+### Actual Merge
+
 Lets start with by merging `new-feature` branch into the `master branch`:
+
+{{% notice warning %}}
+Make sure the currently checked out branch is `master` before running the next command.
+{{% /notice %}}
 
 ![git-merge-origin-new-feature](pictures/git-merge-origin-new-feature.png?classes=border)
 
 While on the `master` branch run the command: `git merge origin/new-feature`
 
 {{% notice green "Bonus" "rocket" %}}
-Notice that the above example uses the remote name `origin` when merging. The remote branches had not yet existed on the local machine when I ran this command. If you already had checked out these remote branches you could have left off the remote name `origin` and simply ran the command `git merge new-feature`.
+Notice that the above example uses the remote name `origin` when merging. The remote branches had not yet existed on the local machine when I ran this command. If you already had checked out these remote branches you could have left off the remote name `origin` and simply run: `git merge new-feature`.
 {{% /notice %}}
 
 The merge was successful! Remember to update your remote master branch:
 
 ![git-push-master-new-feature](pictures/git-push-master-new-feature.png?classes=border)
 
-run the command `git push origin master`
+Run the command `git push origin master`.
 
 ## Merge `new-function` Branch
 
-Now that you have merged the `new-feature` branch into master its time to merge the `new-function` branch. Since both of these branches made edits to the same files you are going to run into conflicts.
+Now that you have merged the `new-feature` branch into master its time to merge the `new-function` branch. Since both of these branches made edits to the same files you are going to have a **merge conflict**.
 
 ![git-merge-origin-new-function](pictures/git-merge-origin-new-function.png?classes=border)
 
-run the command `git merge origin/new-function`
+Run the command `git merge origin/new-function`.
 
 {{% notice note %}}
 Remember that if you already have the `new-function` branch existing locally you can leave off the remote name origin and run the command `git merge new-function`!
@@ -82,9 +92,11 @@ Now would be a great time for you to run a `git status` command to see what is g
 
 ![git-status-git-merge](pictures/git-status-git-merge.png?classes=border)
 
+You will have to decide what to keep and what to discard with regards to the conflicts that currently exist.
+
 ### What Changes to Keep?
 
-Paul and John both made changes to the main.py file. We need to decide which ones to keep and which to throw away. 
+Paul and John both made changes to the `main.py` file. We need to decide which ones to keep and which to throw away. 
 
 The changes that we want to keep in this walkthrough include the following:
 - function created from John's solution
