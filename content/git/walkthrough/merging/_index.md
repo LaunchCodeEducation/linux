@@ -30,5 +30,5 @@ The main benefit of the `git rebase` is that conflicts are handled in the featur
 {{% children %}}
 
 {{% notice note %}}
-The walkthrough articles in this section will be using the [py-demo-web-logs-continued](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-continued) GitHub repository. **Make sure to fork this repository to your GitHub account and to clone it to your local machine.**
+The walkthrough articles in this section will be using the [py-demo-web-logs-continued](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-continued) GitHub repository.
 {{% /notice %}}
