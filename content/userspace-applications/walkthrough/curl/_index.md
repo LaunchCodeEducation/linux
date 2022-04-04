@@ -46,17 +46,17 @@ You will notice that the request page `google.com` has been moved. You can add t
 
 ## Activity
 
-- clone this repo of a RESTful API
-- create the environment
-- run the project
-- make curl requests to the RESTful API
-  - GET /todos --> empty list
-  - POST /todos --> created and reflected back the new resource
-  - GET /todos --> list w/ our new todo
-  - PATCH /todos/{todoId} -->
-  - GET /todos --> list w/ our completed todo
-  - DELETE /todos/{todoId}
-  - GET /todos --> empty list
+- curl REST
+  - creating a GET request with JSON attached
+  - creating a POST request with JSON attached
+  - creating a PUT request with JSON attached
+  - creating a PATCH request with JSON attached
+  - creating a DELETE request no JSON necessary
+
+To add a header -H '{"content-type": "application/json"}'
+To add a JSON body -d '{"text": "some new task"}'
+
+use the todo api as the example project
 
 ### Necessary Options
 
