@@ -12,19 +12,17 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
-{{% notice note %}}
-This walkthrough will be using the `https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs` repository you cloned in the basic-git-workflow article.
-{{% /notice %}}
-
 ## Changing Branches
 
-Now that you have a new branch to work with you can switch or "checkout" to that branch with the `git checkout` command.
+Now that you have a new branch to work with you can switch or `checkout` the branch by using the `git checkout` command.
 
 ![git-checkout](pictures/git-checkout.png?classes=border)
 
 Run the command `git checkout bug-fix`.
 
 Once more check your current branch status with the `git branch` command.
+
+## Running the Python Program
 
 Run the `main.py` program within `py-demo-web-logs` to view the output:
 
@@ -47,7 +45,7 @@ Open up the main.py file with `nano` or `vim` and change the print statement to 
 Write the changes and exit back to the terminal.
 
 {{% notice warning %}}
-Make sure to write your changes before exiting!
+Make sure to write/save your changes before exiting!
 {{% /notice %}}
 
 Now if you run the `main.py` program again you should see that the error has been fixed!
