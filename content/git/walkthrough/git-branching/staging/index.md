@@ -12,13 +12,9 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
-{{% notice note %}}
-This walkthrough is a continuation of the `Changing Branches` walkthrough.
-{{% /notice %}}
+## Staging, Committing & Pushing
 
-## Staging
-
-Now that you have made changes on a new branch this would be a great place to stage your changes for a commit and submit a pull request.
+Now that you have made changes on a new branch this would be a great place to stage, commit and push the changes. You can then open a new pull request so the changes introduced in the `bug-fix` branch can be incorporated into the `master` branch.
 
 ![git-status](pictures/git-status.png?classes=border)
 
