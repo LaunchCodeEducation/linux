@@ -25,7 +25,7 @@ You can use it to download files over private networks like your home, school, o
 You can use it to download files over public networks like the internet.
 
 {{% notice note %}}
-We will only be seeing examples of downloading files over the internet.
+You will only be seeing examples of downloading files over the internet.
 {{% /notice %}}
 
 ## Usage
@@ -34,7 +34,9 @@ We will only be seeing examples of downloading files over the internet.
 wget [url]
 ```
 
-Using `wget` you can download the file using its unique URL. The downloaded file can be any format some examples:
+Using `wget` you can download the file using its unique URL. The downloaded file can be any format.
+
+Some examples:
 - HTML File: `.html`
 - Debian Package File: `.deb`
 - Comma Separated Values: `.csv`
@@ -45,7 +47,9 @@ Using `wget` you can download the file using its unique URL. The downloaded file
 - Image: `.png`, `.jpeg`, `.jpg`
 - etc...
 
-This site is hosting files that we can make wget requests to. We will be using the following files to practice.
+This site is hosting files that you can make wget requests to. You will be using the following files to practice.
+
+<!-- Clarity: Which site are we referencing in the above line #50? -->
 
 ### Example
 
@@ -130,7 +134,7 @@ Command output:
 
 ![cat hello.sh](pictures/cat-hello-sh.png?classes=border)
 
-This file happens to be a `bash` script that we can execute with the `bash` command:
+This file happens to be a `bash` script that you can execute with the `bash` command:
 
 ```bash
 bash hello.sh
@@ -162,7 +166,7 @@ cat hello.py
 
 ![cat hello.py](pictures/cat-hello-py.png?classes=border)
 
-This file happens to be a `python` script that we can execute with the `python3` interpreter:
+This file happens to be a `python` script that you can execute with the `python3` interpreter:
 
 ```bash
 python3 hello.py
