@@ -14,6 +14,17 @@ lastMod: "2022-03-17"
 
 ## Merge Strategies
 
-In this walkthrough you will find two different merge strategies. `git merge` and `git rebase`. The main benefits of `git merge` is that you will keep the original history of the `master` branch in tact. `git rebase` will alter the history but you are able to perform the rebase on a alternate branch. 
+In this walkthrough you will find two different merge strategies: `git merge` and `git rebase`. 
+
+Both strategies have their own pros and cons.
+
+The main benefit of `git merge` is that you keep the original history of the `master` branch in tact. However, conflicts are handled during the merge into the `master` branch.
+
+The main benefit of the `git rebase` is that conflicts are handled in the feature branch and conflicts will not need to be managed when merging with the `master` branch. However, performing a `rebase` alters the history of the feature branch.
+
 - `get merge` requires you to merge a branch directly into master. 
 - `git rebase` allows you to rebase your development branch on top of master.
+
+## Content Links
+
+{{% children %}}
