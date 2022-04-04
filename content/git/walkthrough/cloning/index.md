@@ -35,7 +35,7 @@ Now open up a new terminal and navgiate to the directory where you want the proj
 ![git-clone-desktop](pictures/git-clone-desktop.png?classes=border)
 
 {{% notice warning %}}
-make sure to replace `/your-github-user/` with your own personal github username while also inside the directory where you want the project to live.
+make sure to replace `/[your-github-user]/` with your own personal github username while also inside the directory where you want the project to live.
 {{% /notice %}}
 
 run the command `git clone https://github.com/[your-github-user]/py-demo-web-logs.git` in the terminal.
@@ -47,7 +47,7 @@ If you run the `ls` command you can see that the folder has been cloned:
 ![cloned-directory-ls](pictures/cloned-directory-ls.png?classes=border)
 
 {{% notice green "Bonus" "rocket" %}}
-You can also clone a repository and provide it a new name should you ever wish to do so. You can accomplish this by adding the name you want the directory to be called at the end of the command: `git clone https://github.com/your-github-user/py-demo-web-logs.git <newdirectoryname>`
+You can also clone a repository and provide it a new name should you ever wish to do so. You can accomplish this by adding the name you want the directory to be called at the end of the command: `git clone https://github.com/[your-github-user]/py-demo-web-logs.git <newdirectoryname>`
 ![new-name-example](pictures/new-name-example.png?classes=border)
 {{% /notice %}}
 
