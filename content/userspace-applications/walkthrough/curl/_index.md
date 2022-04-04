@@ -44,7 +44,9 @@ Result:
 You will notice that the request page `google.com` has been moved. You can add the `-L` or `--location` option to redo the request on a new place. Try `curl -L google.com`
 {{% /notice %}}
 
-By default curl will automatically send a HTTP GET request.
+{{% notice note %}}
+By default curl will automatically send a HTTP GET request. To send other types of requests you will need to add the -X option.
+{{% /notice %}}
 
 ## Activity
 
