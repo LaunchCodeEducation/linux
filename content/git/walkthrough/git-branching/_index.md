@@ -14,7 +14,6 @@ lastMod: "2022-03-30"
 
 ## Branching
 
-<!-- Branches allow users to work on projects under version control in a safe and controllable way. you to add new features and bug fixes on a branch to then later merge them with your master branch. -->
 Working with branches allows you to diverge from the master branch of development. 
 
 Working on a branch seperate from the master branch provides many benefits. One of which is to create, read, update, and delete content without breaking anything on the master branch.
