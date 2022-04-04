@@ -12,9 +12,7 @@ lastEditorGitHub: "jwoolbright23"
 lastMod: "2022-03-30"
 ---
 
-{{% notice note %}}
-You will be using `https://github.com/[your-github-username]/py-demo-web-logs-continued` as the github repository for this walkthrough.
-{{% /notice %}}
+
 
 ## Code Review
 
