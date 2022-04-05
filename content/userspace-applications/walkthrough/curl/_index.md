@@ -11,6 +11,11 @@ lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+{{% notice note %}}
+This walkthrough will be utilizing a java spring api. 
+{{% /notice %}}
+
 ## Name
 
 > curl - transfer a URL
@@ -67,8 +72,6 @@ Create a POST request with JSON attached
 ```bash
 curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
 ```
-<!-- - creating a PUT request with JSON attached -->
-<!-- TODO: Clarity - Currently no PUT mapping on todo-api -->
 Create a PATCH request with JSON attached
 ```bash
 curl -X PATCH localhost:8080/todos/{id} -H 'Content-Type:application/json'
@@ -86,6 +89,8 @@ curl -X DELETE localhost:8080/todos/{id}
 {{% notice note %}}
 You will need to replace the `{id}` portion of the above curl request with an existing todo id.
 {{% /notice %}}
+
+<!-- TODO: Add Validation for the above curl requests -->
 
 ### Necessary Options
 
