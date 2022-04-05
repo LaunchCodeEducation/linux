@@ -37,7 +37,7 @@ Regular expressions can be:
 - a phrase
 - all of the above using the additional tools defined by regular expressions
 
-## Setup Download Walkthrough Dataset
+## Setup: Download Walkthrough Dataset
 
 Before we can start searching text we need to first download the text we will be searching. From your home directory:
 
@@ -134,184 +134,15 @@ Regular Expressions are a very powerful tool. By learning the Regular Expression
 
 This class doesn't really cover Regular Expressions, however we included some of the basics to show how better patterns can be created by using some of the Regular Expression Syntax.
 
-## Regular Expression Line Begin Anchor: `^`
+## Content
 
-You can match the beginning of a line with the Regular Expression line begin anchor: `^`.
+{{% children %}}
 
-Earlier `grep 'Paul'` matched lines that had `'Paul'` at any point in the line. If we want to match `'Paul'` at the very beginning of each line we could use the line begin anchor: `^`.
 
-### Match `'^Paul'`
 
-```bash
-grep '^Paul' user.csv
-```
 
-Output:
 
-![grep '^Paul' Output](pictures/grep-line-begin-anchor.png?classes=border)
 
-Take note that **`Bianca,Paul,...` is not** in our matched lines.
 
-### Match `'^Paul,'`
 
-```bash
-grep '^Paul,' user.csv
-```
 
-Output:
-
-![grep '^Paul,' Output](pictures/grep-line-begin-anchor-two.png?classes=border)
-
-Take note that **`Paula,Richardson,...` is not** in our matched lines.
-
-## Regular Expression Line End Anchor: `$`
-
-You can match the end of a line with the Regular Expression line end anchor `$`.
-
-In the case of our data-set company names come at the end of each line.
-
-### Match `'s$'`
-
-Let's match all lines that end with the letter `s`:
-
-```bash
-grep 's$' user.csv
-```
-
-Output:
-
-![grep 's$' output](pictures/grep-line-end-anchor.png?classes=border)
-
-Any line that ends with the letter `s` has been matched, in the case of this dataset `Express Scripts` and `Edward Jones` both match our provided pattern.
-
-### Match `'Accenture$'`
-
-Since the last entry in each record is a company name let's match all records that have `Accenture` as the company:
-
-```bash
-grep 'Accenture$' user.csv
-```
-
-![grep 'Accenture$'](pictures/grep-line-end-anchor-two.png?classes=border)
-
-Every line that ends with `Accenture` is a part of the output from this `grep` command.
-
-## Regular Expression Any Character: `.`
-
-You can use the any character reserved symbol (`.`) to instruct the Regular Expression pattern to match **any** single character.
-
-### Match `'^.a'`
-
-Let's match all lines that start with any character, but the second character must be the lowercase letter `a`:
-
-```bash
-grep '^.a' user.csv
-```
-
-Output:
-
-![grep '^.a'](pictures/grep-any-character.png?classes=border)
-
-### Match `'.7@example.com`
-
-```bash
-grep '.7@example.com' user.csv
-```
-
-Output:
-
-![grep '.7@example'](pictures/grep-any-character-two.png?classes=border)
-
-## Regular Expression Sets: `[]`
-
-### Match `'3[0-9]`
-
-```bash
-grep '3[0-9]' user.csv
-```
-
-### Match `'3[5-9]'`
-
-```bash
-grep '3[5-9]' user.csv
-```
-
-### Match `'^Paul,[A-F]'`
-
-```bash
-grep '^Paul,[A-F]' user.csv
-```
-
-## `grep` from `STDIN`
-
-So far we have only used grep to search a specific file. However, you can pass input directly to `grep` and match `STDIN` results against a Regular Expression pattern.
-
-### `ls | grep` Example
-
-Let's match patterns for the contents of the home directory:
-
-Find all files with a `.` in our home directory.
-
-```bash
-ls ~ | grep '\.'
-```
-
-### `history | grep` Example
-
-Find all `grep` commands in our `bash history`
-
-```bash
-history | grep 'grep'
-```
-
-### `find | grep` Example
-
-Find all `/bin/bash` in the root directory.
-
-```bash
-sudo find / -name 'bash' | grep '/bin/'
-```
-
-### `curl | grep` Example
-
-Fire a `curl` request directly to the API and search the results for a specific pattern.
-
-```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'
-```
-
-## Chaining `grep`
-
-We can even pass the output from a `grep` command to another `grep` command to build complex filter chains.
-
-### Step One: Get our Dataset
-
-```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv
-```
-
-25000 records is too much.
-
-### Step Two: Filter Matches `'^John'`
-
-Filter data to include only `'^John'`:
-
-```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,'
-```
-
-### Step Three: Filter Matches `'Microsoft$'`
-
-Using the output from the previous filter, filter further to include lines that match `'Microsoft$'`.
-
-```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$'
-```
-
-### Step Four: Filter Matches `@example\.com`
-
-Using the output from the previous filter, filter further to include lines that match `'@example\.com'`.
-
-```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$' | grep '@example\.com'
-```

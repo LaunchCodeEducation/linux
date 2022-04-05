@@ -11,3 +11,29 @@ lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
 lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+## Regular Expression Any Character: `.`
+
+You can use the any character reserved symbol (`.`) to instruct the Regular Expression pattern to match **any** single character.
+
+### Match `'^.a'`
+
+Let's match all lines that start with any character, but the second character must be the lowercase letter `a`:
+
+```bash
+grep '^.a' user.csv
+```
+
+Output:
+
+![grep '^.a'](pictures/grep-any-character.png?classes=border)
+
+### Match `'.7@example.com`
+
+```bash
+grep '.7@example.com' user.csv
+```
+
+Output:
+
+![grep '.7@example'](pictures/grep-any-character-two.png?classes=border)

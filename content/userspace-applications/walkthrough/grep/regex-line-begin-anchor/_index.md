@@ -11,3 +11,33 @@ lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
 lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+## Regular Expression Line Begin Anchor: `^`
+
+You can match the beginning of a line with the Regular Expression line begin anchor: `^`.
+
+Earlier `grep 'Paul'` matched lines that had `'Paul'` at any point in the line. If we want to match `'Paul'` at the very beginning of each line we could use the line begin anchor: `^`.
+
+### Match `'^Paul'`
+
+```bash
+grep '^Paul' user.csv
+```
+
+Output:
+
+![grep '^Paul' Output](pictures/grep-line-begin-anchor.png?classes=border)
+
+Take note that **`Bianca,Paul,...` is not** in our matched lines.
+
+### Match `'^Paul,'`
+
+```bash
+grep '^Paul,' user.csv
+```
+
+Output:
+
+![grep '^Paul,' Output](pictures/grep-line-begin-anchor-two.png?classes=border)
+
+Take note that **`Paula,Richardson,...` is not** in our matched lines.

@@ -11,3 +11,23 @@ lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
 lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+## Regular Expression Sets: `[]`
+
+### Match `'3[0-9]`
+
+```bash
+grep '3[0-9]' user.csv
+```
+
+### Match `'3[5-9]'`
+
+```bash
+grep '3[5-9]' user.csv
+```
+
+### Match `'^Paul,[A-F]'`
+
+```bash
+grep '^Paul,[A-F]' user.csv
+```
