@@ -48,6 +48,13 @@ You will notice that the request page `google.com` has been moved. You can add t
 By default curl will automatically send a `HTTP GET` request. To send other types of requests you will need to add the `-X [HTTP METHOD]` option.
 {{% /notice %}}
 
+## curl Options:
+
+- `-H` or `--header`: Specifies an extra header to include in any HTTP request being sent to a server. You can specify any amount of extra headers.
+- `-X [HTTP METHOD]` or `--request [HTTP METHOD]`: specify what type of HTTP request you want to send to the server.
+- `-s` or `--silent`: Silent mode. When added to a curl request you will not see a progress meter or any error messages.
+- `-d` or `data <data>`: Sends specific data in a POST request to the HTTP server. 
+
 ## Activity
 
 Using the java-todo-api you will practice following curl requests:
@@ -71,7 +78,7 @@ curl -X PATCH localhost:8080/todos/{id} -H 'Content-Type:application/json'
 You will need to replace the `{id}` portion of the above curl request with an existing todo id.
 {{% /notice %}}
 
-Create a DELETE request no JSON necessary
+Create a DELETE request
 ```bash
 curl -X DELETE localhost:8080/todos/{id}
 ```
