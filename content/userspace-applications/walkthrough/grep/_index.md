@@ -37,25 +37,37 @@ Regular expressions can be:
 - a phrase
 - all of the above using the additional tools defined by regular expressions
 
-## Activity
+## Setup Download Walkthrough Dataset
 
-- `ls` with grep
-  - plain text (letter: `i`)
-  - plain text (word: `hello`)
-  - plain text (`hello.py`)
-  - basic regex (`hello.\(py\|sh\)`) (regex group: `()`, regex or: `|`)
-  - basic regex (filename must start with: `^i`) (regex line begin anchor: `^`)
-  - basic regex (filename must end with: `\..*^`) (regex line end anchor: `$`)
-- only the `.java` files
-- `find` with grep
-  - find 'bash' at root: `sudo find / -name 'bash'`
-    - too much information, I just want `/bin` options: `sudo find / -name 'bash' | grep 'bin'`
-- `wget` a CSV file
-  - `cat [file] | grep "[search argument]"`: searching for names
-  - `cat [file] | grep "[search argument]"`: searching for dates
-  - `cat [file] | grep "[search argument]"`: searching for phone numbers
-  - `cat [file] | grep "[search argument]"`: searching for addresses
-  - `cat [file] | grep "[search argument]"`: searching for dollar amounts
+Before we can start searching text we need to first download the text we will be searching. From your home directory:
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > user.csv
+```
+
+This command makes a `curl` request to the provided endpoint and whatever data is returned will be written to a file called `user.csv`.
+
+### Validation
+
+![curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv validation image](pictures/curl-dataset.png?classes=border)
+
+You can `cat` out the file, but it has 25000 records in it.
+
+![cat user.csv output](pictures/cat-user-csv.png?classes=border)
+
+{{% notice green "Bonus" "rocket" %}}
+You can use the `wc` package to count the lines in the file:
+
+```bash
+wc -l user.csv
+```
+
+Output:
+
+![wc -l user.csv output](pictures/wc-l-user-csv.png?classes=border)
+
+25001 total lines.
+{{% /notice %}}
 
 ## Word & Phrase Matching
 
@@ -64,7 +76,7 @@ Any string is a valid regular expression. When using `grep` with a string as the
 ### Match `'Paul'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Paul'
+grep 'Paul' user.csv
 ```
 
 Output:
@@ -88,7 +100,7 @@ It would match any line that contains the exact string "Paul" in any part of the
 ### Match `'Paul,Rogers'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Paul,Rogers'
+grep 'Paul,Rogers' user.csv
 ```
 
 ![grep 'Paul,Rogers' Output](pictures/grep-less-simple-string.png?classes=border)
@@ -103,7 +115,7 @@ Two records matched:
 ### Match `'Paul,Ro'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Paul,Ro'
+grep 'Paul,Ro' user.csv
 ```
 
 Output:
@@ -131,7 +143,7 @@ Earlier `grep 'Paul'` matched lines that had `'Paul'` at any point in the line. 
 ### Match `'^Paul'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^Paul'
+grep '^Paul' user.csv
 ```
 
 Output:
@@ -143,7 +155,7 @@ Take note that **`Bianca,Paul,...` is not** in our matched lines.
 ### Match `'^Paul,'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^Paul,'
+grep '^Paul,' user.csv
 ```
 
 Output:
@@ -163,7 +175,7 @@ In the case of our data-set company names come at the end of each line.
 Let's match all lines that end with the letter `s`:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 's$'
+grep 's$' user.csv
 ```
 
 Output:
@@ -177,7 +189,7 @@ Any line that ends with the letter `s` has been matched, in the case of this dat
 Since the last entry in each record is a company name let's match all records that have `Accenture` as the company:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Accenture$'
+grep 'Accenture$' user.csv
 ```
 
 ![grep 'Accenture$'](pictures/grep-line-end-anchor-two.png?classes=border)
@@ -193,7 +205,7 @@ You can use the any character reserved symbol (`.`) to instruct the Regular Expr
 Let's match all lines that start with any character, but the second character must be the lowercase letter `a`:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^.a'
+grep '^.a' user.csv
 ```
 
 Output:
@@ -203,7 +215,7 @@ Output:
 ### Match `'.7@example.com`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '.7@example.com'
+grep '.7@example.com' user.csv
 ```
 
 Output:
@@ -215,18 +227,91 @@ Output:
 ### Match `'3[0-9]`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '3[0-9]'
+grep '3[0-9]' user.csv
 ```
 
 ### Match `'3[5-9]'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '3[5-9]'
+grep '3[5-9]' user.csv
 ```
 
 ### Match `'^Paul,[A-F]'`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^Paul,[A-F]'
+grep '^Paul,[A-F]' user.csv
 ```
 
+## `grep` from `STDIN`
+
+So far we have only used grep to search a specific file. However, you can pass input directly to `grep` and match `STDIN` results against a Regular Expression pattern.
+
+### `ls | grep` Example
+
+Let's match patterns for the contents of the home directory:
+
+Find all files with a `.` in our home directory.
+
+```bash
+ls ~ | grep '\.'
+```
+
+### `history | grep` Example
+
+Find all `grep` commands in our `bash history`
+
+```bash
+history | grep 'grep'
+```
+
+### `find | grep` Example
+
+Find all `/bin/bash` in the root directory.
+
+```bash
+sudo find / -name 'bash' | grep '/bin/'
+```
+
+### `curl | grep` Example
+
+Fire a `curl` request directly to the API and search the results for a specific pattern.
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'
+```
+
+## Chaining `grep`
+
+We can even pass the output from a `grep` command to another `grep` command to build complex filter chains.
+
+### Step One: Get our Dataset
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv
+```
+
+25000 records is too much.
+
+### Step Two: Filter Matches `'^John'`
+
+Filter data to include only `'^John'`:
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,'
+```
+
+### Step Three: Filter Matches `'Microsoft$'`
+
+Using the output from the previous filter, filter further to include lines that match `'Microsoft$'`.
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$'
+```
+
+### Step Four: Filter Matches `@example\.com`
+
+Using the output from the previous filter, filter further to include lines that match `'@example\.com'`.
+
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$' | grep '@example\.com'
+```
