@@ -45,36 +45,43 @@ You will notice that the request page `google.com` has been moved. You can add t
 {{% /notice %}}
 
 {{% notice note %}}
-By default curl will automatically send a HTTP GET request. To send other types of requests you will need to add the -X option.
+By default curl will automatically send a `HTTP GET` request. To send other types of requests you will need to add the `-X [HTTP METHOD]` option.
 {{% /notice %}}
 
 ## Activity
 
-Using the java-todo-api you will run the following curl requests:
+Using the java-todo-api you will practice following curl requests:
 
-- creating a GET request with JSON attached
+Create a GET request with JSON attached
  ```bash
  curl localhost:8080/todos -H Content-Type:application/json
  ```
-- creating a POST request with JSON attached
+Create a POST request with JSON attached
 ```bash
 curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
 ```
-- creating a PUT request with JSON attached
+<!-- - creating a PUT request with JSON attached -->
+<!-- TODO: Clarity - Currently no PUT mapping on todo-api -->
+Create a PATCH request with JSON attached
 ```bash
-curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+curl -X PATCH localhost:8080/todos/{id} -H 'Content-Type:application/json'
 ```
-- creating a PATCH request with JSON attached
+
+{{% notice note %}}
+You will need to replace the `{id}` portion of the above curl request with an existing todo id.
+{{% /notice %}}
+
+Create a DELETE request no JSON necessary
 ```bash
-curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
-```bash
-- creating a DELETE request no JSON necessary
-```bash
-curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+curl -X DELETE localhost:8080/todos/{id}
 ```
+
+{{% notice note %}}
+You will need to replace the `{id}` portion of the above curl request with an existing todo id.
+{{% /notice %}}
 
 ### Necessary Options
 
-- `-X [HTTP METHOD]`
-- `-H 'content-type`: application/json': anytime we are sending a JSON request body
+- `-X [HTTP METHOD]`: This syntax designates what type of HTTP Method you are sending to the server (**GET,POST,PUT,PATCH,DELETE**)
+- `-H 'content-type`: application/json': anytime you are sending a JSON request body you need to provide the header option
 - `-d '{"text": "dishes"}'`: the JSON request body
