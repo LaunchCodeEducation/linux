@@ -41,3 +41,7 @@ Output:
 ![grep '^Paul,' Output](pictures/grep-line-begin-anchor-two.png?classes=border)
 
 Take note that **`Paula,Richardson,...` is not** in our matched lines.
+
+{{% notice note %}}
+Using the RegEx **line begin anchor** we have already created a pattern that is more effective than just searching for the string by itself.
+{{% /notice %}}

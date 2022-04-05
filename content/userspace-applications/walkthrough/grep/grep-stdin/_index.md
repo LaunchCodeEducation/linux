@@ -18,9 +18,9 @@ So far we have only used grep to search a specific file. However, you can pass i
 
 ### `ls | grep` Example
 
-Let's match patterns for the contents of the home directory:
+Match patterns for all contents of the home directory:
 
-Find all files with a `.` in our home directory.
+Match all files with a `.` in our home directory.
 
 ```bash
 ls ~ | grep '\.'
@@ -32,7 +32,7 @@ Output:
 
 ### `history | grep` Example
 
-Find all `grep` commands in our `bash history`
+Match all `grep` commands in our `bash history`
 
 ```bash
 history | grep 'grep'
@@ -44,7 +44,7 @@ Output:
 
 ### `find | grep` Example
 
-Find all `/bin/bash` in the root directory.
+Match all `/bin/` for files containing the word `bash` in the root directory.
 
 ```bash
 sudo find / -name 'bash' | grep '/bin/'
@@ -56,7 +56,7 @@ Output:
 
 ### `curl | grep` Example
 
-Send a `curl` request directly to the API and search the results (`csv` in `STDIN`) for a specific pattern.
+Send a `curl` request directly to the API and match the results (`csv` in `STDIN`) to a specific pattern.
 
 ```bash
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'

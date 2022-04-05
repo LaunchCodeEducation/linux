@@ -28,6 +28,10 @@ Output:
 
 ![grep '^.a'](pictures/grep-any-character.png?classes=border)
 
+{{% notice note %}}
+This RegEx pattern `'^.a'` is combining the Line Begin Anchor and the match any character symbol `.`. RegEx allows you to mix and match the special syntax to create highly specific patterns.
+{{% /notice %}}
+
 ### Match `'.7@example.com`
 
 ```bash
@@ -37,3 +41,7 @@ grep '.7@example.com' user.csv
 Output:
 
 ![grep '.7@example'](pictures/grep-any-character-two.png?classes=border)
+
+{{% notice note %}}
+The match any character symbol gives us great flexibility in our patterns.
+{{% /notice %}}

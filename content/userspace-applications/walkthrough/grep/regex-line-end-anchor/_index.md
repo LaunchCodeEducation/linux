@@ -43,3 +43,7 @@ grep 'Accenture$' user.csv
 ![grep 'Accenture$'](pictures/grep-line-end-anchor-two.png?classes=border)
 
 Every line that ends with `Accenture` is a part of the output from this `grep` command.
+
+{{% notice note %}}
+This is another simple RegEx concept and syntax we can use to create better matching patterns.
+{{% /notice %}}

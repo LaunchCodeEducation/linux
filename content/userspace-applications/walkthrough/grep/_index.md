@@ -71,7 +71,9 @@ Output:
 
 ## Word & Phrase Matching
 
-Any string is a valid regular expression. When using `grep` with a string as the regular expression to match lines against, any line that contains the string will be matched.
+Any string is a valid regular expression. 
+
+When using a string as the regular expression as the pattern **all lines containing the string** will be matched.
 
 ### Match `'Paul'`
 
@@ -79,7 +81,7 @@ Any string is a valid regular expression. When using `grep` with a string as the
 grep 'Paul' user.csv
 ```
 
-Output:
+Trimmed Output:
 
 ![grep 'Paul' Output](pictures/grep-simple-string.png?classes=border)
 
@@ -93,24 +95,7 @@ This command has matched:
 
 It would also match `Paul` in any remaining sections like the company, or email address.
 
-Matches all first_name = "Paul", also matches with first_name = "Paula", also matches with last_name = "Paul".
-
-It would match any line that contains the exact string "Paul" in any part of the line.
-
-### Match `'Paul,Rogers'`
-
-```bash
-grep 'Paul,Rogers' user.csv
-```
-
-![grep 'Paul,Rogers' Output](pictures/grep-less-simple-string.png?classes=border)
-
-This is a much more specific string we are matching resulting in far less results.
-
-Two records matched:
-
-1. `Paul,Rogers,richardmedina@exaxmple.org,Edward Jones`
-2. `Paul,Rogers,richard72@example.org,mastercard`
+As long as `Paul` is found at any point in the line, the line will be returned.
 
 ### Match `'Paul,Ro'`
 
@@ -122,27 +107,35 @@ Output:
 
 ![grep 'Paul,Ro' Output](pictures/grep-least-simple-string.png?classes=border)
 
-This is a less specific string.
+This is a more specific string than the previous example.
 
 Six records matched each last name started with `Ro` as dictated by the regular expression, but the rest of the name didn't matter which is why `Rogers`, `Robinson`, & `Rodriquez` all matched.
+
+### Match `'Paul,Rogers'`
+
+```bash
+grep 'Paul,Rogers' user.csv
+```
+
+![grep 'Paul,Rogers' Output](pictures/grep-less-simple-string.png?classes=border)
+
+This is an even more specific string resulting in even less results.
+
+Two records matched:
+
+1. `Paul,Rogers,richardmedina@exaxmple.org,Edward Jones`
+2. `Paul,Rogers,richard72@example.org,mastercard`
 
 **`grep` will parse the entire text and only return lines that contain the exact pattern provided**.
 
 ## More Specific Matching with Regex Concepts & Symbols
 
-Regular Expressions are a very powerful tool. By learning the Regular Expression concepts and syntax you can create very specific patterns.
+Regular Expressions are a very powerful tool. 
 
-This class doesn't really cover Regular Expressions, however we included some of the basics to show how better patterns can be created by using some of the Regular Expression Syntax.
+By learning the Regular Expression concepts and syntax you can create very specific patterns. Typically the more specific your pattern is, the better your result set will be.
+
+This class doesn't really cover Regular Expressions, however we included some of the basics to show how to create better patterns by incorporating some RegEx basics.
 
 ## Content
 
 {{% children %}}
-
-
-
-
-
-
-
-
-
