@@ -50,17 +50,28 @@ By default curl will automatically send a HTTP GET request. To send other types 
 
 ## Activity
 
-- curl REST
-  - creating a GET request with JSON attached
-  - creating a POST request with JSON attached
-  - creating a PUT request with JSON attached
-  - creating a PATCH request with JSON attached
-  - creating a DELETE request no JSON necessary
+Using the java-todo-api you will run the following curl requests:
 
-To add a header -H '{"content-type": "application/json"}'
-To add a JSON body -d '{"text": "some new task"}'
-
-use the todo api as the example project
+- creating a GET request with JSON attached
+ ```bash
+ curl localhost:8080/todos -H Content-Type:application/json
+ ```
+- creating a POST request with JSON attached
+```bash
+curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+```
+- creating a PUT request with JSON attached
+```bash
+curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+```
+- creating a PATCH request with JSON attached
+```bash
+curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+```bash
+- creating a DELETE request no JSON necessary
+```bash
+curl -X POST localhost:8080/todos -H Content-Type:application/json -d '{"text":"the first task"}'
+```
 
 ### Necessary Options
 
