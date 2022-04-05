@@ -22,6 +22,10 @@ We can even pass the output from a `grep` command to another `grep` command to b
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv
 ```
 
+Output:
+
+![](pictures/grep-chaining-one.png?classes=border)
+
 25000 records is too much.
 
 ### Step Two: Filter Matches `'^John'`
@@ -32,6 +36,10 @@ Filter data to include only `'^John'`:
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,'
 ```
 
+Output:
+
+![alt-text](pictures/grep-chaining-two.png?classes=border)
+
 ### Step Three: Filter Matches `'Microsoft$'`
 
 Using the output from the previous filter, filter further to include lines that match `'Microsoft$'`.
@@ -40,6 +48,10 @@ Using the output from the previous filter, filter further to include lines that 
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$'
 ```
 
+Output:
+
+![](pictures/grep-chaining-three.png?classes=border)
+
 ### Step Four: Filter Matches `@example\.com`
 
 Using the output from the previous filter, filter further to include lines that match `'@example\.com'`.
@@ -47,3 +59,7 @@ Using the output from the previous filter, filter further to include lines that 
 ```bash
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$' | grep '@example\.com'
 ```
+
+Output:
+
+![alt-text](pictures/grep-chaining-four.png?classes=border)

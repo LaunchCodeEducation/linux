@@ -26,6 +26,10 @@ Find all files with a `.` in our home directory.
 ls ~ | grep '\.'
 ```
 
+Output:
+
+![ls to grep output](pictures/grep-stdin-one.png?classes=border)
+
 ### `history | grep` Example
 
 Find all `grep` commands in our `bash history`
@@ -33,6 +37,10 @@ Find all `grep` commands in our `bash history`
 ```bash
 history | grep 'grep'
 ```
+
+Output:
+
+![history to grep '\.' output](pictures/grep-stdin-two.png?classes=border)
 
 ### `find | grep` Example
 
@@ -42,10 +50,18 @@ Find all `/bin/bash` in the root directory.
 sudo find / -name 'bash' | grep '/bin/'
 ```
 
+Output:
+
+![find to grep output](pictures/grep-stdin-three.png?classes=border)
+
 ### `curl | grep` Example
 
-Fire a `curl` request directly to the API and search the results for a specific pattern.
+Send a `curl` request directly to the API and search the results (`csv` in `STDIN`) for a specific pattern.
 
 ```bash
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'
 ```
+
+Output:
+
+![curl to grep output](pictures/grep-stdin-four.png?classes=border)

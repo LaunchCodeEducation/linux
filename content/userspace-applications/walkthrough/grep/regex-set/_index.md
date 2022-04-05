@@ -20,14 +20,22 @@ lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 grep '3[0-9]' user.csv
 ```
 
+Output:
+
+![grep '3[0-9]' user.csv output](pictures/grep-set-one.png?classes=border)
+
 ### Match `'3[5-9]'`
 
 ```bash
 grep '3[5-9]' user.csv
 ```
 
+![grep '3[5-9]' user.csv output](pictures/grep-set-two.png?classes=border)
+
 ### Match `'^Paul,[A-F]'`
 
 ```bash
 grep '^Paul,[A-F]' user.csv
 ```
+
+![grep '^Paul,[A-F]' user.csv Output](pictures/grep-set-three.png?classes=border)
