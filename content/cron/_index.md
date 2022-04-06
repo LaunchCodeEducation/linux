@@ -16,7 +16,4 @@ lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Exercises]({{< relref "./exercises" >}})
-- [Next Steps]({{< relref "./next-steps" >}})
+{{% children %}}
