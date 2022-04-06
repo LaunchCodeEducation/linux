@@ -76,15 +76,3 @@ sed 's/a/q/g'
 Output:
 
 ![sed 's/a/q/g' output](pictures/sed-s-a-q-g.png?classes=border)
-
-
-
-
-
-
-
-
-
-
-
-
