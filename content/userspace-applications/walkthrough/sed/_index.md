@@ -57,22 +57,58 @@ sed 's/regex-pattern/replacement-text/flags' 'input-file'
 Not including the substitute flag will default to `1`, so only the first matched pattern on the line will be replaced. 
 {{% /notice %}}
 
-## `sed` substitute First Occurrence of `'a'` with `'q'`
+## Setup
+
+This and the following articles use the `user-data.csv` file you may have downloaded it during the `grep` examples.
+
+If you don't already have the `user-data.csv` file in your home directory run the following command:
 
 ```bash
-sed 's/a/q/1'
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > ~/user-data.csv
+```
+
+{{% notice green "Bonus" "rocket" %}}
+You can validate the `user-data.csv` file with the following command:
+
+```bash
+wc -l ~/user-data.csv
+```
+
+The output you see should confirm there are 25001 lines in the file.
+
+{{% /notice %}}
+
+
+## `sed` substitute First Occurrence of `'a'` with `'q'`
+
+{{% notice warning %}}
+All commands in this and following articles assume your current working directory is the directory where the `user-data.csv` file resides, most likely your home directory.
+
+You can change into your home directory from anywhere with the command:
+
+```bash
+cd ~
+```
+{{% /notice %}}
+
+Replace the first `a` in each line with `q`:
+
+```bash
+sed 's/a/q/1' user-data.csv
 ```
 
 Output:
 
-![sed 's/a/q/1' output](pictures/sed-s-a-q-1.png?classes=border)
+![sed 's/a/q/1' user-data.csv output](pictures/sed-s-a-q-1.png?classes=border)
 
 ## `sed` substitute All Occurrences of `'a'` with `'q'`
 
+Replace all occurrences of `a` with `q`:
+
 ```bash
-sed 's/a/q/g'
+sed 's/a/q/g' user-data.csv
 ```
 
 Output:
 
-![sed 's/a/q/g' output](pictures/sed-s-a-q-g.png?classes=border)
+![sed 's/a/q/g' user-data.csv output](pictures/sed-s-a-q-g.png?classes=border)
