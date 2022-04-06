@@ -22,22 +22,69 @@ Edit streams of text allowing entire text files to be filtered, or transformed i
 
 ## Usage
 
-- search and replace (substitute)
-- convert CSV delimeter
-- add text after or before specific patterns
+- search and replace
+- add content before or after specific patterns
+- delete lines
+- add lines
 
-## Activity
+Like many of the Userspace Applications introduced in this course we will only be covering a small portion of what you can do with a tool.
 
-- `wget` a TSV
-  - convert to CSV
-- Threat Level Midnight
-  - `wget` the Threat Level Midnight Script
-    - substitute `Dwight` -> `Samuel L. Chang`
-    - substitute all `Dwigh*t` -> `Samuel L. Chang`
-- `wget` a TXT
-  - add TRANSACTION: [remaining line] to each line that contains a transaction pattern
-- `wget` a log file
-  - transform contents into a trimmed version with only IP addresses from Russia
-    - other countries
-- `wget` a log file
-  - transform contents with lines containing email address from specific domain endings
+In the case of `sed` we will simply be showing you how to use the substitute feature. You have likely used a similar feature in other software called `Find & Replace`.
+
+## `sed` Command Pattern
+
+```bash
+sed '[script]' 'input-file'
+```
+
+## `sed` Substitute Syntax
+
+```bash
+sed 's/regex-pattern/replacement-text/flags' 'input-file'
+```
+
+- `s`: the action `sed` will be performing, this case a substitute action
+- `regex-pattern`: a regular expression sed should search each line for
+- `replacement-text`: the text to replace the regular expression with
+- `flags`: which matching section(s) should be replaced
+
+### Substitute Flags
+
+- `N`: Only the Nth matched pattern of the line should be replaced
+- `g`: All matched patterns of the line should be replaced
+
+{{% notice note %}}
+Not including the substitute flag will default to `1`, so only the first matched pattern on the line will be replaced. 
+{{% /notice %}}
+
+## `sed` substitute First Occurrence of `'a'` with `'q'`
+
+```bash
+sed 's/a/q/1'
+```
+
+Output:
+
+![sed 's/a/q/1' output](pictures/sed-s-a-q-1.png?classes=border)
+
+## `sed` substitute All Occurrences of `'a'` with `'q'`
+
+```bash
+sed 's/a/q/g'
+```
+
+Output:
+
+![sed 's/a/q/g' output](pictures/sed-s-a-q-g.png?classes=border)
+
+
+
+
+
+
+
+
+
+
+
+
