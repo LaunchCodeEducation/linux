@@ -13,3 +13,33 @@ lastMod: 2022-04-06 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## `sed` substitute ',' with '\t'
+
+Convert the user-data.corrected.csv to a tsv file:
+
+Run:
+
+```bash
+sed 's/,/\t/g' user-data.corrected.csv > user-data.corrected.tsv
+```
+
+### Validation
+
+```bash
+ls
+```
+
+Output:
+
+![ls output](pictures/ls.png?classes=border)
+
+A new file exists: `user-data.corrected.tsv`.
+
+Inspect it:
+
+```bash
+cat user-data.corrected.tsv
+```
+
+Output:
+
+![cat user-data.corrected.tsv output](pictures/cat-tsv.png?classes=border)
