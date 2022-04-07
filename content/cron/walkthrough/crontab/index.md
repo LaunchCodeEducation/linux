@@ -11,3 +11,20 @@ lastEditor: "" # update any time edits are made after review
 lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
+
+## Usage
+
+```bash
+crontab -e
+```
+- Commands:
+  - `crontab <filename>`: command to run cron-jobs within a separate file as an argument
+  - `crontab -e`: open current user  crontab file
+  - `crontab -l`: list of all cronjobs within the current user crontab file
+  - `crontab -r`: removes current cron jobs within current user crontab file
+  - `crontab -i`: modifies above `-r` option to prompt user for a `y/n` response before removal
+
+{{% notice green "Bonus" "rocket" %}}
+You can also open the global crontab config file with the following command: `sudo vim /etc/crontab`. For the global crontab config file you will have to designate what user this command will be running for. `* * * * * user-name command-to-run`.
+![global-crontab](pictures/global-crontab.png?classes=border)
+{{% /notice %}}
