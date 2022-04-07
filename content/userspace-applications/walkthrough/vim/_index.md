@@ -22,31 +22,45 @@ CLI for editing text files. Provides various modes and actions that allow the us
 
 ## Usage
 
-- create new files
-- read existing files
-- edit existing files
+- create new files in terminal
+- edit files in terminal
+- read files in terminal
 
-## Activity
+## Setup
 
-- create a new file
-- `wget` file
-  - navigate file
-    - bottom
-    - top
-    - end of line
-    - start of line
-    - next word
-  - edit file
-    - insert mode
-    - substitute
+You have likely installed `vim` already, if you have not you can with `apt`:
 
+```bash
+sudo apt install vim
+```
 
-## Next Steps
+## `vim` Modes
 
-`vim` is a powerful text editing tool. We have barely touched the surface on what you can do with this text editor.
+`vim` has a few different modes:
 
-If you'd like to learn more we recommend going through the `vimtutor` application. It comes standard with the `vim` package.
+Basic Modes:
+- Normal
+- Visual
+- Select
+- Insert
+- Command-line
+- Ex
+
+Additional Modes:
+- Operator-pending
+- Replace
+- Virtual Replace
+- Insert Normal
+- Insert Visual
+- Insert Select
 
 {{% notice green "Bonus" "rocket" %}}
-You can access `vimtutor` from your terminal by entering `vimtutor`. This will lock your terminal into `vimtutor` until you exit the package.
+The listed modes can be found in the [Vim Docs / vim-modes](http://vimdoc.sourceforge.net/htmldoc/intro.html#vim-modes).
 {{% /notice %}}
+
+This curriculum will only utilize the following modes:
+
+- **Normal**
+- **Insert**
+
+Our goal is to learn how to create, edit, and read files from the terminal using `vim`.
