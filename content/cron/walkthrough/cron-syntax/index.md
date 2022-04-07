@@ -42,9 +42,6 @@ The above cronjob would run and append the phrase "Hello Cron" to the `hello-cro
 ```bash
 * * * * * 
 ```
-- Syntax:
-  - `* * * * *`: 5 options separated by a space:
-  - minute / hour / day-of-month / month / day-of-week
 - ranges
 - multiple jobs
 - step values
