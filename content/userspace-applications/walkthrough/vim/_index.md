@@ -63,4 +63,4 @@ This curriculum will only utilize the following modes:
 - **Normal**
 - **Insert**
 
-Our goal is to learn how to create, edit, and read files from the terminal using `vim`.
+Our goal is to learn how to **create**, **edit**, and **read** files from the terminal using `vim`.
