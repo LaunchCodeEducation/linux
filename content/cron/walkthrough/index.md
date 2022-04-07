@@ -46,6 +46,10 @@ You can also open the global crontab config file with the following command: `su
 - Syntax:
   - `* * * * *`: 5 options separated by a space:
   - minute / hour / day-of-month / month / day-of-week
+- ranges
+- multiple jobs
+- step values
+- lists
 
 ## Example cronjob within crontab:
 
