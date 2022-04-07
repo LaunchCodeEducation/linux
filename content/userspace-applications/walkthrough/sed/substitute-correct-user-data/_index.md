@@ -45,7 +45,7 @@ You can see that the change didn't take place by running `grep 'mastercard' user
 Write the changes to a new file named `user-data.corrected.csv`. This way the original file stays unchanged.
 
 ```bash
-sed 's/mastercard/Mastercard/g' user-data.csv > user-data.corrected.csv
+sed 's/mastercard/Mastercard/' user-data.csv > user-data.corrected.csv
 ```
 
 ### Validation
@@ -70,6 +70,8 @@ git diff user-data.csv user-data.corrected.csv
 Output:
 
 ![git diff user-data.csv user-data.corrected.csv output](pictures/git-diff.png?classes=border)
+
+You can see the exact lines that were deleted and the lines they were replaced with. This is a `less` screen you can navigate with the arrow keys, `j` (up) and `k` (down) keys and type `q` to exit. 
 {{% /notice %}}
 
 ## `sed` substitute 'spectrum' with 'Spectrum'
@@ -79,7 +81,7 @@ The file needs more corrections.
 Run a substitute command & write:
 
 ```bash
-sed 's/spectrum/Spectrum/' user-data.corrected.csv > user-data.corrected.csv
+sed -i 's/spectrum/Spectrum/' user-data.corrected.csv
 ```
 
 ### Validation
@@ -90,12 +92,16 @@ grep 'spectrum' user-data.corrected.csv
 
 We should not see any records as the instances of `spectrum` were replaced by `Spectrum`
 
+{{% notice green "Bonus" "rocket" %}}
+We leave it up to you to run `grep 'Spectrum' user-data.corrected.csv` or `git diff user-data.csv user-data.corrected.csv` to further confirm the changes.
+{{% /notice %}}
+
 ## `sed` substitute 'Stephens-Griffin' with 'Stephens-Griffin-Ferguson'
 
 Run a substitute command & write:
 
 ```bash
-sed 's/Stephens-Griffin/Stephens-Griffin-Ferguson/' user-data.corrected.csv > user-data.corrected.csv
+sed -i 's/Stephens-Griffin/Stephens-Griffin-Ferguson/' user-data.corrected.csv
 ```
 
 ### Validation
@@ -106,7 +112,7 @@ grep 'Stephens-Griffin-Ferguson' user-data.corrected.csv
 
 Output:
 
-![grep 'Stephens-Griffin-Ferguson' user-data.corrected.csv output](pictures/path.png?classes=border)
+![grep 'Stephens-Griffin-Ferguson' user-data.corrected.csv output](pictures/grep-stephens-griffin-ferguson.png?classes=border)
 
 {{% notice green "Bonus" "rocket" %}}
 You can run any `sed` scripts and edit the file in place by using the `-i` flag. This way you wouldn't need to read a file and then write out the same file.

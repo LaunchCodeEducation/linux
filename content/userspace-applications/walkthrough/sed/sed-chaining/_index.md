@@ -14,6 +14,8 @@ lastMod: 2022-04-06 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Chaining Sed
 
+Another benefit of using `STDIN` when working with `sed` is the ability to chain multiple substitutions (or other `sed` scripts). The final example of the last article was an example of chaining `sed`, but we will get another example here.
+
 In an early walkthrough we corrected the `user-data.csv`.
 
 It took us a total of three steps to complete the task. However, we could have chained all of the steps together using the pipe (`|`) operator.
@@ -47,3 +49,5 @@ There should only be one `Stephens-Griffin-Ferguson` match:
 ```bash
 grep 'Stephens-Griffin-Ferguson'
 ```
+
+We did not provide the pictures as evidence, because you should have the skills now to validate these changes yourself.

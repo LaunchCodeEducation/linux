@@ -101,6 +101,17 @@ Output:
 
 ![sed 's/a/q/1' user-data.csv output](pictures/sed-s-a-q-1.png?classes=border)
 
+Looking at the last record displayed in `STDOUT`:
+
+`Kristy,Strong,nwilliqms@example.com,Hunter Engineering`
+
+It looks like `nwilliams` was changed to `nwilliqms`. Take a look at the other lines to notice tha the first instance of each `a` character was replaced with a `q` character.
+
+
+{{% notice note %}}
+STDOUT shows the substitution that was made, however `sed` does not edit the original file by default. You would need to instruct `sed` to save the changes by writing STDOUT to a file with the redirection operator (`>`) or use the `-i` option. Both of these options for saving changes will be covered in future sections.
+{{% /notice %}}
+
 ## `sed` substitute All Occurrences of `'a'` with `'q'`
 
 Replace all occurrences of `a` with `q`:
@@ -112,3 +123,5 @@ sed 's/a/q/g' user-data.csv
 Output:
 
 ![sed 's/a/q/g' user-data.csv output](pictures/sed-s-a-q-g.png?classes=border)
+
+The last record: `Kristy,Strong,nwilliams@example.org,Hunter Engineering` was changed to: `Kristy,Strong,nwilliqms@exqmple.org,Hunter Engineering`
