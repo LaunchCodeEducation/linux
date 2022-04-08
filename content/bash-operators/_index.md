@@ -1,5 +1,5 @@
 ---
-title: "Bash Operators"
+title: "Bash: Operators"
 date: 2022-04-08T13:54:05-05:00
 draft: false
 weight: 115
