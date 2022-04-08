@@ -14,6 +14,11 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
+- bash script basics
+- bash variables
+- bash conditional statements (just if)
+- bash loops (just which)
+
 ## Content Links
 
 {{% children %}}

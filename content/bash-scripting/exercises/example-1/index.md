@@ -1,8 +1,8 @@
 ---
-title: "Exercise Example 1"
+title: "Scripting Curl"
 date: 2022-04-08T13:54:20-05:00
 draft: false
-weight: 1
+weight: 100
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer

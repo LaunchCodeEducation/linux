@@ -13,3 +13,6 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Next Steps
+
+- bash functions
+- bash arguments
