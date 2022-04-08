@@ -13,6 +13,12 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Major Concepts & Key Terminology
+- STDIN
+- STDOUT
+- STDERR
+- redirect write `>`
+- redirect append `>>`
+- pipe operator `|`
 
 ## Content Links
 
