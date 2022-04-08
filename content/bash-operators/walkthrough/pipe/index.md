@@ -1,8 +1,8 @@
 ---
-title: "Step 1"
+title: "Pipe Operator"
 date: 2022-04-08T13:54:05-05:00
 draft: false
-weight: 1
+weight: 110
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -12,6 +12,6 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Step 1
+## Step 2
 
 ![example picture](pictures/example-picture.png)
