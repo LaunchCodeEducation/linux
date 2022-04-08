@@ -49,8 +49,6 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 
 #### Day Three
 
-- Morning
-  - [Terminal]({{< relref "./terminal" >}})
 - Afternoon
   - [Cron]({{< relref "./cron" >}})
 
