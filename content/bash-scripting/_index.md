@@ -1,10 +1,10 @@
 ---
-title: "Web Servers"
-date: 2022-03-22T10:37:21-05:00
+title: "Bash Scripting"
+date: 2022-04-08T13:54:20-05:00
 draft: false
-weight: 150
-originalAuthor: Paul Matthews # to be set by page creator
-originalAuthorGitHub: pdmxdd # to be set by page creator
+weight: 140
+originalAuthor: <no value> # to be set by page creator
+originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
 reviewerGitHub: # to be set by the page reviewer
 lastEditor: # update any time edits are made after review
