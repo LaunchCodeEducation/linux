@@ -1,5 +1,5 @@
 ---
-title: "Command: Search File"
+title: "Normal Mode: Search File"
 date: 2022-04-07
 draft: false
 weight: 130

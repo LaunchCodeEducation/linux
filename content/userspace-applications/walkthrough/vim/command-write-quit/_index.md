@@ -1,5 +1,5 @@
 ---
-title: "Command: Writing and Quitting"
+title: "Normal Mode Command: Writing and Quitting"
 date: 2022-04-07
 draft: false
 weight: 105

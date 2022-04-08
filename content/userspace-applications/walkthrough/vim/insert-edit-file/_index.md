@@ -1,5 +1,5 @@
 ---
-title: "Insert: Edit File"
+title: "Insert Mode: Edit File"
 date: 2022-04-07
 draft: false
 weight: 120
@@ -39,7 +39,7 @@ After navigating to the new position you enter more text at the location of the 
 ![alt-text](pictures/vim-insert-text-after-move.png?classes=border)
 
 {{% notice note %}}
-Navigation is possible in `Insert` mode, but is cumbersome. Luckily there are more effective ways to navigate the file while in `Normal` mode.
+Navigation is possible in `Insert` mode, but is cumbersome. Luckily there are more effective ways to navigate the file while in `Normal` mode. This will be covered in a future article.
 {{% /notice %}}
 
 ## Deleting Content in Insert Mode

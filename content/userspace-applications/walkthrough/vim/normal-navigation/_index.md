@@ -1,5 +1,5 @@
 ---
-title: "Normal: File Navigation"
+title: "Normal Mode: File Navigation"
 date: 2022-04-07
 draft: false
 weight: 125
