@@ -20,8 +20,19 @@ Open up your crontab config file and add the following cronjob command:
 * * * * * echo "$(date)" >> ~/Desktop/time.log
 ```
 
-Run the command: `crontab -e`:
+Run the command: `crontab -e` and add the cronjob to the config file:
 
 ![crontab-time-log](pictures/crontab-time-log.png?classes=border)
 
-Add the cronjob to the config file:
+Write the file and navigate to your desktop. You should see the created time-log file created from the cronjob.
+
+## Validation
+
+![time-log-validation](pictures/time-log-validation.png?classes=border)
+
+`cat` out the `time-log` file.
+
+## Recap:
+- Add a cronjob to crontab file
+- check file created from cronjob for validation
+
