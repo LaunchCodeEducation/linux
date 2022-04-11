@@ -14,11 +14,11 @@ lastMod: 2022-04-06 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## `sed` from STDIN
 
-So far we have only performed `sed` substitute commands using a file as input, however we can re-route STDOUT from another command to use as the STDIN for `sed`.
+So far you have only performed `sed` substitute commands using a file as input, however you can re-route STDOUT from another command to use as the STDIN for `sed`.
 
-This allows us to combine `sed` with other tools like `grep`.
+This allows you to combine `sed` with other tools like `grep`.
 
-In this example we will be using `grep` to match users with a specific last name. However, we don't want the Company the person works for, just their first and last names, and their email address. So we will use `sed` to trim out the company of our filtered dataset.
+In this example you will be using `grep` to match users with a specific last name. However, you don't want the Company the person works for, just their first and last names, and their email address. So you will use `sed` to trim out the company of our filtered dataset.
 
 ## `grep` Last Name: `Johnson`
 
@@ -33,7 +33,7 @@ Output:
 This `grep` and regular expression combo matched all individuals with a first name, and the last name of Johnson.
 
 {{% notice note %}}
-This `grep` command is using two regular expression symbols we have not seen before:
+This `grep` command is using two regular expression symbols you have not seen before:
 
 - `[^,]`: exclusion group, match any character other than the characters found inside of the match group `[^]` in this case a comma `,`
 - `+`: match at least one, but as many additional characters that fit the pattern
@@ -56,7 +56,7 @@ Altogether: `'^[^,]\+,Johnson'` is a regular expression for:
 
 ## `sed` Substitute Company with Nothing
 
-As of now our output contains all the people we want to email, but we currently have each person's employer, which we don't care about. Let's substitute and replace the company with no characters, effectively deleting the section.
+As of now the output contains all the people you want to email, but you currently have each person's employer, which you don't care about. Let's substitute and replace the company with no characters, effectively deleting the section.
 
 ```bash
 grep '^[^,]\+,Johnson' user-data.corrected.csv | sed 's/[^,]\+//4'
