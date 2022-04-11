@@ -73,7 +73,7 @@ Output:
 
 Any string is a valid regular expression. 
 
-When using a string as the regular expression as the pattern **all lines containing the string** will be matched.
+When using a string as the regular expression in the pattern **all lines containing the string** will be matched.
 
 ### Match `'Paul'`
 
