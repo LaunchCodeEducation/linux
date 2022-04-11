@@ -27,7 +27,7 @@ Edit streams of text allowing entire text files to be filtered, or transformed i
 - delete lines
 - add lines
 
-Like many of the Userspace Applications introduced in this course we will only be covering a small portion of what you can do with a tool.
+Like many of the Userspace Applications introduced in this course we will only be covering a small portion of what you can do with the tool.
 
 In the case of `sed` we will simply be showing you how to use the substitute feature. You have likely used a similar feature in other software called `Find & Replace`.
 
@@ -54,12 +54,12 @@ sed 's/regex-pattern/replacement-text/flags' 'input-file'
 - `g`: All matched patterns of the line should be replaced
 
 {{% notice note %}}
-Not including the substitute flag will default to `1`, so only the first matched pattern on the line will be replaced. 
+If you do not include a substitute flag it will default to `1`, so only the first matched pattern on the line will be replaced. 
 {{% /notice %}}
 
 ## Setup
 
-This and the following articles use the `user-data.csv` file you may have downloaded it during the `grep` examples.
+This and the following articles use the `user-data.csv` file.
 
 If you don't already have the `user-data.csv` file in your home directory run the following command:
 
@@ -87,7 +87,7 @@ All commands in this and following articles assume your current working director
 You can change into your home directory from anywhere with the command:
 
 ```bash
-cd ~
+cd
 ```
 {{% /notice %}}
 
@@ -105,7 +105,7 @@ Looking at the last record displayed in `STDOUT`:
 
 `Kristy,Strong,nwilliqms@example.com,Hunter Engineering`
 
-It looks like `nwilliams` was changed to `nwilliqms`. Take a look at the other lines to notice tha the first instance of each `a` character was replaced with a `q` character.
+It looks like `nwilliams` was changed to `nwilliqms`. Take a look at the other lines to notice that the first instance of each `a` character was replaced with a `q` character.
 
 
 {{% notice note %}}
