@@ -16,7 +16,7 @@ lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 
 You can match the end of a line with the Regular Expression line end anchor `$`.
 
-In the case of our data-set company names come at the end of each line.
+In the case of this specific data-set company names come at the end of each line.
 
 ### Match `'s$'`
 
@@ -45,5 +45,5 @@ grep 'Accenture$' user.csv
 Every line that ends with `Accenture` is a part of the output from this `grep` command.
 
 {{% notice note %}}
-This is another simple RegEx concept and syntax we can use to create better matching patterns.
+This is another simple RegEx concept and syntax you can use to create better matching patterns.
 {{% /notice %}}
