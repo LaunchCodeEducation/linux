@@ -105,12 +105,6 @@ Luckily, `vim` has a ton of advanced Navigation commands in `Normal` mode we wil
 - go to top of file
 - go to bottom of file
 
-<!-- {{% notice green "Bonus" "rocket" %}}
-
-{{% /notice %}} -->
-
-<!-- TODO: Above bonus section was left empty. -->i
-
 ## Go to specific line `:[line-number]` + `<enter>`
 
 The cursor is currently on `B` in `Brian` typing`:66` **and hitting enter** will navigate to the 66th line of the file:
@@ -206,5 +200,4 @@ For example:
 - Navigate 32 characters to the right with `32l`
 - Navigate 6 characters to the left with `6h`
 - Navigate forward 3 words with `3w`
-- etc
 {{% /notice %}}

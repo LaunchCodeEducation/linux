@@ -14,7 +14,11 @@ lastMod: 2022-04-07 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Writing and Quitting
 
-`vim` commands can be sent while in command mode. This article will cover the `write` and `quit` commands.
+{{% notice note %}}
+When entering commands like `:w` and `:q` into vim through normal mode you are technically in `Command Line Mode`. The only way to access `Command Line Mode` is through `Normal` mode which is what allows you to enter commands via the `Command Line`.
+{{% /notice %}}
+
+`vim` commands can be sent while in normal mode. This article will cover the `write` and `quit` commands.
 
 ## Write Command
 
