@@ -14,7 +14,7 @@ lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 
 ## `grep` from `STDIN`
 
-So far we have only used grep to search a specific file. However, you can pass input directly to `grep` and match `STDIN` results against a Regular Expression pattern.
+So far you have only used grep to search a specific file. However, you can pass input directly to `grep` and match `STDIN` results against a Regular Expression pattern.
 
 ### `ls | grep` Example
 
@@ -31,9 +31,9 @@ Output:
 ![ls to grep output](pictures/grep-stdin-one.png?classes=border)
 
 {{% notice note %}}
-The `.` is a Regular Expression special symbol meaning to match any character. In order to search for an actual `.` we need to escape the `.` so that RegEx knows that we are searching for an actual period and not referencing special symbol. The escape special symbol in RegEx is the backslash `\` symbol.
+The `.` is a Regular Expression special symbol meaning to match any character. In order to search for an actual `.` you need to escape the `.` so that RegEx knows that you are searching for an actual period and not referencing special symbol. The escape special symbol in RegEx is the backslash `\` symbol.
 
-When we provide the regular expression: `'\.'` we are telling `grep` to match any lines that have a `.` in them.
+When you provide the regular expression: `'\.'` you are telling `grep` to match any lines that have a `.` in them.
 
 {{% /notice %}}
 
