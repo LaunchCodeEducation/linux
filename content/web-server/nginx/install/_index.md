@@ -90,7 +90,7 @@ systemctl nginx status
 
 Output:
 
-![alt-text](pictures/path.png?classes=border)
+![systemctl nginx status output](pictures/initial-nginx-status.png?classes=border)
 
 ### Systemctl Start
 
@@ -104,9 +104,13 @@ sudo systemctl start nginx
 systemctl status nginx
 ```
 
+![sudo systemctl start nginx && systemctl nginx status output](pictures/nginx-status-after-start.png?classes=border)
+
 ```bash
 curl localhost
 ```
+
+![curl localhost output](pictures/curl-nginx-default.png?classes=border)
 
 ### Systemctl Stop
 
@@ -120,6 +124,10 @@ sudo systemctl stop nginx
 systemctl status nginx
 ```
 
+![sudo systemctl stop nginx && systemctl status nginx output](pictures/nginx-status-after-stop.png?classes=border)
+
 ```bash
 curl localhost
 ```
+
+![curl localhost output](pictures/curl-nginx-stopped.png?classes=border)
