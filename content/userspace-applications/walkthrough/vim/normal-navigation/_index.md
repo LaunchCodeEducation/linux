@@ -55,7 +55,7 @@ By default, `vim` opens the file in `Normal` mode.
 
 In `Normal` Mode the `j` key will move the cursor down one line.
 
-Upon clicking the `j` key exactly one time it will move the cursor from over the `f` in `first_name` to the `A` in `Amy` immediately below it.
+Upon pressing the `j` key exactly one time it will move the cursor from over the `f` in `first_name` to the `A` in `Amy` immediately below it.
 
 Try it out:
 
@@ -105,9 +105,11 @@ Luckily, `vim` has a ton of advanced Navigation commands in `Normal` mode we wil
 - go to top of file
 - go to bottom of file
 
-{{% notice green "Bonus" "rocket" %}}
+<!-- {{% notice green "Bonus" "rocket" %}}
 
-{{% /notice %}}
+{{% /notice %}} -->
+
+<!-- TODO: Above bonus section was left empty. -->i
 
 ## Go to specific line `:[line-number]` + `<enter>`
 
@@ -188,17 +190,16 @@ The cursor is currently located at `1,1` pressing the `G` key combo will move th
 
 Navigating in `vim` can be accomplished in either `Normal` or `Insert` modes with basic navigation commands.
 
-However, `vim` `Insert` mode provides many additional commands for navigating the file in an efficient manner.
+However, `vim` `Normal` mode provides many additional commands for navigating the file in an efficient manner.
 
 {{% notice note %}}
 There are additional navigation commands in `vim`, but you will have to research those on your own!
 {{% /notice %}}
 
-## Bonus: Numeric Prefix
+{{% notice green "Bonus" "rocket" %}}
+You can provide a numeric prefix to the majority of the navigation commands like `5` and it will perform the provided navigation action the provided number of times.
 
-To the majority of the navigation commands you can provide a numeric prefix like `5` and it will perform the provided navigation action the provided number of times.
-
-You can:
+For example:
 
 - Navigate down five lines with `5j`
 - Navigate up 15 lines with `15k`
@@ -206,3 +207,4 @@ You can:
 - Navigate 6 characters to the left with `6h`
 - Navigate forward 3 words with `3w`
 - etc
+{{% /notice %}}
