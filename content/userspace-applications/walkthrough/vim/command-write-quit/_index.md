@@ -14,7 +14,7 @@ lastMod: 2022-04-07 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Writing and Quitting
 
-From `vim` commands can be sent while in normal mode. This article will cover the write and quit commands.
+`vim` commands can be sent while in command mode. This article will cover the `write` and `quit` commands.
 
 ## Write Command
 
@@ -30,13 +30,15 @@ After typing `:w` simply hit enter to submit the command to `vim`:
 
 ![vim :w enter picture](pictures/vim-w-enter.png?classes=border)
 
-The text at the bottom of the terminal window changed after submitting the write command it reads:
+The text at the bottom of the terminal window changed after submitting the `write` command.
+
+It reads:
 
 ```bash
 "temp-file.txt" [New] 0L, 0C written
 ```
 
-This is a notification from `vim` the file was successfully written with so many lines and characters, in this case zero as no content has been added yet.
+This is a notification from `vim` saying the file was successfully written with so many lines and characters, in this case zero as no content has been added yet.
 
 ## Quit Command
 
@@ -44,7 +46,7 @@ To exit a file enter the `:q` command:
 
 ![vim :q picture](pictures/vim-q.png?classes=border)
 
-After entering the terminal window will return back to the `bash` shell:
+After executing the command your terminal window will return back to the `bash` shell:
 
 ![vim :q enter picture](pictures/vim-q-enter.png?classes=border)
 
@@ -56,6 +58,8 @@ Check that the file was written by looking for the file name after executing the
 
 ## Combining Commands
 
+{{% notice green "Bonus" "rocket" %}}
 In `vim` commands can be combined.
 
-Write and quit can be combined by typing and entering `:wq`.
+The `write` and `quit` commands can be combined by typing and entering `:wq`.
+{{% /notice %}}
