@@ -5,6 +5,15 @@ draft: false
 weight: 105
 ---
 
+```bash
+systemctl status nginx
+
+cat /lib/systemd/system/nginx.service
+
+cat /etc/nginx/nginx.conf
+
+```
+
 conf location:
 
 - `/usr/local/nginx/conf`

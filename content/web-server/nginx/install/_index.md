@@ -77,3 +77,49 @@ Output:
 ![which nginx && nginx -version output](pictures/nginx-validation.png?classes=border)
 
 Upon a successful installation you should see the location of the `nginx` binary and the version of the installed `nginx` package with the preceding commands.
+
+## Managing the `nginx.service`
+
+NGINX automatically creates a service upon installation. The `nginx.service` can be controlled with the `systemctl` package.
+
+### Systemctl Status 
+
+```bash
+systemctl nginx status
+```
+
+Output:
+
+![alt-text](pictures/path.png?classes=border)
+
+### Systemctl Start
+
+```bash
+sudo systemctl start nginx
+```
+
+#### Validation
+
+```bash
+systemctl status nginx
+```
+
+```bash
+curl localhost
+```
+
+### Systemctl Stop
+
+```bash
+sudo systemctl stop nginx
+```
+
+#### Validation
+
+```bash
+systemctl status nginx
+```
+
+```bash
+curl localhost
+```
