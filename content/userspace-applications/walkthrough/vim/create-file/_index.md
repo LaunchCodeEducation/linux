@@ -26,8 +26,8 @@ Upon executing the command a new file named `temp-file.txt` will be created and 
 
 ![vim temp-file.txt output](pictures/vim-temp-file.png?classes=border)
 
-Note the file is empty, which makes sense as the file was just created. The file name is listed at the bottom of the terminal window: `"temp-file.txt" [New File]`. This is standard beahvior for creating a new file using `vim`.
+Note the file is empty, which makes sense as the file was just created. The file name is listed at the bottom of the terminal window: `"temp-file.txt" [New File]`. This is standard behavior for creating a new file using `vim`.
 
 When a file is opened `vim` will be in `Normal` mode by default.
 
-The next article will show the way to write and quit the file.
+The next article will show how to write and quit the file.
