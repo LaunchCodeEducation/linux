@@ -14,7 +14,7 @@ lastMod: 2022-04-07 # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Normal Mode: Search File
 
-Navigating a file is a crucial skill, however you know the content you need to edit, but don't know the line it exists on. The `Normal` mode of `vim` provides a search function that allows you to search for specific characters, words, phrases, or additional Regular Expressions.
+Navigating a file is a crucial skill. The `Normal` mode of `vim` provides a search function that allows you to search for specific characters, words, phrases, or additional Regular Expressions.
 
 To perform a search in `vim` `Normal` mode you simply need to press the forward slash (`/`) character and type in your search term. While typing `vim` will automatically take you to the first encountered search term from the cursors current location.
 
@@ -54,16 +54,16 @@ After entering a search in `Normal` mode `vim` can be instructed to backtrack to
 
 ![vim normal mode search N press](pictures/vim-N-one.png?classes=border)
 
-After pressing `N` changed our cursor location from `215,1` to `156,1`.
+After pressing `N` our cursor changed from location `215,1` to `156,1`.
 
 The `N` key can be pressed any number of times after a search has been entered.
 
 ## Search `/^\(John\|Paul\)`
 
-From `vim` `Insert` mode enter the following regular expression:
+Within `vim` `Search` mode enter the following regular expression:
 
 ```bash
-/^\(John\|Paul\)
+^\(John\|Paul\)
 ```
 
 ![vim search regex](pictures/vim-search-regex.png?classes=border)
@@ -89,6 +89,6 @@ The regular expression `^(John|Paul)` needed to be escaped in a way that `vim` u
 There is a general syntax for regular expressions, however the various tools and programming langauges that implement regular expressions may use the standard regular expression syntax in different ways. This requires escaping to work with regular expressions across tools.
 {{% /notice %}}
 
-## Bonus: Numeric Prefix
-
+{{% notice green "Bonus" "rocket" %}}
 After performing a search both advance to next match (`n`) and backtrack to previous match (`N`) can be provided with a numeric prefix (like `5`) and the action will be performed the specific number of times.
+{{% /notice %}}
