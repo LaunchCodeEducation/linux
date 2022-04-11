@@ -16,6 +16,8 @@ lastMod: 2022-04-07 # UPDATE ANY TIME CHANGES ARE MADE
 
 The most common way to edit the contents of a file is in `Insert` mode.
 
+Open `temp-file.txt`
+
 Enter `Insert` mode by typing `i` in `Normal` mode:
 
 ![alt-text](pictures/vim-insert.png?classes=border)
