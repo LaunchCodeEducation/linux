@@ -16,7 +16,7 @@ lastMod: "" # UPDATE ANY TIME CHANGES ARE MADE
 
 You can match the beginning of a line with the Regular Expression line begin anchor: `^`.
 
-Earlier `grep 'Paul'` matched lines that had `'Paul'` at any point in the line. If we want to match `'Paul'` at the very beginning of each line we could use the line begin anchor: `^`.
+Earlier `grep 'Paul'` matched lines that had `'Paul'` at any point in the line. If you want to match `'Paul'` at the very beginning of each line you could use the line begin anchor: `^`.
 
 ### Match `'^Paul'`
 
@@ -43,5 +43,5 @@ Output:
 Take note that **`Paula,Richardson,...` is not** in our matched lines.
 
 {{% notice note %}}
-Using the RegEx **line begin anchor** we have already created a pattern that is more effective than just searching for the string by itself.
+Using the RegEx **line begin anchor** you have already created a pattern that is more effective than just searching for the string by itself.
 {{% /notice %}}
