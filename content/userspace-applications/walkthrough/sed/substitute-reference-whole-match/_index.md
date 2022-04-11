@@ -46,9 +46,9 @@ Output (after scrolling up to find both `Microsoft` and `Mastercard` records):
 
 ![sed 's/\(Microsoft\|Mastercard\)$/&: PAID IN FULL/' user-data.corrected.csv output](pictures/sed-microsoft-mastercard.png?classes=border)
 
-In this case a Regex pattern was provided: `(Microsoft|Mastercard)$` instead of an exact string match `Microsoft$`. For the line where the match occurred when we used the match reference symbol: `&` it entered in the exact text that matched our pattern. 
+In this case a Regex pattern was provided: `(Microsoft|Mastercard)$` instead of an exact string match `Microsoft$`. For the line where the match occurred when you used the match reference symbol: `&` it entered in the exact text that matched our pattern. 
 
-There would have been no way for us to know which company would have matched, and we couldn't have hardcoded it like the example listed in the note above.
+There would have been no way to know which company would have matched, and you couldn't have hardcoded it like the example listed in the note above.
 
 {{% notice green "Bonus" "rocket" %}}
 This article introduced two new regex concepts:
