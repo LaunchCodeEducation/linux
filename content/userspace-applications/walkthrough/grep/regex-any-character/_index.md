@@ -43,5 +43,5 @@ Output:
 ![grep '.7@example'](pictures/grep-any-character-two.png?classes=border)
 
 {{% notice note %}}
-The match any character symbol gives us great flexibility in our patterns.
+The match any character symbol provides great flexibility for all patterns.
 {{% /notice %}}
