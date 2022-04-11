@@ -12,4 +12,17 @@ lastEditorGitHub: "" # update any time edits are made after review
 lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Walkthrough
+## Name
+
+> Cron - daemon to execute scheduled commands
+
+## Purpose
+
+Fire off a command at the exact time you wish and to repeat as often as you would like.
+- Time interval options:
+  - `minute`
+  - `hour`
+  - `day-of-month`
+  - `month`
+  - `day-of-week`
+
