@@ -14,4 +14,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Walkthrough
 
+Bahs and most Linux shells use three different Input / Output streams:
+- `stdin`: Standard Input
+- `stdout`: Standard Output
+- `stderr`: Standard Error
+
+{{% notice note %}}
+By default all forms of stdin and stderr are printed within your terminal window
+{{% /notice %}}
+
 {{% children %}}

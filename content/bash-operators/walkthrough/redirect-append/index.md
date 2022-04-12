@@ -12,4 +12,10 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-![example picture](pictures/example-picture.png)
+## Bash Output
+
+- STDOUT
+  - When working within a bash terminal it will regularly output information or text in response to a command.
+  - Bash can take the output and write the information to a file in two ways:
+    - Append output to file with the `>>` operator
+    - Overwrite target file with output with the `>` operator
