@@ -1,8 +1,8 @@
 ---
-title: "Bash: Operators"
+title: "STDERR"
 date: 2022-04-08T13:54:05-05:00
 draft: false
-weight: 115
+weight: 110
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
@@ -12,15 +12,10 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Major Concepts & Key Terminology
+## Standard Error
 
-- STDIN: standard input
-- STDOUT: standard output
-- STDERR: standard error
-- redirect write `>`
-- redirect append `>>`
-- pipe operator `|`
+Output stream used to display error messages. 
 
-## Content Links
+## Example
 
-{{% children %}}
+- broken bash command with a redirect into `error.log` file
