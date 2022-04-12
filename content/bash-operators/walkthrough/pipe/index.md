@@ -14,7 +14,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Piping
 
-Using the pipe operator `|` allows bash to redirect `stdout` to a new command or place. Piping allows you to send data from one program or command to another.
+Using the pipe operator `|` allows bash to redirect `stdout` as `stdin` to a new command or location. Piping allows you to send data from one program or command to another.
   - Generally used to combine two or more commands
   - Output continues to input into the next command
     
