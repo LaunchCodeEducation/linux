@@ -31,3 +31,6 @@ Calling or referencing Bash Variable:
 - Variable within a variable:
   - `new_variable_two="Two $new_variable"`
     - `echo $new_variable_two`
+- `numeric_variable=5`
+- `numberic_variable_two=10`
+  - `echo $numeric_variable + $numeric_variable_two`
