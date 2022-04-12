@@ -14,7 +14,10 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Walkthrough
 
-Bahs and most Linux shells use three different Input / Output streams:
+Under  normal  circumstances every UNIX program has three streams opened for it when it starts up, one for input, one for output,
+and one for printing diagnostic or error messages.
+
+Bash and most Linux shells use the following Input / Output streams:
 - `stdin`: Standard Input
 - `stdout`: Standard Output
 - `stderr`: Standard Error
