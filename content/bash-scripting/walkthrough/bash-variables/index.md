@@ -12,4 +12,25 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-![example picture](pictures/example-picture.png)
+## Creating Bash Variables
+
+Bash is able to hold values within a variable similar to programming languages like Java, JavaScript, Python, and many more.
+  - Syntax for creating a variable:
+    - `variable=value_to_hold`
+    - Bash variables requires there to be no whitespace on either side of the `=` sign.
+Calling or referencing Bash Variable:
+  - To reference a bash variable you need to use a `$` in front of the variable name. 
+    - To reference the bash variable `bash_variable`:
+      - `$bash_variable`
+
+
+## Examples
+
+- `new_variable="Hello Variable"`
+  - `echo $new_variable`
+- Variable within a variable:
+  - `new_variable_two="Two $new_variable"`
+    - `echo $new_variable_two`
+- `numeric_variable=5`
+- `numberic_variable_two=10`
+  - `echo $numeric_variable + $numeric_variable_two`
