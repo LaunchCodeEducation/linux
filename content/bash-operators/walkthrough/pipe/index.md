@@ -2,7 +2,7 @@
 title: "Pipe Operator"
 date: 2022-04-08T13:54:05-05:00
 draft: false
-weight: 110
+weight: 115
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
