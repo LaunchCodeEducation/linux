@@ -12,10 +12,11 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-## Bash Output
+## Standard Input
 
-- STDOUT
-  - When working within a bash terminal it will regularly output information or text in response to a command.
-  - Bash can take the output and write the information to a file in two ways:
-    - Append output to file
-    - Overwrite file with new output
+- Bash accepts input from the user as text. 
+  - redirect input from file into command:
+    - `cat < filename`
+
+- redirect write command output to file with `>`
+  - `ls -a > ls-a-example`

@@ -15,7 +15,13 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ## Bash Output
 
 - STDOUT
-  - When working within a bash terminal it will regularly output information or text in response to a command.
+  - When working within a bash terminal it will regularly output information or text in response to a command entered as `stdin`.
   - Bash can take the output and write the information to a file in two ways:
+    - Overwrite target file with output using the `>` operator learned in previous lesson
     - Append output to file with the `>>` operator
-    - Overwrite target file with output with the `>` operator
+
+## Examples
+
+- `ls -a >> ls-a-example`
+- `history > history.txt`
+  - `history >> history.txt`
