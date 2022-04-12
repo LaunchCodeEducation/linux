@@ -12,4 +12,16 @@ lastEditorGitHub: # update any time edits are made after review
 lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
-![example picture](pictures/example-picture.png)
+## Bash Scripting
+
+- A bash shell script is a file that holds a set of bash commands to be read and executed by `Bash`.
+  - bash file denoted with a `.sh`
+    - `example-script.sh`
+
+## Example
+
+- File with following script:
+  - `cd Desktop`
+  - `mkdir example-directory`
+  - `cd example-directory`
+  - `touch example-file`
