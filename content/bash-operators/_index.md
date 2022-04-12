@@ -13,6 +13,7 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Major Concepts & Key Terminology
+
 - STDIN: standard input
 - STDOUT: standard output
 - STDERR: standard error
