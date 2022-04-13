@@ -5,16 +5,32 @@ draft: false
 weight: 105
 ---
 
-## Bash Output
+## Redirect `STDOUT` Append to File
 
-- STDOUT
-  - When working within a bash terminal it will regularly output information or text in response to a command entered as `stdin`.
-  - Bash can take the output and write the information to a file in two ways:
-    - Overwrite target file with output using the `>` operator learned in previous lesson
-    - Append output to file with the `>>` operator
+Bash also provides a `STDOUT` redirection **append** to file operator. In this case the contents of the existing file would not be overwritten, but instead a new line(s) would be added (append) at the end of the file.
 
-## Examples
+Let's try this out using the `echo` command:
 
-- `ls -a >> ls-a-example`
-- `history > history.txt`
-  - `history >> history.txt`
+```bash
+echo "Hello, world!" >> hello-from-bash.txt
+```
+
+Output and Validation:
+
+![echo "Hello, world!" >> hello-from-bash.txt && cat hello-from-bash.txt output](pictures/append-echo.png?classes=border)
+
+Similarly to the write redirection operator, the append operator created a new file and added the contents from `STDOUT` to the file.
+
+The difference is the file wasn't overwritten with the contents of `STDOUT`.
+
+This can be tested by executing another append redirection from bash:
+
+```bash
+echo "Good morning!" >> hello-from-bash.txt
+```
+
+Output and Validation
+
+![echo "Good morning!" >> hello-from-bash.txt && cat hello-from-bash.txt](pictures/append-echo-2.png?classes=border)
+
+The `STDOUT` redirect append operator simply added the new text to the contents of the file.
