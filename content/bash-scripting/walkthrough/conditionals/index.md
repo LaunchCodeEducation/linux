@@ -48,7 +48,7 @@ Notice that `bash` requires a closing "`fi`" for `if` statements.
 
 ### if Statement
 
-Create a new file called `if-condition`.
+Create a new file called `if-condition.sh`.
 
 ```bash
 #!/bin/bash
@@ -61,15 +61,15 @@ then
 fi
 ```
 
-Save the above code to the `if-condition` file and exit the editor.
+Save the above code to the `if-condition.sh` file and exit the editor.
 
-Run the command `bash if-condition`.
+Run the command `bash if-condition.sh`.
 
 ![if-condition](pictures/if-condition.png?classes=border)
 
 ### if else statement
 
-Create a new file called `example-if-else`.
+Create a new file called `if-else-condition.sh`.
 
 ```bash
 #!/bin/bash
@@ -85,9 +85,9 @@ else
 fi
 ```
 
-Save the above code to the `example-if-else` file and exit the editor.
+Save the above code to the `if-else-condition.sh` file and exit the editor.
 
-Run the command `bash example-if-else`.
+Run the command `bash if-else-condition.sh`.
 
 ![example-if-else](pictures/example-if-else.png?classes=border)
 
@@ -97,12 +97,12 @@ Try changing the values of the variables to test different outcomes!
 
 ### if elif else statement
 
-Create a new file called `if-elif-else`.
+Create a new file called `if-elif-else.sh`.
 
 ```bash
 #!/bin/bash
 
-$new_number1=50
+new_number1=50
 
 if [[ $new_number -lt 50 ]]
 then
@@ -115,12 +115,37 @@ else
 fi
 ```
 
-Save the above code to the `if-elif-else` file and exit the editor.
+Save the above code to the `if-elif-else.sh` file and exit the editor.
 
-Run the command `bash if-elif-else` and try to match each test case:
+Run the command `bash if-elif-else.sh`.
 
-![if-elif-else](pictures/if-elif-else.png?classes=border)
+![bash-if-elif-else](pictures/bash-if-elif-else.png?classes=border)
 
+{{% notice green "Bonus" "rocket" %}}
+You can also read from `stdin` and assign a variable with bash. Create a new file called `read-stdin-example.sh`. 
+
+Add the code below:
+
+```bash
+#!/bin/bash
+
+echo "Please enter a number: "
+read number_value
+
+if [[ $number_value -lt 50 ]]
+then
+    echo "The number $number_value is less than 50"
+elif [[ $number_value -eq 50 ]]
+then
+    echo "The number $number_value is equal to 50"
+else
+    echo "The number $number_value is greater than 50"
+fi
+```
+Run the command `bash read-stdin-example.sh`
+
+![read-stdin-example](pictures/read-stdin-example.png?classes=border)
+{{% /notice %}}
 
 
 
