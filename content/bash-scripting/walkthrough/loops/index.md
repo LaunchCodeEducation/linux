@@ -9,8 +9,6 @@ weight: 115
 
 Similar to other programming languages like Java, JavaScript, and python you are also able to write `for` loops in bash:
 
-Similar to Java, JavaScript and Python you are also able to write conditional statements in bash:
-
 {{< tabs >}}
 {{% tab name="Bash" %}}
 ```Bash
