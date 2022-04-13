@@ -15,8 +15,6 @@ Similar to Java, JavaScript and Python you are also able to write conditional st
 if [[ condition ]]
 then 
     clause statement
-else
-    clause statement
 fi
 ```
 {{% /tab %}}
@@ -24,16 +22,11 @@ fi
 ```python
 if condition:
     clause statement
-else condtion:
-    clause statement
 ```
 {{% /tab %}}
 {{% tab name="JavaScript" %}}
 ```js
 if (condition) {
-    clause statement
-}
-else (condtion) {
     clause statement
 }
 ```
@@ -43,12 +36,13 @@ else (condtion) {
 if (condition) {
     clause statement
 }
-else (condtion) {
-    clause statement
-}
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+{{% notice note %}}
+Notice that `bash` requires a closing "`fi`" for `if` statements.
+{{% /notice %}}
 
 ## Examples
 

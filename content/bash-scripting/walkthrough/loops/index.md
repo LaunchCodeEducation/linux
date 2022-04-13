@@ -75,9 +75,13 @@ while (condition) {
 {{% /tab %}}
 {{< /tabs >}}
 
+{{% notice note %}}
+Notice that bash requires a closing `done` statement to end the loop.
+{{% /notice %}}
+
 ## Examples
 
-### for loop
+### For Loop
 
 ```bash
 for string in "Linux" "Ubuntu" "Microsoft" "Windows 10" "Apple" "MacOS"
@@ -91,19 +95,20 @@ You can also loop through an array of items:
 ```bash
 OperatingSystem=("Linux" "Ubuntu" "Microsoft" "Windows 10" "Apple" "MacOS")
 
-for string in "Linux" "Ubuntu" "Microsoft" "Windows 10" "Apple" "MacOS"
+for string in ${OperatingSystem[@]}
 do
         echo $string
 done
+
 ```
 {{% /notice %}}
 
-### for loop with condition
+### For Loop with Condition
 
 ```bash
-list_number=(1 -3 3 5 10 7 -1 15 15) 
+list_numbers=(1 -3 3 5 10 7 -1 15 15) 
 
-for number in ${list_number[@]}
+for number in ${list_numbers[@]}
 do
         if [[ $number -gt $max_number ]]
         then
@@ -117,7 +122,19 @@ done
 
 echo $max_number
 echo $min_number
-
 ```
 
+### While Loop
+
+```bash
+number=0
+
+while [ number -lt 10 ]
+do
+    echo $number
+    ((number++))
+done
+```
+
+### While Loop with Condition
 
