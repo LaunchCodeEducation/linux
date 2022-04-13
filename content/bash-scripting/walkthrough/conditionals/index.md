@@ -14,17 +14,18 @@ Similar to Java, JavaScript and Python you are also able to write conditional st
 ```Bash
 if [[ condition ]]
 then 
-    if clause statement
+    clause statement
 else
-    else clause
+    clause statement
+fi
 ```
 {{% /tab %}}
 {{% tab name="python" %}}
 ```python
 if condition:
-    if clause statement
+    clause statement
 else condtion:
-    else clause
+    clause statement
 ```
 {{% /tab %}}
 {{% tab name="JavaScript" %}}
@@ -32,8 +33,8 @@ else condtion:
 if (condition) {
     clause statement
 }
-else (else condtion) {
-    else clause statement
+else (condtion) {
+    clause statement
 }
 ```
 {{% /tab %}}
@@ -42,8 +43,8 @@ else (else condtion) {
 if (condition) {
     clause statement
 }
-else (else condtion) {
-    else clause statement
+else (condtion) {
+    clause statement
 }
 ```
 {{% /tab %}}
@@ -51,19 +52,74 @@ else (else condtion) {
 
 ## Examples
 
-If numeric_variable > numeric_variable_two
-    print one is higher than the other
+### if Statement
+
+Create a new file called `if-condition`.
+
+```bash
+number1=10
+
+if [[ $number1 eq 10 ]]
+then
+    echo "$number1 is equal to 10!"
+fi
+```
+
+Save the above code to the `if-condition` file and exit the editor.
+
+Run the command `bash if-condition`.
+
+![if-condition](pictures/if-condition.png?classes=border)
+
+### if else statement
+
+Create a new file called `example-if-else`.
+
+```bash
+number1=1
+number2=2
+
+if [[ $number1 -gt $number2 ]]
+then
+    echo "The first number is higher"
 else
-    print the higher variable was greater
+    echo "The second number is higher"
+fi
+```
 
-Standard if 
-If route
+Save the above code to the `example-if-else` file and exit the editor.
 
-Standard if else
-If else route
+Run the command `bash example-if-else`.
 
-Standard else if
-If elseif else route
+![example-if-else](pictures/example-if-else.png?classes=border)
+
+{{% notice green "Bonus" "rocket" %}}
+Try changing the values of the variables to test different outcomes!
+{{% /notice %}}
+
+### if elif else statement
+
+Create a new file called `if-elif-else`.
+
+```bash
+$new_number1=50
+
+if [[ $new_number -lt 50 ]]
+then
+    echo "The number is less than 50"
+elif [[ $new_number -eq 50 ]]
+then
+    echo "The number is equal to 50"
+else
+    echo "The number is greater than 50"
+fi
+```
+
+Save the above code to the `if-elif-else` file and exit the editor.
+
+Run the command `bash if-elif-else` and try to match each test case:
+
+![if-elif-else](pictures/if-elif-else.png?classes=border)
 
 
 
