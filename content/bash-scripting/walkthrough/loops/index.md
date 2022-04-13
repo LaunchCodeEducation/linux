@@ -46,20 +46,30 @@ You can also write `while` loops:
 {{< tabs >}}
 {{% tab name="Bash" %}}
 ```Bash
+while [CONDITION]
+do
+  [COMMANDS]
+done
 
 ```
 {{% /tab %}}
 {{% tab name="python" %}}
 ```python
+while condtion:
+    loop body
 ```
 {{% /tab %}}
 {{% tab name="JavaScript" %}}
 ```js
+while (condition) {
+    loop body
 }
 ```
 {{% /tab %}}
 {{% tab name="Java" %}}
 ```java
+while (condition) {
+    loop body
 }
 ```
 {{% /tab %}}
