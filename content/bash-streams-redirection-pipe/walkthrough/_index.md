@@ -101,7 +101,7 @@ There are three data streams:
 - `STDOUT`: standard output provided to the user as a result of CLI commands
 - `STDERR`: standard error output provided to the user as an error result of a CLI command
 
-The following articles explore `bash operators` that provide ways to work with the three data streams discussed in this article.
+The following articles explore stream redirection operators (`>` and others) and the pipe operator (`|`) that provide ways to work with the three data streams discussed in this article.
 
 ## Content
 
