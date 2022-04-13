@@ -8,13 +8,45 @@ weight: 105
 ## Creating Bash Variables
 
 Bash is able to hold values within a variable similar to programming languages like Java, JavaScript, Python, and many more.
-  - Syntax for creating a variable:
-    - `variable=value_to_hold`
-    - Bash variables requires there to be no whitespace on either side of the `=` sign.
+
+{{< tabs >}}
+{{% tab name="Bash" %}}
+```Bash
+name="John"
+```
+{{% /tab %}}
+{{% tab name="Python" %}}
+```python
+name = "Paul"
+```
+{{% /tab %}}
+{{% tab name="JavaScript" %}}
+```js
+let name = "Paul";
+```
+{{% /tab %}}
+{{% tab name="Java" %}}
+```java
+String name = "John";
+```
+{{% /tab %}}
+{{< /tabs >}}
+
+Syntax for creating a variable in `bash`:
+
+```bash
+variable=value_to_hold
+```
+Bash variables requires there to be no whitespace on either side of the equals or `=` sign.
+
 Calling or referencing Bash Variable:
-  - To reference a bash variable you need to use a `$` in front of the variable name. 
-    - To reference the bash variable `bash_variable`:
-      - `$bash_variable`
+
+```bash
+name="Paul"
+echo $name
+```
+
+- To reference a bash variable you need to use a `$` in front of the variable name.
 
 
 ## Examples

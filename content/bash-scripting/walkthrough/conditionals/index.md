@@ -20,7 +20,7 @@ else
 fi
 ```
 {{% /tab %}}
-{{% tab name="python" %}}
+{{% tab name="Python" %}}
 ```python
 if condition:
     clause statement

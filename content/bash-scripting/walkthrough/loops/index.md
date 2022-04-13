@@ -19,7 +19,7 @@ done
 
 ```
 {{% /tab %}}
-{{% tab name="python" %}}
+{{% tab name="Python" %}}
 ```python
 for element in collection:
     loop body
@@ -53,7 +53,7 @@ done
 
 ```
 {{% /tab %}}
-{{% tab name="python" %}}
+{{% tab name="Python" %}}
 ```python
 while condtion:
     loop body
