@@ -54,5 +54,18 @@ To reference a bash variable you need to use a `$` in front of the variable name
 
 ## Examples
 
-<!-- TODO: Creating as script file and executing as script -->
+```bash
+#!/bin/bash
+
+linux_distro="Ubuntu"
+
+number=23
+
+language_list=("Bash" "Python" "JavaScript" "Java")
+
+echo "Linux Distribution: " $linux_distro
+echo "Michael Jordan: " $number
+echo "${language_list[@]}"
+
+```
 
