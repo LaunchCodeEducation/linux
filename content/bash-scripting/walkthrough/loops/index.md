@@ -84,7 +84,7 @@ Notice that bash requires a closing `done` statement to end the loop.
 ### For Loop
 
 ```bash
-for string in "Linux" "Ubuntu" "Microsoft" "Windows 10" "Apple" "MacOS"
+for string in "Linux" "Microsoft" "Apple"
 do
         echo $string
 done
@@ -93,7 +93,7 @@ done
 {{% notice green "Bonus" "rocket" %}}
 You can also loop through an array of items:
 ```bash
-OperatingSystem=("Linux" "Ubuntu" "Microsoft" "Windows 10" "Apple" "MacOS")
+OperatingSystem=("Linux" "Microsoft" "Apple")
 
 for string in ${OperatingSystem[@]}
 do
@@ -106,22 +106,17 @@ done
 ### For Loop with Condition
 
 ```bash
-list_numbers=(1 -3 3 5 10 7 -1 15 15) 
+OperatingSystem=("Linux" "Microsoft" "Apple")
 
-for number in ${list_numbers[@]}
+for string in ${OperatingSystem[@]}
 do
-        if [[ $number -gt $max_number ]]
+        if [[ $string == "Linux" ]]
         then
-                max_number=$number
-        fi
-        if [[ $number -lt $min_number ]]
-        then
-                min_number=$number
+                echo $string: "Open Source!"
+        else
+                echo $string: "Not Open Source : ("
         fi
 done
-
-echo $max_number
-echo $min_number
 ```
 
 ### While Loop
@@ -137,4 +132,18 @@ done
 ```
 
 ### While Loop with Condition
+
+```bash
+number=0
+
+while [ $number -lt 10 ]
+do
+        echo $number
+        ((number++))
+        if [[ $number -eq 5 ]]
+        then
+                echo "halfway done!"
+        fi
+done
+```
 
