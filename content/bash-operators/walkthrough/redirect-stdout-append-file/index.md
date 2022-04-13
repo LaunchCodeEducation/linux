@@ -1,5 +1,5 @@
 ---
-title: "STDOUT: Redirect Append"
+title: "Redirect STDOUT Append File"
 date: 2022-04-08T13:54:05-05:00
 draft: false
 weight: 105
