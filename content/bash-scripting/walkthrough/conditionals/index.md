@@ -51,6 +51,8 @@ Notice that `bash` requires a closing "`fi`" for `if` statements.
 Create a new file called `if-condition`.
 
 ```bash
+#!/bin/bash
+
 number1=10
 
 if [[ $number1 eq 10 ]]
@@ -70,6 +72,8 @@ Run the command `bash if-condition`.
 Create a new file called `example-if-else`.
 
 ```bash
+#!/bin/bash
+
 number1=1
 number2=2
 
@@ -96,6 +100,8 @@ Try changing the values of the variables to test different outcomes!
 Create a new file called `if-elif-else`.
 
 ```bash
+#!/bin/bash
+
 $new_number1=50
 
 if [[ $new_number -lt 50 ]]

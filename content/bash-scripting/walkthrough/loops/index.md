@@ -84,6 +84,8 @@ Notice that bash requires a closing `done` statement to end the loop.
 ### For Loop
 
 ```bash
+#!/bin/bash
+
 for string in "Linux" "Microsoft" "Apple"
 do
         echo $string
@@ -93,6 +95,8 @@ done
 {{% notice green "Bonus" "rocket" %}}
 You can also loop through an array of items:
 ```bash
+#!/bin/bash
+
 OperatingSystem=("Linux" "Microsoft" "Apple")
 
 for string in ${OperatingSystem[@]}
@@ -106,6 +110,8 @@ done
 ### For Loop with Condition
 
 ```bash
+#!/bin/bash
+
 OperatingSystem=("Linux" "Microsoft" "Apple")
 
 for string in ${OperatingSystem[@]}
@@ -122,6 +128,8 @@ done
 ### While Loop
 
 ```bash
+#!/bin/bash
+
 number=0
 
 while [ number -lt 10 ]
@@ -134,6 +142,8 @@ done
 ### While Loop with Condition
 
 ```bash
+#!/bin/bash
+
 number=0
 
 while [ $number -lt 10 ]

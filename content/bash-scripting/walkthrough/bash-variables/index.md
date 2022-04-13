@@ -33,7 +33,7 @@ String name = "John";
 {{< /tabs >}}
 
 {{% notice note %}}
-**Dissimilar** to programming languages like `JavaScript` and `Java`, `Bash` variables are not type specific. **Similar** to `Python`, `Bash` will respect any type of value you assign to a variable.
+`Bash` variables are not type specific. **Similar** to `Python`, `Bash` will respect any type of value you assign to a variable.
 {{% /notice %}}
 
 Syntax for initializing a variable in `bash`:
@@ -51,3 +51,8 @@ echo $name
 ```
 
 To reference a bash variable you need to use a `$` in front of the variable name.
+
+## Examples
+
+<!-- TODO: Creating as script file and executing as script -->
+
