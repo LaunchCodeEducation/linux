@@ -5,6 +5,8 @@ draft: false
 weight: 115
 ---
 
+## Looping with Bash
+
 Similar to other programming languages like Java, JavaScript, and python you are also able to write `for` loops in bash:
 
 Similar to Java, JavaScript and Python you are also able to write conditional statements in bash:
@@ -83,6 +85,8 @@ Notice that bash requires a closing `done` statement to end the loop.
 
 ### For Loop
 
+Create a new file called `for-loop.sh`
+
 ```bash
 #!/bin/bash
 
@@ -91,6 +95,12 @@ do
         echo $string
 done
 ```
+
+Save the above code to the `for-loop.sh` file and exit the editor.
+
+Run the command `bash for-loop.sh`:
+
+![for-loop](pictures/for-loop.png?classes=border)
 
 {{% notice green "Bonus" "rocket" %}}
 You can also loop through an array of items:
@@ -109,6 +119,8 @@ done
 
 ### For Loop with Condition
 
+Create a new file called `for-loop-if-else.sh`
+
 ```bash
 #!/bin/bash
 
@@ -125,21 +137,37 @@ do
 done
 ```
 
+Save the above code to the `for-loop-if-else.sh` file and exit the editor.
+
+Run the command `bash for-loop-if-else.sh`:
+
+![for-loop-condition](pictures/for-loop-condition.png?classes=border)
+
 ### While Loop
+
+Create a new file called `while-loop.sh`
 
 ```bash
 #!/bin/bash
 
 number=0
 
-while [ number -lt 10 ]
+while [ $number -lt 10 ]
 do
     echo $number
     ((number++))
 done
 ```
 
+Save the above code to the `while-loop.sh` file and exit the editor.
+
+Run the command `bash while-loop.sh`:
+
+![while-loop](pictures/while-loop.png?classes=border)
+
 ### While Loop with Condition
+
+Create a new file called `while-loop-if.sh`
 
 ```bash
 #!/bin/bash
@@ -156,4 +184,16 @@ do
         fi
 done
 ```
+
+Save the above code to the `while-loop-if.sh` file and exit the editor.
+
+Run the command `bash while-loop-if.sh`:
+
+![while-if-loop](pictures/while-if-loop.png?classes=border)
+
+## Recap:
+- For loop
+  - For loop with conditional statement
+- While loop
+  - While loop with conditional statement
 
