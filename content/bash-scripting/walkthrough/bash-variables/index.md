@@ -32,7 +32,11 @@ String name = "John";
 {{% /tab %}}
 {{< /tabs >}}
 
-Syntax for creating a variable in `bash`:
+{{% notice note %}}
+**Dissimilar** to programming languages like `JavaScript` and `Java`, `Bash` variables are not type specific. **Similar** to `Python`, `Bash` will respect any type of value you assign to a variable.
+{{% /notice %}}
+
+Syntax for initializing a variable in `bash`:
 
 ```bash
 variable=value_to_hold
@@ -46,16 +50,4 @@ name="Paul"
 echo $name
 ```
 
-- To reference a bash variable you need to use a `$` in front of the variable name.
-
-
-## Examples
-
-- `new_variable="Hello Variable"`
-  - `echo $new_variable`
-- Variable within a variable:
-  - `new_variable_two="Two $new_variable"`
-    - `echo $new_variable_two`
-- `numeric_variable=5`
-- `numberic_variable_two=10`
-  - `echo $numeric_variable + $numeric_variable_two`
+To reference a bash variable you need to use a `$` in front of the variable name.
