@@ -7,10 +7,17 @@ weight: 140
 
 ## Major Concepts & Key Terminology
 
-- bash script basics
-- bash variables
-- bash conditional statements (just if)
-- bash loops (just which)
+- Bash Scripting basics
+- How to create and reference bash variables
+- Bash Conditional Statements:
+  - `if statements`
+  - `if / else statements`
+  - `if / elif / else statements`
+- Looping with Bash
+  - `for loops`
+    - `for loops with conditional statements`
+  - `while loops`
+    - `while loops with conditional statements`
 
 ## Content Links
 

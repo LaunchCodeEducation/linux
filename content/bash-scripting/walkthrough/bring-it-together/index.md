@@ -3,6 +3,7 @@ title: "Bring it All Together"
 date: 2022-04-08T13:54:20-05:00
 draft: false
 weight: 120
+hidden: true
 originalAuthor: <no value> # to be set by page creator
 originalAuthorGitHub: <no value> # to be set by page creator
 reviewer: # to be set by the page reviewer
