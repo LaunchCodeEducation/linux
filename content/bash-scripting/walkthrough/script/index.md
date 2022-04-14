@@ -12,15 +12,58 @@ weight: 100
     - `example-script.sh`
   - `#!/bin/bash`: shebang. Placed at the top of each bash script in order to let the file know what command to run.
 
-## Example
+<!-- TODO: Script to solve a live coding problem -->
 
-- File with following script:
-  - `cd Desktop`
-  - `mkdir example-directory`
-  - `cd example-directory`
-  - `touch example-file`
+## Examples
 
-- File with shebang:
+Create a new file called `create-dir-file.sh`
+
+```bash
+## navgiate to /home/student/Desktop
+cd /home/john/Desktop
+
+## create new directory inside of /home/student/Desktop
+mkdir new-directory
+
+## navigate to  new-directory inside of /Desktop
+cd new-directory
+
+## create new file inside of new-directory
+touch new-file
+```
+
+Add the above code to the file:
+
+Run the command `bash create-dir-file.sh`
+
+Create a new file called `high-low.sh`
+
+```bash
+#!/bin/bash
+
+high_low=(15 10 -3 5 23 -5)
+
+for item in ${high_low[@]}
+do
+	if [[ $item -gt $high_value ]]
+	then
+		high_value=$item
+	fi
+	if [[ $item -lt $low_value ]]
+	then
+		low_value=$item
+	fi
+done
+
+echo "The highest value is: "$high_value
+echo "The lowest value is: "$low_value
+```
+
+Add the above code to the file:
+
+Run the command `bash high-low.sh`
+
+<!-- - File with shebang:
   - `#!/bin/bash`
   - `echo "Hello World`
-    - `./filename`
+    - `./filename` -->
