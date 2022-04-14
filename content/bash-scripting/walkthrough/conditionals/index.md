@@ -161,7 +161,10 @@ Run the command `bash read-stdin-example.sh`
 ![read-stdin-example](pictures/read-stdin-example.png?classes=border)
 {{% /notice %}}
 
-
-
-
+## Recap
+- `if` statement syntax
+  - `if` statement example
+  - `if else` example
+  - `if elif else` example
+- `fi`: closing if statement
 
