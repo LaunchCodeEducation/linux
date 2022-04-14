@@ -41,31 +41,57 @@ Syntax for initializing a variable in `bash`:
 ```bash
 variable=value_to_hold
 ```
-Bash variables requires there to be no whitespace on either side of the equals or `=` sign.
+- Bash variables requires there to be no whitespace on either side of the equals or `=` sign.
+- To reference a bash variable you need to use a `$` in front of the variable name.
 
-Calling or referencing Bash Variable:
+## Creating a Variable
+
+Create a new file called `example-variable.sh`
 
 ```bash
 name="Paul"
 echo $name
 ```
 
-To reference a bash variable you need to use a `$` in front of the variable name.
+Add the above code to the file.
 
-## Examples
+![example-variable](pictures/example-variable.png?classes=border)
+
+Run the command `bash example-variable.sh`
+
+
+## More Examples
+
+Create a file called `multiple-variables.sh`
 
 ```bash
 #!/bin/bash
 
+## Variable holding the string "Ubuntu"
 linux_distro="Ubuntu"
 
+##Variable holding the number 23
 number=23
 
+##Arraylist holding multiple strings
 language_list=("Bash" "Python" "JavaScript" "Java")
 
 echo "Linux Distribution: " $linux_distro
 echo "Michael Jordan: " $number
-echo "${language_list[@]}"
-
+echo "Programming Langauges :" "${language_list[@]}"
 ```
 
+Add the above code to the file.
+
+![multiple-variables](pictures/multiple-variables.png?classes=border)
+
+Run the command `bash multiple-variables.sh`
+
+## Recap:
+How to create variables in Bash:
+```bash
+variable=value_to_hold
+```
+
+- Bash variables are not type specfic
+- Reference a bash variable with the `$`
