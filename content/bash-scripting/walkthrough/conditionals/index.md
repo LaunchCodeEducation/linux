@@ -44,6 +44,18 @@ if (condition) {
 Notice that `bash` requires a closing "`fi`" for `if` statements.
 {{% /notice %}}
 
+## Operators
+
+Bash has built in binary operators for the following:
+- equal to: `-eq`
+- not equal to: `-ne`
+- less than: `-lt`
+- less than or equal to: `le`
+- greater than: `-gt`
+- greater than or equal to: `-ge`
+
+Some of the above operators will be used in the following walkthroughs for the `Bash: Scripting` chapter.
+
 ## Examples
 
 ### if Statement
@@ -55,7 +67,7 @@ Create a new file called `if-condition.sh`.
 
 number1=10
 
-if [[ $number1 eq 10 ]]
+if [[ $number1 -eq 10 ]]
 then
     echo "$number1 is equal to 10!"
 fi
@@ -102,7 +114,7 @@ Create a new file called `if-elif-else.sh`.
 ```bash
 #!/bin/bash
 
-new_number1=50
+new_number=50
 
 if [[ $new_number -lt 50 ]]
 then
@@ -117,12 +129,14 @@ fi
 
 Save the above code to the `if-elif-else.sh` file and exit the editor.
 
-Run the command `bash if-elif-else.sh`.
-
 ![bash-if-elif-else](pictures/bash-if-elif-else.png?classes=border)
 
+Run the command `bash if-elif-else.sh`.
+
+Try changing the value of `new_number`!
+
 {{% notice green "Bonus" "rocket" %}}
-You can also read from `stdin` and assign a variable with bash. Create a new file called `read-stdin-example.sh`. 
+You can also read from `stdin` and assign a variable with bash to make a script more interactive. Create a new file called `read-stdin-example.sh`. 
 
 Add the code below:
 
