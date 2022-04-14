@@ -44,40 +44,6 @@ Add the above code to the file:
 
 Run the command `bash create-dir-file.sh`
 
-### high-low algorithm script
-
-Create a new file called `high-low.sh`
-
-```bash
-#!/bin/bash
-
-## Create new ArrayList
-high_low=(15 10 -3 5 23 -5)
-
-## Loop through ArrayList
-for item in ${high_low[@]}
-do
-## Compare item in list to current high_value
-	if [[ $item -gt $high_value ]]
-	then
-		high_value=$item
-	fi
-## Compare item in list to current low_value
-	if [[ $item -lt $low_value ]]
-	then
-		low_value=$item
-	fi
-done
-
-## echo items to stdout
-echo "The highest value is: "$high_value
-echo "The lowest value is: "$low_value
-```
-
-Add the above code to the file:
-
-Run the command `bash high-low.sh`
-
 ### lc-employee script
 
 Create a new file called `lc-employee.sh`
@@ -108,5 +74,4 @@ Run the command `bash lc-employee-sh`
   - `#!/bin/bash`: shebang
 - Example Bash Scripts:
   - Script to change directories, create a new directory, add a file to new directory
-  - Script containing an algorithm to a common live coding problem
   - Script to create a list of LaunchCode Employees and also separate John and Paul from the list!
