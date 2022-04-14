@@ -44,18 +44,28 @@ Add the above code to the file:
 
 Run the command `bash create-dir-file.sh`
 
-### lc-employee script
+### LaunchCode Employee Script
+
+To ensure that you have the correct file for the following example it has been provided below:
+
+{{%attachments style="blue" title="Practice File" /%}}
+
+By hovering over the file you can find the URL of this specific resource, in the bottom left corner of your web browser.
+
+{{% notice note %}}
+You can add that specific resource to the wget command inside of the following script! As I was creating this walkthrough the specific link for me was `http://localhost:1313/bash-scripting/walkthrough/script/_index.files/about.html`
+{{% /notice %}}
 
 Create a new file called `lc-employee.sh`
 
 ```bash
-cd /home/student/Desktop
+cd /home/john/Desktop
 
 mkdir launchcode-roster
 
 cd launchcode-roster
 
-wget https://www.launchcode.org/about
+wget http://localhost:1313/bash-scripting/walkthrough/script/_index.files/about.html
 
 cat about | grep '<p style="line-height: 1.4;"><strong>.*</strong><br/>.*<br/>' | sed 's/^.*<strong>//g' | sed 's/<\/strong><br\/>/: /g' | sed 's/<br\/>.*$//g' > lc-employees.txt
 
