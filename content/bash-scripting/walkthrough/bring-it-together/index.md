@@ -15,6 +15,8 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Combinig Concepts
 
+Now that you have learned how to create write a basic bash script, assign values to variables, write conditional and loop statements lets combine them all into one script!
+
 Create a new file called `high-low.sh`
 
 ```bash
