@@ -37,9 +37,9 @@ do
 	fi
 done
 
-## echo items to stdout
-echo "The highest value is: "$high_value
-echo "The lowest value is: "$low_value
+## echo items to stdout and redirect: append the results into a new file
+echo "The highest value is: "$high_value >> high-values.txt
+echo "The lowest value is: "$low_value >> low-values.txt
 ```
 
 Add the above code to the file:
