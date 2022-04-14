@@ -59,7 +59,7 @@ You can add that specific resource to the wget command inside of the following s
 Create a new file called `lc-employee.sh`
 
 ```bash
-cd /home/john/Desktop
+cd /home/student/Desktop
 
 mkdir launchcode-roster
 
@@ -69,14 +69,32 @@ wget http://localhost:1313/bash-scripting/walkthrough/script/_index.files/about.
 
 cat about | grep '<p style="line-height: 1.4;"><strong>.*</strong><br/>.*<br/>' | sed 's/^.*<strong>//g' | sed 's/<\/strong><br\/>/: /g' | sed 's/<br\/>.*$//g' > lc-employees.txt
 
-cat lc-employees.txt | awk '{employees+=1}END{print "total employees: " employees}' >> lc-employees.txt
-
 cat lc-employees.txt | grep "^John\|Paul" > john-paul.txt
 ```
 
 Add the above code to the file:
 
+{{% notice warning %}}
+The url you provide for the wget command must be correct in order for this to work properly! Make sure you copy the correct url from the `about.html` file!
+{{% /notice %}}
+
+![bash-lc-employee](pictures/bash-lc-employee.png?classes=border)
+
 Run the command `bash lc-employee-sh`
+
+### Script Validation
+
+Check to see if the script worked!
+
+![validation](pictures/validation.png?classes=border)
+
+- Navigate to your `Desktop` folder to view the newly created `launchcode-roster` directory.
+- `cd` into the `launchcode-roster` directory and list the contents.
+- `cat` out of the contents of the `john-paul.txt`
+
+{{% notice green "Bonus" "rocket" %}}
+Check the contents of the `lc-employees.txt` file!
+{{% /notice %}}
 
 
 ## Recap:
