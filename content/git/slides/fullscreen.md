@@ -5,13 +5,6 @@ draft: false
 weight: 105
 type: "slides"
 hidden: true
-originalAuthor: ""
-originalAuthorGitHub: ""
-reviewer: "" # to be set by the approving reviewer
-reviewerGitHub:
-lastEditor: ""
-lastEditorGitHub: ""
-lastMod: "2022-03-10"
 ---
 
 ## Slides Title

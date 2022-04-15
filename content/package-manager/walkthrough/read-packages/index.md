@@ -3,13 +3,6 @@ title: "Reading Packages"
 date: 2021-11-09T15:13:39-06:00
 draft: false
 weight: 115
-originalAuthor: "Paul Matthews" # to be set by page creator
-originalAuthorGitHub: "pdmxdd" # to be set by page creator
-reviewer: "John Woolbright" # to be set by the page reviewer
-reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
-lastEditor: "John Woolbright" # update any time edits are made after review
-lastEditorGitHub: "jwoolbright23" # update any time edits are made after review
-lastMod: 2022-03-14 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 Being able to access the metadata of package can be useful. This article shows how to view all currently installed packages, and how to look at some of the metadata associated with any specific installed package.

@@ -2,13 +2,6 @@
 title: "Download Ubuntu Image"
 draft: false
 weight: 100
-originalAuthor: "Paul Matthews" # to be set by page creator
-originalAuthorGitHub: "pdmxdd" # to be set by page creator
-reviewer: "John Woolbright" # to be set by the page reviewer
-reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
-lastEditor: "" # update any time edits are made after review
-lastEditorGitHub: "" # update any time edits are made after review
-lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 In this class we will be using Ubuntu Desktop 20.04.3 LTS, you can find its download [on their website](https://ubuntu.com/download/desktop).

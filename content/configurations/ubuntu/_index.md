@@ -2,13 +2,6 @@
 title: "Ubuntu"
 draft: false
 weight: 105
-originalAuthor: "Paul Matthews" # to be set by page creator
-originalAuthorGitHub: "pdmxdd" # to be set by page creator
-reviewer: "John Woolbright" # to be set by the page reviewer
-reviewerGitHub: "jwoolbright23" # to be set by the page reviewer
-lastEditor: "" # update any time edits are made after review
-lastEditorGitHub: "" # update any time edits are made after review
-lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 We will be using Ubuntu as our Linux distribution in this class.
