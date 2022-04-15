@@ -2,13 +2,6 @@
 title: "Suggest a Change to a Page"
 date: 2022-03-08T11:15:22-06:00
 weight: 1
-originalAuthor: "Paul Matthews" # to be set by page creator
-originalAuthorGitHub: "pdmxdd" # to be set by page creator
-reviewer: "" # to be set by the page reviewer
-reviewerGitHub: "" # to be set by the page reviewer
-lastEditor: "" # update any time edits are made after review
-lastEditorGitHub: "" # update any time edits are made after review
-lastMod: 2022-03-22 # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 In the top right corner of each page you will see a link in the page menu section called `Edit this page`. Clicking this button will take you to the GitHub repository of this project. If you are currently logged in to your personal Github account you will be presented with the option of Forking the repository into your own account.

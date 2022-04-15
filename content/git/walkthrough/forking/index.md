@@ -3,13 +3,6 @@ title: "Forking a Repository"
 date: 
 draft: false
 weight: 105
-originalAuthor: "John Woolbright"
-originalAuthorGitHub: "jwoolbright23"
-reviewer: "" # to be set by the approving reviewer
-reviewerGitHub:
-lastEditor: "John Woolbright"
-lastEditorGitHub: "jwoolbright23"
-lastMod: ""
 ---
 
 ## Forking a Repository

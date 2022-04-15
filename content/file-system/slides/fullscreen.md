@@ -6,7 +6,6 @@ type: "slides"
 weight: 105
 hidden: true
 original_author: "Paul Matthews" 
-reviewer: "" # to be set by the approving reviewer
 last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
