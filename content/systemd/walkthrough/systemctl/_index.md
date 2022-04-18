@@ -12,40 +12,46 @@ Knowing some of the basic commands of `systemctl` is necessary for working with 
 
 ## Status
 
+> Show terse runtime status information about one or more units, follwoed by most recent log data from the journal.
+
+```bash
+systemctl status nginx
+```
+
 ## Start
+
+> Start (activate) one or more units specified on the command line.
+
+```bash
+sudo systemctl start nginx
+```
 
 ## Stop
 
+> Stop (deactivate) one mor more units specified on the command line.
+
+```bash
+sudo systemctl stop nginx
+```
+
 ## Enable
+
+> Enables one or more units... ...Enabling simply hooks the unit into various suggested places (for example, so that the unit is automatically started on boot or when a particular kind of hardware is plugged in).
+
+```bash
+sudo systemctl enable nginx
+```
 
 ## Disable
 
+> Disables one or more units.
+
+```bash
+sudo systemctl disable nginx
+```
+
 ## Listing Units
 
-## Listing Unit Files
-
-- `systemctl`
-  - `--help`
-  - `systemctl list-units`
-  - `systemctl list-dependencies [UNIT...]`
-  - `systemctl list-unit-files [PATTERN...]`
-    - `systemctl list-unit-files accounts-daemon.service`
-    - `sudo find / -name "accounts-daemon.service"`
-      - `/usr/lib/systemd/system/accounts-daemon.service`
-      - `/sys/fs/cgroup/pids/system.slice/accounts-daemon.service`
-      - `/var/lib/systemd/deb-systemd-helper-enabled/graphical.target.wants/accounts-daemon.service`
-      - `/etc/systemd/system/graphical.target.wants/accounts-daemon.service`
-    - `systemctl list-unit-files apt-daily.service`
-      - `sudo find / -name "apt-daily.service`
-        - `/usr/lib/systemd/system/apt-daily.service`
-        - `find: '/run/user/1000/gvfs': Permission denied`
-        - `cat /usr/lib/systemd/system/apt-daily.service`
-          - `cat /usr/lib/apt/apt.system.daily` --> it's a dash script! --> that's all it is, this script is executed after the dependencies are satisfied, and it only fires once (oneshot)
-    - `systemctl list-units --status=active`
-      - `systemctl status colord.service`
-      - `sudo find / -name colord.service`
-        - `cat /usr/lib/systemd/system/colord.service`
-        - `Description=Manage, Install and Generate Color Profiles`
-        - `ExecStart=/usr/libexec/colord`
-        - `cat /usr/libexec/colord` --> it's a binary
-        - `ls -l /usr/libexec | grep colord`
+```bash
+systemctl list-units
+```

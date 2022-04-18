@@ -2,7 +2,7 @@
 title: "Webserver: Nginx Unit File"
 date: 2021-03-16T15:12:13-06:00
 draft: false
-weight: 130
+weight: 105
 ---
 
 view the status of the NGINX service
