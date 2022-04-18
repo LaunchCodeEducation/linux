@@ -1,9 +1,28 @@
 ---
-title: "Listing Unit Files"
-date: 2021-03-16T15:12:13-06:00
-draft: false
+title: "systemctl"
 weight: 100
+date: 2022-04-18
 ---
+
+`systemd` isn't touched by the end user directly. End user's work with `systemd` by using the `systemctl` package and by defining `systemd unit files`.
+
+`systemctl` gives the end user access to information and control over all services, daemons, and unit files.
+
+Knowing some of the basic commands of `systemctl` is necessary for working with services and daemons.
+
+## Status
+
+## Start
+
+## Stop
+
+## Enable
+
+## Disable
+
+## Listing Units
+
+## Listing Unit Files
 
 - `systemctl`
   - `--help`
