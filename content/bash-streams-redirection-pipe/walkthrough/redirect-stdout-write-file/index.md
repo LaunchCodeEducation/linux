@@ -47,7 +47,7 @@ Print the contents of the working directory and print the contents of the `home-
 
 ![ls && cat home-contents.txt output](pictures/cat-home-contents-txt.png?classes=border)
 
-Using the `Bash` `STDOUT` redirection write operator created a new file and set it's contents to be the whatever was in `STDOUT`.
+Using the `Bash` `STDOUT` redirection write operator a new file was created and it's contents are set to what was in `STDOUT`.
 
 {{% notice warning %}}
 The `Bash` `STDOUT` redirection write operator will **overwrite** any contents that exist in the file provided. For example the contents of `home-contents.txt` would be overwritten by rerunning the command, but changing the argument of the `ls` command:
