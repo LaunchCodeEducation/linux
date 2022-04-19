@@ -89,14 +89,14 @@ NGINX automatically creates a service upon installation. The `nginx.service` can
 ### Systemctl Status 
 
 ```bash
-systemctl nginx status
+systemctl status nginx
 ```
 
 <!-- TODO: CLARITY: Was this an intended command with screenshot? -->
 
 Output:
 
-![systemctl nginx status output](pictures/initial-nginx-status.png?classes=border)
+![systemctl nginx status output](pictures/systemctl-status-nginx.png?classes=border)
 
 ### Systemctl Start
 
