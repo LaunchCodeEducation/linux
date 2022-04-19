@@ -3,23 +3,16 @@ title: "Bonus: Redirect STDIN"
 date: 2022-04-08T13:54:05-05:00
 draft: false
 weight: 115
-originalAuthor: <no value> # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 ---
 
 ## Redirect `STDIN`
 
-So far we have given our `bash` commands input in two ways:
+So far you have given `bash` commands input in two ways:
 
 1. as command arguments
 1. via converting `STDOUT` from a preceding command into `STDIN` using the pipe operator
 
-These are the two ways we expect to work with `STDIN` in this course.
+These are the two ways you should expect to work with `STDIN` in this course.
 
 However, there are additional ways you can provide input to `bash` commands.
 
@@ -32,7 +25,7 @@ cat <<< "hello"
 `cat` is concatenating the contents of the here string "hello".
 
 {{% notice note %}}
-This is identical to `echo "hello"`. This is example shows how a here string can be passed to a command as `STDIN`.
+This is identical to `echo "hello"`. This example shows how a here string can be passed to a command as `STDIN`.
 {{% /notice %}}
 
 ## `STDIN` Redirection from File
