@@ -10,7 +10,7 @@ weight: 100
 - A bash shell script is a file that holds a set of bash commands to be read and executed by `Bash`.
   - bash files are commonly denoted with a `.sh`
     - `example-script.sh`
-  - `#!/bin/bash`: shebang. Placed at the top of each bash script in order to let the file know what command to run. 
+  - `#!/bin/bash`: shebang. Placed at the top of each bash script in order to let the file know what command to run.
 
 ## Example
 
