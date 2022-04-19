@@ -78,7 +78,7 @@ Output:
 
 In `bash` you can chain together multiple commands with the pipe operator to create specific and sometimes complex commands.
 
-Suppose we wanted to open the `STDOUT` from `history | grep 'ls'` in `less` we can add another pipe:
+Suppose you wanted to open the `STDOUT` from `history | grep 'ls'` in `less` you can add another pipe:
 
 ```bash
 history | grep 'ls' | less
