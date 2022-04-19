@@ -116,7 +116,7 @@ This configuration file:
 - is named `localhost`
 - any requests made to `localhost:80`: 
   - will be served from the `root` location of `/usr/share/nginx/html` (on this computer's file system)
-  - if the HTTP request is missing a file extension from the path: `index.html` will be added and then `index.htm` added before returning a `400 level` HTTP status code.
+  - if the HTTP request is missing a file extension from the path: `index.html` will be added and then `index.html` added before returning a `400 level` HTTP status code.
 
 To NGINX this means an HTTP request made to `localhost:80/` would result in an HTTP response including the file located at `/user/share/nginx/html/index.html`.
 
@@ -132,7 +132,7 @@ NGINX can be configured to load `.conf` files from many different locations. It 
 
 ## Top Level Configuration File
 
-In addition to the user-defined configuration files their is a top level NGINX configuration file found at: `/etc/nginx/nginx.conf`.
+In addition to the user-defined configuration files there is a top level NGINX configuration file found at: `/etc/nginx/nginx.conf`.
 
 This file contains high level configurations about NGINX itself, not for creating a new web server definition. This course will not cover the top level configuration file.
 
