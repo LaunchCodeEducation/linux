@@ -92,8 +92,6 @@ NGINX automatically creates a service upon installation. The `nginx.service` can
 systemctl status nginx
 ```
 
-<!-- TODO: CLARITY: Was this an intended command with screenshot? -->
-
 Output:
 
 ![systemctl nginx status output](pictures/systemctl-status-nginx.png?classes=border)
