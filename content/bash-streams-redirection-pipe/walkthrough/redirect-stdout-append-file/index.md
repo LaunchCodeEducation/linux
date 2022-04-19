@@ -33,4 +33,4 @@ Output and Validation
 
 ![echo "Good morning!" >> hello-from-bash.txt && cat hello-from-bash.txt](pictures/append-echo-2.png?classes=border)
 
-The `STDOUT` redirect append operator simply added the new text to the contents of the file.
+The `STDOUT` redirect append operator simply added the text to the contents of the file.
