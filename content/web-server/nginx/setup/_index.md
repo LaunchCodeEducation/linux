@@ -7,6 +7,10 @@ weight: 100
 
 ## Installation
 
+{{% notice note %}}
+Before beginning this walkthrough please shut down `Caddy` with the command `sudo systemctl caddy stop`. Caddy is running as a service in the background on port 80 which is the same that `NGINX` is going to attempt to use. This will prevent any issues trying to start NGINX.
+{{% /notice %}}
+
 There are multiple ways to install `NGINX`. This class recommends adding the official `NGINX` package repository and then installing the `NGINX` packages with the `apt` CLI.
 
 {{% notice green "Bonus" "rocket" %}}
@@ -87,6 +91,8 @@ NGINX automatically creates a service upon installation. The `nginx.service` can
 ```bash
 systemctl nginx status
 ```
+
+<!-- TODO: CLARITY: Was this an intended command with screenshot? -->
 
 Output:
 
