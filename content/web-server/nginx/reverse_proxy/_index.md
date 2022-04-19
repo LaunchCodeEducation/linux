@@ -20,7 +20,7 @@ Examples of application server frameworks:
 - Django (Python)
 - Rails (Ruby)
 - Cake (PHP)
-- ,like, 1 million more options for every single programming language under the sun
+- 1 million additional options for every single programming language under the sun
 
 The application server frameworks contain code that handle raw HTTP requests, perform certain actions, and serve an HTTP response.
 
