@@ -8,22 +8,90 @@ weight: 105
 ## Creating Bash Variables
 
 Bash is able to hold values within a variable similar to programming languages like Java, JavaScript, Python, and many more.
-  - Syntax for creating a variable:
-    - `variable=value_to_hold`
-    - Bash variables requires there to be no whitespace on either side of the `=` sign.
-Calling or referencing Bash Variable:
-  - To reference a bash variable you need to use a `$` in front of the variable name. 
-    - To reference the bash variable `bash_variable`:
-      - `$bash_variable`
+
+{{< tabs >}}
+{{% tab name="Bash" %}}
+```Bash
+name="John"
+```
+{{% /tab %}}
+{{% tab name="Python" %}}
+```python
+name = "Paul"
+```
+{{% /tab %}}
+{{% tab name="JavaScript" %}}
+```js
+let name = "Paul";
+```
+{{% /tab %}}
+{{% tab name="Java" %}}
+```java
+String name = "John";
+```
+{{% /tab %}}
+{{< /tabs >}}
+
+{{% notice note %}}
+`Bash` variables are not type specific. **Similar** to `Python`, `Bash` will respect any type of value you assign to a variable.
+{{% /notice %}}
+
+Syntax for initializing a variable in `bash`:
+
+```bash
+variable=value_to_hold
+```
+- Bash variables requires there to be no whitespace on either side of the equals or `=` sign.
+- To reference a bash variable you need to use a `$` in front of the variable name.
+
+## Creating a Variable
+
+Create a new file called `example-variable.sh`
+
+```bash
+name="Paul"
+echo $name
+```
+
+Add the above code to the file.
+
+![example-variable](pictures/example-variable.png?classes=border)
+
+Run the command `bash example-variable.sh`
 
 
-## Examples
+## More Examples
 
-- `new_variable="Hello Variable"`
-  - `echo $new_variable`
-- Variable within a variable:
-  - `new_variable_two="Two $new_variable"`
-    - `echo $new_variable_two`
-- `numeric_variable=5`
-- `numberic_variable_two=10`
-  - `echo $numeric_variable + $numeric_variable_two`
+Create a file called `multiple-variables.sh`
+
+```bash
+#!/bin/bash
+
+## Variable holding the string "Ubuntu"
+linux_distro="Ubuntu"
+
+##Variable holding the number 23
+number=23
+
+##Arraylist holding multiple strings
+language_list=("Bash" "Python" "JavaScript" "Java")
+
+echo "Linux Distribution: " $linux_distro
+echo "Michael Jordan: " $number
+echo "Programming Langauges :" "${language_list[@]}"
+```
+
+Add the above code to the file.
+
+![multiple-variables](pictures/multiple-variables.png?classes=border)
+
+Run the command `bash multiple-variables.sh`
+
+## Recap:
+How to create variables in Bash:
+```bash
+variable=value_to_hold
+```
+
+- Bash variables are not type specfic
+- Reference a bash variable with the `$`
