@@ -8,7 +8,7 @@ date: 2022-04-18
 
 `systemctl` gives the end user access to information and control over all services, daemons, and unit files.
 
-Knowing some of the basic commands of `systemctl` is necessary for working with services and daemons.
+Knowing some of the basic commands of `systemctl` is necessary for working with services.
 
 ## Status
 
@@ -18,6 +18,8 @@ Knowing some of the basic commands of `systemctl` is necessary for working with 
 systemctl status nginx
 ```
 
+The `status` command displays the current status of a specific service.
+
 ## Start
 
 > Start (activate) one or more units specified on the command line.
@@ -25,6 +27,8 @@ systemctl status nginx
 ```bash
 sudo systemctl start nginx
 ```
+
+The `start` command starts a service.
 
 ## Stop
 
@@ -34,6 +38,8 @@ sudo systemctl start nginx
 sudo systemctl stop nginx
 ```
 
+The `stop` command stops a service.
+
 ## Enable
 
 > Enables one or more units... ...Enabling simply hooks the unit into various suggested places (for example, so that the unit is automatically started on boot or when a particular kind of hardware is plugged in).
@@ -41,6 +47,8 @@ sudo systemctl stop nginx
 ```bash
 sudo systemctl enable nginx
 ```
+
+The `enable` command will automatically start a service at a specific computer runtime target. For example a service may be configured to start when the computer boots.
 
 ## Disable
 
@@ -50,8 +58,14 @@ sudo systemctl enable nginx
 sudo systemctl disable nginx
 ```
 
+The `disable` command will not automatically start a service at a specific computer runtime target.
+
 ## Listing Units
 
 ```bash
 systemctl list-units
 ```
+
+All units can be listed with the `list-units` command.
+
+In the following articles we will explore the Caddy and NGINX unit files that were automatically created when those tools were installed on the computer.
