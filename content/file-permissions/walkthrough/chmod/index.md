@@ -11,7 +11,7 @@ weight: 105
 
 ## Usage
 
-The chmod command allows you to change the permissions on any given file so that you can update the `read`, `write`, and `execute` status for specific users.
+The `chmod` command allows you to change the permissions on any given file so that you can update the `read`, `write`, and `execute` status for specific users.
 
 ```bash
 chmod [OPTIONS] file-name
@@ -67,7 +67,7 @@ echo "Hello chmod example!"
 
 Write the changes to the file and exit the editor.
 
-## Read Only Permissions
+### Read Only Permissions
 
 Now that you have created a new file and viewed the existing permissions it is time to use `chmod` command to change them.
 
@@ -87,7 +87,7 @@ If you were to try and edit the file again you would get a message notifying you
 
 ![read-only](pictures/read-only.png?classes=border)
 
-## Write Only Permissions
+### Write Only Permissions
 
 Change the permissions of the `chmod-example` file so that all users only have `write` permissions:
 
@@ -97,7 +97,7 @@ Change the permissions of the `chmod-example` file so that all users only have `
 chmod 222 chmod-example
 ```
 
-## Execute Only Permissions
+### Execute Only Permissions
 
 Change the permissions of the `chmod-example` file so that all users only have `execute` permissions:
 
@@ -111,7 +111,7 @@ chmod 111 chmod-example
 When a file is changed to have execute permissions you will notice that the color of the file has been changed to green. On most Linux distributions this is letting the user know that the file is executable.
 {{% /notice %}}
 
-## Read, Write, and Execute
+### Read, Write, and Execute
 
 In order to make a file readable, writable, and executable for the current user you can execute the following command:
 
@@ -123,7 +123,7 @@ chmod 711 chmod-example
 
 The above `711` chmod options provide the current student user with `read, write, and execute` permissions while leaving the student group and all others with only execute permissions.
 
-## Execute the file
+### Execute the file
 
 Now that the current user `student` has read, write, and execute permissions on the `chmod-example` you can execute the file!
 
