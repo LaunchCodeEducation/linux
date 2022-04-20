@@ -110,3 +110,25 @@ chmod 111 chmod-example
 {{% notice note %}}
 When a file is changed to have execute permissions you will notice that the color of the file has been changed to green. On most Linux distributions this is letting the user know that the file is executable.
 {{% /notice %}}
+
+## Read, Write, and Execute
+
+In order to make a file readable, writable, and executable for the current user you can execute the following command:
+
+![read-write-execute](pictures/read-write-execute.png?classes=border)
+
+```bash
+chmod 711 chmod-example
+```
+
+The above `711` chmod options provide the current student user with `read, write, and execute` permissions while leaving the student group and all others with only execute permissions.
+
+## Execute the file
+
+Now that the current user `student` has read, write, and execute permissions on the `chmod-example` you can execute the file!
+
+![execute-chmod-example](pictures/execute-chmod-example.png?classes=border)
+
+```bash
+./chmod-example
+```
