@@ -70,7 +70,7 @@ sudo touch /etc/systemd/system/bash-garbage-collector.service
 
 Add the following contents to the file using your editor of choice (make sure you are still acting as the `root` user):
 
-```bash
+```systemd
 [Unit]
 Description=An awesome bash garbage collector (files in a certain directory)
 
