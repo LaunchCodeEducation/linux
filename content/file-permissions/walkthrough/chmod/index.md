@@ -81,7 +81,7 @@ chmod 444 chmod-example
 
 The above command can be broken down as follows:
 
-chmod `4` - read only for student user `4` - read only for student group `4` - read only for all other users
+chmod `4` - read only for student user || `4` - read only for student group ||  `4` - read only for all other users
 
 If you were to try and edit the file again you would get a message notifying you that you are trying to edit a `readonly` file.
 
@@ -113,7 +113,7 @@ When a file is changed to have execute permissions you will notice that the colo
 
 ### Read, Write, and Execute
 
-In order to make a file readable, writable, and executable for the current user you can execute the following command:
+In order to make a file readable, writable, and executable for the student user you can execute the following command:
 
 ![read-write-execute](pictures/read-write-execute.png?classes=border)
 
@@ -121,7 +121,7 @@ In order to make a file readable, writable, and executable for the current user 
 chmod 711 chmod-example
 ```
 
-The above `711` chmod options provide the current student user with `read, write, and execute` permissions while leaving the student group and all others with only execute permissions.
+The above `711` chmod options provide the student user with `read, write, and execute` permissions while leaving the student group and all others with only execute permissions.
 
 ### Execute the file
 
