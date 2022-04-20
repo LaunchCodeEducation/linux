@@ -5,9 +5,7 @@ draft: false
 weight: 110
 ---
 
-view the status of the caddy service
-
-where is it's unit file?
+## Checking Status
 
 ```bash
 systemctl status caddy
@@ -16,6 +14,8 @@ systemctl status caddy
 ```bash
 Loaded: loaded(/lib/systemd/system/caddy.service; enabled; vendor preset:>
 ```
+
+## Viewing Unit File
 
 ```bash
 cat /lib/systemd/system/caddy.service
@@ -58,3 +58,15 @@ AmbientCapabilities=CAP_NET_BIND_SERVICE
 [Install]
 WantedBy=multi-user.target
 ```
+
+This unit file is very similar to the `NGINX` unit file.
+
+In the `[Unit]` section it defines a description, a link to the documentation and defines some relationships.
+
+In the `[Service]` section it sets the `ExecStart=` directive among other configurations.
+
+In the `[Install]` section it defines that this service should be created before the `multi-user.target` run level is complete.
+
+{{% notice green "Bonus" "rocket" %}}
+Take note of how this unit file also defines the user and group this service should run under.
+{{% /notice %}}
