@@ -82,10 +82,11 @@ chmod 444 chmod-example
 The above command can be broken down as follows:
 
 chmod `4` - read only for student user || `4` - read only for student group ||  `4` - read only for all other users
-
+{{% notice green "Bonus" "rocket" %}}
 If you were to try and edit the file again you would get a message notifying you that you are trying to edit a `readonly` file.
 
 ![read-only](pictures/read-only.png?classes=border)
+{{% /notice %}}
 
 ### Write Only Permissions
 
@@ -108,7 +109,7 @@ chmod 111 chmod-example
 ```
 
 {{% notice note %}}
-When a file is changed to have execute permissions you will notice that the color of the file has been changed to green. On most Linux distributions this is letting the user know that the file is executable.
+When a file is changed to have execute permissions on a Ubuntu operating system you will notice that the color of the file has been changed to green.
 {{% /notice %}}
 
 ### Read, Write, and Execute
