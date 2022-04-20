@@ -67,7 +67,7 @@ The first argument of the chown command (prior to the `:`) designates what user 
 ## Recap:
 - `chown` command
   - allows you to change user and group ownership of a file
-  - `chown [OPTIONS] target-file`
-  - `chown new-user target-file`: changes user ownership
-  - `chown :new-group`: changes group ownership
-  - `chown new-user:new-group`: changes both user and group ownership with one command
+  - `chown [OPTIONS] file-name`
+  - `chown new-user file-name`: changes user ownership
+  - `chown :new-group file-name`: changes group ownership
+  - `chown new-user:new-group file-name`: changes both user and group ownership with one command

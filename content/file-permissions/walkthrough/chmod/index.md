@@ -31,13 +31,13 @@ See the table below for more explanation:
 | Chmod | Description |
 | :---: | :--- |
 | 7 | 4(r) + 2(w) + 1(x) = 7 `rwx`: read, write and execute |
-| 6 | 4(r) + 2(w) = 6 `rw` -: read and write |
+| 6 | 4(r) + 2(w) = 6 `rw-`: read and write |
 | 5 | 4(r) + 1(x) = 5 `r-x`: read and execute |
-| 4 | 4(r) `r` - -: read only |
+| 4 | 4(r) `r--`: read only |
 | 3 | 2(w) + 1(x) = 3 `-wx`: write and execute |
 | 2 | 2(w) `-w-`: write only|
-| 1 | 1(x) `- -x`: execute only |
-| 0 | 0 `- - -` : none |
+| 1 | 1(x) `--x`: execute only |
+| 0 | 0 `---` : none |
 
 
 ## Examples
@@ -132,3 +132,11 @@ Now that the current user `student` has read, write, and execute permissions on 
 ```bash
 ./chmod-example
 ```
+
+## Recap:
+- `chmod` command
+  - `chmod [OPTIONS] file-name`
+- `Read only permissions`: `r--` (4)
+- `Write only permissions`: `-w-` (2)
+- `Execute only permissions`: `--x` (1)
+- `Read, Write, and Execute`: `rwx` (7)
