@@ -11,7 +11,7 @@ weight: 105
 
 ## Usage
 
-The chmod command allows you to change the permissions on any given file so that you can update the `read`, `write`, and `execute` status.
+The chmod command allows you to change the permissions on any given file so that you can update the `read`, `write`, and `execute` status for specific users.
 
 ```bash
 chmod [OPTIONS] file-name
@@ -40,9 +40,9 @@ See the table below for more explanation:
 | 0 | 0 `- - -` : none |
 
 
-## Example
+## Examples
 
-Navitate to your desktop and create a new file called `chmod-example`
+Navigate to your desktop and create a new file called `chmod-example`
 
 Check the permissions of the newly created file:
 
@@ -57,7 +57,7 @@ You will notice the file currently has the following permissions:
 - `Read` and `Write` for the `student` group
 - `Read` only for all others
 
-Pick your favorite editor and add the following code to the file:
+Pick your favorite editor and add the following code to the `chmod-example` file:
 
 ```bash
 #!/bin/bash
@@ -65,19 +65,13 @@ Pick your favorite editor and add the following code to the file:
 echo "Hello chmod example!"
 ```
 
-Execute the file to view the output:
+Write the changes to the file and exit the editor.
 
-![bash-chmod-example](pictures/bash-chmod-example.png?classes=border)
-
-```bash
-bash chmod-example
-```
-
-## Changing Permissions
+## Read Only Permissions
 
 Now that you have created a new file and viewed the existing permissions it is time to use `chmod` command to change them.
 
-Change the permissions of the `chmod-example` file so that all users only have read permissions:
+Change the permissions of the `chmod-example` file so that all users only have `read` permissions:
 
 ![chmod-444](pictures/chmod-444.png?classes=border)
 
@@ -87,4 +81,32 @@ chmod 444 chmod-example
 
 The above command can be broken down as follows:
 
-chmod `4` - read only for student user `4` - read only for student group)`4` - read only for all other users
+chmod `4` - read only for student user `4` - read only for student group `4` - read only for all other users
+
+If you were to try and edit the file again you would get a message notifying you that you are trying to edit a `readonly` file.
+
+![read-only](pictures/read-only.png?classes=border)
+
+## Write Only Permissions
+
+Change the permissions of the `chmod-example` file so that all users only have `write` permissions:
+
+![write-only](pictures/write-only.png?classes=border)
+
+```bash
+chmod 222 chmod-example
+```
+
+## Execute Only Permissions
+
+Change the permissions of the `chmod-example` file so that all users only have `execute` permissions:
+
+![execute-only](pictures/execute-only.png?classes=border)
+
+```bash
+chmod 111 chmod-example
+```
+
+{{% notice note %}}
+When a file is changed to have execute permissions you will notice that the color of the file has been changed to green. On most Linux distributions this is letting the user know that the file is executable.
+{{% /notice %}}
