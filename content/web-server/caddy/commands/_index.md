@@ -19,6 +19,10 @@ In total there are four signals you can send using the `Caddy` CLI.
 - `caddy reload`: Reload caddy after making changes to config file
 {{% /notice %}}
 
+{{% notice note %}}
+To view all available Caddy commands run `caddy help`
+{{% /notice %}}
+
 {{% notice warning %}}
 Anytime a change is made to a `Caddyfile` the process must be reloaded with `caddy reload`.
 {{% /notice %}}

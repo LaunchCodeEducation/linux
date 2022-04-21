@@ -5,13 +5,6 @@ draft: false
 weight: 105
 ---
 
-{{% notice warning %}}
-This article assumes that `Caddy` is installed, and running in the background. The `Caddy service` can be started using the following command:
-```bash
-caddy start
-```
-{{% /notice %}}
-
 ## Caddyfile Configuration
 
 Caddy is predominately configured with a `Caddyfile`.
@@ -70,10 +63,10 @@ Ignoring the commented out lines the file contents are:
 }
 ```
 
-This particular configuartion file:
-- Is listening on port `80` (the default HTTP port)
+This particular configuartion file is:
+- Listening on port `80` (the default HTTP port)
 - Using the path `/usr/share/caddy` for the site directory
-- Enabling the file server with `file_server` directive
+- Enabling the static file server with the `file_server` directive
 
 {{% notice note %}}
 In the following articles you will edit and create new Caddyfiles for a static website and reverse proxy
