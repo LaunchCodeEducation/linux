@@ -7,30 +7,12 @@ weight: 115
 
 ## Exercises
 
-Install each of the following packages:
+Install the packages in the following articles:
 
-### Vim: `vim` package
+{{% children %}}
 
-Let's start off easy. We installed this and then removed it during our walkthrough. 
-
-Reinstall the package as we will be using it in a later lesson.
-
-### cURL: `curl` package
-
-We will be using the cURL tool in a later lesson. Go ahead and install it now.
-
-### Visual Studio Code: `code` package
-
-Visual Studio Code is a very popular text and code editor. It is graphical in nature, and does not offer a terminal version. However, due to it's popularity let's install it on our machines.
-
-There isn't an official Ubuntu repository for Visual Studio Code, however the Microsoft documentation provides an excellent article for [installing VSC on Linux](https://code.visualstudio.com/docs/setup/linux) systems:
-
-![code installation instructions](pictures/code-installation-instructions.png?classes=border)
-
-The picture above shows the exact steps for adding the repository, with gpg key, and then installing the `code` package.
-
-{{% notice green "Bonus" "rocket" %}}
-If you visit the [actual article](https://code.visualstudio.com/docs/setup/linux) you will find there is another way to complete the steps in a more streamlined process.
+{{% notice note %}}
+The Visual Studio Code (`VSC`) installation is optional.
 {{% /notice %}}
 
 ## Questions & Answers
