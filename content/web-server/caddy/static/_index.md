@@ -5,23 +5,21 @@ draft: false
 weight: 115
 ---
 
-what do we mean by static?
+## Configuring Caddy to Serve a Static Website
 
-what are the build artifacts?
+A common task performed by a web server is to serve websites.
 
-- root
-- file_server
+Sometimes the website to be served is a static website. A static website only requires that the HTML, CSS, JS, and media files (like .jpgs) need to be served as an HTTP Response.
 
+The syntax for a `Caddyfile` meant to serve a static website will look similar to the following:
 
-```
+```caddy
 localhost {
     root * /absolute/path/to/build/artifact/directory
     file_server
 }
 ```
-
-```
-127.0.0.1 {
+<!-- 127.0.0.1 {
     root * /absolute/path/to/build/artifact/directory
     file_server
 }
@@ -45,4 +43,4 @@ http://localhost {
     root * /absolute/path/to/build/artifact/directory
     file_server
 }
-```
+``` -->
