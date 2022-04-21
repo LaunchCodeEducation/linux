@@ -53,31 +53,36 @@ For more information and to see useful Caddy commands run the below command:
 ### Caddy Start
 
 ```bash
-caddy start
+sudo systemctl start caddy
 ```
+
+Check status:
+
+![systemctl-status-caddy](pictures/systemctl-status-caddy.png?classes=border)
 
 ```bash
-curl localhost:2019
+systemctl status caddy
 ```
 
-![curl-localhost-start](pictures/curl-localhost-start.png?classes=border)
+### Curl Localhost
+
+![curl-localhost-caddy](pictures/curl-localhost-caddy.png?classes=border)
+
+```bash
+curl localhost
+```
 
 ### Caddy Stop
+
+![caddy-stop](pictures/caddy-stop.png?classes=border)
 
 ```bash
 caddy stop
 ```
 
 ```bash
-curl localhost:2019
+curl localhost
 ```
 
-![curl-localhost-stop](pictures/curl-localhost-stop.png?classes=border)
+![caddy-stop-curl](pictures/caddy-stop-curl.png?classes=border)
 
-###
-
-<!-- {{% notice note %}}
-`systemctl status caddy.service`
-
-![systemctl-status-caddy](pictures/systemctl-status-caddy.png?classes=border)
-{{% /notice %}} -->
