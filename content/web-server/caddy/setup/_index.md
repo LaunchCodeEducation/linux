@@ -68,6 +68,8 @@ systemctl status caddy
 
 ![curl-localhost-caddy](pictures/curl-localhost-caddy.png?classes=border)
 
+If you scroll towards the top of the STDOUT you will find similar html formatting.
+
 ```bash
 curl localhost
 ```

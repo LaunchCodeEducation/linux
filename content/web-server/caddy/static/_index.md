@@ -45,7 +45,7 @@ Validation:
 Using your preferred editor add the following configuration to the newly created `Caddyfile`:
 
 ```caddy
-http://localhost:2018 {
+http://localhost {
     root * /home/student/Desktop/orbit-report
     file_server
 }
@@ -53,7 +53,7 @@ http://localhost:2018 {
 
 Configuration breakdown:
 
-- `http://localhost:2018`: designated port to listen on
+- `http://localhost`: designated port to listen on
   - `root * /home/student/Desktop/orbit-report`: Path to build directory
   - `file_server`: static file server directive
 
@@ -105,6 +105,6 @@ caddy reload
 
 ### Access Site
 
-Make a web request to localhost:2018.
+Make a web request to localhost.
 
-![localhost-2018](pictures/localhost-2018.png?classes=border)
+![localhost](pictures/localhost.png?classes=border)

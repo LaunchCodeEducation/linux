@@ -14,7 +14,7 @@ The Caddy CLI provides a command to start, stop, and reload the process. The pri
 {{% notice green "Bonus" "rocket" %}}
 In total there are four signals you can send using the `Caddy` CLI.
 - `caddy run`: Start the service in foreground and block indefinitely
-- `caddy start`: Start the service in the background
+- `sudo systemctl start caddy`: Start the service in the background as root user
 - `caddy stop`: Stop the service
 - `caddy reload`: Reload caddy after making changes to config file
 {{% /notice %}}
