@@ -26,48 +26,40 @@ A common practice is to have a `Caddyfile` in your working directory with the pr
 
 Below you will find the steps to create new `Caddyfile` for the Angular Orbit Report
 
-### Create New `Caddyfile` File
+{{% notice note %}}
+The `Caddyfile` can be stored in any location as long as your path is pointing to the correct build artifacts for the application you would like to deploy. When running the command `caddy reload` you must be in the directory containing the `Caddyfile` you want to load.
+{{% /notice %}}
+
+### Create New `Caddyfile`
 
 ```bash
-touch /home/student/Caddyfile
+touch /home/student/Desktop/Caddyfile
 ```
 
 Validation:
 
-![touch-caddyfile](pictures/touch-caddyfile.png?classes=border)
+![caddyfile-desktop](pictures/caddyfile-desktop.png?classes=border)
 
-### Add Configuration to `orbit-report.conf`
+### Add Configuration to `Caddyfile`
 
-Add the following configuration to `orbit-report.conf`:
+Using your preferred editor add the following configuration to the newly created `Caddyfile`:
 
-```nginx
-server {
-    listen 80;
-    server_name localhost;
-
-    location / {
-        root /home/student/website/orbit-report;
-        index index.html;
-    }
+```caddy
+http://localhost:2018 {
+    root * /home/student/Desktop/orbit-report
+    file_server
 }
 ```
 
 Configuration breakdown:
 
-- `server`: defining a new server in NGINX
-- `listen`: the port the server is listening on (standard HTTP 80)
-- `server_name`: the domain name, or IP address of the server (`localhost`)
-- `location /`: URL path location directive, dictates how HTTP requests to the `/` (root) are handled
-  - `root`: the location of the files to be served at the configured path
-  - `index`: the filename for any non-provided file paths (attached automatically by NGINX, never seen by the web user)
-
-{{% notice note %}}
-If you reload the `nginx` configuration file and make a request to localhost you would see a 404 Not Found error, because currently the directory `/home/student/website/orbit-report/` does not have an `index.html` file.
-{{% /notice %}}
+- `http://localhost:2018`: designated port to listen on
+  - `root * /home/student/Desktop/orbit-report`: Path to build directory
+  - `file_server`: static file server directive
 
 ### Clone Build Artifacts
 
-NGINX is expecting `/home/student/website/orbit-report/` to contain the artifacts (HTML, CSS, JS, media files), as of now the directory doesn't exist and the build artifacts are missing.
+The `Caddyfile` is expecting `/home/student/Desktop/orbit-report` to contain the artifacts (HTML, CSS, JS, media files), as of now the directory doesn't exist and the build artifacts are missing.
 
 Luckily the build artifacts are stored on GitHub.
 
@@ -77,64 +69,42 @@ From your home directory:
 git clone https://github.com/LaunchCodeTechnicalTraining/orbit-report-artifacts
 ```
 
-From here we will want to move the contents of `orbit-report-artifacts` into `/home/student/website/orbit-report/`.
+From here you will want to move the contents of `orbit-report-artifacts` into `/home/student/Desktop/orbit-report/`.
 
-### Move Build Artifacts to `/home/student/website/orbit-report`
+### Move Build Artifacts to `/home/student/Desktop/orbit-report`
 
-Create `/home/student/website/orbit-report`
+Create `/home/student/Desktop/orbit-report`
 
 ```bash
-mkdir -p /home/student/website/orbit-report
+mkdir /home/student/Desktop/orbit-report
 ```
 
-{{% notice green "Bonus" "rocket" %}}
-The `-p` flag instructs the `mkdir` command to make any necessary parent directories in the path provided. In this case it's likely that both `website/` and `/website/orbit-report` are being created!
-{{% /notice %}}
-
-Move all files in `/home/student/orbit-report-artifacts/` into `/home/student/website/orbit-report`:
+Move all files in `/home/student/orbit-report-artifacts/` into `/home/student/Desktop/orbit-report`:
 
 ```bash
-mv /home/student/orbit-report-artifacts/* /home/student/website/orbit-report/
+mv /home/student/orbit-report-artifacts/* /home/student/Desktop/orbit-report/
 ```
 
 Validation:
 
-![ls /home/student/website/orbit-report output](pictures/ls-orbit-report.png?classes=border)
+![ls-orbit-report](pictures/ls-orbit-report.png?classes=border)
+
+```bash
+ls /home/student/Desktop/orbit-report/
+```
 
 ### Reload Configuration
 
 ```bash
-sudo nginx -s reload
+cd ~/Desktop
+```
+
+```bash
+caddy reload
 ```
 
 ### Access Site
 
-Make a web request to localhost.
+Make a web request to localhost:2018.
 
-![orbit-report in browser picture](pictures/orbit-report-in-browser.png?classes=border)
-
-<!-- 127.0.0.1 {
-    root * /absolute/path/to/build/artifact/directory
-    file_server
-}
-```
-
-additional file_server options:
-
-```
-localhost {
-    root * /absolute/path/to/build/artifact/directory
-    file_server {
-        precompressed gzip zstd
-    } 
-}
-```
-
-force http:
-
-```
-http://localhost {
-    root * /absolute/path/to/build/artifact/directory
-    file_server
-}
-``` -->
+![localhost-2018](pictures/localhost-2018.png?classes=border)
