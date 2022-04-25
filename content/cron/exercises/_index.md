@@ -39,3 +39,15 @@ crontab -e
 Five
 {{% /expand %}}
 
+### What would the syntax be to run a cronjob at 5:30 PM every Monday, Wednesday, and Friday?
+
+{{% expand "Click Here for Answer" %}}
+30 17 * * 1,3,5
+{{% /expand %}}
+
+### What is the syntax to run a cronjob at 5:00 AM the first day of every quarter of the year?
+
+{{% expand "Click Here for Answer" %}}
+0 5 1 3,6,9,12 *
+{{% /expand %}}
+
