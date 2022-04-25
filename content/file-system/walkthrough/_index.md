@@ -5,6 +5,6 @@ draft: false
 weight: 110
 ---
 
-## Bash File System Commands
+## File System Commands
 
 {{% children %}}
