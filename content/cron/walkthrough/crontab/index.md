@@ -7,7 +7,9 @@ weight: 105
 
 ## Usage
 
-A crontab file holds the instructions for the cron daemon. Each job within the crontab will run a specific command at a specific time on the designated date.
+A crontab is a file that holds the instructions for the cron daemon. 
+
+Each cronjob within the crontab will run a specific command at a specific time based on the crontab configuration.
 
 - Commands:
   - `crontab <filename>`: command to run cron-jobs within a separate file as an argument
@@ -18,16 +20,32 @@ A crontab file holds the instructions for the cron daemon. Each job within the c
 
 ## Open crontab
 
-Open up your crontab file:
+View the crontab file with the follwing command:
 
-![crontab-e](pictures/crontab-e.png?classes=border)
+```bash
+crontab -e
+```
 
-Run the command `crontab -e`
+Output:
 
-The default user crontab file will look similar to the above screenshot.
+![crontab-e output](pictures/crontab-e.png?classes=border)
 
+The default user crontab seen from the previous command will look similar to the above screenshot.
 
 {{% notice green "Bonus" "rocket" %}}
-You can also open the global crontab config file with the following command: `sudo vim /etc/crontab`. For the global crontab config file you will have to designate what user this command will be running for. `* * * * * user-name command-to-run`.
-![global-crontab](pictures/global-crontab.png?classes=border)
+The global crontab config file can be viewed with the following command: 
+
+```bash
+sudo vim /etc/crontab
+```
+
+In addition to the five time parameters, and command to execute, the global crontab config file requires the user that will execute the command
+
+```bash
+* * * * * user-name command-to-run
+```
+
+![sudo vim /etc/crontab output](pictures/global-crontab.png?classes=border)
+
+The file was opened with `vim` and can be closed with `:q`.
 {{% /notice %}}
