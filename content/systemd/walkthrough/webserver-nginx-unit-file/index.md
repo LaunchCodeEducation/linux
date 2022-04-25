@@ -5,7 +5,7 @@ draft: false
 weight: 105
 ---
 
-Before we can view the NGINX unit file we need to know where the unit file lives.
+Before viewing the NGINX unit file you need to know where the unit file lives.
 
 ## Checking Status
 
@@ -15,13 +15,13 @@ Check the status of the NGINX service:
 systemctl status nginx
 ```
 
-The output contains all of the status information about the service, we are only interested in the location of the unit file, luckily that is recorded as a part of the `status` command:
+The output contains all of the status information about the service. The location of the unit file is recorded as a part of the `status` command:
 
 ```bash
 Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset:>
 ```
 
-It looks like we can view the unit file that defines the `nginx.service` at: `/lib/systemd/system/nginx.service`.
+The unit file that defines the `nginx.service` can be viewed at: `/lib/systemd/system/nginx.service`.
 
 Print the contents of the file to `STDOUT` with `cat`:
 
@@ -49,7 +49,9 @@ ExecStop=/bin/sh -c "/bin/kill -s TERM $(/bin/cat /var/run/nginx.pid)"
 WantedBy=multi-user.target
 ```
 
-This course will not cover `systemd` in great depth. We are most interested in understanding how:
+This course will not cover `systemd` in great depth. 
+
+What it will cover is understanding how:
 - a `unit` is defined
 - to start and stop a `service` 
 - to configure a `service` to start automatically on boot
@@ -57,7 +59,17 @@ This course will not cover `systemd` in great depth. We are most interested in u
 
 ## [Unit]
 
-The unit is defined by the `[Unit]` section of the unit file. This section contains metadata about the unit like it's **description**, and where the **documentation** can be found. 
+The unit is defined by the `[Unit]` section of the unit file. 
+
+```bash
+[Unit]
+Description=nginx - high performance web server
+Documentation=https://nginx.org/en/docs
+After=network-online.target remote-fs.target nss-lookup.target
+Wants=network-online.target
+```
+
+This section contains metadata about the unit like it's **description**, and where the **documentation** can be found. 
 
 {{% notice green "Bonus" "rocket" %}}
 The `[Unit]` section also defines the relationship between this and any other units. This goes beyond the scope of this class. This explains why the **After=** and **Want=** directives are found in the `[Unit]` section of the NGINX unit file.
@@ -66,6 +78,15 @@ The `[Unit]` section also defines the relationship between this and any other un
 ## [Service]
 
 The `[Service]` section of the unit file provides configuration information to the `service` associated with this unit file.
+
+```bash
+[Service]
+Type=forking
+PIDFile=/var/run/nginx.pid
+ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf
+ExecReload=/bin/sh -c "/bin/kill -s HUP $(/bin/cat /var/run/nginx.pid)"
+ExecStop=/bin/sh -c "/bin/kill -s TERM $(/bin/cat /var/run/nginx.pid)"
+```
 
 From the NGINX unit file:
 
@@ -104,6 +125,11 @@ So the `ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf` is simply starting t
 ## [Install]
 
 The `[Install]` section configures how the unit should behave when `enabled` or `disabled`.
+
+```bash
+[Install]
+WantedBy=multi-user.target
+```
 
 From the NGINX unit file:
 
