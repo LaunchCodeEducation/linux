@@ -9,15 +9,15 @@ A common way `systemd` is used with regards to web development is to strengthen 
 
 `Caddy` and `NGINX` come pre-configured as services that will restart when failed. 
 
-However, if we are using one of these web servers to reverse proxy to our own application server we are responsible for ensuring our application server will restart when failed. We are also responsible for ensuring the application server will start if the computer itself crashes and reboots.
+However, if you are using one of these web servers to reverse proxy to your own application server you are also responsible for ensuring the application server will restart when failed. You are also responsible for ensuring the application server will start if the computer itself crashes and reboots.
 
-This can be done easily using `systemd`. We can simply define a unit-file for our application, configure it to restart on failure, configure it to start on machine reboot. This will make our application available even if the application framework crashes (maybe because it ran out of RAM), or if the machine powers down and back up (maybe because a power outage happened).
+This can be done easily using `systemd`. You can define a unit-file for your application, configure it to restart on failure, configure it to start on machine reboot. This will make the application available even if the application framework crashes (maybe because it ran out of RAM), or if the machine powers down and back up (maybe because a power outage happened).
 
-This article will walk us through creating a service out of a Spring application.
+This article will walk through creating a service out of a Spring application.
 
 ## Setup
 
-We will be running the `spring-techjobs-mvc` application that was deployed in the NGINX Reverse Proxy article. You may already have the artifact you will need on your computer, check in your home directory for a directory named `spring-techjobs-mvc-artifact/`.
+You will be running the `spring-techjobs-mvc` application that was deployed in the NGINX Reverse Proxy article. You may already have the artifact you will need on your computer, check in your home directory for a directory named `spring-techjobs-mvc-artifact/`.
 
 ### Clone If Necessary
 
