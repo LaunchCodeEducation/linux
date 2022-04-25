@@ -7,7 +7,7 @@ last_editor: "" # update each time the file is edited
 last_edit_date: # just the date is enough (don't worry about the time portion)
 ---
 
-- listing unit files
+<!-- - listing unit files
 - simple unit files
   - bash scripts
   - python3 scripts
@@ -40,7 +40,7 @@ last_edit_date: # just the date is enough (don't worry about the time portion)
 
 - webapp (persistent) unit files
   - depends on database service
-  - reverse proxy
+  - reverse proxy -->
 
 ## Walkthrough
 

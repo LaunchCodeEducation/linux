@@ -2,7 +2,8 @@
 title: "Python3 Unit File"
 date: 2021-03-16T15:12:13-06:00
 draft: false
-weight: 110
+hidden: true
+weight: 120
 ---
 
 real handy command: `systemctl list-units --type target`
