@@ -7,61 +7,71 @@ weight: 110
 
 ## Name
 
-> `chown` command - change the user and/or group ownership of any given file
+> `chown` - change file owner and group 
 
 ## Usage
 
 The `chown` command allows you to change the ownership on any given file which will directly affect what users are able to `read`, `write`, and `execute` the target file.
 
 ```bash
-chown [OPTIONS] file-name
+chown [OPTION] [OWNER][:[GROUP]] [file-name]
 ```
 
 ## Examples
 
 Create a new file called `chown-example`.
 
-Check the current ownership of the newly created file:
+```bash
+touch chown-example
+```
 
-![chown-ownership](pictures/chown-ownership.png?classes=border)
+Check the current owner of the newly created file:
 
 ```bash
 ls -l
 ```
 
+Output:
+
+![touch chown-example && ls -l output](pictures/chown-ownership.png?classes=border)
+
 The current user `student` in the `student` group is the owner of the file `chown-example`.
 
-### Change User Ownership
+### Change File Owner
 
 Change the ownership of the file `chown-example` to the root user.
-
-![root-chown](pictures/root-chown.png?classes=border)
 
 ```bash
 sudo chown root chown-example
 ```
 
-The new ownership of the file `chown-example` has been changed to the root user. However the `chown-example` file still falls within the `student` group.
+Output:
 
-### Change Group Ownership
+![sudo chown root chown-example output && ls -l](pictures/root-chown.png?classes=border)
 
-To change the group of a file chown requires an additional option:
+The new owner of the file `chown-example` has been changed to the root user. However the `chown-example` file still falls within the `student` group.
 
-![chown-group](pictures/chown-group.png?classes=border)
+### Change File Group
+
+To change the group of a file chown requires an additional argument:
 
 ```bash
 sudo chown :root chown-example
 ```
 
-You are able to add a `:` to the `chown` options to specify a change in group.
+Output:
+
+![sudo chown :root chown-example && ls -l output](pictures/chown-group.png?classes=border)
+
+You are able to add a `:` to the `chown` argument to change the group of a file.
 
 {{% notice green "Bonus" "rocket" %}}
-the `chown` command also allows you to change the user and group ownership with one command.
+The `chown` command also allows you to change the user and group ownership with one command.
 ![student-group-chown](pictures/student-group-chown.png?classes=border)
 ```bash
 sudo chown student:student chown-example
 ```
-The first argument of the chown command (prior to the `:`) designates what user you would like to change ownership to. The second argument designates the desired group to change ownership to.
+The first argument of the chown command (prior to the `:`) designates the file owner. The second argument designates the desired group.
 {{% /notice %}}
 
 ## Recap:
