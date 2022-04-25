@@ -12,17 +12,14 @@ The Caddy service is controlled using the Caddy CLI.
 The Caddy CLI provides a command to start, stop, and reload the process. The primary reason to use the `caddy reload` command would be to recognize changes made to the `Caddyfile` configuration.
 
 {{% notice green "Bonus" "rocket" %}}
-In total there are four signals you can send using the `Caddy` CLI.
-- `caddy run`: Start the service in foreground and block indefinitely
-- `sudo systemctl start caddy`: Start the service in the background as root user
-- `caddy stop`: Stop the service
-- `caddy reload`: Reload caddy after making changes to config file
-{{% /notice %}}
+The `caddy` CLI offers many commands for managing and even configuring the Caddy web server. Almost all of these commands fall outside the scope of this class. We predominately interested in reloading the Caddy webserver when changes have been made to a `Caddyfile`.
 
-{{% notice note %}}
-To view all available Caddy commands run `caddy help`
+To learn more about the `caddy` CLI checkout it's help page:
+```bash
+caddy help
+```
 {{% /notice %}}
 
 {{% notice warning %}}
-Anytime a change is made to a `Caddyfile` the process must be reloaded with `caddy reload`.
+**Anytime a change is made to a `Caddyfile` the process must be reloaded with `caddy reload`.**
 {{% /notice %}}
