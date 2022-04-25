@@ -12,7 +12,7 @@ Knowing some of the basic commands of `systemctl` is necessary for working with 
 
 ## Status
 
-> Show terse runtime status information about one or more units, follwoed by most recent log data from the journal.
+> Show terse runtime status information about one or more units, followed by most recent log data from the journal.
 
 ```bash
 systemctl status nginx
@@ -32,7 +32,7 @@ The `start` command starts a service.
 
 ## Stop
 
-> Stop (deactivate) one mor more units specified on the command line.
+> Stop (deactivate) one or more more units specified on the command line.
 
 ```bash
 sudo systemctl stop nginx
