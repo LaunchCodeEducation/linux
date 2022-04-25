@@ -7,7 +7,27 @@ weight: 110
 
 ## Exercises
 
+Create a cronjob that removes all .txt files from your `Desktop` directory every 3 minutes.
 
+ - Add a file to your Desktop directory for testing purposes:
+
+```bash
+touch /home/student/Desktop/example-file.txt
+```
+
+{{% expand "Click Here for Answer" %}}
+```bash
+*/3 * * * * rm /home/student/Desktop/*.txt
+```
+{{% /expand %}}
+
+Create a cronjob that would append the current date the first minute of every month to a file called `new-month` on your Desktop.
+
+{{% expand "Click Here for Answer" %}}
+```bash
+1 0 1 * * echo "$(date)" >> /home/student/Desktop/new-month
+```
+{{% /expand %}}
 
 ## Questions and Answers
 
