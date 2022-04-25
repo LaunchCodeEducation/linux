@@ -20,7 +20,7 @@ ls bash-garbage-collector
 ```
 
 ```bash
-cat empty.sh
+cat bash-garbage-collector/empty.sh
 ```
 
 ```bash
@@ -52,7 +52,7 @@ From the project directory run:
 bash empty.sh
 ```
 
-Feel free to add files to `/home/student/bash-garbage-collector/trash` after 30 seconds check the contents of `/home/student/bash-garbage-collector/garbage.log` and the `trash/` directory to see how the effects of the script.
+Feel free to add files to `/home/student/bash-garbage-collector/trash` after 30 seconds check the contents of `/home/student/bash-garbage-collector/garbage.log` and the `trash/` directory to see the effects of the script.
 
 ### Stop Script
 
