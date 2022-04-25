@@ -7,15 +7,11 @@ weight: 105
 
 ## Caddyfile Configuration
 
-Caddy is predominately configured with a `Caddyfile`.
-
-To configure Caddy to server static files, or to reverse proxy to a running web application Caddy requires a configured `Caddyfile`.
-
-The Caddy config file should simply be named `Caddyfile` in the desired directory.
+Caddy can be configured in multiple ways. The preferred way is by creating and managing a configuration file named `Caddyfile`.
 
 ## View Default Config File
 
-The default config file that comes with the intial Caddy installation can be located at `/etc/caddy/Caddyfile`. Take a look at the file with:
+The default `Caddyfile` file that comes with the initial Caddy installation can be located at `/etc/caddy/Caddyfile`. Take a look at the file with:
 
 ```bash
 cat /etc/caddy/Caddyfile
@@ -52,7 +48,7 @@ Contents of `/etc/caddy/Caddyfile`
 # https://caddyserver.com/docs/caddyfile
 ```
 
-Lots of lines within this file are commented out notes. This default Caddyfile is meant to serve as an example to guide the configuration needs of the user.
+Lots of lines within this file are commented out notes. This default `Caddyfile` is meant to serve as an example to guide the configuration needs of the user.
 
 Ignoring the commented out lines the file contents are:
 
@@ -67,6 +63,8 @@ This particular configuartion file is:
 - Listening on port `80` (the default HTTP port)
 - Using the path `/usr/share/caddy` for the site directory
 - Enabling the static file server with the `file_server` directive
+
+This specific configuraiton is stating that all requests made to port `80` are requesting files at the directory `/usr/share/caddy/`. Whatever files live in that directory will be matched up with any `HTTP` requests that hit this web server on port `80`.
 
 {{% notice note %}}
 In the following articles you will edit and create new Caddyfiles for a static website and reverse proxy
