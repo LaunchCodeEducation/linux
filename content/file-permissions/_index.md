@@ -14,6 +14,16 @@ lastMod: # UPDATE ANY TIME CHANGES ARE MADE
 
 ## Major Concepts & Key Terminology
 
+- user
+- group
+- other
+- read permission
+- write permission
+- execute permission
+- none permission
+- `chmod`
+- `chown`
+
 ## Content Links
 
 {{% children %}}
