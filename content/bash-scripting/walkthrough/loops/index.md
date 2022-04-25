@@ -7,7 +7,7 @@ weight: 115
 
 ## Looping with Bash
 
-Similar to other programming languages like Java, JavaScript, and python you are also able to write `for` loops in bash:
+Similar to other programming languages like Java, JavaScript, and Python you are also able to write `for` loops in bash:
 
 {{< tabs >}}
 {{% tab name="Bash" %}}
