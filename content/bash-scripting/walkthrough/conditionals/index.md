@@ -7,7 +7,7 @@ weight: 110
 
 ## Conditional Statements in Bash
 
-Similar to Java, JavaScript and Python you are also able to write conditional statements in bash:
+ Similar to many programming languages `bash` allows you to write conditional statements to control the flow of a script:
 
 {{< tabs >}}
 {{% tab name="Bash" %}}
@@ -40,8 +40,12 @@ if (condition) {
 {{% /tab %}}
 {{< /tabs >}}
 
+ `Bash` requires a closing "`fi`" for `if` statements.
+
 {{% notice note %}}
-Notice that `bash` requires a closing "`fi`" for `if` statements.
+`Bash` is an old and mature tool. To wit, there are many ways to write an `if` statement in `bash`. The preceding example is the example that most closely aligns to many of the popular programming languages.
+
+The double square brackets (`[[]]`) are the way of defining a boolean expression in `bash`. The `if` statement will first evaluate the boolean expression inside of the square brackets to `true` (1) or `false` (0) and then the clause statement will be executed based on the results of the boolean expression.
 {{% /notice %}}
 
 ## Operators
@@ -55,6 +59,10 @@ Bash has built in binary operators for the following:
 - greater than or equal to: `-ge`
 
 Some of the above operators will be used in the following walkthroughs for the `Bash: Scripting` chapter.
+
+{{% notice note %}}
+Again, due to the age and maturity of `Bash` some of the preceding binary operators can be replaced with more modern programming language equivalents like equal to (`==`) and not equal to (`!=`). However, even the oldest version of `bash` will accept the binary operators as defined above.
+{{% /notice %}}
 
 ## Examples
 
