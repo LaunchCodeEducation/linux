@@ -7,9 +7,9 @@ weight: 115
 
 ## Configuring Caddy to Serve a Static Website
 
-A common task performed by a web server is to serve websites.
+A common task performed by a web server is to serve static websites.
 
-Sometimes the website to be served is a static website. A static website only requires that the HTML, CSS, JS, and media files (like .jpgs) need to be served as an HTTP Response.
+A static website only requires that the HTML, CSS, JS, and media files (like .jpgs) need to be served as a part of the HTTP Response.
 
 The syntax for a `Caddyfile` meant to serve a static website will look similar to the following:
 
@@ -22,11 +22,11 @@ localhost {
 
 ## New Configuration File
 
-A common practice is to have a `Caddyfile` in your working directory with the proper configurations to load.
+A `Caddyfile` can technically live anywhere on the machine. Some people opt to store all of their `Caddyfiles` in `/etc/caddy`. This is similar to the best practice used by the NGINX web server.
 
-Below you will find the steps to create new `Caddyfile` for the Angular Orbit Report
+Another practice is to store a `Caddyfile` with the source code of a project. For this example we will be deploying the `Orbit Report` angular project built in `LC101` unit 1. We will be creating a `Caddyfile` near the source code of this project.
 
-{{% notice note %}}
+{{% notice warning %}}
 The `Caddyfile` can be stored in any location as long as your path is pointing to the correct build artifacts for the application you would like to deploy. When running the command `caddy reload` you must be in the directory containing the `Caddyfile` you want to load.
 {{% /notice %}}
 
@@ -38,7 +38,7 @@ touch /home/student/Desktop/Caddyfile
 
 Validation:
 
-![caddyfile-desktop](pictures/caddyfile-desktop.png?classes=border)
+![touch /home/student/Desktop/Caddyfile && ls /home/student/Desktop output](pictures/caddyfile-desktop.png?classes=border)
 
 ### Add Configuration to `Caddyfile`
 
@@ -53,13 +53,15 @@ http://localhost {
 
 Configuration breakdown:
 
-- `http://localhost`: designated port to listen on
-  - `root * /home/student/Desktop/orbit-report`: Path to build directory
-  - `file_server`: static file server directive
+- `http://localhost`: designated hostname and port to listen on
+  - `root * /home/student/Desktop/orbit-report`: the root location for all requests coming to this server
+  - `file_server`: static file_server directive instructing Caddy to serve the files found in the root location as files for any incoming requests
 
 ### Clone Build Artifacts
 
-The `Caddyfile` is expecting `/home/student/Desktop/orbit-report` to contain the artifacts (HTML, CSS, JS, media files), as of now the directory doesn't exist and the build artifacts are missing.
+The `Caddyfile` is expecting `/home/student/Desktop/orbit-report` to contain the artifacts (HTML, CSS, JS, media files) of this project. 
+
+As of now the directory doesn't exist and the build artifacts are missing.
 
 Luckily the build artifacts are stored on GitHub.
 
@@ -85,13 +87,15 @@ Move all files in `/home/student/orbit-report-artifacts/` into `/home/student/De
 mv /home/student/orbit-report-artifacts/* /home/student/Desktop/orbit-report/
 ```
 
-Validation:
-
-![ls-orbit-report](pictures/ls-orbit-report.png?classes=border)
+Check the contents of `/home/student/Desktop/orbit-report`:
 
 ```bash
 ls /home/student/Desktop/orbit-report/
 ```
+
+Validation:
+
+![ls /home/student/Desktop/orbit-report output](pictures/ls-orbit-report.png?classes=border)
 
 ### Reload Configuration
 
@@ -102,6 +106,13 @@ cd ~/Desktop
 ```bash
 caddy reload
 ```
+
+{{% notice warning %}}
+If Caddy is not currently running you will need to start the `caddy` service with `systemctl` like:
+```bash
+sudo systemctl start caddy
+```
+{{% /notice %}}
 
 ### Access Site
 
