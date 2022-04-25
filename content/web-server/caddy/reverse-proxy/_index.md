@@ -47,7 +47,7 @@ touch /home/student/Caddyfile
 
 ```caddy
 http://localhost {
-    
+    reverse_proxy localhost:8080
 }
 ```
 
