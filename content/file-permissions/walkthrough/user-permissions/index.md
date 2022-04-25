@@ -1,58 +1,137 @@
 ---
-title: "User Permissions"
+title: "User File Permissions"
 date: 2022-04-14T16:13:40-05:00
 draft: false
-weight: 1
-originalAuthor: <no value> # to be set by page creator
-originalAuthorGitHub: <no value> # to be set by page creator
-reviewer: # to be set by the page reviewer
-reviewerGitHub: # to be set by the page reviewer
-lastEditor: # update any time edits are made after review
-lastEditorGitHub: # update any time edits are made after review
-lastMod: # UPDATE ANY TIME CHANGES ARE MADE
+weight: 100
 ---
 
-## User File Permissions
+## System Users and Permissions
 
-`ls -l` /path
+All files within a Linux system define permissions for owner, group, and others.
 
-`ls -l` /path/file
+The available permissions for any given owner, group, and other users is as follows:
+- `Read`
+- `Write`
+- `Execute`
+- `None`
 
-examples
+An owner, group, or other users can have any combination of the above permissions. 
 
-- `drwxrwxrwx`
-- `rwxrwxrwx`
+The following list shows all possible options:
 
-d or - (directory or file)
+- `Read only`
+- `Write only`
+- `Execute only`
+- `Read and Write`
+- `Read and Execute`
+- `Write and Execute`
+- `Read, Write, and Execute`
+- `None`
 
-1. `rwx`: permissions for owner
-2. `rwx`: permission for other users in the owner's user group
-3. `rwx`: permissions for all other user
+## Viewing Permissions in Terminal
 
-`r`: read
-`w`: write
-`x`: execute
+Open up a terminal and navigate to the home directory if necessary.
 
-So a file with:
+View all the contents of the home directory with:
 
-- `-rw-r-----`: a standard file: owner can read and write; user group can read; all other user's have NO permissions
-- `drw-rw-r--`: a directory: owner can read/write; user group can read/write; all other user's can read
-- `rwxr-x---x`: a standard file: owner can read/write/execute; user group can read/execute; all other user's can execute
+```bash
+ls -l
+```
 
-`chown` command
+For each non hidden file found by `ls -l` the following is displayed: 
 
-`chmod` command:
+- file type
+- file permissions
+- number of contained files
+- file owner
+- file group
+- file size (in bytes)
+- file last touched date
+- file name
 
-bit notatation:
+Output:
 
-- 7 `4(r) + 2(w) + 1(x)` rwx: read, write and execute
-- 6 `4(r) + 2(w)` 	rw-: read and write
-- 5 `4(r) + 1(x)` r-x:	read and execute
-- 4 `4(r)` r--: read only
-- 3 `2(w) + 1(x)` 	-wx: write and execute
-- 2 `2(w)` 	-w-: write only
-- 1 `1(x)` 	--x: execute only
-- 0 `0` ---: none 
+![ls -l of home directory output](pictures/ls-l-desktop.png?classes=border)
+
+The line with the `Desktop` directory can be broken down as follows:
+
+- file type: `d` for directory
+- file permissions: `rwxr-xr-x`
+- number of contained files: `4`
+- file owner: `student`
+- file group: `student`
+- file size (in bytes): `4096` bytes (`4` kilobytes)
+- file last touched date: `Apr 20 10:00`
+- file name: `Desktop`
+
+The file permissions section defines read, write and execute permissions for each of the file owner, file group, and all other users.
+
+`rwxr-xr-x` is broken into three:
+
+- `rwx`: the file owner has **r**ead, **w**rite and e**x**ecute permissions
+- `r-x`: the file group has **r**ead and e**x**ecute permissions
+- `r-x`: all other users have **r**ead and e**x**ecute permissions
+
+Bringing it together:
+
+- `drwxr-xr-x 4 student student`: 
+  - Directory that allows the `student` user to `Read, Write, and Execute`, the `student` group to `Execute and Read`, and all others to `Execute` only.
+
+The line with the `snap` directory is as follows:
+- `drwx------ 4 student student`:
+  - Directory that allows the `student` owner to `Read, Write, and Execute`, the `student` group has `None` permissions, and all other users have `None` permissions.
+
+## Alternate Users
+
+Now that you have a basic understanding of the user and file permissions structure lets take a look at a different directory with alternate users.
+
+Using the `ls -l` command view the file permissions for all files within the root directory:
+
+```bash
+ls -l /
+```
+
+Output:
+
+![ls -l / output](pictures/ls-l-root.png?classes=border)
 
 
-numerical file permissions
+Take note that all folders and files located within the root directory belong to the `root` user and `root` group.
+
+### `/usr/` File Permission Breakdown
+
+```bash
+drwxr-xr-x  21 root root        4096 Apr 20 10:20 tmp
+```
+
+`drwxr-xr-x`:
+
+- `d`: file is of the directory type
+- `rwx`: root owner has read, write and execute privileges
+- `r-x`: root group has read and execute privileges
+- `r-x`: all other users have read and execute privileges
+
+### `/lost+found/` File Permission Breakdown
+
+```bash
+drwx------  2 root root        16384 Mar 11 14:32 lost+found
+```
+
+`drwx------`:
+
+- `d`: file is of the directory type
+- `rwx`: the root owner has read, write and execute privileges
+- `---`: the root group has **no** permissions
+- `---`: all other users have **no** permissions
+
+{{% notice green "Bonus" "rocket" %}}
+You may also notice that some of the lines begin with an `l`. The first character on the line will always provide what type of file it is. In this particular example the `l` signifies a symbolic link. The other types of files you may see are as follows:
+- `-`: regular file
+- `d`: directory
+- `c`: character device file
+- `b`: block device file
+- `s`: socket file
+- `l`: symbolic link
+
+You are not expected to fully understand any of the special file types in this course.
+{{% /notice %}}
