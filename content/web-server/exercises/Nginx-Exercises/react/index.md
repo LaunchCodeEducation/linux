@@ -8,3 +8,13 @@ weight: 100
 ## React
 
 - App to deploy `https://github.com/LaunchCodeTechnicalTraining/react-tic-tac-toe-tutorial`
+
+First up the `React` tic tac toe tutorial project.
+
+## Get Artifacts
+
+## Write NGINX Conf File
+
+## Reload NGINX
+
+## Access Live Site
