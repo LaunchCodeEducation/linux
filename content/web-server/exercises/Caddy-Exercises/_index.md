@@ -6,3 +6,7 @@ weight: 100
 ---
 
 ## Caddy Exercises
+
+The Caddy exercises include deploying a React, Spring Boot, and .NET application using the caddy service.
+
+{{% children %}}
