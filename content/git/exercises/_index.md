@@ -7,6 +7,20 @@ weight: 115
 
 ## Exercises
 
+- push
+- pull
+- add
+- commit
+- checkout
+- checkout -b
+- git branch
+- git branch -d
+
+What are the two merge strategies?
+
+- merge
+- rebase
+
 Example repos for each exercise
 
 
