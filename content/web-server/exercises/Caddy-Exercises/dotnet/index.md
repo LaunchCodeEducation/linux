@@ -5,17 +5,59 @@ draft: false
 weight: 110
 ---
 
-## .NET
+## Install Instructions
 
-### Install Instructions
-
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb 
+<!-- wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb 
 sudo dpkg -i packages-microsoft-prod.deb
 
 sudo apt update 
 sudo apt install apt-transport-https 
-sudo apt install dotnet-sdk-3.1 
+sudo apt install dotnet-sdk-3.1  -->
 
-## Github Repo
+## Clone React Build Artifacts:
 
-- repo to use `https://github.com/LaunchCodeTechnicalTraining/dotnet-techjobs-mvc-artifacts`
+Clone the following repository to the home directory:
+
+```bash
+git clone https://github.com/LaunchCodeTechnicalTraining/dotnet-techjobs-mvc-artifacts
+```
+
+How do you deploy the `dotnot-techjobs-mvc` project using Caddy?
+
+{{% expand "Click Here for Answer" %}}
+Ensure the caddy service is running:
+
+```bash
+systemctl status caddy
+```
+
+![check caddy.service status](pictures/systemctl-status-caddy.png?classes=border)
+
+Start the caddy service if it is inactive:
+
+```bash
+sudo systemctl start caddy
+```
+
+Create a `Caddyfile`
+
+ - You can create the `Caddyfile` anywhere you would like. For this exercise it was created inside of the home directory.
+
+Add the following code to the `Caddyfile`
+
+```caddy
+## Default localhost port
+https://localhost {
+}
+```
+
+Reload the Caddy Service:
+
+```bash
+caddy reload
+```
+
+![Reload Caddy Service](pictures/caddy-reload.png?classes=border)
+
+Open Localhost in the browser:
+{{% /expand %}}
