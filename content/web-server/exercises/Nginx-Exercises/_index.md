@@ -6,3 +6,7 @@ weight: 105
 ---
 
 ## Nginx Exercises
+
+The Nginx exercises include deploying a React, Spring Boot, and .NET application using the nginx.service.
+
+{{% children %}}
