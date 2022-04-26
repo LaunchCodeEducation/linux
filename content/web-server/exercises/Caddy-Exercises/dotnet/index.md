@@ -39,6 +39,12 @@ Start the caddy service if it is inactive:
 sudo systemctl start caddy
 ```
 
+Start the .NET application:
+
+```bash
+dotnet TechJobsMVC.dll
+```
+
 Create a `Caddyfile`
 
  - You can create the `Caddyfile` anywhere you would like. For this exercise it was created inside of the home directory.

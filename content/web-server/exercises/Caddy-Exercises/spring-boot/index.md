@@ -34,6 +34,12 @@ Start the caddy service if it is inactive:
 sudo systemctl start caddy
 ```
 
+Start the Spring Boot project:
+
+```bash
+java -jar spring-todo-mvc-artifact/todo-mvc.jar
+```
+
 Create a `Caddyfile`
 
  - You can create the `Caddyfile` anywhere you would like. For this exercise it was created inside of the home directory.
@@ -43,6 +49,7 @@ Add the following code to the `Caddyfile`
 ```caddy
 ## Default localhost port
 https://localhost {
+    reverse_proxy http://localhost:8080
 }
 ```
 
