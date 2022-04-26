@@ -7,13 +7,13 @@ weight: 121
 
 ## Major Concepts & Key Terminology
 
-- user
-- group
-- other
+- permission classifications
+  - owner
+  - group
+  - other users
 - read permission
 - write permission
 - execute permission
-- none permission
 - `chmod`
 - `chown`
 
