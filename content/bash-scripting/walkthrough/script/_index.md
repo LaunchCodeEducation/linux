@@ -11,12 +11,14 @@ A bash shell script is a file that holds a set of bash commands to be read and e
 
 Bash files are commonly denoted with a `.sh` file extension for example: `example-script.sh`.
 
-Additionally the first line of a Bash script commonly contains a **shebang**. A shebang is a line that informs the operating system of the exact shell to use when executing the script. The shebang simply points to the absolute path of the shell for example: `#!/bin/bash`.
+Additionally the first line of a Bash script commonly contains a **shebang**. A shebang is a line that informs the operating system of the exact shell to use when executing the script. The shebang simply points to the absolute path of the shell.
+
+For example: `#!/bin/bash`.
 
 {{% notice note %}}
 Any valid bash syntax can be run in a file without the `.sh` extension and without a shebang when the `bash` command is invoked. However, to run a file without explicitly invoking the bash command, the bash script file requires a shebang and must be executable. 
 
-Once these conditions are met the script can be invoked directly without the `bash` command. An example of this will be shown later in this chapter.
+Once these conditions are met the script can be invoked directly without the `bash` command.
 {{% /notice %}}
 
 ## Examples
@@ -62,7 +64,7 @@ Look at the contents of the `/home/student/Desktop` and `/home/student/Desktop/n
 
 ### LaunchCode Employee Script
 
-The first script was pretty basic. Let's create a more complex script that combines multiple of the tools we've learned in this class. Let's scrape, extract, and transform some data into a more usable state.
+The first script was pretty basic. Let's create a more complex script that combines multiple tools we've learned in this class. Let's scrape, extract, and transform some data into a more usable state.
 
 The LaunchCode website provides an about page, and on the page is a listing of all current LaunchCode employees.
 
@@ -87,7 +89,7 @@ The about page of the LaunchCode website is subject to change. To ensure the pro
 By hovering over the file you can find the URL of this specific resource, in the bottom left corner of your web browser.
 
 {{% notice note %}}
-You can add that specific resource to the wget command inside of the following script! As I was creating this walkthrough the specific link for me was `http://localhost:1313.app/bash-scripting/walkthrough/script/_index.files/about.html`
+You can add that specific resource to the wget command inside of the following script! As I was creating this walkthrough the specific link for me was `http://localhost:1313/bash-scripting/walkthrough/script/_index.files/about.html`
 {{% /notice %}}
 
  Create a new file called `lc-employee.sh` and add the following code:
