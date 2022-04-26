@@ -22,7 +22,7 @@ Clone the following repository to the home directory:
 git clone https://github.com/LaunchCodeTechnicalTraining/dotnet-techjobs-mvc-artifacts
 ```
 
-How do you deploy the `dotnot-techjobs-mvc` project using Caddy?
+How do you deploy the `dotnet-techjobs-mvc` project using Caddy?
 
 {{% expand "Click Here for Answer" %}}
 Ensure the caddy service is running:
@@ -48,6 +48,7 @@ Add the following code to the `Caddyfile`
 ```caddy
 ## Default localhost port
 https://localhost {
+        reverse_proxy http://localhost:5000
 }
 ```
 
@@ -60,4 +61,6 @@ caddy reload
 ![Reload Caddy Service](pictures/caddy-reload.png?classes=border)
 
 Open Localhost in the browser:
+
+![Open http://localhost in browser](pictures/dotnet-localhost.png?classes=border)
 {{% /expand %}}
