@@ -42,6 +42,14 @@ sed 's/Hunter Engineering/LaunchCode/' user.csv
 ```
 {{% /expand %}}
 
+Add the additional text ": Kansas City" to all users employed at `VMLY&R`
+
+{{% expand "Click Here for Solution" %}}
+```bash
+sed 's/VMLY&R/&: Kansas City/' user.csv
+```
+{{% /expand %}}
+
 Substitute all email signatures (`@example.org, @example.net, @example.com`) for `@launchcode.org`
 
 {{% expand "Click Here for Solution" %}}
