@@ -54,3 +54,40 @@ How would you search a directory for only files ending in `.csv`?
 ls /path/to/directory | grep ".csv$"
 ```
 {{% /expand %}}
+
+## Working with the user.csv Dataset
+
+Using the user.csv Dataset complete the following requirements:
+
+{{% notice note %}}
+If you need to get the `user.csv` Dataset again you can do so with the following command:
+```bash
+curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > user.csv
+```
+{{% /notice %}}
+
+Filter the results of the `user.csv` so that you only match users by the name of `James` with an email ending in `.org` that work for `Boeing`.
+
+{{% expand "Click Here for Solution" %}}
+```bash
+grep '^James' user.csv | grep '.org' | grep 'Boeing$'
+```
+{{% /expand %}}
+
+Filter the results of the `user.csv` so that you only match users with the last name `Campbell` that work for the organization `Freedom pay`.
+
+{{% expand "Click Here for Solution" %}}
+```bash
+grep "Campbell," user.csv | grep "Freedom pay"
+```
+{{% /expand %}}
+
+{{% notice green "Bonus" "rocket" %}}
+How would you filter the results of the `user.csv` so that you only match users with the first name `John` or `Paul` and have a last name beginning with the letter `J` or `S` that work for the organization `Express Scripts`?
+{{% /notice %}}
+
+{{% expand "Click Here for Answer" %}}
+```bash
+grep -E '^John,[J,S]|^Paul,[J,S]' user.csv | grep "Express Scripts"
+```
+{{% /expand %}}
