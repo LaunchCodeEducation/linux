@@ -16,6 +16,8 @@ weight: 105
 
 {{% expand "Click Here for Answer" %}}
 ```bash
+#!/bin/bash
+
 curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > ~/user-data
 
 mkdir ~/technical-user-data

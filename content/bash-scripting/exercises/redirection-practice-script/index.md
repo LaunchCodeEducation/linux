@@ -19,6 +19,8 @@ Create a script that does the following:
 
 {{% expand "Click Here for Answer" %}}
 ```bash
+#!/bin/bash
+
 mkdir ~/redirect-practice
 
 path_to_dir=~/redirect-practice
