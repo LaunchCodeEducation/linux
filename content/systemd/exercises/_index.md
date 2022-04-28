@@ -5,19 +5,83 @@ draft: false
 weight: 115
 ---
 
-## Definite Exercise:
-
-Full Key Logging Activity:
-1. bash: on computer startup clear the logging file
-1. python3: after bash file runs start the key-logging service
-1. bash: on computer shutdown (email key-log file to a configured email address)
-
-This combines the services they have seen in their walkthroughs all together to create a completely new feature that is useful. They have seen bash examples (creating a user-login file, deleting a user-login file) and python example (creating a service for a pylogger). They will have to create new unit files and start/enable the services for the bash scripts, and will need to update the pylogger service to depend on the logging clear task.
-
-## Definite Exercise:
-
-Create and manage services for 2-3 more web application servers (node/express, spring, .Net?, golang?) (one of which needs to have a DB component).
-
 ## Exercises
 
 {{% children %}}
+
+## Questions & Answers
+
+### What is the purpose of `systemd`?
+
+{{% expand "CLICK FOR ANSWER" %}}
+Create and manage services.
+{{% /expand %}}
+
+### What is `systemctl`?
+
+{{% expand "CLICK FOR ANSWER" %}}
+The CLI package that allows for managing services.
+{{% /expand %}}
+
+### What is a unit file?
+
+{{% expand "CLICK FOR ANSWER" %}}
+A service definition file. It configures the service and dictates how the service behaves and how it is managed by `systemd`.
+{{% /expand %}}
+
+### What are the five primary commands of `systemctl` introduced in this class?
+
+{{% expand "CLICK FOR ANSWER" %}}
+1. `status`
+1. `start`
+1. `stop`
+1. `disable`
+1. `enable`
+{{% /expand %}}
+
+## Which of the five commands is necessary to view information about a given unit?
+
+{{% expand "CLICK FOR ANSWER" %}}
+`status`
+{{% /expand %}}
+
+### Which of the five commands are necessary for managing a units state?
+
+{{% expand "CLICK FOR ANSWER" %}}
+- `start`
+- `stop`
+{{% /expand %}}
+
+### Which of the five commands are necessary for controlling when a unit starts at a specific computer target?
+
+{{% expand "CLICK FOR ANSWER" %}}
+- `enable`
+- `disable`
+{{% /expand %}}
+
+### What must be included in a unit file to start a service?
+
+{{% expand "CLICK FOR ANSWER" %}}
+```systemd
+[Service]
+ExecStart=valid command to start the service
+```
+{{% /expand %}}
+
+### What must be included in a unit file to configure a unit to restart on failure?
+
+{{% expand "CLICK FOR ANSWER" %}}
+```systemd
+[Service]
+Restart=on-failure
+```
+{{% /expand %}}
+
+### What must be included in a unit file to configure a unit to start at a specific computer target (like on boot)?
+
+{{% expand "CLICK FOR ANSWER" %}}
+```systemd
+[Install]
+WantedBy=some-defined.target
+```
+{{% /expand %}}
