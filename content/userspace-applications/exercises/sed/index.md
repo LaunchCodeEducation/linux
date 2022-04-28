@@ -7,7 +7,7 @@ weight: 115
 
 ## Questions and Answers
 
-How do you run a substitute command with `sed`?
+### How do you run a substitute command with `sed`?
 
 {{% expand "Click Here for Answer" %}}
 ```bash
@@ -15,7 +15,7 @@ sed 's/word-or-phrase-to-replace/replacement-word-or-phrase/' file-name
 ```
 {{% /expand %}}
 
-How do you use the substitute command to add additional text?
+### How do you use the substitute command to add additional text?
 
 {{% expand "Click Here for Answer" %}}
 ```bash
