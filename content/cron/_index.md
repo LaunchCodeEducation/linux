@@ -7,6 +7,12 @@ weight: 145
 
 ## Major Concepts & Key Terminology
 
+- task scheduling
+- cron
+- cronjob
+- crontab
+  - syntax
+
 ## Content Links
 
 {{% children %}}

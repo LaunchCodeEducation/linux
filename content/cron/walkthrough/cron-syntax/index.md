@@ -7,21 +7,28 @@ weight: 100
 
 ## Cron Syntax
 
-Cron requires you to provide 5 time parameters to designate the time you want a job to execute. The time is broken down as follows:
+Cron will schedule a command to be executed at a specific time. Cron expects **five time parameters**, and a valid **command**.
 
+The times are correlated with:
 - `minute`: 0-59
 - `hour`: 0-23
 - `Day of Month`: 1-31
 - `Month of Year`: 0-11
-- `Day of the Week`: 1-7
+- `Day of Week`: 1-7
 
-You also need to provide the cronjob a command after designating the desired time:
+ After the five time parameters are provided to Cron, it expects a valid command resulting in the line:
 
 ```bash
 * * * * * echo "Hello Cron" >> ~/Desktop/hello-cron.log
 ```
 
 The above cronjob would run and append the phrase "Hello Cron" to the `hello-cron.log` file every minute.
+
+{{% notice note %}}
+In the preceding example the five time parameters are each `*` indicating to run at every minute, hour, day of the month, month of the year, and day of the week.
+
+Cron will execute the command `echo "Hello Cron" >> ~/Desktop/hello-cron.log` every minute of every hour of every day of the month of every day of the year of every day of the week.
+{{% /notice %}}
 
 ## Special Characters
 
