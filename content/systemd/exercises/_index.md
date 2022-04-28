@@ -13,9 +13,21 @@ weight: 115
 
 ### What is the purpose of `systemd`?
 
+{{% expand "CLICK FOR ANSWER" %}}
+Create and manage services.
+{{% /expand %}}
+
 ### What is `systemctl`?
 
+{{% expand "CLICK FOR ANSWER" %}}
+The CLI package that allows for managing services.
+{{% /expand %}}
+
 ### What is a unit file?
+
+{{% expand "CLICK FOR ANSWER" %}}
+A service definition file. It configures the service and dictates how the service behaves and how it is managed by `systemd`.
+{{% /expand %}}
 
 ### What are the five primary commands of `systemctl` introduced in this class?
 
