@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Linux Introduction"
 theme = "hugo-theme-relearn"
 
+canonifyURLs = true
+
 [params]
   themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]
   editURL = "https://github.com/LaunchCodeTechnicalTraining/linux/edit/master/content/"
