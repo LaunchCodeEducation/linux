@@ -6,11 +6,42 @@ draft: false
 
 ## Linux
 
-Welcome. This course explores Linux.
+
+### What is this Course
+
+#### Generally
+
+#### Specifically
+
+### Why take this Course
+
+#### Generally
+
+#### Specifically
+
+### Where this Course leads
+- Cloud Basics
+- Operations
+- Docker/Containers
+- CI/CD
+
+
+<!-- This course is designed to provide you with the 
+
+What can I accomplish with concepts and skills learned?
+- Learning how to give CLI text based instructions to a computer to perform specific tasks
+- Deploy web apps
+- Prepare for Cloud Computing
+
+What do I need to know to take this course?
+
+How will this help me perform a job in the future? -->
+
+<!-- Welcome. This course explores Linux.
 
 We won't cover Linux exhaustively because it is a massive tool. 
 
-Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications.
+Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications. -->
 
 ## Segments / Chapters
 
