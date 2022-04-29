@@ -12,19 +12,23 @@ We won't cover Linux exhaustively because it is a massive tool.
 
 Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications.
 
-### Segments / Chapters
+## Segments / Chapters
 
 {{% children %}}
 
-#### Configurations
+## Pre-Course Requirements
+
+The only dependancy for this class is that you have VirtualBox installed on your machine and you are able to run Ubuntu 20.04. The configurations walkthrough will take you through the steps for both Windows and MacOS installations.
+
+### Configurations
 
 - [Configurations Home]({{< relref "./configurations" >}})
   - [VirtualBox Download & Installation]({{< relref "./configurations/virtualbox" >}})
   - [Ubuntu Image in VirtualBox]({{< relref "./configurations/ubuntu" >}})
 
-### Schedule
+## Schedule
 
-#### Day One
+### Day One
 
 - Morning
   - [Introduction]({{< relref "./introduction" >}})
@@ -32,7 +36,7 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 - Afternoon
   - [Bash: File System]({{< relref "./file-system" >}})
 
-#### Day Two
+### Day Two
 
 - Morning
   - [Package Manager]({{< relref "./package-manager" >}})
@@ -40,12 +44,12 @@ Linux can be used in many ways to solve many problems, but we will specifically 
 - Afternoon
   - [Git]({{< relref "./git" >}})
 
-#### Day Three
+### Day Three
 
 - Afternoon
   - [Cron]({{< relref "./cron" >}})
 
-#### Day Four
+### Day Four
 
 - Morning
   - [General Web Server Concepts & Key Terminology]({{< relref "./web-server" >}})
@@ -57,7 +61,7 @@ Linux can be used in many ways to solve many problems, but we will specifically 
   - [NGINX]({{< relref "./web-server/nginx" >}}) (Reverse Proxy)
   - [Web Server Exercises]({{< relref "./web-server/exercises" >}})
 
-#### Day Five
+### Day Five
 
 - Morning
   - [systemd]({{< relref "./systemd" >}})
