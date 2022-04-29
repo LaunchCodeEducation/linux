@@ -31,35 +31,42 @@ The only dependancy for this class is that you have VirtualBox installed on your
 ### Day One
 
 - Morning
-  - [Introduction]({{< relref "./introduction" >}})
+  - VirtualBox Installation Validation
+  - [Linux: Introduction]({{< relref "./introduction" >}})
   - [Bash: Introduction]({{< relref "./bash-introduction" >}})
 - Afternoon
+  - [Bash: Streams, Redirection, & Pipes]({{< relref "./bash-streams-redirection-pipe" >}})
   - [Bash: File System]({{< relref "./file-system" >}})
+  - [File Permissions]({{< relref "./file-permissions" >}})
 
 ### Day Two
 
 - Morning
   - [Package Manager]({{< relref "./package-manager" >}})
-  - [Userspace Applications]({{< relref "./userspace-applications" >}})
-- Afternoon
   - [Git]({{< relref "./git" >}})
+- Afternoon
+  - [Userspace Applications]({{< relref "./userspace-applications" >}})
+    - [Wget]({{< relref "./userspace-applications/walkthrough/wget" >}})
+    - [Curl]({{< relref "./userspace-applications/walkthrough/curl" >}})
 
 ### Day Three
 
+- Morning
+  - [Userspace Applications: Continued]({{< relref "./userspace-applications" >}})
+    - [Grep]({{< relref "./userspace-applications/walkthrough/grep" >}})
+    - [Sed]({{< relref "./userspace-applications/walkthrough/sed" >}})
 - Afternoon
-  - [Cron]({{< relref "./cron" >}})
+    - [Userspace Applications: Continued]({{< relref "./userspace-applications" >}})
+      - [Vim]({{< relref "./userspace-applications/walkthrough/vim" >}})
+  - [Bash: Scripting]({{< relref "./bash-scripting" >}})
 
 ### Day Four
 
 - Morning
-  - [General Web Server Concepts & Key Terminology]({{< relref "./web-server" >}})
-  - [General Web Server Slides]({{< relref "./web-server/slides" >}})
-  - [Caddy]({{< relref "./web-server/caddy" >}}) (installation through static website)
-  - [NGINX]({{< relref "./web-server/nginx" >}}) (installation through static website)
+  - [Cron]({{< relref "./cron" >}})
+  - [Web Servers]({{< relref "./web-server" >}})
 - Afternoon
-  - [Caddy]({{< relref "./web-server/caddy" >}}) (Reverse Proxy)
-  - [NGINX]({{< relref "./web-server/nginx" >}}) (Reverse Proxy)
-  - [Web Server Exercises]({{< relref "./web-server/exercises" >}})
+  - [Web Servers Continued]({{< relref "./web-server" >}})
 
 ### Day Five
 
