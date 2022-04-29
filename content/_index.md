@@ -6,60 +6,65 @@ draft: false
 
 ## Linux
 
-Welcome. This course explores Linux.
+### What is this Course
 
-We won't cover Linux exhaustively because it is a massive tool. 
+<!-- #### Generally -->
+
+This course is an introduction to the Linux and the Command Line.
+
+<!-- #### Specifically -->
+
+This course is designed to provide an understanding of the fundamental skills necessary to deploy web applications to a server using a Linux Operating System.
+You will learn about many of the operational tools used when working with a server.
+
+### Why take this Course
+
+<!-- #### Generally -->
+
+Learning how to give instructions to a computer so that it performs any given task is the job of someone who works in tech. In this course you will learn and practice giving text based commands to a computer using the terminal to accomplish tasks.
+
+{{% notice note %}}
+You have likely learned a programming language in the past. Programming languages are a great way to create applications that run on a computer that usually serve a third party user. Working with a terminal is a way of providing exact instructions to a computer with you as the end user.
+{{% /notice %}}
+
+<!-- #### Specifically -->
 
 Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications.
 
-### Segments / Chapters
+You will learn:
+1. How to Create, Read, Update, and Delete files with the Linux file system
+1. How to deploy a React project, Angular project, Spring project, and .NET project.
+1. How to configure a production grade web server (Caddy, NGINX)
+1. Package managers
+1. How to automate tedious tasks with bash scripting
+1. How to schedule tasks to execute at a specific time or on a recurring schedule
+1. How to configure a service to start upon system boot or failure
+1. How to craft http requests and render responses from a terminal
+1. How to search files or terminal output
+1. Git Basics and Collaborative strategies
+
+{{% notice note %}}
+A large percentage of cloud resources are Linux based.
+
+These resources talk about the prevelence of Linux in cloud computing:
+- [Red Hat](https://www.redhat.com/en/resources/state-of-linux-in-public-cloud-for-enterprises)
+- [Linux Article: zdnet](https://www.zdnet.com/article/microsoft-developer-reveals-linux-is-now-more-used-on-azure-than-windows-server/)
+[]()
+{{% /notice %}}
+
+### Where this Course leads
+
+Upon completing this course you will be capable of configuring a server with deployed web applications.
+
+The next step would be to learn cloud basics so that you can make the deployed application available on the internet.
+
+Additionally this leads to:
+- Operations
+- Docker/Containers
+- CI/CD Pipelines
+
+## Segments / Chapters
 
 {{% children %}}
 
-#### Configurations
-
-- [Configurations Home]({{< relref "./configurations" >}})
-  - [VirtualBox Download & Installation]({{< relref "./configurations/virtualbox" >}})
-  - [Ubuntu Image in VirtualBox]({{< relref "./configurations/ubuntu" >}})
-
-### Schedule
-
-#### Day One
-
-- Morning
-  - [Introduction]({{< relref "./introduction" >}})
-  - [Bash: Introduction]({{< relref "./bash-introduction" >}})
-- Afternoon
-  - [Bash: File System]({{< relref "./file-system" >}})
-
-#### Day Two
-
-- Morning
-  - [Package Manager]({{< relref "./package-manager" >}})
-  - [Userspace Applications]({{< relref "./userspace-applications" >}})
-- Afternoon
-  - [Git]({{< relref "./git" >}})
-
-#### Day Three
-
-- Afternoon
-  - [Cron]({{< relref "./cron" >}})
-
-#### Day Four
-
-- Morning
-  - [General Web Server Concepts & Key Terminology]({{< relref "./web-server" >}})
-  - [General Web Server Slides]({{< relref "./web-server/slides" >}})
-  - [Caddy]({{< relref "./web-server/caddy" >}}) (installation through static website)
-  - [NGINX]({{< relref "./web-server/nginx" >}}) (installation through static website)
-- Afternoon
-  - [Caddy]({{< relref "./web-server/caddy" >}}) (Reverse Proxy)
-  - [NGINX]({{< relref "./web-server/nginx" >}}) (Reverse Proxy)
-  - [Web Server Exercises]({{< relref "./web-server/exercises" >}})
-
-#### Day Five
-
-- Morning
-  - [systemd]({{< relref "./systemd" >}})
-- Afternoon
-  - [Final Project]({{< relref "./final-project" >}})
+{{% include "schedule/course-requirements.md" %}}

@@ -14,6 +14,8 @@ weight: 110
 
 {{% expand "Click Here for Solution" %}}
 ```bash
+#!/bin/bash
+
 ## Enter any numbers inside of index_list
 index_list=(15 10 -3 5 23 -5)
 
