@@ -48,4 +48,4 @@ This course is not designed to dive deeply into the kernel. The majority of time
 
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
+{{% children %}}
