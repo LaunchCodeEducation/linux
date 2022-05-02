@@ -49,10 +49,10 @@ Click on the `Choose a disk file...` option.
 
 ### Selecting the Ubuntu ISO
 
-Upon clicking `Choose a disk file` your host OS will open the default file manager. Using that file manager you need to select the `ubuntu-20.04.3-desktop-amd64.iso` file you downloaded earlier. 
+Upon clicking `Choose a disk file` your host OS will open the default file manager. Using that file manager you need to select the `ubuntu-22.04-desktop-amd64.iso` file you downloaded earlier. 
 
 {{% notice note %}}
-The location of the `ubuntu-20.04.3-desktop-amd64.iso` will likely be in a different location than the example image posted below. The file is likely located in your downloads folder.
+The location of the `ubuntu-22.04-desktop-amd64.iso` will likely be in a different location than the example image posted below. The file is likely located in your downloads folder.
 ![personal-file-manager](pictures/personal-file-manager.png?classes=border)
 This image is an example of the default file manager on a Pop!_OS which is an Ubuntu derived distribution.
 {{% /notice %}}
