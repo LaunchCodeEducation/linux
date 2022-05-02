@@ -1,3 +1,12 @@
+[submodule "layouts"]
+	path = layouts
+	url = https://github.com/LaunchCode-Hugo-Submodules/layouts
+[submodule "static"]
+	path = static
+	url = https://github.com/LaunchCode-Hugo-Submodules/static
+[submodule "archetypes"]
+	path = archetypes
+	url = https://github.com/LaunchCode-Hugo-Submodules/archetypes
 [submodule "themes/hugo-theme-relearn"]
 	path = themes/hugo-theme-relearn
-	url = https://github.com/LaunchCodeTechnicalTraining/hugo-theme-relearn
+	url = https://github.com/LaunchCode-Hugo-Submodules/hugo-theme-relearn
