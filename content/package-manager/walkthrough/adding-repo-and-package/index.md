@@ -54,7 +54,7 @@ sudo apt update -y
 
 Our first divergence from the Docker instructions.
 
-To add the Docker Package Repository we will need a few command line tools. **Most of the required packages come pre-installed as a part of Ubuntu 20.04.**
+To add the Docker Package Repository we will need a few command line tools. **Most of the required packages come pre-installed as a part of Ubuntu 22.04**
 
 {{% notice note %}}
 The Docker Installation Guide makes no assumptions about your current distribution. So they include a snippet that installs all of the tools. When you use `apt` to install a tool that already exists, it doesn't throw an error, and will not stop the remaining tools from installing.

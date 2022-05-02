@@ -50,7 +50,7 @@ ___
 
 ### Package Repositories in Ubuntu
 
-Checkout the list of Packages managed by Ubuntu for [Ubuntu 20.04 (focal)](https://packages.ubuntu.com/focal/)
+Checkout the list of Packages managed by Ubuntu for [Ubuntu 22.04 (focal)](https://packages.ubuntu.com/focal/)
 
 This is the list of official Ubuntu Packages. You can add new package repositories from parties outside of Ubuntu, which would give you access to even more packages.
 
@@ -72,6 +72,6 @@ For `APT` we have the CLI's named `apt` and `apt-get` / `apt-cache`.
 
 For `RPM` there are the CLI's named `rpm` and `yum`.
 
-Most linux distributions that come with a graphical windows system also provide a graphical client to access the underlying package manager (`Ubuntu Software` in Ubuntu 20.04).
+Most linux distributions that come with a graphical windows system also provide a graphical client to access the underlying package manager (`Ubuntu Software` in Ubuntu 22.04).
 
 We will only be using the CLI options from our Bash shell's.
