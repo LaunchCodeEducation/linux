@@ -9,7 +9,4 @@ weight: 125
 
 ## Content Links
 
-- [Slides]({{< relref "./slides" >}})
-- [Walkthrough]({{< relref "./walkthrough" >}})
-- [Exercises]({{< relref "./exercises" >}})
-- [Next Steps]({{< relref "./next-steps" >}})
+{{% children %}}
