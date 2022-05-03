@@ -45,7 +45,7 @@ You know you want to edit files from the terminal in Ubuntu. So pull up a search
 
 ![alt-text](pictures/search-engine-terminal-text-editors.png?classes=border)
 
-You may want to check out a couple of different results, but you are mainly on a discovery mission, so just focus on the first article for now: [Exploring Text Editors in Ubuntu 22.04 - ByteXD](https://bytexd.com/exploring-the-text-editors-in-ubuntu-20-04/).
+You may want to check out a couple of different results, but you are mainly on a discovery mission, so just focus on the first article for now: [Exploring Text Editors in Ubuntu 20.04 - ByteXD](https://bytexd.com/exploring-the-text-editors-in-ubuntu-20-04/).
 
 It's an article with the date of Oct 23, 2021. Pretty quick read, just mentioning some terminal text editors this specific author has heard of including both terminal (CLI) and graphical (GUI).
 

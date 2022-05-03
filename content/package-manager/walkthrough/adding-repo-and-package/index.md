@@ -234,7 +234,7 @@ Which results in the following output:
 The output is difficult to see so we will share it here:
 
 ```bash
-deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu jammy stable
 ```
 
 Overall it's a simple line. One line of output that contains:
@@ -242,7 +242,7 @@ Overall it's a simple line. One line of output that contains:
 - the architecture of our computer (`amd64`)
 - the key to use when using this repo (`docker-archive-keyring.gpg`)
 - the package repo URL (`https://download.docker.com/linux/ubuntu`)
-- our distributions canonical name (`focal`)
+- our distributions canonical name (`jammy`)
 - the type of repository to add (`stable`)
 
 This is the information necessary for a package repository to work.

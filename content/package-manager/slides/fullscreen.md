@@ -50,7 +50,7 @@ ___
 
 ### Package Repositories in Ubuntu
 
-Checkout the list of Packages managed by Ubuntu for [Ubuntu 22.04 (focal)](https://packages.ubuntu.com/focal/)
+Checkout the list of Packages managed by Ubuntu for [Ubuntu 22.04 (jammy)](https://packages.ubuntu.com/jammy/)
 
 This is the list of official Ubuntu Packages. You can add new package repositories from parties outside of Ubuntu, which would give you access to even more packages.
 

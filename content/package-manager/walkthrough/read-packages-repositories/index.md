@@ -63,11 +63,11 @@ Trying to wrap our head around all of the package repositories on our machine is
 
 Let's take a look at the [Ubuntu Packages Homepage](https://packages.ubuntu.com/).
 
-It provides a list of various Ubuntu versions, we are using 22.04 the canonical name is `focal`.
+It provides a list of various Ubuntu versions, we are using 22.04 the canonical name is `jammy`.
 
 {{% notice green "Bonus" "rocket" %}}
 If you have forgotten your version of Ubuntu there are many ways to figure it out from your computer. There is a `lsb_release` command that displays distribution specific information. Try running `lsb_release -a` from your Bash shell:
 ![lsb_release -a](pictures/lsb-release-a.png?classes=border)
 {{% /notice %}}
 
-Upon looking at the [webpage for the `focal`](https://packages.ubuntu.com/focal/) repositories we can see they are organized by easier to digest sections.
+Upon looking at the [webpage for the `jammy`](https://packages.ubuntu.com/jammy/) repositories we can see they are organized by easier to digest sections.
