@@ -63,7 +63,7 @@ You will now see that the Ubuntu ISO has been populated under the Controller:IDE
 
 ![Optical-drive-image](pictures/optical-drive-image.png?classes=border)
 
-W3e have configured our virtual machine to use the virtual CD in the virtual optical drive. This way our new virtual machine (that doesn't currently have an operating system) will boot from the Ubuntu `.iso` file which will allow us to configure Ubuntu on the virtual machine.
+You have configured the virtual machine to use the virtual CD in the virtual optical drive. This way the new virtual machine (that doesn't currently have an operating system) will boot from the Ubuntu `.iso` file which will allow you to configure Ubuntu on the virtual machine.
 
 ## Next Steps
 
