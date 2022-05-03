@@ -204,7 +204,7 @@ After running the full command, the Docker public key is now on our `gpg` keyrin
 Now that we have the Docker public key on our keyring we can add the Docker repository to our computer. It's another complex command we will break down:
 
 ```bash
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 Wow, that's a lot of stuff packed into one line. Let's break it down.
@@ -224,7 +224,7 @@ The `echo` command is just displaying something to the Bash shell's display (STD
 You can run this part of the command completely on your own to see the contents of this command:
 
 ```bash
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable"
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 Which results in the following output:
