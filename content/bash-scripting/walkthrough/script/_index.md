@@ -103,7 +103,7 @@ cd launchcode-roster
 
 wget http://lctt-linux.netlify.app/bash-scripting/walkthrough/script/_index.files/about.html
 
-cat about | grep '<p style="line-height: 1.4;"><strong>.*</strong><br/>.*<br/>' | sed 's/^.*<strong>//g' | sed 's/<\/strong><br\/>/: /g' | sed 's/<br\/>.*$//g' > lc-employees.txt
+cat about.html | grep '<p style="line-height: 1.4;"><strong>.*</strong><br/>.*<br/>' | sed 's/^.*<strong>//g' | sed 's/<\/strong><br\/>/: /g' | sed 's/<br\/>.*$//g' > lc-employees.txt
 
 cat lc-employees.txt | grep "^John\|Paul" > john-paul.txt
 ```
