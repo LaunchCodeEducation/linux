@@ -50,7 +50,7 @@ More information about each required deployment will be provided in an upcoming 
 
 ## Example Initialization Script
 
-As you have not seen an example of an inititalizaiton script in this course we will provide one example for the `angular-tour-of-heroes` project in the next article.
+As you have not seen an example of an initialization script we will provide one example for the `angular-tour-of-heroes` project in the next article.
 
 {{% notice note %}}
 You are more than welcome to look at the example before starting to write your own initialization scripts, but if you feel like you have an idea of how to begin we recommended starting with your ideas first and referencing the example only when necessary.
