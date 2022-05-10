@@ -6,7 +6,7 @@ date: 2022-05-05
 
 ## Get Organized
 
-What needed to happen for the Angular project to be deployed?
+What needs to happen for the Angular project to be deployed?
 
 ### VirtualBox
 
