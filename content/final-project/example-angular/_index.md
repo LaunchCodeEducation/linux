@@ -4,8 +4,6 @@ weight: 100
 date: 2022-05-05
 ---
 
-<!-- TODO: switch to orbit report durh -->
-
 ## Get Organized
 
 What needed to happen for the Angular project to be deployed?
@@ -77,7 +75,7 @@ sudo apt install caddy
 
 ```bash
 # Download Project Artifacts
-git clone https://github.com/LaunchCodeTechnicalTraining/angular-tour-of-heroes-artifacts
+git clone https://github.com/LaunchCodeTechnicalTraining/orbit-report-artifacts
 ```
 
 ### Configure Web Server
@@ -129,7 +127,7 @@ sudo apt update -y
 sudo apt install caddy
 
 # Download Project Artifacts
-git clone https://github.com/LaunchCodeTechnicalTraining/angular-tour-of-heroes-artifacts
+git clone https://github.com/LaunchCodeTechnicalTraining/orbit-report-artifacts
 
 # Configure Web Server
 
@@ -137,7 +135,7 @@ git clone https://github.com/LaunchCodeTechnicalTraining/angular-tour-of-heroes-
 (
 cat <<'EOF'
 https://localhost {
-    root * /home/student/angular-tour-of-heroes-artifacts/
+    root * /home/student/orbit-report-artifacts/
     file_server
 }
 EOF
