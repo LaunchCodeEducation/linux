@@ -8,4 +8,5 @@
   HUGO_VERSION = "0.93.0"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  HUGO_VERSION = "0.93.0"

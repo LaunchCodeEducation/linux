@@ -1,7 +1,7 @@
 ---
 title: "Slides: Fullscreen"
 date: 2022-03-22T10:37:21-05:00
-draft: false
+draft: true
 hidden: true
 type: "slides"
 weight: 105
