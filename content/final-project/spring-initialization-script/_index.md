@@ -34,8 +34,8 @@ At this point the `Spring` project should be accessible in your browser.
 This Spring project has a couple of different requirements than the React project. You will need to install the required version of java in order to run this project to set up a reverse proxy. The version you will need is `11`. In order to start the project you need to run the command `java -jar path/to/jar-file`
 {{% /notice %}}
 
-{{% expand "Click Here for Solution" %}}
 ## Full Script Solution
+{{% expand "Click Here for Solution" %}}
 
 ```bash
 # Install Dependencies

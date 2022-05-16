@@ -34,8 +34,8 @@ Build artifacts for this script: `https://github.com/LaunchCodeTechnicalTraining
 
 At this point the `react` project should be accessible in your browser.
 
-{{% expand "Click Here for Solution" %}}
 ## Full Script Solution
+{{% expand "Click Here for Solution" %}}
 
 ```bash
 #!/bin/bash
