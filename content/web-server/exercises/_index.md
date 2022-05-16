@@ -7,22 +7,12 @@ weight: 120
 
 ## Caddy Practice:
 
-- plain HTML/CSS/JS
-- react
-- angular
-- java/spring
-- node/express
-- python/flask
-- python/django
-- python/fastapi
+- React
+- java/Spring Boot
+- C#/.NET
 
 ## NGINX Practice:
 
-- plain HTML/CSS/JS
-- react
-- angular
-- java/spring
-- node/express
-- python/flask
-- python/django
-- python/fastapi
+- React
+- java/Spring Boot
+- C#/.NET

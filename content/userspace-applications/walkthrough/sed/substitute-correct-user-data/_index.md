@@ -7,7 +7,7 @@ weight: 100
 
 ## Correct `user-data.csv`
 
-The `user-data.csv` file we downloaded from `https://launchcodetecnicaltraining.org/api/walkthrough/user?data_format=csv` has a couple of mistakes we need to fix across the entire file.
+The `user-data.csv` file we downloaded from `https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv` has a couple of mistakes we need to fix across the entire file.
 
 1. Typo: company `mastercard` should be `Mastercard`
 1. Typo: company `spectrum` should be `Spectrum`
