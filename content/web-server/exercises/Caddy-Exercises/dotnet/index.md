@@ -5,14 +5,9 @@ draft: false
 weight: 110
 ---
 
-## Install Instructions
+## Dependencies
 
-<!-- wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb 
-sudo dpkg -i packages-microsoft-prod.deb
-
-sudo apt update 
-sudo apt install apt-transport-https 
-sudo apt install dotnet-sdk-3.1  -->
+{{% include "web-server/exercises/dotnet_installation.md" %}}
 
 ## Clone React Build Artifacts:
 

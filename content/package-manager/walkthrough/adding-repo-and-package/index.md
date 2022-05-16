@@ -54,7 +54,7 @@ sudo apt update -y
 
 Our first divergence from the Docker instructions.
 
-To add the Docker Package Repository we will need a few command line tools. **Most of the required packages come pre-installed as a part of Ubuntu 20.04.**
+To add the Docker Package Repository we will need a few command line tools. **Most of the required packages come pre-installed as a part of Ubuntu 22.04**
 
 {{% notice note %}}
 The Docker Installation Guide makes no assumptions about your current distribution. So they include a snippet that installs all of the tools. When you use `apt` to install a tool that already exists, it doesn't throw an error, and will not stop the remaining tools from installing.
@@ -204,7 +204,7 @@ After running the full command, the Docker public key is now on our `gpg` keyrin
 Now that we have the Docker public key on our keyring we can add the Docker repository to our computer. It's another complex command we will break down:
 
 ```bash
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 Wow, that's a lot of stuff packed into one line. Let's break it down.
@@ -224,7 +224,7 @@ The `echo` command is just displaying something to the Bash shell's display (STD
 You can run this part of the command completely on your own to see the contents of this command:
 
 ```bash
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb-release -cs) stable"
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
 Which results in the following output:
@@ -234,7 +234,7 @@ Which results in the following output:
 The output is difficult to see so we will share it here:
 
 ```bash
-deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu focal stable
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu jammy stable
 ```
 
 Overall it's a simple line. One line of output that contains:
@@ -242,7 +242,7 @@ Overall it's a simple line. One line of output that contains:
 - the architecture of our computer (`amd64`)
 - the key to use when using this repo (`docker-archive-keyring.gpg`)
 - the package repo URL (`https://download.docker.com/linux/ubuntu`)
-- our distributions canonical name (`focal`)
+- our distributions canonical name (`jammy`)
 - the type of repository to add (`stable`)
 
 This is the information necessary for a package repository to work.
