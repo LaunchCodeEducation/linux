@@ -76,6 +76,10 @@ EOF
 
 sudo mv Caddyfile /etc/caddy/Caddyfile
 
+sudo systemctl stop caddy
+
+sudo caddy start
+
 ## Reload Caddy
 sudo caddy reload --config /etc/caddy/Caddyfile
 ```
