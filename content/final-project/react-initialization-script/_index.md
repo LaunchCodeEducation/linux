@@ -36,7 +36,6 @@ At this point the `react` project should be accessible in your browser.
 
 ## Full Script Solution
 {{% expand "Click Here for Solution" %}}
-
 ```bash
 #!/bin/bash
 
@@ -55,28 +54,34 @@ sudo apt install -y curl
 
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
 
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo tee /etc/apt/trusted.gpg.d/caddy-stable.asc
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+curl -1sLf \
+  'https://dl.cloudsmith.io/public/caddy/stable/cfg/setup/bash.deb.sh' \
+  | sudo bash
+
 sudo apt update -y
 sudo apt install caddy
 
+source /home/student/.bashrc
+
 ## Cloning Build Artifacts
 
-git clone https://github.com/LaunchCodeTechnicalTraining/react-tic-tac-toe-tutorial.git
+git clone https://github.com/LaunchCodeTechnicalTraining/react-tic-tac-toe-build-artifacts
 
 ## Configure Web Server
 
 (
 cat <<'EOF'
 https://localhost {
-        root * /home/student/react-tic-tac-toe-tutorial/
+        root * /home/student/react-tic-tac-toe-build-artifacts/
         file_server
 }
 EOF
 ) > Caddyfile
 
+sudo mv Caddyfile /etc/caddy/Caddyfile
+
 ## Reload Caddy
-sudo caddy reload
+sudo caddy reload --config /etc/caddy/Caddyfile
 ```
 {{% /expand %}}
 
