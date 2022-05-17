@@ -54,32 +54,38 @@ sudo apt install -y openjdk-11-jre
 
 sudo apt install -y curl
 
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+curl -1sLf \
+  'https://dl.cloudsmith.io/public/caddy/stable/cfg/setup/bash.deb.sh' \
+  | sudo bash
 
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo tee /etc/apt/trusted.gpg.d/caddy-stable.asc
-curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
 sudo apt update -y
 sudo apt install caddy
 
 ## Clone Build Artifacts
 
-git clone https://github.com/LaunchCodeTechnicalTraining/spring-todo-api-jar
+git clone https://github.com/LaunchCodeTechnicalTraining/spring-todo-mvc-artifact
 
 ## Run the project jar file with jre in detached mode
 
-java -jar /home/student/spring-todo-api-jar/todo-api.jar &
+java -jar /home/student/spring-todo-mvc-artifact/todo-api.jar &
 
 ## Configure Web Server
 
 (
 cat <<'EOF'
 http://localhost {
-        reverse_proxy 127.0.0.1:8080
+        reverse_proxy http://localhost:8080
 }
 EOF
 ) > Caddyfile
 
-sudo caddy reload
+sudo mv Caddyfile /etc/caddy/Caddyfile
+
+sudo systemctl stop caddy
+
+sudo caddy start
+
+sudo caddy reload --config /etc/caddy/Caddyfile
 ```
 {{% /expand %}}
 

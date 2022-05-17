@@ -52,16 +52,12 @@ sudo apt install git
 ### Install Curl (Needed to install Caddy)
 sudo apt install -y curl
 
-sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
-
 curl -1sLf \
   'https://dl.cloudsmith.io/public/caddy/stable/cfg/setup/bash.deb.sh' \
   | sudo bash
 
 sudo apt update -y
 sudo apt install caddy
-
-source /home/student/.bashrc
 
 ## Cloning Build Artifacts
 
