@@ -86,3 +86,5 @@ sudo caddy reload --config /etc/caddy/Caddyfile
 {{% /expand %}}
 
 ### Check Browser
+
+![React-Project-Browser-Validation](pictures/react-validation.png?classes=border)

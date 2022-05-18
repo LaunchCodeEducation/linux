@@ -90,3 +90,5 @@ sudo caddy reload --config /etc/caddy/Caddyfile
 {{% /expand %}}
 
 ### Check Browser
+
+![Spring-Project-Browser-Validation](pictures/spring-validation.png?classes=border)
