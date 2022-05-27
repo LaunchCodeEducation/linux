@@ -1,0 +1,35 @@
+name: Deploy Master on Merge
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  dependencies_checkout_build_deliver:
+    name: Install Hugo, Checkout Source Code, Build Artifacts & Deliver
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@master
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.93.0'
+
+      - name: Build
+        run: hugo --minify --gc -b "https://launchcodetechnicaltraining.org/linux"
+
+      - name: Deliver
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          source: "public/*"
+          target: ${{ secrets.PATH }}
