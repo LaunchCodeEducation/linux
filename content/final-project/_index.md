@@ -5,21 +5,56 @@ draft: false
 weight: 160
 ---
 
-## Major Concepts & Key Terminology
+## Recap
 
-For our final project we will be creating (and executing) 2 Bash scripts:
+This class has touched many subjects:
 
-### Script One
+- terminal
+- bash
+- bash streams, redirection & pipes
+- Linux file system & permissions
+- package manager
+- version control
+- bash scripting
+- cron
+- web servers
+- systemd
+- additional user space applications
 
-A machine setup, and initialization script.
+At this point multiple web projects have been deployed to your Linux machine.
 
-This script will automatically do everything that we learned in the Web Server: Static and Web Server: Reverse Proxy chapters.
+Going through the concepts and practicing is how you will become comfortable with the concepts and skills in this course.
 
-It will all need to exist in one script. You will prove it works, by spinning up a brand new virtualbox image. Cloning the script. Executing the script. Access your deployed application from the browser of your VirtualBox image.
+For your final project you will be required to **create two initialization scripts**.
 
-### Script Two:
+An **initialization script** is a **bash** script that is executed after a new virtual machine is created and configures the machine completely and automatically.
 
-This script fires every 5 minutes. It is constantly *polling* the project remote repo. If changes are detected it redeploys the application!
+Once you have an initialization script for a specific project you can spin up a new Ubuntu machine on any device and run one script which will go through all the steps necessary to deploy a project. Initialization scripts are used commonly in the cloud computing world.
+
+## The Scripts
+
+- `react-tic-tac-toe-configuration-and-deployment.sh`
+- `spring-todo-mvc-configuration-and-deployment.sh`
+
+### React
+
+Create an initialization script that when run on a new `Ubuntu 22.04` image configures the machine and deploys the `react-tic-tac-toe-tutorial` project.
+
+### Spring
+
+Create an initialization script that when run on a new `Ubuntu 22.04` image configures the machine and deploys the `spring-todo-mvc` project.
+
+{{% notice note %}}
+More information about each required deployment will be provided in an upcoming article.
+{{% /notice %}}
+
+## Example Initialization Script
+
+As you have not seen an example of an initialization script we will provide one example for the `angular-tour-of-heroes` project in the next article.
+
+{{% notice note %}}
+You are more than welcome to look at the example before starting to write your own initialization scripts, but if you feel like you have an idea of how to begin we recommended starting with your ideas first and referencing the example only when necessary.
+{{% /notice %}}
 
 ## Content Links
 

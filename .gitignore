@@ -4,3 +4,4 @@ data/contributors/contributor.yaml
 .vscode
 deploy.sh
 linux/
+**gource**
