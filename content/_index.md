@@ -29,7 +29,7 @@ You have likely learned a programming language in the past. Programming language
 
 <!-- #### Specifically -->
 
-Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the deployment environment for web applications.
+Linux can be used in many ways to solve many problems, but we will specifically be learning Linux to serve as the **deployment environment** for web applications.
 
 You will learn:
 1. How to Create, Read, Update, and Delete files with the Linux file system
