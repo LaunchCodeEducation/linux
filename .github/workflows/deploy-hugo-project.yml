@@ -22,7 +22,7 @@ jobs:
           hugo-version: '0.93.0'
 
       - name: Build
-        run: hugo --minify --gc -b "https://launchcodetechnicaltraining.org/linux"
+        run: hugo --minify --gc -b "https://launchcodetechnicaltraining.org/linux" -d "linux"
 
       - name: Deliver
         uses: appleboy/scp-action@master
@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
-          source: "public/*"
+          source: "linux/*"
           target: ${{ secrets.PATH }}
