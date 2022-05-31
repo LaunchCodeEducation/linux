@@ -4,6 +4,6 @@ The only dependancy for this class is that you have VirtualBox installed on your
 
 ### Configurations
 
-- [Configurations Home](../configurations/)
-  - [VirtualBox Download & Installation](../configurations/virtualbox/)
-  - [Ubuntu Image in VirtualBox](../configurations/ubuntu/)
+- [Configurations Home](https://launchcodetechnicaltraining.org/linux/configurations/)
+  - [VirtualBox Download & Installation](https://launchcodetechnicaltraining.org/linux/configurations/virtualbox/)
+  - [Ubuntu Image in VirtualBox](https://launchcodetechnicaltraining.org/linux/configurations/ubuntu/)
