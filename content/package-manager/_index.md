@@ -6,6 +6,10 @@ weight: 125
 ---
 
 ## Major Concepts & Key Terminology
+1. `apt` - Advanced Package Tool
+1. Package Repositories
+1. Package Managers
+
 
 ## Content Links
 
