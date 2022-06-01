@@ -42,7 +42,7 @@ For each non hidden file found by `ls -l` the following is displayed:
 
 - file type
 - file permissions
-- number of contained files
+- number of contained folders
 - file owner
 - file group
 - file size (in bytes)
