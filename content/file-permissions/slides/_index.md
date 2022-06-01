@@ -58,6 +58,8 @@ You can expand even further and provide the -a option in addition to -l for all 
 
 The chmod command allows you to change file permissions for a file or directory
 
+chmod [OPTION] [file-name]
+
 Read is represented by the numeric value 4
 
 Write is represented by the numeric value 2
@@ -79,11 +81,19 @@ ___
 
 You are able to use the numeric values in addition to one another to provide multiple permissions for any given Owner, Group, and Other users
 
+Read + Execute = 5
+
+Read + Write = 6
+
+Read + Write + Execute = 7
+
 ---
 
 ## Changing File Ownership
 
 The chown command allows you to change file ownership for a file or directory
+
+chown [OPTION] [OWNER][:[GROUP]] [file-name]
 
 ___
 
