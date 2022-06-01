@@ -14,7 +14,7 @@ weight: 105
 The `chmod` command allows you to change the permissions on any given file so that you can update the `read`, `write`, and `execute` status for the file owner, group and all other users.
 
 ```bash
-chmod [OPTION] [MODE] [file-name]
+chmod [OPTION] [file-name]
 ```
 
 ## Chmod Numerical Expressions
