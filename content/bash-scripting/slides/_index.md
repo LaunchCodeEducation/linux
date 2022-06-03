@@ -54,6 +54,54 @@ Python Variable: name = "George"
 Java variable: String name = "Ringo";
 ___
 
-### Slide 2 Verticial Slide
+### Variable Types
+
+Similar to Python a bash variable will respect any value type you assign to it
+
+---
+
+## Conditional Statements
+
+Bash also contains conditional statements
+
+if statements
+
+if else
+
+if elif else
+
+if statements must be closed with "fi"
+
+___
+
+### Operators
+
+Bash has built in binary operators for the following:
+
+equal to: -eq
+
+not equal to: -ne
+
+less than: -lt
+
+less than or equal to: -le
+
+greater than: -gt
+
+greater than or equal to: -ge
+
+---
+
+## Loops
+
+Bash also contains loops
+
+The two we will cover in class will be the for loop and while loop
+
+For loops and While loops will have a "do" statement with a clause, and a closing "done" statement
+
+We will also cover for loops with conditional statements
+
+---
 
 {{< /slides >}}
