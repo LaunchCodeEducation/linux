@@ -1,7 +1,8 @@
 ---
 title: "Slides"
 date: 2022-02-08T15:07:22-06:00
-draft: true
+draft: false
+hidden: false
 type: "slides"
 weight: 100
 ---
@@ -10,11 +11,12 @@ weight: 100
 The slides found at this location are meant to be used in personal reference. If you are reading these slides for the first time, or are presenting these slides we recommended using the Fullscreen option found below.
 {{% /notice %}}
 
-## Slides Title
+## Cron
 
 ---
 
-## First Slide
+## Purpose
+
 
 ___
 
