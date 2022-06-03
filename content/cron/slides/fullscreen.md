@@ -1,17 +1,11 @@
 ---
-title: "Slides"
-date: 2022-02-08T15:07:22-06:00
-draft: false
-hidden: false
-# type: "slides"
-weight: 100
+title: "Slides: Fullscreen"
+date: 2022-04-08T13:54:20-05:00
+draft: true
+hidden: true
+type: "slides"
+weight: 1
 ---
-
-{{% notice note %}}
-The slides found at this location are meant to be used in personal reference. If you are reading these slides for the first time, or are presenting these slides we recommended using the Fullscreen option found below.
-{{% /notice %}}
-
-{{< slides >}}
 
 ## Cron
 
@@ -65,6 +59,3 @@ Cronjob that clears unwanted files from specific directories at end of a month
 Cronjob that reminds you of important dates
 
 The list goes on
-
-{{< /slides >}}
-
