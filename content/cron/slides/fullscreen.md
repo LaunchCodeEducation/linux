@@ -32,6 +32,16 @@ Crontab is the file that will hold instructions for the cron daemon
 
 You can have as many cronjobs within the crontab as you would like
 
+___
+
+### Global Crontab vs User Crontab
+
+You can find the global crontab at the following location:
+
+/etc/crontab - This crontab file is system wide
+
+When you open crontab using the crontab -e command it is user specific
+
 ---
 
 ## Cronjobs
