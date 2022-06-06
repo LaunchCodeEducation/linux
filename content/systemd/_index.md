@@ -15,8 +15,8 @@ weight: 155
 - initialization system
   - `systemd`
   - `Init V`
-- daemon: definition
-- service: definition
+- daemon: computer program that runs as a background process
+- service: computer program that responds to requests from other computer programs
 - where system daemon and service files live (existing services and daemons)
   - from https://www.enricozini.org/blog/2017/debian/systemd-01-intro/ linked from [official debian systemd docs](https://wiki.debian.org/systemd/documentation)
   - `/lib/systemd/system/`: for units provided by packaged software

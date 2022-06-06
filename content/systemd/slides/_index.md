@@ -1,7 +1,8 @@
 ---
 title: "Slides"
 date: 2022-03-02T09:54:08-06:00
-draft: true
+draft: false
+hidden: false
 # type: "slides"
 weight: 100
 ---
@@ -12,11 +13,11 @@ The slides found at this location are meant to be used in personal reference. If
 
 {{< slides >}}
 
-## Slide Deck Title
+## systemd
 
 ---
 
-## Slide 1
+## Purpose
 
 ___
 
