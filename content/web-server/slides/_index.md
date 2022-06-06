@@ -37,9 +37,19 @@ ___
 
 ### Use Cases
 
+This course utilizes Caddy and NGINX to server static files as web applications for the following:
+
+- React Project
+- Spring Boot Project
+- Angular Project
+- C# Project
+- Python Project
+
 Caddy - User friendly, less configuration, newer technology (released in 2015)
 
-Nginx - Many organizations still use Nginx (released in 2004)
+NGINX - Many organizations still use Nginx (released in 2004)
+
+This Linux Course curriculum is currently being served with a Caddyfile
 
 ---
 
