@@ -7,12 +7,12 @@ weight: 150
 
 ## Major Concepts & Key Terminology
 
-- `Caddy` HTTP, HTTPS, and reverse proxy server
+- `Caddy` HTTP, automatic HTTPS, and reverse proxy server to serve web applications
     - `Caddyfile`: config file required for caddy
-    - `caddy reload`
-- `NGINX` - HTTP and reverse proxy server
+    - `caddy reload`: command to reload web server with config file updates
+- `NGINX` - HTTP, HTTPS, and reverse proxy server to serve web applications
     - `.conf file`: config file required for nginx
-    - `nginx -s reload`
+    - `nginx -s reload`: command to reload web server with config file updates
 
 ## Content Links
 
