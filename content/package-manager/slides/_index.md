@@ -1,7 +1,8 @@
 ---
 title: "Slides"
 date: 2021-11-09T15:13:39-06:00
-draft: true
+draft: false
+hidden: false
 # type: "slides"
 weight: 100
 ---
