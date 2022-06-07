@@ -2,7 +2,7 @@
 title: "Slides"
 date: 2022-04-08T13:54:20-05:00
 draft: false
-hidden: false
+hidden: true
 # type: "slides"
 weight: 1
 ---
@@ -101,7 +101,5 @@ The two we will cover in class will be the for loop and while loop
 For loops and While loops will have a "do" statement with a clause, and a closing "done" statement
 
 We will also cover for loops with conditional statements
-
----
 
 {{< /slides >}}
