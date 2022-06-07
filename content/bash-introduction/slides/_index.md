@@ -2,6 +2,7 @@
 title: "Slides"
 date: 2022-02-17T14:54:25-06:00
 draft: false
+hidden: true
 # type: "slides"
 weight: 100
 ---
