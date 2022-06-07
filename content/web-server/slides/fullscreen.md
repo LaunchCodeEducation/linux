@@ -1,28 +1,70 @@
 ---
 title: "Slides: Fullscreen"
 date: 2022-03-22T10:37:21-05:00
-draft: true
+draft: false
 hidden: true
 type: "slides"
 weight: 105
 ---
 
-<!-- Copy everything between open and closing slide tags from _index.md -->
-
-## Slide Deck Title
+## Web Servers
 
 ---
 
-## Slide 1
+## Purpose
 
+Program that allows you to serve web pages to the end user
 ___
 
-### Slide 1 Vertical Slide
+### Protocols
+
+HTTP: Hypertext Transfer Protocol
+
+HTTPS: Hypertext Transfer Protocol Secure
 
 ---
 
-## Slide 2
+## Web Servers Covered
 
+Caddy: Serve files and reverse proxy, automatic HTTPS
+
+Nginx: Serve files and reverse proxy, no automatic HTTPS
+
+Both of the above web servers can accomplish the same tasks
 ___
 
-### Slide 2 Verticial Slide
+### Use Cases
+
+This course utilizes Caddy and NGINX to server static files as web applications for the following:
+
+- React Project
+- Spring Boot Project
+- Angular Project
+- C# Project
+- Python Project
+
+Caddy - User friendly, less configuration, newer technology (released in 2015)
+
+NGINX - Many organizations still use Nginx (released in 2004)
+
+This Linux Course curriculum is currently being served with a Caddyfile
+
+---
+
+## Caddy
+
+Requires a Caddyfile to be configured in order to serve web applications
+
+default Caddyfile located at /etc/caddy/Caddyfile
+
+Best practice is to store your Caddyfile in the default location
+
+---
+
+## NGINX
+
+Requires a .conf (config) file to be configured in order to server web applications
+
+default .conf file located at /etc/nginx/conf.d/default.conf
+
+Best practice to store any custom .conf files at /etc/nginx/conf.d/
