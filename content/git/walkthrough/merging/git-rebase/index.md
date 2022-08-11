@@ -6,7 +6,7 @@ weight: 110
 ---
 
 {{% notice note %}}
-You will be using [py-demo-web-logs-continued](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-continued) as the github repository for this walkthrough.
+You will be using [py-demo-web-logs-rebase](https://github.com/LaunchCodeTechnicalTraining/py-demo-web-logs-rebase) as the github repository for this walkthrough.
 {{% /notice %}}
 
 ## Merging with Git Rebase
