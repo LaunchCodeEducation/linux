@@ -1,5 +1,5 @@
 
-### Install .NET SDK 3.1 and the `dotnet` CLI
+### Install .NET SDK 6.0 and the `dotnet` CLI
 
 #### Add Package Repository
 
@@ -12,11 +12,11 @@ sudo dpkg -i packages-microsoft-prod.deb
 #### Update Package Repository List
 
 ```bash
-sudo apt update 
+sudo apt update
 ```
 
-#### Install .NET SDK 3.1 and `dotnet` CLI
+#### Install .NET SDK 6.0 and `dotnet` CLI
 
 ```bash
-sudo apt install dotnet-sdk-3.1 
+sudo apt install dotnet-sdk-6.0
 ```

@@ -37,7 +37,7 @@ sudo systemctl start caddy
 Start the .NET application:
 
 ```bash
-dotnet TechJobsMVC.dll
+dotnet run
 ```
 
 Create a `Caddyfile`
