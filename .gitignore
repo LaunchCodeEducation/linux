@@ -5,3 +5,4 @@ data/contributors/contributor.yaml
 deploy.sh
 linux/
 **gource**
+Dockerfile
