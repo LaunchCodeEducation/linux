@@ -3,7 +3,7 @@ name: Deploy Master on Merge
 on: 
   push:
     branches:
-      - master
+      - main
 
 jobs:
   dependencies_checkout_build_deliver:
