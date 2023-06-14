@@ -67,3 +67,14 @@ weight: 1000
 	- We want the learners of this course to be focused on manipulating the application so that it can be packaged, tested, and delivered with the push of a button.
 	- If we decide to have the learners build their own application within a 4-5 week course my concern is that it would take too much time and be a blocker from learning other content within the course.
 
+## Ideal Project Requirements
+1. Project must be in a working state
+1. Project ideally is connected to a database
+1. Project must have tests
+1. Any language is okay
+
+## Template Projects
+1. Provide template projects for deployment targets?
+
+## Other Project Ideas
+1. Should we have each learner deploy a hugo project that acts as their own personal website?
