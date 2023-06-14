@@ -20,23 +20,7 @@ weight: 1000
 1. Deploying applications on AWS (we can potentially use Digital Ocean for this class as well. There are some benefits like referring a friend to receive credits in the future.)
 	- This is already included in a walkthrough or two within the AWS curriculum that has been created. We can customize it as we would like.
 
-## Week 3: Containerization 
-1. Introduction to containerization and its benefits (Why do it? What are the benefits? What kinds of architechtures use containers ie: Monolithic vs Microservices)
-1. Docker fundamentals (containers, images, Dockerfile)
-	- gisdevops has a what is docker and installation steps for MAC
-	- gisdevops walkthrough: intro to docker includes the following:
-		- common docker commands
-		- simple python web app
-		- creating a dockerfile
-		- creating a container
-		- a more complex python app
-		- docker compose file
-		- docker logs
-1. Building and managing Docker containers (Common commands, ports to open, how to access container with shell)
-1. Container orchestration with Kubernetes (Introduced with Minikube)
-1. Deploying and scaling applications using Kubernetes (Can also be completed with Minikube)
-
-## Week 4: CI/CD Pipelines
+## Week 3: CI/CD Pipelines / Testing
 1. Continuous Integration and Continuous Deployment concepts (This is the why)
 1. Setting up CI/CD pipelines using popular tools (e.g., Jenkins, GitLab CI/CD, Github Actions)
 	- Jenkins hardware requirements:
@@ -47,11 +31,27 @@ weight: 1000
 1. Automating build, test, and deployment processes
 1. Monitoring and logging in CI/CD pipelines
 
-## Week 5: Testing and Security
+## Week 4: Testing Continued and Security
 1. Introduction to testing methodologies (unit, integration, system testing)
 1. Test automation frameworks and tools (e.g., JUnit, Selenium, Cypress)
 1. Security best practices in DevOps (vulnerability scanning, secure coding practices)
 1. Implementing security measures in CI/CD pipelines (Environment Variables, common problem among learners)
+
+## Week 4-5: Containerization and any additional Security / Logging
+1. Introduction to containerization and its benefits (Why do it? What are the benefits? What kinds of architechtures use containers ie: Monolithic vs Microservices)
+1. Docker fundamentals (containers, images, Dockerfile)
+        - gisdevops has a what is docker and installation steps for MAC
+        - gisdevops walkthrough: intro to docker includes the following:
+                - common docker commands
+                - simple python web app
+                - creating a dockerfile
+                - creating a container
+                - a more complex python app
+                - docker compose file
+                - docker logs
+1. Building and managing Docker containers (Common commands, ports to open, how to access container with shell)
+1. Container orchestration with Kubernetes (Introduced with Minikube)
+1. Deploying and scaling applications using Kubernetes (Can also be completed with Minikube)
 
 ## Course Delivery:
 1. Ideally one lead instructor and 1-2 TAs depending on the size of the class
