@@ -7,7 +7,7 @@ canonifyURLs = true
 
 [params]
   themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]
-  editURL = "https://github.com/LaunchCodeEducation/linux/edit/master/content/"
+  editURL = "https://github.com/LaunchCodeEducation/linux/edit/main/content/"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
