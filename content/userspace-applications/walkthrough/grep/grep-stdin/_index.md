@@ -59,7 +59,7 @@ Output:
 Send a `curl` request directly to the API and match the results (`csv` in `STDIN`) to a specific pattern.
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep 'Microsoft$'
 ```
 
 Output:

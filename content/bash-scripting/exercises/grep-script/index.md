@@ -6,7 +6,7 @@ weight: 105
 ---
 
 ## Script Requirements:
-- Get Dataset located at `https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv`
+- Get Dataset located at `https://launchcodelearning.org/api/walkthrough/user?data_format=csv`
   - write it to a file called `user-data` in your `home` directory.
 - Create a new directory called `technical-user-data` inside of the `home directory`
 - Filter the Data inside of `user-data` to include only lines matching `Paul` and write the results to a file called `paul-data.csv` inside of the `technical-user-data` directory
@@ -18,7 +18,7 @@ weight: 105
 ```bash
 #!/bin/bash
 
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > ~/user-data
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv > ~/user-data
 
 mkdir ~/technical-user-data
 

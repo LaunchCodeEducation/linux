@@ -35,14 +35,14 @@ Regular expressions can be:
 Before we can start searching text we need to first download the text we will be searching. From your home directory:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > user.csv
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv > user.csv
 ```
 
 This command makes a `curl` request to the provided endpoint and whatever data is returned will be written to a file called `user.csv`.
 
 ### Validation
 
-![curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv validation image](pictures/curl-dataset.png?classes=border)
+![curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv validation image](pictures/curl-dataset.png?classes=border)
 
 You can `cat` out the file, but it has 25000 records in it.
 

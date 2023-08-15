@@ -57,7 +57,7 @@ This and the following articles use the `user-data.csv` file.
 If you don't already have the `user-data.csv` file in your home directory run the following command:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > ~/user-data.csv
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv > ~/user-data.csv
 ```
 
 {{% notice green "Bonus" "rocket" %}}

@@ -9,13 +9,13 @@ hidden: true
 ## At Least One, Possibly More `+`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/transaction?data_format=csv | grep '\$5[0-9]\+'
+curl -s https://launchcodelearning.org/api/walkthrough/transaction?data_format=csv | grep '\$5[0-9]\+'
 ```
 
 ## Maybe One, Possibly More `*`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^Paula*'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '^Paula*'
 ```
 
 ## Match Exact Number `{}`
@@ -54,13 +54,13 @@ echo -e "Paul\nPaula\nPaulaaaaaa\nTim" | grep '^Paula\{6\}$'
 ## Regular Expression Groups `()`
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '\(Paul\|John\)'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '\(Paul\|John\)'
 ```
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^\(Paul\|John\),'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '^\(Paul\|John\),'
 ```
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '\(Accenture\|Boeing|)$'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '\(Accenture\|Boeing|)$'
 ```
