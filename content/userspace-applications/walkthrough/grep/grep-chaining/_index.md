@@ -12,7 +12,7 @@ We can even pass the output from a `grep` command to another `grep` command to b
 ### Step One: Get our Dataset
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv
 ```
 
 Output:
@@ -26,7 +26,7 @@ Output:
 Filter data to include only `'^John'`:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '^John,'
 ```
 
 Output:
@@ -38,7 +38,7 @@ Output:
 Using the output from the previous filter, filter further to include lines that match `'Microsoft$'`.
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$'
 ```
 
 Output:
@@ -50,7 +50,7 @@ Output:
 Using the output from the previous filter, filter further to include lines that match `'@example\.com'`.
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$' | grep '@example\.com'
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv | grep '^John,' | grep 'Microsoft$' | grep '@example\.com'
 ```
 
 Output:

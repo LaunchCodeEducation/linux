@@ -15,7 +15,7 @@ Most navigation occurs in `Normal` mode.
 This article will use the `user-data.csv` used in the previous `grep` and `sed` sections. If you do not already have the file, you can re-download it with:
 
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > user-data.csv
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv > user-data.csv
 ```
 
 After running the command you should have a new copy of the `user-data.csv` file:

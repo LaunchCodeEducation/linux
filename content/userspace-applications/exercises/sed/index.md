@@ -30,7 +30,7 @@ Using the user.csv Dataset complete the following requirements:
 {{% notice note %}}
 If you need to get the `user.csv` Dataset again you can do so with the following command:
 ```bash
-curl -s https://launchcodetechnicaltraining.org/api/walkthrough/user?data_format=csv > user.csv
+curl -s https://launchcodelearning.org/api/walkthrough/user?data_format=csv > user.csv
 ```
 {{% /notice %}}
 
