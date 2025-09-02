@@ -10,7 +10,7 @@ Not all packages come installed on your operating system. However, through using
 Before you can install a package you must figure out how to find a package.
 
 {{% notice note %}}
-Before searching for packages you should [Update Package Repositories]({{< relref "../updating-package-repositories" >}}) with: `sudo apt update`
+Before searching for packages you should [Update Package Repositories]({{< relref "/package-manager/walkthrough/updating-package-repositories" >}}) with: `sudo apt update`
 {{% /notice %}}
 
 ## `apt search [package-name]`

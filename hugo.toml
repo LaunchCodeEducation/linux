@@ -1,0 +1,15 @@
+## Hugo Config
+baseURL = 'https://lc-linux.netlify.app/'
+languageCode = 'en-us'
+title = 'Linux'
+
+theme = "hugo-theme-relearn"
+ignoreLogs = ['warning-goldmark-raw-html']
+
+canonifyUrls = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[params]
+  themeVariant = ["lc-light", "lc-dark-blue", "lc-dark-blue-two"]

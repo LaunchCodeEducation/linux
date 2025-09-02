@@ -1,12 +1,13 @@
 # netlify site URL: https://lctt-linux.netlify.app
+# Comment for build
 
 [build]
   command = "hugo --gc --minify"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.95.0"
+  HUGO_VERSION = "0.147.1"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-  HUGO_VERSION = "0.95.0"
+  HUGO_VERSION = "0.147.1"

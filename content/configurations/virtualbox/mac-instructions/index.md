@@ -158,4 +158,4 @@ Once you have reached this screen you have successfully downloaded, installed an
 
 In this article we downloaded and installed Oracle VirtualBox onto our host computers. In the next configuration article we will be using VirtualBox to create a virtual machine image of Ubuntu, which will be the Linux distribution used in this class.
 
-Look over the [Ubuntu Configuration Article]({{< relref "../../ubuntu" >}}) to complete the configurations necessary for this course.
+Look over the [Ubuntu Configuration Article]({{< relref "/configurations/ubuntu" >}}) to complete the configurations necessary for this course.

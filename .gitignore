@@ -1,4 +1,5 @@
 public/
+.claude/
 .hugo_build.lock
 data/contributors/contributor.yaml
 .vscode
