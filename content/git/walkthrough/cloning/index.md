@@ -1,6 +1,6 @@
 ---
 title: "Cloning a Repository"
-date: 2022-16-03T15:20:12-06:00
+date: 2022-06-03T15:20:12-06:00
 draft: false
 weight: 110
 ---

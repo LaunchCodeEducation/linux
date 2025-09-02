@@ -55,7 +55,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://education.launchcode.org/linux"
+            --baseURL "https://education.launchcode.org/data-analysis-curriculum"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -65,7 +65,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://education.launchcode.org/linux/
+      url: https://education.launchcode.org/data-analysis-curriculum/
     runs-on: ubuntu-latest
     needs: build
     steps:
