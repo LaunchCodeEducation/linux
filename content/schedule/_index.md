@@ -5,7 +5,12 @@ draft: false
 weight: 95
 ---
 
-{{% include "schedule/course-requirements.md" %}}
+The only dependancy for this class is that you have VirtualBox installed on your machine and you are able to run Ubuntu 22.04. The configurations walkthrough will take you through the steps for both Windows and MacOS installations.
+
+## Configurations
+- [Configurations Home]({{< relref "../configurations" >}})
+  - [VirtualBox Installation]({{< relref "../configurations/virtualbox" >}})
+  - [Ubuntu Image Download Instructions]({{< relref "../configurations/ubuntu" >}})
 
 ## Schedule
 
