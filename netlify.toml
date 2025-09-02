@@ -1,4 +1,5 @@
 # netlify site URL: https://lctt-linux.netlify.app
+# Comment for build
 
 [build]
   command = "hugo --gc --minify"
