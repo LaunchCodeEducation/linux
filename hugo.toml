@@ -1,4 +1,4 @@
-baseURL = 'https://linux.netlify.app/'
+baseURL = 'https://lctt-linux.netlify.app/'
 languageCode = 'en-us'
 title = 'Linux'
 
