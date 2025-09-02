@@ -10,6 +10,3 @@
 [submodule "themes/hugo-theme-relearn"]
 	path = themes/hugo-theme-relearn
 	url = https://github.com/LaunchCode-Hugo-Submodules/hugo-theme-relearn
-[submodule "hugo-theme-relearn"]
-	path = hugo-theme-relearn
-	url = https://github.com/LaunchCode-Hugo-Submodules/hugo-theme-relearn
