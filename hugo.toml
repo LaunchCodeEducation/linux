@@ -1,3 +1,4 @@
+## Hugo Config
 baseURL = 'https://lc-linux.netlify.app/'
 languageCode = 'en-us'
 title = 'Linux'
