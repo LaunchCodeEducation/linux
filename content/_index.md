@@ -47,9 +47,8 @@ You will learn:
 A large percentage of cloud resources are Linux based.
 
 These resources talk about the prevelence of Linux in cloud computing:
-- [Red Hat](https://www.redhat.com/en/resources/state-of-linux-in-public-cloud-for-enterprises)
+- [Red Hat](https://www.redhat.com/en/topics/linux/linux-for-cloud-computing)
 - [Linux Article: zdnet](https://www.zdnet.com/article/microsoft-developer-reveals-linux-is-now-more-used-on-azure-than-windows-server/)
-[]()
 {{% /notice %}}
 
 ### Where this Course leads
